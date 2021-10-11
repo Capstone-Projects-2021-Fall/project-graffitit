@@ -8,4 +8,9 @@ public class RegisterationPanel : MonoBehaviour
     {
         SceneManager.LoadScene("LoginMenuPage");
     }
+
+    public void loadHomePage()
+    {
+        SceneManager.LoadScene("TemHomePage");
+    }
 }
