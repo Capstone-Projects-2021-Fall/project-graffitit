@@ -6,6 +6,6 @@ public class LoginMenuScript : MonoBehaviour
 {
     public void backToRegisteration()
     {
-        SceneManager.LoadScene("RegisterationPage");
+        SceneManager.LoadScene("RegistrationPage");
     }
 }
