@@ -1,0 +1,8 @@
+C:\Users\liboh\source\repos\AWSS3\AWSS3\obj\Debug\net5.0\AWSS3.csproj.AssemblyReference.cache
+C:\Users\liboh\source\repos\AWSS3\AWSS3\obj\Debug\net5.0\AWSS3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\liboh\source\repos\AWSS3\AWSS3\obj\Debug\net5.0\AWSS3.AssemblyInfoInputs.cache
+C:\Users\liboh\source\repos\AWSS3\AWSS3\obj\Debug\net5.0\AWSS3.AssemblyInfo.cs
+C:\Users\liboh\source\repos\AWSS3\AWSS3\obj\Debug\net5.0\AWSS3.csproj.CoreCompileInputs.cache
+C:\Users\liboh\source\repos\AWSS3\AWSS3\obj\Debug\net5.0\AWSS3.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\liboh\source\repos\AWSS3\AWSS3\obj\Debug\net5.0\AWSS3.RazorAssemblyInfo.cache
+C:\Users\liboh\source\repos\AWSS3\AWSS3\obj\Debug\net5.0\AWSS3.RazorAssemblyInfo.cs
