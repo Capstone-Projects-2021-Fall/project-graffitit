@@ -61,7 +61,7 @@ public class PhoneCamera : MonoBehaviour
         background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
     }
 
-    public void TakePicture(int maxSize)
+    public static void TakePicture(int maxSize)
     {
         NativeCamera.Permission permission = NativeCamera.TakePicture((path) =>
         {
@@ -92,7 +92,7 @@ public class PhoneCamera : MonoBehaviour
             }
         }, maxSize);
     }
-    public void RecordVideo()
+    public static void RecordVideo()
     {
         NativeCamera.Permission permission = NativeCamera.RecordVideo((path) =>
         {

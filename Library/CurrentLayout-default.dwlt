@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1306
     height: 820
-  m_MinSize: {x: 678, y: 492}
+  m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 18
+  controlID: 18851
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1027
     height: 820
-  m_MinSize: {x: 403, y: 492}
+  m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 19
+  controlID: 18852
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,10 +169,10 @@ MonoBehaviour:
     y: 0
     width: 1027
     height: 496
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 20
+  controlID: 18853
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 254
     height: 496
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -225,7 +225,7 @@ MonoBehaviour:
   - {fileID: 14}
   - {fileID: 12}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -336,7 +336,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 1
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -349,18 +349,18 @@ MonoBehaviour:
       y: 21
       width: 771
       height: 454
-    m_Scale: {x: 0.5246432, y: 0.5246432}
-    m_Translation: {x: 385.5, y: 227.92982}
+    m_Scale: {x: 0.5066964, y: 0.5066964}
+    m_Translation: {x: 385.5, y: 227}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -734.7851
-      y: -434.44733
-      width: 1469.5702
-      height: 865.35004
+      x: -760.8106
+      y: -448.00003
+      width: 1521.6212
+      height: 896.00006
     m_MinimalGUI: 1
   m_defaultScale: 0.5066964
   m_LastWindowPixelSize: {x: 1542, y: 950}
@@ -399,7 +399,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 62efffff80efffffb4f0ffffc6f0ffffe2f0ffffaaf1ffffc8f1ffffd0f1ffffe0f1fffff4f1ffffbcf2ffffdaf2ffff0ef4ffff20f4ffff3cf4ffff50fbffffb03f0000c03f000096430000a6430000
+      m_ExpandedIDs: 7663ffff9463ffff9c63ffffac63ffffc063ffffca64ffffea64ffff1866ffff2a66ffff9487ffffb487ffffbc87ffffcc87ffffe087ffffc88cffffe88cfffff08cffff008dffff148dffff408fffff608fffff688fffff788fffff8c8fffff5c97ffffc697ffffe297ffff1499ffff2699ffff4e99ffff50a2ffff6ca2ffff74a2ffff84a2ffff06a4ffff22a4ffff58a5ffff6aa5ffff7aa9ffff96a9ffff9ea9ffffaea9ffffcea9ffff8aabffffa6abffffaeabffffbeabffffd2abffff62acffff7eacffffb4adffffc6adffffe2adffff4cbcffff6abcffffa0bdffffb2bdffffcebdffff7cc6ffff9ac6ffffd0c7ffffe2c7fffffec7ffff06d7ffff38deffffd0e8ffff08e9ffff5aeaffff6aeaffff74eaffffb6eaffff50fbffffd23f00005840000050460000604600002e4a00003e4a0000444f0000544f0000f669000060820000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -459,9 +459,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 735.43604, y: 860.07404, z: -184.92172}
+    m_Target: {x: 615.692, y: 261.4718, z: -171.55174}
     speed: 2
-    m_Value: {x: 735.43604, y: 860.07404, z: -184.92172}
+    m_Value: {x: 611.29443, y: 273.99826, z: -169.13174}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -512,9 +512,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1003.046
+    m_Target: 641.9733
     speed: 2
-    m_Value: 1003.046
+    m_Value: 672.2234
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -577,22 +577,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Plugins/NativeCamera
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Plugins/NativeCamera
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\wnz6k\OneDrive\Desktop\Temple\2021 Fall\CIS4398\project-graffitit
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d2400000
-    m_LastClickedID: 16594
-    m_ExpandedIDs: 00000000c0400000c2400000c4400000c6400000
+    m_SelectedIDs: 0a410000
+    m_LastClickedID: 16650
+    m_ExpandedIDs: 00000000fe40000000410000024100000a4100001441000028410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -620,7 +620,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c0400000c2400000c4400000c6400000
+    m_ExpandedIDs: 00000000fe400000004100000241000014410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
