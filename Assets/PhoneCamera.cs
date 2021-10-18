@@ -60,4 +60,51 @@ public class PhoneCamera : MonoBehaviour
         int orient = -backCam.videoRotationAngle;
         background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
     }
+
+    public static void TakePicture(int maxSize)
+    {
+        NativeCamera.Permission permission = NativeCamera.TakePicture((path) =>
+        {
+            Debug.Log("Image path: " + path);
+            if(path != null)
+            {
+                Texture2D texture = NativeCamera.LoadImageAtPath(path, maxSize);
+                NativeGallery.SaveImageToGallery(texture, "test", "myimg.png");
+                if (texture == null)
+                {
+                    Debug.Log("Couldn't load texture from " + path);
+                    return;
+                }
+                GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
+                quad.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 2.5f;
+                quad.transform.forward = Camera.main.transform.forward;
+                quad.transform.localScale = new Vector3(1f, texture.height / (float)texture.width, 1f);
+
+                Material material = quad.GetComponent<Renderer>().material;
+                if (!material.shader.isSupported)
+                    material.shader = Shader.Find("Legacy Shaders/Diffuse");
+
+                material.mainTexture = texture;
+
+                Destroy(quad, 5f);
+
+                Destroy(texture, 5f);
+            }
+        }, maxSize);
+    }
+    public static void RecordVideo()
+    {
+        NativeCamera.Permission permission = NativeCamera.RecordVideo((path) =>
+        {
+            Debug.Log("Video path: " + path);
+            if (path != null)
+            {
+                NativeGallery.SaveVideoToGallery(path, "testvideo", "myvideo.mp4");
+                //Play the recorded video
+                Handheld.PlayFullScreenMovie("file://" + path);
+            }
+        });
+        Debug.Log("Permission result: " + permission);
+    }
 }
+
