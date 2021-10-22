@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{5F7717AF-D1D5-16B9-2EDD-5D4C665ACFF1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -160,6 +161,7 @@
     <Compile Include="Library\PackageCache\com.unity.xr.arsubsystems@4.1.7\Runtime\HumanBodySubsystem\XRHumanBody.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Library\PackageCache\com.unity.xr.arsubsystems@4.1.7\Runtime\Unity.XR.ARSubsystems.asmdef" />
   </ItemGroup>
   <ItemGroup>

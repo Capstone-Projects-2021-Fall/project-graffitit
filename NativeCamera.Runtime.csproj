@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{DB8BFAD5-7FF7-C16F-077D-8303E84BF471}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -63,6 +64,7 @@
     <Compile Include="Assets\Plugins\NativeCamera\Android\NCCameraCallbackAndroid.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Assets\Plugins\NativeCamera\NativeCamera.Runtime.asmdef" />
     <None Include="Assets\Plugins\NativeCamera\README.txt" />
   </ItemGroup>

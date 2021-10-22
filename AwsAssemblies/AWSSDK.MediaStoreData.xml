@@ -1,0 +1,1927 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.MediaStoreData</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.MediaStoreData.AmazonMediaStoreDataClient">
+             <summary>
+             Implementation for accessing MediaStoreData
+            
+             An AWS Elemental MediaStore asset is an object, similar to an object in the Amazon
+             S3 service. Objects are the fundamental entities that are stored in AWS Elemental
+             MediaStore.
+             </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.#ctor(System.String)">
+             <summary>
+             Constructs AmazonMediaStoreDataClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="serviceUrl">The URL of the search or document service.</param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.#ctor(Amazon.MediaStoreData.AmazonMediaStoreDataConfig)">
+             <summary>
+             Constructs AmazonMediaStoreDataClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonMediaStoreDataClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.#ctor(System.String,Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonMediaStoreDataClient with AWS Credentials
+            </summary>
+            <param name="serviceUrl">The URL of the search or document service.</param>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.MediaStoreData.AmazonMediaStoreDataConfig)">
+            <summary>
+            Constructs AmazonMediaStoreDataClient with AWS Credentials and an
+            AmazonMediaStoreDataClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonMediaStoreDataClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonMediaStoreDataClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="serviceUrl">The URL of the search or document service.</param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.#ctor(System.String,System.String,Amazon.MediaStoreData.AmazonMediaStoreDataConfig)">
+            <summary>
+            Constructs AmazonMediaStoreDataClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonMediaStoreDataClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonMediaStoreDataClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonMediaStoreDataClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="serviceUrl">The URL of the search or document service.</param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.#ctor(System.String,System.String,System.String,Amazon.MediaStoreData.AmazonMediaStoreDataConfig)">
+            <summary>
+            Constructs AmazonMediaStoreDataClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonMediaStoreDataClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonMediaStoreDataClient Configuration Object</param>
+        </member>
+        <member name="P:Amazon.MediaStoreData.AmazonMediaStoreDataClient.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.AmazonMediaStoreDataClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.DeleteObject(Amazon.MediaStoreData.Model.DeleteObjectRequest)">
+            <summary>
+            Deletes an object at the specified path.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteObject service method.</param>
+            
+            <returns>The response from the DeleteObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.ObjectNotFoundException">
+            Could not perform an operation on an object that does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/DeleteObject">REST API Reference for DeleteObject Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.DeleteObjectAsync(Amazon.MediaStoreData.Model.DeleteObjectRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes an object at the specified path.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteObject service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.ObjectNotFoundException">
+            Could not perform an operation on an object that does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/DeleteObject">REST API Reference for DeleteObject Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.DescribeObject(Amazon.MediaStoreData.Model.DescribeObjectRequest)">
+            <summary>
+            Gets the headers for an object at the specified path.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeObject service method.</param>
+            
+            <returns>The response from the DescribeObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.ObjectNotFoundException">
+            Could not perform an operation on an object that does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/DescribeObject">REST API Reference for DescribeObject Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.DescribeObjectAsync(Amazon.MediaStoreData.Model.DescribeObjectRequest,System.Threading.CancellationToken)">
+            <summary>
+            Gets the headers for an object at the specified path.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeObject service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.ObjectNotFoundException">
+            Could not perform an operation on an object that does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/DescribeObject">REST API Reference for DescribeObject Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.GetObject(Amazon.MediaStoreData.Model.GetObjectRequest)">
+            <summary>
+            Downloads the object at the specified path. If the object’s upload availability is
+            set to <code>streaming</code>, AWS Elemental MediaStore downloads the object even
+            if it’s still uploading the object.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetObject service method.</param>
+            
+            <returns>The response from the GetObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.ObjectNotFoundException">
+            Could not perform an operation on an object that does not exist.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.RequestedRangeNotSatisfiableException">
+            The requested content range is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/GetObject">REST API Reference for GetObject Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.GetObjectAsync(Amazon.MediaStoreData.Model.GetObjectRequest,System.Threading.CancellationToken)">
+            <summary>
+            Downloads the object at the specified path. If the object’s upload availability is
+            set to <code>streaming</code>, AWS Elemental MediaStore downloads the object even
+            if it’s still uploading the object.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetObject service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.ObjectNotFoundException">
+            Could not perform an operation on an object that does not exist.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.RequestedRangeNotSatisfiableException">
+            The requested content range is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/GetObject">REST API Reference for GetObject Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.ListItems(Amazon.MediaStoreData.Model.ListItemsRequest)">
+            <summary>
+            Provides a list of metadata entries about folders and objects in the specified folder.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListItems service method.</param>
+            
+            <returns>The response from the ListItems service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/ListItems">REST API Reference for ListItems Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.ListItemsAsync(Amazon.MediaStoreData.Model.ListItemsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Provides a list of metadata entries about folders and objects in the specified folder.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListItems service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListItems service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/ListItems">REST API Reference for ListItems Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.PutObject(Amazon.MediaStoreData.Model.PutObjectRequest)">
+            <summary>
+            Uploads an object to the specified path. Object sizes are limited to 25 MB for standard
+            upload availability and 10 MB for streaming upload availability.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutObject service method.</param>
+            
+            <returns>The response from the PutObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/PutObject">REST API Reference for PutObject Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataClient.PutObjectAsync(Amazon.MediaStoreData.Model.PutObjectRequest,System.Threading.CancellationToken)">
+            <summary>
+            Uploads an object to the specified path. Object sizes are limited to 25 MB for standard
+            upload availability and 10 MB for streaming upload availability.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutObject service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the PutObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/PutObject">REST API Reference for PutObject Operation</seealso>
+        </member>
+        <member name="T:Amazon.MediaStoreData.AmazonMediaStoreDataConfig">
+            <summary>
+            Configuration for accessing Amazon MediaStoreData service
+            </summary>
+            <summary>
+            Configuration for accessing Amazon MediaStoreData service
+            </summary>
+            <summary>
+            Configuration for accessing Amazon MediaStoreData service
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataConfig.Initialize">
+            <summary>
+            This method contains custom initializations for the config object.
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataConfig.Validate">
+            <summary>
+            Validate that the config object is properly configured.
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.AmazonMediaStoreDataConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.AmazonMediaStoreDataConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.AmazonMediaStoreDataConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.AmazonMediaStoreDataException">
+            <summary>
+             Common exception for the MediaStoreData service.
+             </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonMediaStoreDataException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonMediaStoreDataException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonMediaStoreDataException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonMediaStoreDataException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonMediaStoreDataException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.AmazonMediaStoreDataException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonMediaStoreDataException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Internal.AmazonMediaStoreDataMetadata">
+            <summary>
+            Service metadata for  Amazon MediaStoreData service
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Internal.AmazonMediaStoreDataMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Internal.AmazonMediaStoreDataMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.AmazonMediaStoreDataRequest">
+            <summary>
+            Base class for MediaStoreData operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            <summary>
+            The specified container was not found for the specified account.
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.ContainerNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ContainerNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.ContainerNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ContainerNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.ContainerNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ContainerNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.ContainerNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ContainerNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.ContainerNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ContainerNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.ContainerNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ContainerNotFoundException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.ContainerNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.DeleteObjectRequest">
+            <summary>
+            Container for the parameters to the DeleteObject operation.
+            Deletes an object at the specified path.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.DeleteObjectRequest.Path">
+            <summary>
+            Gets and sets the property Path. 
+            <para>
+            The path (including the file name) where the object is stored in the container. Format:
+            &lt;folder name&gt;/&lt;folder name&gt;/&lt;file name&gt;
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.DeleteObjectResponse">
+            <summary>
+            This is the response object from the DeleteObject operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.DescribeObjectRequest">
+            <summary>
+            Container for the parameters to the DescribeObject operation.
+            Gets the headers for an object at the specified path.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.DescribeObjectRequest.Path">
+            <summary>
+            Gets and sets the property Path. 
+            <para>
+            The path (including the file name) where the object is stored in the container. Format:
+            &lt;folder name&gt;/&lt;folder name&gt;/&lt;file name&gt;
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.DescribeObjectResponse">
+            <summary>
+            This is the response object from the DescribeObject operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.DescribeObjectResponse.CacheControl">
+            <summary>
+            Gets and sets the property CacheControl. 
+            <para>
+            An optional <code>CacheControl</code> header that allows the caller to control the
+            object's cache behavior. Headers can be passed in as specified in the HTTP at <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9">https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9</a>.
+            </para>
+             
+            <para>
+            Headers with a custom user-defined value are also accepted.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.DescribeObjectResponse.ContentLength">
+            <summary>
+            Gets and sets the property ContentLength. 
+            <para>
+            The length of the object in bytes.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.DescribeObjectResponse.ContentType">
+            <summary>
+            Gets and sets the property ContentType. 
+            <para>
+            The content type of the object.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.DescribeObjectResponse.ETag">
+            <summary>
+            Gets and sets the property ETag. 
+            <para>
+            The ETag that represents a unique instance of the object.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.DescribeObjectResponse.LastModified">
+            <summary>
+            Gets and sets the property LastModified. 
+            <para>
+            The date and time that the object was last modified.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.GetObjectRequest">
+            <summary>
+            Container for the parameters to the GetObject operation.
+            Downloads the object at the specified path. If the object’s upload availability is
+            set to <code>streaming</code>, AWS Elemental MediaStore downloads the object even
+            if it’s still uploading the object.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.GetObjectRequest.Path">
+            <summary>
+            Gets and sets the property Path. 
+            <para>
+            The path (including the file name) where the object is stored in the container. Format:
+            &lt;folder name&gt;/&lt;folder name&gt;/&lt;file name&gt;
+            </para>
+             
+            <para>
+            For example, to upload the file <code>mlaw.avi</code> to the folder path <code>premium\canada</code>
+            in the container <code>movies</code>, enter the path <code>premium/canada/mlaw.avi</code>.
+            </para>
+             
+            <para>
+            Do not include the container name in this path.
+            </para>
+             
+            <para>
+            If the path includes any folders that don't exist yet, the service creates them. For
+            example, suppose you have an existing <code>premium/usa</code> subfolder. If you specify
+            <code>premium/canada</code>, the service creates a <code>canada</code> subfolder in
+            the <code>premium</code> folder. You then have two subfolders, <code>usa</code> and
+            <code>canada</code>, in the <code>premium</code> folder. 
+            </para>
+             
+            <para>
+            There is no correlation between the path to the source and the path (folders) in the
+            container in AWS Elemental MediaStore.
+            </para>
+             
+            <para>
+            For more information about folders and how they exist in a container, see the <a href="http://docs.aws.amazon.com/mediastore/latest/ug/">AWS
+            Elemental MediaStore User Guide</a>.
+            </para>
+             
+            <para>
+            The file name is the name that is assigned to the file that you upload. The file can
+            have the same name inside and outside of AWS Elemental MediaStore, or it can have
+            the same name. The file name can include or omit an extension. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.GetObjectRequest.Range">
+            <summary>
+            Gets and sets the property Range. 
+            <para>
+            The range bytes of an object to retrieve. For more information about the <code>Range</code>
+            header, see <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35">http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35</a>.
+            AWS Elemental MediaStore ignores this header for partially uploaded objects that have
+            streaming upload availability.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.GetObjectResponse">
+            <summary>
+            This is the response object from the GetObject operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.GetObjectResponse.Body">
+            <summary>
+            Gets and sets the property Body. 
+            <para>
+            The bytes of the object. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.GetObjectResponse.CacheControl">
+            <summary>
+            Gets and sets the property CacheControl. 
+            <para>
+            An optional <code>CacheControl</code> header that allows the caller to control the
+            object's cache behavior. Headers can be passed in as specified in the HTTP spec at
+            <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9">https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9</a>.
+            </para>
+             
+            <para>
+            Headers with a custom user-defined value are also accepted.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.GetObjectResponse.ContentLength">
+            <summary>
+            Gets and sets the property ContentLength. 
+            <para>
+            The length of the object in bytes.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.GetObjectResponse.ContentRange">
+            <summary>
+            Gets and sets the property ContentRange. 
+            <para>
+            The range of bytes to retrieve.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.GetObjectResponse.ContentType">
+            <summary>
+            Gets and sets the property ContentType. 
+            <para>
+            The content type of the object.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.GetObjectResponse.ETag">
+            <summary>
+            Gets and sets the property ETag. 
+            <para>
+            The ETag that represents a unique instance of the object.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.GetObjectResponse.LastModified">
+            <summary>
+            Gets and sets the property LastModified. 
+            <para>
+            The date and time that the object was last modified.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.GetObjectResponse.StatusCode">
+            <summary>
+            Gets and sets the property StatusCode. 
+            <para>
+            The HTML status code of the request. Status codes ranging from 200 to 299 indicate
+            success. All other status codes indicate the type of error that occurred.
+            </para>
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.GetObjectResponse.Dispose">
+            <summary>
+            Disposes of all managed and unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            <summary>
+            The service is temporarily unavailable.
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.InternalServerErrorException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServerErrorException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.InternalServerErrorException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServerErrorException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.InternalServerErrorException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServerErrorException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.InternalServerErrorException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerErrorException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.InternalServerErrorException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerErrorException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.InternalServerErrorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InternalServerErrorException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.InternalServerErrorException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ContainerNotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ContainerNotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ContainerNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ContainerNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ContainerNotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DeleteObjectRequestMarshaller">
+            <summary>
+            DeleteObject Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DeleteObjectRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DeleteObjectRequestMarshaller.Marshall(Amazon.MediaStoreData.Model.DeleteObjectRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DeleteObjectRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DeleteObjectResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DeleteObject operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DeleteObjectResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DeleteObjectResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DeleteObjectResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DescribeObjectRequestMarshaller">
+            <summary>
+            DescribeObject Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DescribeObjectRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DescribeObjectRequestMarshaller.Marshall(Amazon.MediaStoreData.Model.DescribeObjectRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DescribeObjectRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DescribeObjectResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DescribeObject operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DescribeObjectResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DescribeObjectResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.DescribeObjectResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.GetObjectRequestMarshaller">
+            <summary>
+            GetObject Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.GetObjectRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.GetObjectRequestMarshaller.Marshall(Amazon.MediaStoreData.Model.GetObjectRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.GetObjectRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.GetObjectResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetObject operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.GetObjectResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.GetObjectResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.GetObjectResponseUnmarshaller.HasStreamingProperty">
+            <summary>
+            Overriden to return true indicating the response contains streaming data.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.GetObjectResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.InternalServerErrorExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalServerErrorException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.InternalServerErrorExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.InternalServerErrorExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.InternalServerErrorExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ItemUnmarshaller">
+            <summary>
+            Response Unmarshaller for Item Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ItemUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#MediaStoreData#Model#Item,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ItemUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ItemUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ListItemsRequestMarshaller">
+            <summary>
+            ListItems Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ListItemsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ListItemsRequestMarshaller.Marshall(Amazon.MediaStoreData.Model.ListItemsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ListItemsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ListItemsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListItems operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ListItemsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ListItemsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ListItemsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ObjectNotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ObjectNotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ObjectNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ObjectNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.ObjectNotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.PutObjectRequestMarshaller">
+            <summary>
+            PutObject Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.PutObjectRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.PutObjectRequestMarshaller.Marshall(Amazon.MediaStoreData.Model.PutObjectRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.PutObjectRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.PutObjectResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for PutObject operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.PutObjectResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.PutObjectResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.PutObjectResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.RequestedRangeNotSatisfiableExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for RequestedRangeNotSatisfiableException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.RequestedRangeNotSatisfiableExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.RequestedRangeNotSatisfiableExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Internal.MarshallTransformations.RequestedRangeNotSatisfiableExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.Item">
+            <summary>
+            A metadata entry for a folder or object.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Item.ContentLength">
+            <summary>
+            Gets and sets the property ContentLength. 
+            <para>
+            The length of the item in bytes.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Item.ContentType">
+            <summary>
+            Gets and sets the property ContentType. 
+            <para>
+            The content type of the item.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Item.ETag">
+            <summary>
+            Gets and sets the property ETag. 
+            <para>
+            The ETag that represents a unique instance of the item.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Item.LastModified">
+            <summary>
+            Gets and sets the property LastModified. 
+            <para>
+            The date and time that the item was last modified.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Item.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the item.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.Item.Type">
+            <summary>
+            Gets and sets the property Type. 
+            <para>
+            The item type (folder or object).
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.ListItemsRequest">
+            <summary>
+            Container for the parameters to the ListItems operation.
+            Provides a list of metadata entries about folders and objects in the specified folder.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.ListItemsRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results to return per API request. For example, you submit a
+            <code>ListItems</code> request with <code>MaxResults</code> set at 500. Although 2,000
+            items match your request, the service returns no more than the first 500 items. (The
+            service also returns a <code>NextToken</code> value that you can use to fetch the
+            next batch of results.) The service might return fewer results than the <code>MaxResults</code>
+            value.
+            </para>
+             
+            <para>
+            If <code>MaxResults</code> is not included in the request, the service defaults to
+            pagination with a maximum of 1,000 results per page.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.ListItemsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token that identifies which batch of results that you want to see. For example,
+            you submit a <code>ListItems</code> request with <code>MaxResults</code> set at 500.
+            The service returns the first batch of results (up to 500) and a <code>NextToken</code>
+            value. To see the next batch of results, you can submit the <code>ListItems</code>
+            request a second time and specify the <code>NextToken</code> value.
+            </para>
+             
+            <para>
+            Tokens expire after 15 minutes.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.ListItemsRequest.Path">
+            <summary>
+            Gets and sets the property Path. 
+            <para>
+            The path in the container from which to retrieve items. Format: &lt;folder name&gt;/&lt;folder
+            name&gt;/&lt;file name&gt;
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.ListItemsResponse">
+            <summary>
+            This is the response object from the ListItems operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.ListItemsResponse.Items">
+            <summary>
+            Gets and sets the property Items. 
+            <para>
+            The metadata entries for the folders and objects at the requested path.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.ListItemsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token that can be used in a request to view the next set of results. For example,
+            you submit a <code>ListItems</code> request that matches 2,000 items with <code>MaxResults</code>
+            set at 500. The service returns the first batch of results (up to 500) and a <code>NextToken</code>
+            value that can be used to fetch the next batch of results.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.ObjectNotFoundException">
+            <summary>
+            Could not perform an operation on an object that does not exist.
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.ObjectNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ObjectNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.ObjectNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ObjectNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.ObjectNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ObjectNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.ObjectNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ObjectNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.ObjectNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ObjectNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.ObjectNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ObjectNotFoundException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.ObjectNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.PutObjectRequest">
+            <summary>
+            Container for the parameters to the PutObject operation.
+            Uploads an object to the specified path. Object sizes are limited to 25 MB for standard
+            upload availability and 10 MB for streaming upload availability.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.PutObjectRequest.Body">
+            <summary>
+            Gets and sets the property Body. 
+            <para>
+            The bytes to be stored. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.PutObjectRequest.CacheControl">
+            <summary>
+            Gets and sets the property CacheControl. 
+            <para>
+            An optional <code>CacheControl</code> header that allows the caller to control the
+            object's cache behavior. Headers can be passed in as specified in the HTTP at <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9">https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9</a>.
+            </para>
+             
+            <para>
+            Headers with a custom user-defined value are also accepted.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.PutObjectRequest.ContentType">
+            <summary>
+            Gets and sets the property ContentType. 
+            <para>
+            The content type of the object.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.PutObjectRequest.Path">
+            <summary>
+            Gets and sets the property Path. 
+            <para>
+            The path (including the file name) where the object is stored in the container. Format:
+            &lt;folder name&gt;/&lt;folder name&gt;/&lt;file name&gt;
+            </para>
+             
+            <para>
+            For example, to upload the file <code>mlaw.avi</code> to the folder path <code>premium\canada</code>
+            in the container <code>movies</code>, enter the path <code>premium/canada/mlaw.avi</code>.
+            </para>
+             
+            <para>
+            Do not include the container name in this path.
+            </para>
+             
+            <para>
+            If the path includes any folders that don't exist yet, the service creates them. For
+            example, suppose you have an existing <code>premium/usa</code> subfolder. If you specify
+            <code>premium/canada</code>, the service creates a <code>canada</code> subfolder in
+            the <code>premium</code> folder. You then have two subfolders, <code>usa</code> and
+            <code>canada</code>, in the <code>premium</code> folder. 
+            </para>
+             
+            <para>
+            There is no correlation between the path to the source and the path (folders) in the
+            container in AWS Elemental MediaStore.
+            </para>
+             
+            <para>
+            For more information about folders and how they exist in a container, see the <a href="http://docs.aws.amazon.com/mediastore/latest/ug/">AWS
+            Elemental MediaStore User Guide</a>.
+            </para>
+             
+            <para>
+            The file name is the name that is assigned to the file that you upload. The file can
+            have the same name inside and outside of AWS Elemental MediaStore, or it can have
+            the same name. The file name can include or omit an extension. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.PutObjectRequest.StorageClass">
+            <summary>
+            Gets and sets the property StorageClass. 
+            <para>
+            Indicates the storage class of a <code>Put</code> request. Defaults to high-performance
+            temporal storage class, and objects are persisted into durable storage shortly after
+            being received.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.PutObjectRequest.UploadAvailability">
+            <summary>
+            Gets and sets the property UploadAvailability. 
+            <para>
+            Indicates the availability of an object while it is still uploading. If the value
+            is set to <code>streaming</code>, the object is available for downloading after some
+            initial buffering but before the object is uploaded completely. If the value is set
+            to <code>standard</code>, the object is available for downloading only when it is
+            uploaded completely. The default value for this header is <code>standard</code>.
+            </para>
+             
+            <para>
+            To use this header, you must also set the HTTP <code>Transfer-Encoding</code> header
+            to <code>chunked</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.PutObjectRequest.CreateSigner">
+            <summary>
+            Get the signer to use for this request.
+            </summary>
+            <returns>A signer for this request.</returns>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.PutObjectResponse">
+            <summary>
+            This is the response object from the PutObject operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.PutObjectResponse.ContentSHA256">
+            <summary>
+            Gets and sets the property ContentSHA256. 
+            <para>
+            The SHA256 digest of the object that is persisted.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.PutObjectResponse.ETag">
+            <summary>
+            Gets and sets the property ETag. 
+            <para>
+            Unique identifier of the object in the container.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.PutObjectResponse.StorageClass">
+            <summary>
+            Gets and sets the property StorageClass. 
+            <para>
+            The storage class where the object was persisted. The class should be “Temporal”.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.RequestedRangeNotSatisfiableException">
+            <summary>
+            The requested content range is not valid.
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.RequestedRangeNotSatisfiableException.#ctor(System.String)">
+            <summary>
+            Constructs a new RequestedRangeNotSatisfiableException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.RequestedRangeNotSatisfiableException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of RequestedRangeNotSatisfiableException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.RequestedRangeNotSatisfiableException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of RequestedRangeNotSatisfiableException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.RequestedRangeNotSatisfiableException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of RequestedRangeNotSatisfiableException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.RequestedRangeNotSatisfiableException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of RequestedRangeNotSatisfiableException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.RequestedRangeNotSatisfiableException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the RequestedRangeNotSatisfiableException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.RequestedRangeNotSatisfiableException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.IListItemsPaginator">
+             <summary>
+             Paginator for the ListItems operation
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.IListItemsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.IMediaStoreDataPaginatorFactory">
+             <summary>
+             Paginators for the MediaStoreData service
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.IMediaStoreDataPaginatorFactory.ListItems(Amazon.MediaStoreData.Model.ListItemsRequest)">
+             <summary>
+             Paginator for ListItems operation
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.ListItemsPaginator">
+            <summary>
+            Base class for ListItems paginators.
+            </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.Model.ListItemsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.Model.MediaStoreDataPaginatorFactory">
+             <summary>
+             Paginators for the MediaStoreData service
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.Model.MediaStoreDataPaginatorFactory.ListItems(Amazon.MediaStoreData.Model.ListItemsRequest)">
+             <summary>
+             Paginator for ListItems operation
+            </summary>
+        </member>
+        <member name="T:Amazon.MediaStoreData.ItemType">
+            <summary>
+            Constants used for properties of type ItemType.
+            </summary>
+        </member>
+        <member name="F:Amazon.MediaStoreData.ItemType.FOLDER">
+            <summary>
+            Constant FOLDER for ItemType
+            </summary>
+        </member>
+        <member name="F:Amazon.MediaStoreData.ItemType.OBJECT">
+            <summary>
+            Constant OBJECT for ItemType
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.ItemType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.ItemType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.ItemType.op_Implicit(System.String)~Amazon.MediaStoreData.ItemType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.MediaStoreData.StorageClass">
+            <summary>
+            Constants used for properties of type StorageClass.
+            </summary>
+        </member>
+        <member name="F:Amazon.MediaStoreData.StorageClass.TEMPORAL">
+            <summary>
+            Constant TEMPORAL for StorageClass
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.StorageClass.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.StorageClass.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.StorageClass.op_Implicit(System.String)~Amazon.MediaStoreData.StorageClass">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.MediaStoreData.UploadAvailability">
+            <summary>
+            Constants used for properties of type UploadAvailability.
+            </summary>
+        </member>
+        <member name="F:Amazon.MediaStoreData.UploadAvailability.STANDARD">
+            <summary>
+            Constant STANDARD for UploadAvailability
+            </summary>
+        </member>
+        <member name="F:Amazon.MediaStoreData.UploadAvailability.STREAMING">
+            <summary>
+            Constant STREAMING for UploadAvailability
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.UploadAvailability.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.UploadAvailability.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.MediaStoreData.UploadAvailability.op_Implicit(System.String)~Amazon.MediaStoreData.UploadAvailability">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.MediaStoreData.IAmazonMediaStoreData">
+             <summary>
+             Interface for accessing MediaStoreData
+            
+             An AWS Elemental MediaStore asset is an object, similar to an object in the Amazon
+             S3 service. Objects are the fundamental entities that are stored in AWS Elemental
+             MediaStore.
+             </summary>
+        </member>
+        <member name="P:Amazon.MediaStoreData.IAmazonMediaStoreData.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.MediaStoreData.IAmazonMediaStoreData.DeleteObject(Amazon.MediaStoreData.Model.DeleteObjectRequest)">
+            <summary>
+            Deletes an object at the specified path.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteObject service method.</param>
+            
+            <returns>The response from the DeleteObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.ObjectNotFoundException">
+            Could not perform an operation on an object that does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/DeleteObject">REST API Reference for DeleteObject Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.IAmazonMediaStoreData.DeleteObjectAsync(Amazon.MediaStoreData.Model.DeleteObjectRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes an object at the specified path.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteObject service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.ObjectNotFoundException">
+            Could not perform an operation on an object that does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/DeleteObject">REST API Reference for DeleteObject Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.IAmazonMediaStoreData.DescribeObject(Amazon.MediaStoreData.Model.DescribeObjectRequest)">
+            <summary>
+            Gets the headers for an object at the specified path.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeObject service method.</param>
+            
+            <returns>The response from the DescribeObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.ObjectNotFoundException">
+            Could not perform an operation on an object that does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/DescribeObject">REST API Reference for DescribeObject Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.IAmazonMediaStoreData.DescribeObjectAsync(Amazon.MediaStoreData.Model.DescribeObjectRequest,System.Threading.CancellationToken)">
+            <summary>
+            Gets the headers for an object at the specified path.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeObject service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.ObjectNotFoundException">
+            Could not perform an operation on an object that does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/DescribeObject">REST API Reference for DescribeObject Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.IAmazonMediaStoreData.GetObject(Amazon.MediaStoreData.Model.GetObjectRequest)">
+            <summary>
+            Downloads the object at the specified path. If the object’s upload availability is
+            set to <code>streaming</code>, AWS Elemental MediaStore downloads the object even
+            if it’s still uploading the object.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetObject service method.</param>
+            
+            <returns>The response from the GetObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.ObjectNotFoundException">
+            Could not perform an operation on an object that does not exist.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.RequestedRangeNotSatisfiableException">
+            The requested content range is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/GetObject">REST API Reference for GetObject Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.IAmazonMediaStoreData.GetObjectAsync(Amazon.MediaStoreData.Model.GetObjectRequest,System.Threading.CancellationToken)">
+            <summary>
+            Downloads the object at the specified path. If the object’s upload availability is
+            set to <code>streaming</code>, AWS Elemental MediaStore downloads the object even
+            if it’s still uploading the object.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetObject service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.ObjectNotFoundException">
+            Could not perform an operation on an object that does not exist.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.RequestedRangeNotSatisfiableException">
+            The requested content range is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/GetObject">REST API Reference for GetObject Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.IAmazonMediaStoreData.ListItems(Amazon.MediaStoreData.Model.ListItemsRequest)">
+            <summary>
+            Provides a list of metadata entries about folders and objects in the specified folder.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListItems service method.</param>
+            
+            <returns>The response from the ListItems service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/ListItems">REST API Reference for ListItems Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.IAmazonMediaStoreData.ListItemsAsync(Amazon.MediaStoreData.Model.ListItemsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Provides a list of metadata entries about folders and objects in the specified folder.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListItems service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListItems service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/ListItems">REST API Reference for ListItems Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.IAmazonMediaStoreData.PutObject(Amazon.MediaStoreData.Model.PutObjectRequest)">
+            <summary>
+            Uploads an object to the specified path. Object sizes are limited to 25 MB for standard
+            upload availability and 10 MB for streaming upload availability.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutObject service method.</param>
+            
+            <returns>The response from the PutObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/PutObject">REST API Reference for PutObject Operation</seealso>
+        </member>
+        <member name="M:Amazon.MediaStoreData.IAmazonMediaStoreData.PutObjectAsync(Amazon.MediaStoreData.Model.PutObjectRequest,System.Threading.CancellationToken)">
+            <summary>
+            Uploads an object to the specified path. Object sizes are limited to 25 MB for standard
+            upload availability and 10 MB for streaming upload availability.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutObject service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the PutObject service method, as returned by MediaStoreData.</returns>
+            <exception cref="T:Amazon.MediaStoreData.Model.ContainerNotFoundException">
+            The specified container was not found for the specified account.
+            </exception>
+            <exception cref="T:Amazon.MediaStoreData.Model.InternalServerErrorException">
+            The service is temporarily unavailable.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/mediastore-data-2017-09-01/PutObject">REST API Reference for PutObject Operation</seealso>
+        </member>
+    </members>
+</doc>

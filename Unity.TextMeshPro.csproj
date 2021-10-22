@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{8E37C391-1499-00B9-71EE-DF5B87BF18C5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -85,8 +86,8 @@
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_UpdateRegistery.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_ResourcesManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_SubMesh.cs" />
-    <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_InputValidator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_Asset.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_SpriteAssetImportFormats.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_LineInfo.cs" />
@@ -117,6 +118,7 @@
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\MaterialReferenceManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\Unity.TextMeshPro.asmdef" />
   </ItemGroup>
   <ItemGroup>

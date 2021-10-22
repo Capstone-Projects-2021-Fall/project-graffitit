@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{357D17EE-A80F-FC03-F31A-49300C336354}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -64,6 +65,7 @@
     <Compile Include="Library\PackageCache\com.unity.xr.management@4.0.1\Runtime\IXRLoaderPreInit.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Library\PackageCache\com.unity.xr.management@4.0.1\Runtime\Unity.XR.Management.asmdef" />
   </ItemGroup>
   <ItemGroup>

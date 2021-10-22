@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{94E1A826-494C-2035-85D2-7C896A339712}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -59,6 +60,7 @@
     <Compile Include="Library\PackageCache\com.unity.subsystemregistration@1.1.0\Runtime\SubsystemRegistration.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Library\PackageCache\com.unity.subsystemregistration@1.1.0\Runtime\Unity.Subsystem.Registration.asmdef" />
   </ItemGroup>
   <ItemGroup>

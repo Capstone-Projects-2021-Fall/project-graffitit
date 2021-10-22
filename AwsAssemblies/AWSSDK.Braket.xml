@@ -1,0 +1,3485 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.Braket</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.Braket.AmazonBraketConfig">
+            <summary>
+            Configuration for accessing Amazon Braket service
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.AmazonBraketConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.AmazonBraketConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.AmazonBraketConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.AmazonBraketException">
+            <summary>
+             Common exception for the Braket service.
+             </summary>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonBraketException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonBraketException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonBraketException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonBraketException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonBraketException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonBraketException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.Braket.Internal.AmazonBraketMetadata">
+            <summary>
+            Service metadata for  Amazon Braket service
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Internal.AmazonBraketMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Internal.AmazonBraketMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.AccessDeniedException">
+            <summary>
+            You do not have sufficient access to perform this action.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.Model.AccessDeniedException.#ctor(System.String)">
+            <summary>
+            Constructs a new AccessDeniedException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Braket.Model.AccessDeniedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.AccessDeniedException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.AccessDeniedException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.AccessDeniedException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.AccessDeniedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AccessDeniedException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.Braket.Model.AccessDeniedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.Braket.Model.CancelQuantumTaskRequest">
+            <summary>
+            Container for the parameters to the CancelQuantumTask operation.
+            Cancels the specified task.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.CancelQuantumTaskRequest.ClientToken">
+            <summary>
+            Gets and sets the property ClientToken. 
+            <para>
+            The client token associated with the request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.CancelQuantumTaskRequest.QuantumTaskArn">
+            <summary>
+            Gets and sets the property QuantumTaskArn. 
+            <para>
+            The ARN of the task to cancel.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.CancelQuantumTaskResponse">
+            <summary>
+            This is the response object from the CancelQuantumTask operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.CancelQuantumTaskResponse.CancellationStatus">
+            <summary>
+            Gets and sets the property CancellationStatus. 
+            <para>
+            The status of the cancellation request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.CancelQuantumTaskResponse.QuantumTaskArn">
+            <summary>
+            Gets and sets the property QuantumTaskArn. 
+            <para>
+            The ARN of the task.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.ConflictException">
+            <summary>
+            An error occurred due to a conflict.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.Model.ConflictException.#ctor(System.String)">
+            <summary>
+            Constructs a new ConflictException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ConflictException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ConflictException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ConflictException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ConflictException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ConflictException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ConflictException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.Braket.Model.ConflictException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.Braket.Model.CreateQuantumTaskRequest">
+            <summary>
+            Container for the parameters to the CreateQuantumTask operation.
+            Creates a quantum task.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.CreateQuantumTaskRequest.Action">
+            <summary>
+            Gets and sets the property Action. 
+            <para>
+            The action associated with the task.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.CreateQuantumTaskRequest.ClientToken">
+            <summary>
+            Gets and sets the property ClientToken. 
+            <para>
+            The client token associated with the request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.CreateQuantumTaskRequest.DeviceArn">
+            <summary>
+            Gets and sets the property DeviceArn. 
+            <para>
+            The ARN of the device to run the task on.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.CreateQuantumTaskRequest.DeviceParameters">
+            <summary>
+            Gets and sets the property DeviceParameters. 
+            <para>
+            The parameters for the device to run the task on.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.CreateQuantumTaskRequest.OutputS3Bucket">
+            <summary>
+            Gets and sets the property OutputS3Bucket. 
+            <para>
+            The S3 bucket to store task result files in.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.CreateQuantumTaskRequest.OutputS3KeyPrefix">
+            <summary>
+            Gets and sets the property OutputS3KeyPrefix. 
+            <para>
+            The key prefix for the location in the S3 bucket to store task results in.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.CreateQuantumTaskRequest.Shots">
+            <summary>
+            Gets and sets the property Shots. 
+            <para>
+            The number of shots to use for the task.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.CreateQuantumTaskRequest.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            Tags to be added to the quantum task you're creating.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.CreateQuantumTaskResponse">
+            <summary>
+            This is the response object from the CreateQuantumTask operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.CreateQuantumTaskResponse.QuantumTaskArn">
+            <summary>
+            Gets and sets the property QuantumTaskArn. 
+            <para>
+            The ARN of the task created by the request.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.DeviceOfflineException">
+            <summary>
+            The specified device is currently offline.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.Model.DeviceOfflineException.#ctor(System.String)">
+            <summary>
+            Constructs a new DeviceOfflineException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Braket.Model.DeviceOfflineException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of DeviceOfflineException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.DeviceOfflineException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of DeviceOfflineException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.DeviceOfflineException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of DeviceOfflineException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.DeviceOfflineException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of DeviceOfflineException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.DeviceOfflineException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the DeviceOfflineException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.Braket.Model.DeviceOfflineException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.Braket.Model.DeviceRetiredException">
+            <summary>
+            The specified device has been retired.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.Model.DeviceRetiredException.#ctor(System.String)">
+            <summary>
+            Constructs a new DeviceRetiredException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Braket.Model.DeviceRetiredException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of DeviceRetiredException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.DeviceRetiredException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of DeviceRetiredException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.DeviceRetiredException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of DeviceRetiredException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.DeviceRetiredException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of DeviceRetiredException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.DeviceRetiredException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the DeviceRetiredException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.Braket.Model.DeviceRetiredException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.Braket.Model.DeviceSummary">
+            <summary>
+            Includes information about the device.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.DeviceSummary.DeviceArn">
+            <summary>
+            Gets and sets the property DeviceArn. 
+            <para>
+            The ARN of the device.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.DeviceSummary.DeviceName">
+            <summary>
+            Gets and sets the property DeviceName. 
+            <para>
+            The name of the device.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.DeviceSummary.DeviceStatus">
+            <summary>
+            Gets and sets the property DeviceStatus. 
+            <para>
+            The status of the device.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.DeviceSummary.DeviceType">
+            <summary>
+            Gets and sets the property DeviceType. 
+            <para>
+            The type of the device.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.DeviceSummary.ProviderName">
+            <summary>
+            Gets and sets the property ProviderName. 
+            <para>
+            The provider of the device.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.GetDeviceRequest">
+            <summary>
+            Container for the parameters to the GetDevice operation.
+            Retrieves the devices available in Amazon Braket.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetDeviceRequest.DeviceArn">
+            <summary>
+            Gets and sets the property DeviceArn. 
+            <para>
+            The ARN of the device to retrieve.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.GetDeviceResponse">
+            <summary>
+            This is the response object from the GetDevice operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetDeviceResponse.DeviceArn">
+            <summary>
+            Gets and sets the property DeviceArn. 
+            <para>
+            The ARN of the device.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetDeviceResponse.DeviceCapabilities">
+            <summary>
+            Gets and sets the property DeviceCapabilities. 
+            <para>
+            Details about the capabilities of the device.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetDeviceResponse.DeviceName">
+            <summary>
+            Gets and sets the property DeviceName. 
+            <para>
+            The name of the device.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetDeviceResponse.DeviceStatus">
+            <summary>
+            Gets and sets the property DeviceStatus. 
+            <para>
+            The status of the device.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetDeviceResponse.DeviceType">
+            <summary>
+            Gets and sets the property DeviceType. 
+            <para>
+            The type of the device.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetDeviceResponse.ProviderName">
+            <summary>
+            Gets and sets the property ProviderName. 
+            <para>
+            The name of the partner company for the device.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.GetQuantumTaskRequest">
+            <summary>
+            Container for the parameters to the GetQuantumTask operation.
+            Retrieves the specified quantum task.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetQuantumTaskRequest.QuantumTaskArn">
+            <summary>
+            Gets and sets the property QuantumTaskArn. 
+            <para>
+            the ARN of the task to retrieve.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.GetQuantumTaskResponse">
+            <summary>
+            This is the response object from the GetQuantumTask operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetQuantumTaskResponse.CreatedAt">
+            <summary>
+            Gets and sets the property CreatedAt. 
+            <para>
+            The time at which the task was created.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetQuantumTaskResponse.DeviceArn">
+            <summary>
+            Gets and sets the property DeviceArn. 
+            <para>
+            The ARN of the device the task was run on.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetQuantumTaskResponse.DeviceParameters">
+            <summary>
+            Gets and sets the property DeviceParameters. 
+            <para>
+            The parameters for the device on which the task ran.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetQuantumTaskResponse.EndedAt">
+            <summary>
+            Gets and sets the property EndedAt. 
+            <para>
+            The time at which the task ended.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetQuantumTaskResponse.FailureReason">
+            <summary>
+            Gets and sets the property FailureReason. 
+            <para>
+            The reason that a task failed.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetQuantumTaskResponse.OutputS3Bucket">
+            <summary>
+            Gets and sets the property OutputS3Bucket. 
+            <para>
+            The S3 bucket where task results are stored.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetQuantumTaskResponse.OutputS3Directory">
+            <summary>
+            Gets and sets the property OutputS3Directory. 
+            <para>
+            The folder in the S3 bucket where task results are stored.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetQuantumTaskResponse.QuantumTaskArn">
+            <summary>
+            Gets and sets the property QuantumTaskArn. 
+            <para>
+            The ARN of the task.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetQuantumTaskResponse.Shots">
+            <summary>
+            Gets and sets the property Shots. 
+            <para>
+            The number of shots used in the task.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetQuantumTaskResponse.Status">
+            <summary>
+            Gets and sets the property Status. 
+            <para>
+            The status of the task.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.GetQuantumTaskResponse.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            The tags that belong to this task.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.InternalServiceException">
+            <summary>
+            The request processing has failed because of an unknown error, exception, or failure.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.Model.InternalServiceException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServiceException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Braket.Model.InternalServiceException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.InternalServiceException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.InternalServiceException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.InternalServiceException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.InternalServiceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InternalServiceException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.Braket.Model.InternalServiceException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for AccessDeniedException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.CancelQuantumTaskRequestMarshaller">
+            <summary>
+            CancelQuantumTask Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.CancelQuantumTaskRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.CancelQuantumTaskRequestMarshaller.Marshall(Amazon.Braket.Model.CancelQuantumTaskRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.CancelQuantumTaskRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.CancelQuantumTaskResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for CancelQuantumTask operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.CancelQuantumTaskResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.CancelQuantumTaskResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.CancelQuantumTaskResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ConflictException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.CreateQuantumTaskRequestMarshaller">
+            <summary>
+            CreateQuantumTask Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.CreateQuantumTaskRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.CreateQuantumTaskRequestMarshaller.Marshall(Amazon.Braket.Model.CreateQuantumTaskRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.CreateQuantumTaskRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.CreateQuantumTaskResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for CreateQuantumTask operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.CreateQuantumTaskResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.CreateQuantumTaskResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.CreateQuantumTaskResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.DeviceOfflineExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for DeviceOfflineException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.DeviceOfflineExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.DeviceOfflineExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.DeviceOfflineExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.DeviceRetiredExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for DeviceRetiredException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.DeviceRetiredExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.DeviceRetiredExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.DeviceRetiredExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.DeviceSummaryUnmarshaller">
+            <summary>
+            Response Unmarshaller for DeviceSummary Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.DeviceSummaryUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#Braket#Model#DeviceSummary,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.DeviceSummaryUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.DeviceSummaryUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.GetDeviceRequestMarshaller">
+            <summary>
+            GetDevice Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.GetDeviceRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.GetDeviceRequestMarshaller.Marshall(Amazon.Braket.Model.GetDeviceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.GetDeviceRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.GetDeviceResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetDevice operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.GetDeviceResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.GetDeviceResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.GetDeviceResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.GetQuantumTaskRequestMarshaller">
+            <summary>
+            GetQuantumTask Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.GetQuantumTaskRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.GetQuantumTaskRequestMarshaller.Marshall(Amazon.Braket.Model.GetQuantumTaskRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.GetQuantumTaskRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.GetQuantumTaskResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetQuantumTask operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.GetQuantumTaskResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.GetQuantumTaskResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.GetQuantumTaskResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalServiceException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller">
+            <summary>
+            ListTagsForResource Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller.Marshall(Amazon.Braket.Model.ListTagsForResourceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListTagsForResource operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.QuantumTaskSummaryUnmarshaller">
+            <summary>
+            Response Unmarshaller for QuantumTaskSummary Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.QuantumTaskSummaryUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#Braket#Model#QuantumTaskSummary,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.QuantumTaskSummaryUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.QuantumTaskSummaryUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceNotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.SearchDevicesFilterMarshaller">
+            <summary>
+            SearchDevicesFilter Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.SearchDevicesFilterMarshaller.Marshall(Amazon.Braket.Model.SearchDevicesFilter,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.Braket.Model.Internal.MarshallTransformations.SearchDevicesFilterMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.SearchDevicesRequestMarshaller">
+            <summary>
+            SearchDevices Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.SearchDevicesRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.SearchDevicesRequestMarshaller.Marshall(Amazon.Braket.Model.SearchDevicesRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.SearchDevicesRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.SearchDevicesResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for SearchDevices operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.SearchDevicesResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.SearchDevicesResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.SearchDevicesResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.SearchQuantumTasksFilterMarshaller">
+            <summary>
+            SearchQuantumTasksFilter Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.SearchQuantumTasksFilterMarshaller.Marshall(Amazon.Braket.Model.SearchQuantumTasksFilter,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.Braket.Model.Internal.MarshallTransformations.SearchQuantumTasksFilterMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.SearchQuantumTasksRequestMarshaller">
+            <summary>
+            SearchQuantumTasks Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.SearchQuantumTasksRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.SearchQuantumTasksRequestMarshaller.Marshall(Amazon.Braket.Model.SearchQuantumTasksRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.SearchQuantumTasksRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.SearchQuantumTasksResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for SearchQuantumTasks operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.SearchQuantumTasksResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.SearchQuantumTasksResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.SearchQuantumTasksResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ServiceQuotaExceededException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller">
+            <summary>
+            TagResource Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller.Marshall(Amazon.Braket.Model.TagResourceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for TagResource operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ThrottlingException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller">
+            <summary>
+            UntagResource Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller.Marshall(Amazon.Braket.Model.UntagResourceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for UntagResource operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ValidationException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.Braket.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.Braket.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.Braket.Model.ListTagsForResourceRequest">
+            <summary>
+            Container for the parameters to the ListTagsForResource operation.
+            Shows the tags associated with this resource.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.ListTagsForResourceRequest.ResourceArn">
+            <summary>
+            Gets and sets the property ResourceArn. 
+            <para>
+            Specify the <code>resourceArn</code> for the resource whose tags to display.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.ListTagsForResourceResponse">
+            <summary>
+            This is the response object from the ListTagsForResource operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.ListTagsForResourceResponse.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            Displays the key, value pairs of tags associated with this resource.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.QuantumTaskSummary">
+            <summary>
+            Includes information about a quantum task.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.QuantumTaskSummary.CreatedAt">
+            <summary>
+            Gets and sets the property CreatedAt. 
+            <para>
+            The time at which the task was created.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.QuantumTaskSummary.DeviceArn">
+            <summary>
+            Gets and sets the property DeviceArn. 
+            <para>
+            The ARN of the device the task ran on.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.QuantumTaskSummary.EndedAt">
+            <summary>
+            Gets and sets the property EndedAt. 
+            <para>
+            The time at which the task finished.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.QuantumTaskSummary.OutputS3Bucket">
+            <summary>
+            Gets and sets the property OutputS3Bucket. 
+            <para>
+            The S3 bucket where the task result file is stored..
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.QuantumTaskSummary.OutputS3Directory">
+            <summary>
+            Gets and sets the property OutputS3Directory. 
+            <para>
+            The folder in the S3 bucket where the task result file is stored.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.QuantumTaskSummary.QuantumTaskArn">
+            <summary>
+            Gets and sets the property QuantumTaskArn. 
+            <para>
+            The ARN of the task.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.QuantumTaskSummary.Shots">
+            <summary>
+            Gets and sets the property Shots. 
+            <para>
+            The shots used for the task.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.QuantumTaskSummary.Status">
+            <summary>
+            Gets and sets the property Status. 
+            <para>
+            The status of the task.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.QuantumTaskSummary.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            Displays the key, value pairs of tags associated with this quantum task.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.ResourceNotFoundException">
+            <summary>
+            The specified resource was not found.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ResourceNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ResourceNotFoundException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.Braket.Model.ResourceNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.Braket.Model.SearchDevicesFilter">
+            <summary>
+            The filter to use for searching devices.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchDevicesFilter.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name to use to filter results.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchDevicesFilter.Values">
+            <summary>
+            Gets and sets the property Values. 
+            <para>
+            The values to use to filter results.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.SearchDevicesRequest">
+            <summary>
+            Container for the parameters to the SearchDevices operation.
+            Searches for devices using the specified filters.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchDevicesRequest.Filters">
+            <summary>
+            Gets and sets the property Filters. 
+            <para>
+            The filter values to use to search for a device.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchDevicesRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results to return in the response.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchDevicesRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            A token used for pagination of results returned in the response. Use the token returned
+            from the previous request continue results where the previous request ended.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.SearchDevicesResponse">
+            <summary>
+            This is the response object from the SearchDevices operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchDevicesResponse.Devices">
+            <summary>
+            Gets and sets the property Devices. 
+            <para>
+            An array of <code>DeviceSummary</code> objects for devices that match the specified
+            filter values.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchDevicesResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            A token used for pagination of results, or null if there are no additional results.
+            Use the token value in a subsequent request to continue results where the previous
+            request ended.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.SearchQuantumTasksFilter">
+            <summary>
+            A filter to use to search for tasks.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchQuantumTasksFilter.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the device used for the task.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchQuantumTasksFilter.Operator">
+            <summary>
+            Gets and sets the property Operator. 
+            <para>
+            An operator to use in the filter.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchQuantumTasksFilter.Values">
+            <summary>
+            Gets and sets the property Values. 
+            <para>
+            The values to use for the filter.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.SearchQuantumTasksRequest">
+            <summary>
+            Container for the parameters to the SearchQuantumTasks operation.
+            Searches for tasks that match the specified filter values.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchQuantumTasksRequest.Filters">
+            <summary>
+            Gets and sets the property Filters. 
+            <para>
+            Array of <code>SearchQuantumTasksFilter</code> objects.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchQuantumTasksRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            Maximum number of results to return in the response.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchQuantumTasksRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            A token used for pagination of results returned in the response. Use the token returned
+            from the previous request continue results where the previous request ended.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.SearchQuantumTasksResponse">
+            <summary>
+            This is the response object from the SearchQuantumTasks operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchQuantumTasksResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            A token used for pagination of results, or null if there are no additional results.
+            Use the token value in a subsequent request to continue results where the previous
+            request ended.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchQuantumTasksResponse.QuantumTasks">
+            <summary>
+            Gets and sets the property QuantumTasks. 
+            <para>
+            An array of <code>QuantumTaskSummary</code> objects for tasks that match the specified
+            filters.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.ServiceQuotaExceededException">
+            <summary>
+            The request failed because a service quota is exceeded.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.Model.ServiceQuotaExceededException.#ctor(System.String)">
+            <summary>
+            Constructs a new ServiceQuotaExceededException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ServiceQuotaExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ServiceQuotaExceededException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ServiceQuotaExceededException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ServiceQuotaExceededException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ServiceQuotaExceededException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ServiceQuotaExceededException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.Braket.Model.ServiceQuotaExceededException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.Braket.Model.TagResourceRequest">
+            <summary>
+            Container for the parameters to the TagResource operation.
+            Add a tag to the specified resource.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.TagResourceRequest.ResourceArn">
+            <summary>
+            Gets and sets the property ResourceArn. 
+            <para>
+            Specify the <code>resourceArn</code> of the resource to which a tag will be added.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.TagResourceRequest.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            Specify the tags to add to the resource.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.TagResourceResponse">
+            <summary>
+            This is the response object from the TagResource operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.ThrottlingException">
+            <summary>
+            The throttling rate limit is met.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.Model.ThrottlingException.#ctor(System.String)">
+            <summary>
+            Constructs a new ThrottlingException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ThrottlingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ThrottlingException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ThrottlingException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ThrottlingException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ThrottlingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ThrottlingException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.Braket.Model.ThrottlingException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.Braket.Model.UntagResourceRequest">
+            <summary>
+            Container for the parameters to the UntagResource operation.
+            Remove tags from a resource.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.UntagResourceRequest.ResourceArn">
+            <summary>
+            Gets and sets the property ResourceArn. 
+            <para>
+            Specify the <code>resourceArn</code> for the resource from which to remove the tags.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.UntagResourceRequest.TagKeys">
+            <summary>
+            Gets and sets the property TagKeys. 
+            <para>
+            Specify the keys for the tags to remove from the resource.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.UntagResourceResponse">
+            <summary>
+            This is the response object from the UntagResource operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.ValidationException">
+            <summary>
+            The input fails to satisfy the constraints specified by an AWS service.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.Model.ValidationException.#ctor(System.String)">
+            <summary>
+            Constructs a new ValidationException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ValidationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ValidationException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ValidationException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ValidationException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.Braket.Model.ValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ValidationException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.Braket.Model.ValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.Braket.Model.BraketPaginatorFactory">
+             <summary>
+             Paginators for the Braket service
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.Model.BraketPaginatorFactory.SearchDevices(Amazon.Braket.Model.SearchDevicesRequest)">
+             <summary>
+             Paginator for SearchDevices operation
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.Model.BraketPaginatorFactory.SearchQuantumTasks(Amazon.Braket.Model.SearchQuantumTasksRequest)">
+             <summary>
+             Paginator for SearchQuantumTasks operation
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.IBraketPaginatorFactory">
+             <summary>
+             Paginators for the Braket service
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.Model.IBraketPaginatorFactory.SearchDevices(Amazon.Braket.Model.SearchDevicesRequest)">
+             <summary>
+             Paginator for SearchDevices operation
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.Model.IBraketPaginatorFactory.SearchQuantumTasks(Amazon.Braket.Model.SearchQuantumTasksRequest)">
+             <summary>
+             Paginator for SearchQuantumTasks operation
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.ISearchDevicesPaginator">
+             <summary>
+             Paginator for the SearchDevices operation
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.ISearchDevicesPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.ISearchDevicesPaginator.Devices">
+            <summary>
+            Enumerable containing all of the Devices
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.ISearchQuantumTasksPaginator">
+             <summary>
+             Paginator for the SearchQuantumTasks operation
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.ISearchQuantumTasksPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.ISearchQuantumTasksPaginator.QuantumTasks">
+            <summary>
+            Enumerable containing all of the QuantumTasks
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.SearchDevicesPaginator">
+            <summary>
+            Base class for SearchDevices paginators.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchDevicesPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchDevicesPaginator.Devices">
+            <summary>
+            Enumerable containing all of the Devices
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.Model.SearchQuantumTasksPaginator">
+            <summary>
+            Base class for SearchQuantumTasks paginators.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchQuantumTasksPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.Model.SearchQuantumTasksPaginator.QuantumTasks">
+            <summary>
+            Enumerable containing all of the QuantumTasks
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.AmazonBraketRequest">
+            <summary>
+            Base class for Braket operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.Braket.CancellationStatus">
+            <summary>
+            Constants used for properties of type CancellationStatus.
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.CancellationStatus.CANCELLED">
+            <summary>
+            Constant CANCELLED for CancellationStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.CancellationStatus.CANCELLING">
+            <summary>
+            Constant CANCELLING for CancellationStatus
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.CancellationStatus.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.CancellationStatus.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.Braket.CancellationStatus.op_Implicit(System.String)~Amazon.Braket.CancellationStatus">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.Braket.DeviceStatus">
+            <summary>
+            Constants used for properties of type DeviceStatus.
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.DeviceStatus.OFFLINE">
+            <summary>
+            Constant OFFLINE for DeviceStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.DeviceStatus.ONLINE">
+            <summary>
+            Constant ONLINE for DeviceStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.DeviceStatus.RETIRED">
+            <summary>
+            Constant RETIRED for DeviceStatus
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.DeviceStatus.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.DeviceStatus.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.Braket.DeviceStatus.op_Implicit(System.String)~Amazon.Braket.DeviceStatus">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.Braket.DeviceType">
+            <summary>
+            Constants used for properties of type DeviceType.
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.DeviceType.QPU">
+            <summary>
+            Constant QPU for DeviceType
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.DeviceType.SIMULATOR">
+            <summary>
+            Constant SIMULATOR for DeviceType
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.DeviceType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.DeviceType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.Braket.DeviceType.op_Implicit(System.String)~Amazon.Braket.DeviceType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.Braket.QuantumTaskStatus">
+            <summary>
+            Constants used for properties of type QuantumTaskStatus.
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.QuantumTaskStatus.CANCELLED">
+            <summary>
+            Constant CANCELLED for QuantumTaskStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.QuantumTaskStatus.CANCELLING">
+            <summary>
+            Constant CANCELLING for QuantumTaskStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.QuantumTaskStatus.COMPLETED">
+            <summary>
+            Constant COMPLETED for QuantumTaskStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.QuantumTaskStatus.CREATED">
+            <summary>
+            Constant CREATED for QuantumTaskStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.QuantumTaskStatus.FAILED">
+            <summary>
+            Constant FAILED for QuantumTaskStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.QuantumTaskStatus.QUEUED">
+            <summary>
+            Constant QUEUED for QuantumTaskStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.QuantumTaskStatus.RUNNING">
+            <summary>
+            Constant RUNNING for QuantumTaskStatus
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.QuantumTaskStatus.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.QuantumTaskStatus.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.Braket.QuantumTaskStatus.op_Implicit(System.String)~Amazon.Braket.QuantumTaskStatus">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.Braket.SearchQuantumTasksFilterOperator">
+            <summary>
+            Constants used for properties of type SearchQuantumTasksFilterOperator.
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.SearchQuantumTasksFilterOperator.BETWEEN">
+            <summary>
+            Constant BETWEEN for SearchQuantumTasksFilterOperator
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.SearchQuantumTasksFilterOperator.EQUAL">
+            <summary>
+            Constant EQUAL for SearchQuantumTasksFilterOperator
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.SearchQuantumTasksFilterOperator.GT">
+            <summary>
+            Constant GT for SearchQuantumTasksFilterOperator
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.SearchQuantumTasksFilterOperator.GTE">
+            <summary>
+            Constant GTE for SearchQuantumTasksFilterOperator
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.SearchQuantumTasksFilterOperator.LT">
+            <summary>
+            Constant LT for SearchQuantumTasksFilterOperator
+            </summary>
+        </member>
+        <member name="F:Amazon.Braket.SearchQuantumTasksFilterOperator.LTE">
+            <summary>
+            Constant LTE for SearchQuantumTasksFilterOperator
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.SearchQuantumTasksFilterOperator.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.SearchQuantumTasksFilterOperator.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.Braket.SearchQuantumTasksFilterOperator.op_Implicit(System.String)~Amazon.Braket.SearchQuantumTasksFilterOperator">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.Braket.AmazonBraketClient">
+             <summary>
+             Implementation for accessing Braket
+            
+             The Amazon Braket API Reference provides information about the operations and structures
+             supported in Amazon Braket.
+             </summary>
+        </member>
+        <member name="P:Amazon.Braket.AmazonBraketClient.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.#ctor">
+             <summary>
+             Constructs AmazonBraketClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonBraketClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.#ctor(Amazon.Braket.AmazonBraketConfig)">
+             <summary>
+             Constructs AmazonBraketClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonBraketClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonBraketClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonBraketClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.Braket.AmazonBraketConfig)">
+            <summary>
+            Constructs AmazonBraketClient with AWS Credentials and an
+            AmazonBraketClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonBraketClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonBraketClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonBraketClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.#ctor(System.String,System.String,Amazon.Braket.AmazonBraketConfig)">
+            <summary>
+            Constructs AmazonBraketClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonBraketClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonBraketClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonBraketClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonBraketClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.#ctor(System.String,System.String,System.String,Amazon.Braket.AmazonBraketConfig)">
+            <summary>
+            Constructs AmazonBraketClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonBraketClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonBraketClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.Braket.AmazonBraketClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.CancelQuantumTask(Amazon.Braket.Model.CancelQuantumTaskRequest)">
+            <summary>
+            Cancels the specified task.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CancelQuantumTask service method.</param>
+            
+            <returns>The response from the CancelQuantumTask service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ConflictException">
+            An error occurred due to a conflict.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/CancelQuantumTask">REST API Reference for CancelQuantumTask Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.CancelQuantumTaskAsync(Amazon.Braket.Model.CancelQuantumTaskRequest,System.Threading.CancellationToken)">
+            <summary>
+            Cancels the specified task.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CancelQuantumTask service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CancelQuantumTask service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ConflictException">
+            An error occurred due to a conflict.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/CancelQuantumTask">REST API Reference for CancelQuantumTask Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.CreateQuantumTask(Amazon.Braket.Model.CreateQuantumTaskRequest)">
+            <summary>
+            Creates a quantum task.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateQuantumTask service method.</param>
+            
+            <returns>The response from the CreateQuantumTask service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.DeviceOfflineException">
+            The specified device is currently offline.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ServiceQuotaExceededException">
+            The request failed because a service quota is exceeded.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/CreateQuantumTask">REST API Reference for CreateQuantumTask Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.CreateQuantumTaskAsync(Amazon.Braket.Model.CreateQuantumTaskRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a quantum task.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateQuantumTask service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateQuantumTask service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.DeviceOfflineException">
+            The specified device is currently offline.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ServiceQuotaExceededException">
+            The request failed because a service quota is exceeded.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/CreateQuantumTask">REST API Reference for CreateQuantumTask Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.GetDevice(Amazon.Braket.Model.GetDeviceRequest)">
+            <summary>
+            Retrieves the devices available in Amazon Braket.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetDevice service method.</param>
+            
+            <returns>The response from the GetDevice service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.DeviceOfflineException">
+            The specified device is currently offline.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.DeviceRetiredException">
+            The specified device has been retired.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/GetDevice">REST API Reference for GetDevice Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.GetDeviceAsync(Amazon.Braket.Model.GetDeviceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves the devices available in Amazon Braket.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetDevice service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetDevice service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.DeviceOfflineException">
+            The specified device is currently offline.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.DeviceRetiredException">
+            The specified device has been retired.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/GetDevice">REST API Reference for GetDevice Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.GetQuantumTask(Amazon.Braket.Model.GetQuantumTaskRequest)">
+            <summary>
+            Retrieves the specified quantum task.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetQuantumTask service method.</param>
+            
+            <returns>The response from the GetQuantumTask service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/GetQuantumTask">REST API Reference for GetQuantumTask Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.GetQuantumTaskAsync(Amazon.Braket.Model.GetQuantumTaskRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves the specified quantum task.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetQuantumTask service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetQuantumTask service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/GetQuantumTask">REST API Reference for GetQuantumTask Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.ListTagsForResource(Amazon.Braket.Model.ListTagsForResourceRequest)">
+            <summary>
+            Shows the tags associated with this resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListTagsForResource service method.</param>
+            
+            <returns>The response from the ListTagsForResource service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/ListTagsForResource">REST API Reference for ListTagsForResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.ListTagsForResourceAsync(Amazon.Braket.Model.ListTagsForResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Shows the tags associated with this resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListTagsForResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListTagsForResource service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/ListTagsForResource">REST API Reference for ListTagsForResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.SearchDevices(Amazon.Braket.Model.SearchDevicesRequest)">
+            <summary>
+            Searches for devices using the specified filters.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SearchDevices service method.</param>
+            
+            <returns>The response from the SearchDevices service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/SearchDevices">REST API Reference for SearchDevices Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.SearchDevicesAsync(Amazon.Braket.Model.SearchDevicesRequest,System.Threading.CancellationToken)">
+            <summary>
+            Searches for devices using the specified filters.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SearchDevices service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the SearchDevices service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/SearchDevices">REST API Reference for SearchDevices Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.SearchQuantumTasks(Amazon.Braket.Model.SearchQuantumTasksRequest)">
+            <summary>
+            Searches for tasks that match the specified filter values.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SearchQuantumTasks service method.</param>
+            
+            <returns>The response from the SearchQuantumTasks service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/SearchQuantumTasks">REST API Reference for SearchQuantumTasks Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.SearchQuantumTasksAsync(Amazon.Braket.Model.SearchQuantumTasksRequest,System.Threading.CancellationToken)">
+            <summary>
+            Searches for tasks that match the specified filter values.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SearchQuantumTasks service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the SearchQuantumTasks service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/SearchQuantumTasks">REST API Reference for SearchQuantumTasks Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.TagResource(Amazon.Braket.Model.TagResourceRequest)">
+            <summary>
+            Add a tag to the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the TagResource service method.</param>
+            
+            <returns>The response from the TagResource service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/TagResource">REST API Reference for TagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.TagResourceAsync(Amazon.Braket.Model.TagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Add a tag to the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the TagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the TagResource service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/TagResource">REST API Reference for TagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.UntagResource(Amazon.Braket.Model.UntagResourceRequest)">
+            <summary>
+            Remove tags from a resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UntagResource service method.</param>
+            
+            <returns>The response from the UntagResource service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/UntagResource">REST API Reference for UntagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.AmazonBraketClient.UntagResourceAsync(Amazon.Braket.Model.UntagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Remove tags from a resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UntagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UntagResource service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/UntagResource">REST API Reference for UntagResource Operation</seealso>
+        </member>
+        <member name="T:Amazon.Braket.IAmazonBraket">
+             <summary>
+             Interface for accessing Braket
+            
+             The Amazon Braket API Reference provides information about the operations and structures
+             supported in Amazon Braket.
+             </summary>
+        </member>
+        <member name="P:Amazon.Braket.IAmazonBraket.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.CancelQuantumTask(Amazon.Braket.Model.CancelQuantumTaskRequest)">
+            <summary>
+            Cancels the specified task.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CancelQuantumTask service method.</param>
+            
+            <returns>The response from the CancelQuantumTask service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ConflictException">
+            An error occurred due to a conflict.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/CancelQuantumTask">REST API Reference for CancelQuantumTask Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.CancelQuantumTaskAsync(Amazon.Braket.Model.CancelQuantumTaskRequest,System.Threading.CancellationToken)">
+            <summary>
+            Cancels the specified task.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CancelQuantumTask service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CancelQuantumTask service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ConflictException">
+            An error occurred due to a conflict.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/CancelQuantumTask">REST API Reference for CancelQuantumTask Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.CreateQuantumTask(Amazon.Braket.Model.CreateQuantumTaskRequest)">
+            <summary>
+            Creates a quantum task.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateQuantumTask service method.</param>
+            
+            <returns>The response from the CreateQuantumTask service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.DeviceOfflineException">
+            The specified device is currently offline.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ServiceQuotaExceededException">
+            The request failed because a service quota is exceeded.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/CreateQuantumTask">REST API Reference for CreateQuantumTask Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.CreateQuantumTaskAsync(Amazon.Braket.Model.CreateQuantumTaskRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a quantum task.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateQuantumTask service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateQuantumTask service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.DeviceOfflineException">
+            The specified device is currently offline.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ServiceQuotaExceededException">
+            The request failed because a service quota is exceeded.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/CreateQuantumTask">REST API Reference for CreateQuantumTask Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.GetDevice(Amazon.Braket.Model.GetDeviceRequest)">
+            <summary>
+            Retrieves the devices available in Amazon Braket.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetDevice service method.</param>
+            
+            <returns>The response from the GetDevice service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.DeviceOfflineException">
+            The specified device is currently offline.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.DeviceRetiredException">
+            The specified device has been retired.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/GetDevice">REST API Reference for GetDevice Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.GetDeviceAsync(Amazon.Braket.Model.GetDeviceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves the devices available in Amazon Braket.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetDevice service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetDevice service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.DeviceOfflineException">
+            The specified device is currently offline.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.DeviceRetiredException">
+            The specified device has been retired.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/GetDevice">REST API Reference for GetDevice Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.GetQuantumTask(Amazon.Braket.Model.GetQuantumTaskRequest)">
+            <summary>
+            Retrieves the specified quantum task.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetQuantumTask service method.</param>
+            
+            <returns>The response from the GetQuantumTask service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/GetQuantumTask">REST API Reference for GetQuantumTask Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.GetQuantumTaskAsync(Amazon.Braket.Model.GetQuantumTaskRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves the specified quantum task.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetQuantumTask service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetQuantumTask service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/GetQuantumTask">REST API Reference for GetQuantumTask Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.ListTagsForResource(Amazon.Braket.Model.ListTagsForResourceRequest)">
+            <summary>
+            Shows the tags associated with this resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListTagsForResource service method.</param>
+            
+            <returns>The response from the ListTagsForResource service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/ListTagsForResource">REST API Reference for ListTagsForResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.ListTagsForResourceAsync(Amazon.Braket.Model.ListTagsForResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Shows the tags associated with this resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListTagsForResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListTagsForResource service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/ListTagsForResource">REST API Reference for ListTagsForResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.SearchDevices(Amazon.Braket.Model.SearchDevicesRequest)">
+            <summary>
+            Searches for devices using the specified filters.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SearchDevices service method.</param>
+            
+            <returns>The response from the SearchDevices service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/SearchDevices">REST API Reference for SearchDevices Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.SearchDevicesAsync(Amazon.Braket.Model.SearchDevicesRequest,System.Threading.CancellationToken)">
+            <summary>
+            Searches for devices using the specified filters.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SearchDevices service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the SearchDevices service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/SearchDevices">REST API Reference for SearchDevices Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.SearchQuantumTasks(Amazon.Braket.Model.SearchQuantumTasksRequest)">
+            <summary>
+            Searches for tasks that match the specified filter values.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SearchQuantumTasks service method.</param>
+            
+            <returns>The response from the SearchQuantumTasks service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/SearchQuantumTasks">REST API Reference for SearchQuantumTasks Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.SearchQuantumTasksAsync(Amazon.Braket.Model.SearchQuantumTasksRequest,System.Threading.CancellationToken)">
+            <summary>
+            Searches for tasks that match the specified filter values.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SearchQuantumTasks service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the SearchQuantumTasks service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ThrottlingException">
+            The throttling rate limit is met.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/SearchQuantumTasks">REST API Reference for SearchQuantumTasks Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.TagResource(Amazon.Braket.Model.TagResourceRequest)">
+            <summary>
+            Add a tag to the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the TagResource service method.</param>
+            
+            <returns>The response from the TagResource service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/TagResource">REST API Reference for TagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.TagResourceAsync(Amazon.Braket.Model.TagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Add a tag to the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the TagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the TagResource service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/TagResource">REST API Reference for TagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.UntagResource(Amazon.Braket.Model.UntagResourceRequest)">
+            <summary>
+            Remove tags from a resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UntagResource service method.</param>
+            
+            <returns>The response from the UntagResource service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/UntagResource">REST API Reference for UntagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.Braket.IAmazonBraket.UntagResourceAsync(Amazon.Braket.Model.UntagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Remove tags from a resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UntagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UntagResource service method, as returned by Braket.</returns>
+            <exception cref="T:Amazon.Braket.Model.InternalServiceException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.Braket.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/braket-2019-09-01/UntagResource">REST API Reference for UntagResource Operation</seealso>
+        </member>
+    </members>
+</doc>

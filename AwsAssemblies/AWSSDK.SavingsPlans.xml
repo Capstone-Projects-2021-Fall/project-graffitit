@@ -1,0 +1,3839 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.SavingsPlans</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.SavingsPlans.AmazonSavingsPlansConfig">
+            <summary>
+            Configuration for accessing Amazon SavingsPlans service
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.AmazonSavingsPlansConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.AmazonSavingsPlansConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.AmazonSavingsPlansConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.AmazonSavingsPlansException">
+            <summary>
+             Common exception for the SavingsPlans service.
+             </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonSavingsPlansException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonSavingsPlansException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonSavingsPlansException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonSavingsPlansException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonSavingsPlansException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonSavingsPlansException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Internal.AmazonSavingsPlansMetadata">
+            <summary>
+            Service metadata for  Amazon SavingsPlans service
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Internal.AmazonSavingsPlansMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Internal.AmazonSavingsPlansMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.AmazonSavingsPlansRequest">
+            <summary>
+            Base class for SavingsPlans operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.CreateSavingsPlanRequest">
+            <summary>
+            Container for the parameters to the CreateSavingsPlan operation.
+            Creates a Savings Plan.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.CreateSavingsPlanRequest.ClientToken">
+            <summary>
+            Gets and sets the property ClientToken. 
+            <para>
+            Unique, case-sensitive identifier that you provide to ensure the idempotency of the
+            request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.CreateSavingsPlanRequest.Commitment">
+            <summary>
+            Gets and sets the property Commitment. 
+            <para>
+            The hourly commitment, in USD. This is a value between 0.001 and 1 million. You cannot
+            specify more than three digits after the decimal point.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.CreateSavingsPlanRequest.PurchaseTime">
+            <summary>
+            Gets and sets the property PurchaseTime. 
+            <para>
+            The time at which to purchase the Savings Plan, in UTC format (YYYY-MM-DDTHH:MM:SSZ).
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.CreateSavingsPlanRequest.SavingsPlanOfferingId">
+            <summary>
+            Gets and sets the property SavingsPlanOfferingId. 
+            <para>
+            The ID of the offering.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.CreateSavingsPlanRequest.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            One or more tags.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.CreateSavingsPlanRequest.UpfrontPaymentAmount">
+            <summary>
+            Gets and sets the property UpfrontPaymentAmount. 
+            <para>
+            The up-front payment amount. This is a whole number between 50 and 99 percent of the
+            total value of the Savings Plan. This parameter is supported only if the payment option
+            is <code>Partial Upfront</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.CreateSavingsPlanResponse">
+            <summary>
+            This is the response object from the CreateSavingsPlan operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.CreateSavingsPlanResponse.SavingsPlanId">
+            <summary>
+            Gets and sets the property SavingsPlanId. 
+            <para>
+            The ID of the Savings Plan.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.DeleteQueuedSavingsPlanRequest">
+            <summary>
+            Container for the parameters to the DeleteQueuedSavingsPlan operation.
+            Deletes the queued purchase for the specified Savings Plan.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DeleteQueuedSavingsPlanRequest.SavingsPlanId">
+            <summary>
+            Gets and sets the property SavingsPlanId. 
+            <para>
+            The ID of the Savings Plan.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.DeleteQueuedSavingsPlanResponse">
+            <summary>
+            This is the response object from the DeleteQueuedSavingsPlan operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.DescribeSavingsPlanRatesRequest">
+            <summary>
+            Container for the parameters to the DescribeSavingsPlanRates operation.
+            Describes the specified Savings Plans rates.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlanRatesRequest.Filters">
+            <summary>
+            Gets and sets the property Filters. 
+            <para>
+            The filters.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlanRatesRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results to return with a single call. To retrieve additional
+            results, make another call with the returned token value.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlanRatesRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token for the next page of results.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlanRatesRequest.SavingsPlanId">
+            <summary>
+            Gets and sets the property SavingsPlanId. 
+            <para>
+            The ID of the Savings Plan.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.DescribeSavingsPlanRatesResponse">
+            <summary>
+            This is the response object from the DescribeSavingsPlanRates operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlanRatesResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token to use to retrieve the next page of results. This value is null when there
+            are no more results to return.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlanRatesResponse.SavingsPlanId">
+            <summary>
+            Gets and sets the property SavingsPlanId. 
+            <para>
+            The ID of the Savings Plan.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlanRatesResponse.SearchResults">
+            <summary>
+            Gets and sets the property SearchResults. 
+            <para>
+            Information about the Savings Plans rates.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest">
+            <summary>
+            Container for the parameters to the DescribeSavingsPlansOfferingRates operation.
+            Describes the specified Savings Plans offering rates.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest.Filters">
+            <summary>
+            Gets and sets the property Filters. 
+            <para>
+            The filters.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results to return with a single call. To retrieve additional
+            results, make another call with the returned token value.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token for the next page of results.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest.Operations">
+            <summary>
+            Gets and sets the property Operations. 
+            <para>
+            The specific AWS operation for the line item in the billing report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest.Products">
+            <summary>
+            Gets and sets the property Products. 
+            <para>
+            The AWS products.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest.SavingsPlanOfferingIds">
+            <summary>
+            Gets and sets the property SavingsPlanOfferingIds. 
+            <para>
+            The IDs of the offerings.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest.SavingsPlanPaymentOptions">
+            <summary>
+            Gets and sets the property SavingsPlanPaymentOptions. 
+            <para>
+            The payment options.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest.SavingsPlanTypes">
+            <summary>
+            Gets and sets the property SavingsPlanTypes. 
+            <para>
+            The plan types.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest.ServiceCodes">
+            <summary>
+            Gets and sets the property ServiceCodes. 
+            <para>
+            The services.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest.UsageTypes">
+            <summary>
+            Gets and sets the property UsageTypes. 
+            <para>
+            The usage details of the line item in the billing report.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesResponse">
+            <summary>
+            This is the response object from the DescribeSavingsPlansOfferingRates operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token to use to retrieve the next page of results. This value is null when there
+            are no more results to return.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesResponse.SearchResults">
+            <summary>
+            Gets and sets the property SearchResults. 
+            <para>
+            Information about the Savings Plans offering rates.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest">
+            <summary>
+            Container for the parameters to the DescribeSavingsPlansOfferings operation.
+            Describes the specified Savings Plans offerings.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest.Currencies">
+            <summary>
+            Gets and sets the property Currencies. 
+            <para>
+            The currencies.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest.Descriptions">
+            <summary>
+            Gets and sets the property Descriptions. 
+            <para>
+            The descriptions.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest.Durations">
+            <summary>
+            Gets and sets the property Durations. 
+            <para>
+            The durations, in seconds.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest.Filters">
+            <summary>
+            Gets and sets the property Filters. 
+            <para>
+            The filters.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results to return with a single call. To retrieve additional
+            results, make another call with the returned token value.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token for the next page of results.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest.OfferingIds">
+            <summary>
+            Gets and sets the property OfferingIds. 
+            <para>
+            The IDs of the offerings.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest.Operations">
+            <summary>
+            Gets and sets the property Operations. 
+            <para>
+            The specific AWS operation for the line item in the billing report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest.PaymentOptions">
+            <summary>
+            Gets and sets the property PaymentOptions. 
+            <para>
+            The payment options.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest.PlanTypes">
+            <summary>
+            Gets and sets the property PlanTypes. 
+            <para>
+            The plan type.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest.ProductType">
+            <summary>
+            Gets and sets the property ProductType. 
+            <para>
+            The product type.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest.ServiceCodes">
+            <summary>
+            Gets and sets the property ServiceCodes. 
+            <para>
+            The services.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest.UsageTypes">
+            <summary>
+            Gets and sets the property UsageTypes. 
+            <para>
+            The usage details of the line item in the billing report.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsResponse">
+            <summary>
+            This is the response object from the DescribeSavingsPlansOfferings operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token to use to retrieve the next page of results. This value is null when there
+            are no more results to return.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsResponse.SearchResults">
+            <summary>
+            Gets and sets the property SearchResults. 
+            <para>
+            Information about the Savings Plans offerings.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.DescribeSavingsPlansRequest">
+            <summary>
+            Container for the parameters to the DescribeSavingsPlans operation.
+            Describes the specified Savings Plans.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansRequest.Filters">
+            <summary>
+            Gets and sets the property Filters. 
+            <para>
+            The filters.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results to return with a single call. To retrieve additional
+            results, make another call with the returned token value.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token for the next page of results.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansRequest.SavingsPlanArns">
+            <summary>
+            Gets and sets the property SavingsPlanArns. 
+            <para>
+            The Amazon Resource Names (ARN) of the Savings Plans.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansRequest.SavingsPlanIds">
+            <summary>
+            Gets and sets the property SavingsPlanIds. 
+            <para>
+            The IDs of the Savings Plans.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansRequest.States">
+            <summary>
+            Gets and sets the property States. 
+            <para>
+            The states.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.DescribeSavingsPlansResponse">
+            <summary>
+            This is the response object from the DescribeSavingsPlans operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token to use to retrieve the next page of results. This value is null when there
+            are no more results to return.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.DescribeSavingsPlansResponse.SavingsPlans">
+            <summary>
+            Gets and sets the property SavingsPlans. 
+            <para>
+            Information about the Savings Plans.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.InternalServerException">
+            <summary>
+            An unexpected error occurred.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.InternalServerException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServerException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.InternalServerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.InternalServerException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.InternalServerException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.InternalServerException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.InternalServerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InternalServerException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.InternalServerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.CreateSavingsPlanRequestMarshaller">
+            <summary>
+            CreateSavingsPlan Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.CreateSavingsPlanRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.CreateSavingsPlanRequestMarshaller.Marshall(Amazon.SavingsPlans.Model.CreateSavingsPlanRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.CreateSavingsPlanRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.CreateSavingsPlanResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for CreateSavingsPlan operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.CreateSavingsPlanResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.CreateSavingsPlanResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.CreateSavingsPlanResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DeleteQueuedSavingsPlanRequestMarshaller">
+            <summary>
+            DeleteQueuedSavingsPlan Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DeleteQueuedSavingsPlanRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DeleteQueuedSavingsPlanRequestMarshaller.Marshall(Amazon.SavingsPlans.Model.DeleteQueuedSavingsPlanRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DeleteQueuedSavingsPlanRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DeleteQueuedSavingsPlanResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DeleteQueuedSavingsPlan operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DeleteQueuedSavingsPlanResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DeleteQueuedSavingsPlanResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DeleteQueuedSavingsPlanResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlanRatesRequestMarshaller">
+            <summary>
+            DescribeSavingsPlanRates Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlanRatesRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlanRatesRequestMarshaller.Marshall(Amazon.SavingsPlans.Model.DescribeSavingsPlanRatesRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlanRatesRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlanRatesResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DescribeSavingsPlanRates operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlanRatesResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlanRatesResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlanRatesResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingRatesRequestMarshaller">
+            <summary>
+            DescribeSavingsPlansOfferingRates Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingRatesRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingRatesRequestMarshaller.Marshall(Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingRatesRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingRatesResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DescribeSavingsPlansOfferingRates operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingRatesResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingRatesResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingRatesResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingsRequestMarshaller">
+            <summary>
+            DescribeSavingsPlansOfferings Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingsRequestMarshaller.Marshall(Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DescribeSavingsPlansOfferings operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansOfferingsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansRequestMarshaller">
+            <summary>
+            DescribeSavingsPlans Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansRequestMarshaller.Marshall(Amazon.SavingsPlans.Model.DescribeSavingsPlansRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DescribeSavingsPlans operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.DescribeSavingsPlansResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalServerException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller">
+            <summary>
+            ListTagsForResource Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller.Marshall(Amazon.SavingsPlans.Model.ListTagsForResourceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListTagsForResource operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ParentSavingsPlanOfferingUnmarshaller">
+            <summary>
+            Response Unmarshaller for ParentSavingsPlanOffering Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ParentSavingsPlanOfferingUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#SavingsPlans#Model#ParentSavingsPlanOffering,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ParentSavingsPlanOfferingUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ParentSavingsPlanOfferingUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceNotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanFilterMarshaller">
+            <summary>
+            SavingsPlanFilter Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanFilterMarshaller.Marshall(Amazon.SavingsPlans.Model.SavingsPlanFilter,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanFilterMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingFilterElementMarshaller">
+            <summary>
+            SavingsPlanOfferingFilterElement Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingFilterElementMarshaller.Marshall(Amazon.SavingsPlans.Model.SavingsPlanOfferingFilterElement,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingFilterElementMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingPropertyUnmarshaller">
+            <summary>
+            Response Unmarshaller for SavingsPlanOfferingProperty Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingPropertyUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#SavingsPlans#Model#SavingsPlanOfferingProperty,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingPropertyUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingPropertyUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingRateFilterElementMarshaller">
+            <summary>
+            SavingsPlanOfferingRateFilterElement Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingRateFilterElementMarshaller.Marshall(Amazon.SavingsPlans.Model.SavingsPlanOfferingRateFilterElement,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingRateFilterElementMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingRatePropertyUnmarshaller">
+            <summary>
+            Response Unmarshaller for SavingsPlanOfferingRateProperty Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingRatePropertyUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#SavingsPlans#Model#SavingsPlanOfferingRateProperty,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingRatePropertyUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingRatePropertyUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingRateUnmarshaller">
+            <summary>
+            Response Unmarshaller for SavingsPlanOfferingRate Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingRateUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#SavingsPlans#Model#SavingsPlanOfferingRate,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingRateUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingRateUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingUnmarshaller">
+            <summary>
+            Response Unmarshaller for SavingsPlanOffering Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#SavingsPlans#Model#SavingsPlanOffering,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanOfferingUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanRateFilterMarshaller">
+            <summary>
+            SavingsPlanRateFilter Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanRateFilterMarshaller.Marshall(Amazon.SavingsPlans.Model.SavingsPlanRateFilter,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanRateFilterMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanRatePropertyUnmarshaller">
+            <summary>
+            Response Unmarshaller for SavingsPlanRateProperty Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanRatePropertyUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#SavingsPlans#Model#SavingsPlanRateProperty,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanRatePropertyUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanRatePropertyUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanRateUnmarshaller">
+            <summary>
+            Response Unmarshaller for SavingsPlanRate Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanRateUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#SavingsPlans#Model#SavingsPlanRate,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanRateUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanRateUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanUnmarshaller">
+            <summary>
+            Response Unmarshaller for SavingsPlan Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#SavingsPlans#Model#SavingsPlan,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.SavingsPlanUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ServiceQuotaExceededException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller">
+            <summary>
+            TagResource Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller.Marshall(Amazon.SavingsPlans.Model.TagResourceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for TagResource operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller">
+            <summary>
+            UntagResource Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller.Marshall(Amazon.SavingsPlans.Model.UntagResourceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for UntagResource operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ValidationException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.ListTagsForResourceRequest">
+            <summary>
+            Container for the parameters to the ListTagsForResource operation.
+            Lists the tags for the specified resource.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.ListTagsForResourceRequest.ResourceArn">
+            <summary>
+            Gets and sets the property ResourceArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the resource.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.ListTagsForResourceResponse">
+            <summary>
+            This is the response object from the ListTagsForResource operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.ListTagsForResourceResponse.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            Information about the tags.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.ParentSavingsPlanOffering">
+            <summary>
+            Information about a Savings Plan offering.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.ParentSavingsPlanOffering.Currency">
+            <summary>
+            Gets and sets the property Currency. 
+            <para>
+            The currency.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.ParentSavingsPlanOffering.DurationSeconds">
+            <summary>
+            Gets and sets the property DurationSeconds. 
+            <para>
+            The duration, in seconds.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.ParentSavingsPlanOffering.OfferingId">
+            <summary>
+            Gets and sets the property OfferingId. 
+            <para>
+            The ID of the offering.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.ParentSavingsPlanOffering.PaymentOption">
+            <summary>
+            Gets and sets the property PaymentOption. 
+            <para>
+            The payment option.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.ParentSavingsPlanOffering.PlanDescription">
+            <summary>
+            Gets and sets the property PlanDescription. 
+            <para>
+            The description.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.ParentSavingsPlanOffering.PlanType">
+            <summary>
+            Gets and sets the property PlanType. 
+            <para>
+            The plan type.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            <summary>
+            The specified resource was not found.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ResourceNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ResourceNotFoundException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ResourceNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.SavingsPlan">
+            <summary>
+            Information about a Savings Plan.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.Commitment">
+            <summary>
+            Gets and sets the property Commitment. 
+            <para>
+            The hourly commitment, in USD.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.Currency">
+            <summary>
+            Gets and sets the property Currency. 
+            <para>
+            The currency.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.Description">
+            <summary>
+            Gets and sets the property Description. 
+            <para>
+            The description.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.Ec2InstanceFamily">
+            <summary>
+            Gets and sets the property Ec2InstanceFamily. 
+            <para>
+            The EC2 instance family.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.End">
+            <summary>
+            Gets and sets the property End. 
+            <para>
+            The end time.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.OfferingId">
+            <summary>
+            Gets and sets the property OfferingId. 
+            <para>
+            The ID of the offering.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.PaymentOption">
+            <summary>
+            Gets and sets the property PaymentOption. 
+            <para>
+            The payment option.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.ProductTypes">
+            <summary>
+            Gets and sets the property ProductTypes. 
+            <para>
+            The product types.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.RecurringPaymentAmount">
+            <summary>
+            Gets and sets the property RecurringPaymentAmount. 
+            <para>
+            The recurring payment amount.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.Region">
+            <summary>
+            Gets and sets the property Region. 
+            <para>
+            The AWS Region.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.SavingsPlanArn">
+            <summary>
+            Gets and sets the property SavingsPlanArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the Savings Plan.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.SavingsPlanId">
+            <summary>
+            Gets and sets the property SavingsPlanId. 
+            <para>
+            The ID of the Savings Plan.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.SavingsPlanType">
+            <summary>
+            Gets and sets the property SavingsPlanType. 
+            <para>
+            The plan type.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.Start">
+            <summary>
+            Gets and sets the property Start. 
+            <para>
+            The start time.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.State">
+            <summary>
+            Gets and sets the property State. 
+            <para>
+            The state.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            One or more tags.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.TermDurationInSeconds">
+            <summary>
+            Gets and sets the property TermDurationInSeconds. 
+            <para>
+            The duration of the term, in seconds.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlan.UpfrontPaymentAmount">
+            <summary>
+            Gets and sets the property UpfrontPaymentAmount. 
+            <para>
+            The up-front payment amount.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.SavingsPlanFilter">
+            <summary>
+            Information about a filter.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanFilter.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The filter name.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanFilter.Values">
+            <summary>
+            Gets and sets the property Values. 
+            <para>
+            The filter value.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.SavingsPlanOffering">
+            <summary>
+            Information about a Savings Plan offering.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOffering.Currency">
+            <summary>
+            Gets and sets the property Currency. 
+            <para>
+            The currency.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOffering.Description">
+            <summary>
+            Gets and sets the property Description. 
+            <para>
+            The description.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOffering.DurationSeconds">
+            <summary>
+            Gets and sets the property DurationSeconds. 
+            <para>
+            The duration, in seconds.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOffering.OfferingId">
+            <summary>
+            Gets and sets the property OfferingId. 
+            <para>
+            The ID of the offering.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOffering.Operation">
+            <summary>
+            Gets and sets the property Operation. 
+            <para>
+            The specific AWS operation for the line item in the billing report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOffering.PaymentOption">
+            <summary>
+            Gets and sets the property PaymentOption. 
+            <para>
+            The payment option.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOffering.PlanType">
+            <summary>
+            Gets and sets the property PlanType. 
+            <para>
+            The plan type.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOffering.ProductTypes">
+            <summary>
+            Gets and sets the property ProductTypes. 
+            <para>
+            The product type.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOffering.Properties">
+            <summary>
+            Gets and sets the property Properties. 
+            <para>
+            The properties.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOffering.ServiceCode">
+            <summary>
+            Gets and sets the property ServiceCode. 
+            <para>
+            The service.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOffering.UsageType">
+            <summary>
+            Gets and sets the property UsageType. 
+            <para>
+            The usage details of the line item in the billing report.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.SavingsPlanOfferingFilterElement">
+            <summary>
+            Information about a filter.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingFilterElement.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The filter name.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingFilterElement.Values">
+            <summary>
+            Gets and sets the property Values. 
+            <para>
+            The filter values.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.SavingsPlanOfferingProperty">
+            <summary>
+            Information about a property.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingProperty.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The property name.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingProperty.Value">
+            <summary>
+            Gets and sets the property Value. 
+            <para>
+            The property value.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.SavingsPlanOfferingRate">
+            <summary>
+            Information about a Savings Plan offering rate.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingRate.Operation">
+            <summary>
+            Gets and sets the property Operation. 
+            <para>
+            The specific AWS operation for the line item in the billing report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingRate.ProductType">
+            <summary>
+            Gets and sets the property ProductType. 
+            <para>
+            The product type.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingRate.Properties">
+            <summary>
+            Gets and sets the property Properties. 
+            <para>
+            The properties.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingRate.Rate">
+            <summary>
+            Gets and sets the property Rate. 
+            <para>
+            The Savings Plan rate.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingRate.SavingsPlanOffering">
+            <summary>
+            Gets and sets the property SavingsPlanOffering. 
+            <para>
+            The Savings Plan offering.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingRate.ServiceCode">
+            <summary>
+            Gets and sets the property ServiceCode. 
+            <para>
+            The service.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingRate.Unit">
+            <summary>
+            Gets and sets the property Unit. 
+            <para>
+            The unit.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingRate.UsageType">
+            <summary>
+            Gets and sets the property UsageType. 
+            <para>
+            The usage details of the line item in the billing report.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.SavingsPlanOfferingRateFilterElement">
+            <summary>
+            Information about a filter.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingRateFilterElement.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The filter name.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingRateFilterElement.Values">
+            <summary>
+            Gets and sets the property Values. 
+            <para>
+            The filter values.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.SavingsPlanOfferingRateProperty">
+            <summary>
+            Information about a property.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingRateProperty.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The property name.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanOfferingRateProperty.Value">
+            <summary>
+            Gets and sets the property Value. 
+            <para>
+            The property value.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.SavingsPlanRate">
+            <summary>
+            Information about a Savings Plan rate.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanRate.Currency">
+            <summary>
+            Gets and sets the property Currency. 
+            <para>
+            The currency.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanRate.Operation">
+            <summary>
+            Gets and sets the property Operation. 
+            <para>
+            The specific AWS operation for the line item in the billing report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanRate.ProductType">
+            <summary>
+            Gets and sets the property ProductType. 
+            <para>
+            The product type.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanRate.Properties">
+            <summary>
+            Gets and sets the property Properties. 
+            <para>
+            The properties.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanRate.Rate">
+            <summary>
+            Gets and sets the property Rate. 
+            <para>
+            The rate.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanRate.ServiceCode">
+            <summary>
+            Gets and sets the property ServiceCode. 
+            <para>
+            The service.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanRate.Unit">
+            <summary>
+            Gets and sets the property Unit. 
+            <para>
+            The unit.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanRate.UsageType">
+            <summary>
+            Gets and sets the property UsageType. 
+            <para>
+            The usage details of the line item in the billing report.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.SavingsPlanRateFilter">
+            <summary>
+            Information about a filter.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanRateFilter.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The filter name.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanRateFilter.Values">
+            <summary>
+            Gets and sets the property Values. 
+            <para>
+            The filter values.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.SavingsPlanRateProperty">
+            <summary>
+            Information about a property.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanRateProperty.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The property name.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.SavingsPlanRateProperty.Value">
+            <summary>
+            Gets and sets the property Value. 
+            <para>
+            The property value.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.ServiceQuotaExceededException">
+            <summary>
+            A service quota has been exceeded.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ServiceQuotaExceededException.#ctor(System.String)">
+            <summary>
+            Constructs a new ServiceQuotaExceededException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ServiceQuotaExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ServiceQuotaExceededException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ServiceQuotaExceededException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ServiceQuotaExceededException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ServiceQuotaExceededException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ServiceQuotaExceededException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ServiceQuotaExceededException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.TagResourceRequest">
+            <summary>
+            Container for the parameters to the TagResource operation.
+            Adds the specified tags to the specified resource.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.TagResourceRequest.ResourceArn">
+            <summary>
+            Gets and sets the property ResourceArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the resource.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.TagResourceRequest.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            One or more tags. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.TagResourceResponse">
+            <summary>
+            This is the response object from the TagResource operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.UntagResourceRequest">
+            <summary>
+            Container for the parameters to the UntagResource operation.
+            Removes the specified tags from the specified resource.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.UntagResourceRequest.ResourceArn">
+            <summary>
+            Gets and sets the property ResourceArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the resource.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.Model.UntagResourceRequest.TagKeys">
+            <summary>
+            Gets and sets the property TagKeys. 
+            <para>
+            The tag keys.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.UntagResourceResponse">
+            <summary>
+            This is the response object from the UntagResource operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.SavingsPlans.Model.ValidationException">
+            <summary>
+            One of the input parameters is not valid.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ValidationException.#ctor(System.String)">
+            <summary>
+            Constructs a new ValidationException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ValidationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ValidationException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ValidationException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ValidationException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ValidationException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.SavingsPlans.Model.ValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.SavingsPlans.CurrencyCode">
+            <summary>
+            Constants used for properties of type CurrencyCode.
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.CurrencyCode.CNY">
+            <summary>
+            Constant CNY for CurrencyCode
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.CurrencyCode.USD">
+            <summary>
+            Constant USD for CurrencyCode
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.CurrencyCode.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.CurrencyCode.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.CurrencyCode.op_Implicit(System.String)~Amazon.SavingsPlans.CurrencyCode">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.SavingsPlans.SavingsPlanOfferingFilterAttribute">
+            <summary>
+            Constants used for properties of type SavingsPlanOfferingFilterAttribute.
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanOfferingFilterAttribute.InstanceFamily">
+            <summary>
+            Constant InstanceFamily for SavingsPlanOfferingFilterAttribute
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanOfferingFilterAttribute.Region">
+            <summary>
+            Constant Region for SavingsPlanOfferingFilterAttribute
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanOfferingFilterAttribute.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanOfferingFilterAttribute.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanOfferingFilterAttribute.op_Implicit(System.String)~Amazon.SavingsPlans.SavingsPlanOfferingFilterAttribute">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.SavingsPlans.SavingsPlanOfferingPropertyKey">
+            <summary>
+            Constants used for properties of type SavingsPlanOfferingPropertyKey.
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanOfferingPropertyKey.InstanceFamily">
+            <summary>
+            Constant InstanceFamily for SavingsPlanOfferingPropertyKey
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanOfferingPropertyKey.Region">
+            <summary>
+            Constant Region for SavingsPlanOfferingPropertyKey
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanOfferingPropertyKey.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanOfferingPropertyKey.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanOfferingPropertyKey.op_Implicit(System.String)~Amazon.SavingsPlans.SavingsPlanOfferingPropertyKey">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.SavingsPlans.SavingsPlanPaymentOption">
+            <summary>
+            Constants used for properties of type SavingsPlanPaymentOption.
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanPaymentOption.AllUpfront">
+            <summary>
+            Constant AllUpfront for SavingsPlanPaymentOption
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanPaymentOption.NoUpfront">
+            <summary>
+            Constant NoUpfront for SavingsPlanPaymentOption
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanPaymentOption.PartialUpfront">
+            <summary>
+            Constant PartialUpfront for SavingsPlanPaymentOption
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanPaymentOption.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanPaymentOption.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanPaymentOption.op_Implicit(System.String)~Amazon.SavingsPlans.SavingsPlanPaymentOption">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.SavingsPlans.SavingsPlanProductType">
+            <summary>
+            Constants used for properties of type SavingsPlanProductType.
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanProductType.EC2">
+            <summary>
+            Constant EC2 for SavingsPlanProductType
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanProductType.Fargate">
+            <summary>
+            Constant Fargate for SavingsPlanProductType
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanProductType.Lambda">
+            <summary>
+            Constant Lambda for SavingsPlanProductType
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanProductType.SageMaker">
+            <summary>
+            Constant SageMaker for SavingsPlanProductType
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanProductType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanProductType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanProductType.op_Implicit(System.String)~Amazon.SavingsPlans.SavingsPlanProductType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.SavingsPlans.SavingsPlanRateFilterAttribute">
+            <summary>
+            Constants used for properties of type SavingsPlanRateFilterAttribute.
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateFilterAttribute.InstanceFamily">
+            <summary>
+            Constant InstanceFamily for SavingsPlanRateFilterAttribute
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateFilterAttribute.InstanceType">
+            <summary>
+            Constant InstanceType for SavingsPlanRateFilterAttribute
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateFilterAttribute.ProductDescription">
+            <summary>
+            Constant ProductDescription for SavingsPlanRateFilterAttribute
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateFilterAttribute.ProductId">
+            <summary>
+            Constant ProductId for SavingsPlanRateFilterAttribute
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateFilterAttribute.Region">
+            <summary>
+            Constant Region for SavingsPlanRateFilterAttribute
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateFilterAttribute.Tenancy">
+            <summary>
+            Constant Tenancy for SavingsPlanRateFilterAttribute
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRateFilterAttribute.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRateFilterAttribute.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRateFilterAttribute.op_Implicit(System.String)~Amazon.SavingsPlans.SavingsPlanRateFilterAttribute">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.SavingsPlans.SavingsPlanRateFilterName">
+            <summary>
+            Constants used for properties of type SavingsPlanRateFilterName.
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateFilterName.InstanceType">
+            <summary>
+            Constant InstanceType for SavingsPlanRateFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateFilterName.Operation">
+            <summary>
+            Constant Operation for SavingsPlanRateFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateFilterName.ProductDescription">
+            <summary>
+            Constant ProductDescription for SavingsPlanRateFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateFilterName.ProductType">
+            <summary>
+            Constant ProductType for SavingsPlanRateFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateFilterName.Region">
+            <summary>
+            Constant Region for SavingsPlanRateFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateFilterName.ServiceCode">
+            <summary>
+            Constant ServiceCode for SavingsPlanRateFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateFilterName.Tenancy">
+            <summary>
+            Constant Tenancy for SavingsPlanRateFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateFilterName.UsageType">
+            <summary>
+            Constant UsageType for SavingsPlanRateFilterName
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRateFilterName.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRateFilterName.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRateFilterName.op_Implicit(System.String)~Amazon.SavingsPlans.SavingsPlanRateFilterName">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.SavingsPlans.SavingsPlanRatePropertyKey">
+            <summary>
+            Constants used for properties of type SavingsPlanRatePropertyKey.
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRatePropertyKey.InstanceFamily">
+            <summary>
+            Constant InstanceFamily for SavingsPlanRatePropertyKey
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRatePropertyKey.InstanceType">
+            <summary>
+            Constant InstanceType for SavingsPlanRatePropertyKey
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRatePropertyKey.ProductDescription">
+            <summary>
+            Constant ProductDescription for SavingsPlanRatePropertyKey
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRatePropertyKey.Region">
+            <summary>
+            Constant Region for SavingsPlanRatePropertyKey
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRatePropertyKey.Tenancy">
+            <summary>
+            Constant Tenancy for SavingsPlanRatePropertyKey
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRatePropertyKey.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRatePropertyKey.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRatePropertyKey.op_Implicit(System.String)~Amazon.SavingsPlans.SavingsPlanRatePropertyKey">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.SavingsPlans.SavingsPlanRateServiceCode">
+            <summary>
+            Constants used for properties of type SavingsPlanRateServiceCode.
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateServiceCode.AmazonEC2">
+            <summary>
+            Constant AmazonEC2 for SavingsPlanRateServiceCode
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateServiceCode.AmazonECS">
+            <summary>
+            Constant AmazonECS for SavingsPlanRateServiceCode
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateServiceCode.AmazonEKS">
+            <summary>
+            Constant AmazonEKS for SavingsPlanRateServiceCode
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateServiceCode.AmazonSageMaker">
+            <summary>
+            Constant AmazonSageMaker for SavingsPlanRateServiceCode
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateServiceCode.AWSLambda">
+            <summary>
+            Constant AWSLambda for SavingsPlanRateServiceCode
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRateServiceCode.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRateServiceCode.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRateServiceCode.op_Implicit(System.String)~Amazon.SavingsPlans.SavingsPlanRateServiceCode">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.SavingsPlans.SavingsPlanRateUnit">
+            <summary>
+            Constants used for properties of type SavingsPlanRateUnit.
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateUnit.Hrs">
+            <summary>
+            Constant Hrs for SavingsPlanRateUnit
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateUnit.LambdaGBSecond">
+            <summary>
+            Constant LambdaGBSecond for SavingsPlanRateUnit
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanRateUnit.Request">
+            <summary>
+            Constant Request for SavingsPlanRateUnit
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRateUnit.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRateUnit.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanRateUnit.op_Implicit(System.String)~Amazon.SavingsPlans.SavingsPlanRateUnit">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.SavingsPlans.SavingsPlansFilterName">
+            <summary>
+            Constants used for properties of type SavingsPlansFilterName.
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlansFilterName.Commitment">
+            <summary>
+            Constant Commitment for SavingsPlansFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlansFilterName.Ec2InstanceFamily">
+            <summary>
+            Constant Ec2InstanceFamily for SavingsPlansFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlansFilterName.End">
+            <summary>
+            Constant End for SavingsPlansFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlansFilterName.PaymentOption">
+            <summary>
+            Constant PaymentOption for SavingsPlansFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlansFilterName.Region">
+            <summary>
+            Constant Region for SavingsPlansFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlansFilterName.SavingsPlanType">
+            <summary>
+            Constant SavingsPlanType for SavingsPlansFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlansFilterName.Start">
+            <summary>
+            Constant Start for SavingsPlansFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlansFilterName.Term">
+            <summary>
+            Constant Term for SavingsPlansFilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlansFilterName.Upfront">
+            <summary>
+            Constant Upfront for SavingsPlansFilterName
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlansFilterName.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlansFilterName.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlansFilterName.op_Implicit(System.String)~Amazon.SavingsPlans.SavingsPlansFilterName">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.SavingsPlans.SavingsPlanState">
+            <summary>
+            Constants used for properties of type SavingsPlanState.
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanState.Active">
+            <summary>
+            Constant Active for SavingsPlanState
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanState.PaymentFailed">
+            <summary>
+            Constant PaymentFailed for SavingsPlanState
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanState.PaymentPending">
+            <summary>
+            Constant PaymentPending for SavingsPlanState
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanState.Queued">
+            <summary>
+            Constant Queued for SavingsPlanState
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanState.QueuedDeleted">
+            <summary>
+            Constant QueuedDeleted for SavingsPlanState
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanState.Retired">
+            <summary>
+            Constant Retired for SavingsPlanState
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanState.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanState.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanState.op_Implicit(System.String)~Amazon.SavingsPlans.SavingsPlanState">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.SavingsPlans.SavingsPlanType">
+            <summary>
+            Constants used for properties of type SavingsPlanType.
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanType.Compute">
+            <summary>
+            Constant Compute for SavingsPlanType
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanType.EC2Instance">
+            <summary>
+            Constant EC2Instance for SavingsPlanType
+            </summary>
+        </member>
+        <member name="F:Amazon.SavingsPlans.SavingsPlanType.SageMaker">
+            <summary>
+            Constant SageMaker for SavingsPlanType
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.SavingsPlans.SavingsPlanType.op_Implicit(System.String)~Amazon.SavingsPlans.SavingsPlanType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.SavingsPlans.AmazonSavingsPlansClient">
+             <summary>
+             Implementation for accessing SavingsPlans
+            
+             Savings Plans are a pricing model that offer significant savings on AWS usage (for
+             example, on Amazon EC2 instances). You commit to a consistent amount of usage, in
+             USD per hour, for a term of 1 or 3 years, and receive a lower price for that usage.
+             For more information, see the <a href="https://docs.aws.amazon.com/savingsplans/latest/userguide/">AWS
+             Savings Plans User Guide</a>.
+             </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.#ctor">
+             <summary>
+             Constructs AmazonSavingsPlansClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonSavingsPlansClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.#ctor(Amazon.SavingsPlans.AmazonSavingsPlansConfig)">
+             <summary>
+             Constructs AmazonSavingsPlansClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonSavingsPlansClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonSavingsPlansClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonSavingsPlansClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.SavingsPlans.AmazonSavingsPlansConfig)">
+            <summary>
+            Constructs AmazonSavingsPlansClient with AWS Credentials and an
+            AmazonSavingsPlansClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonSavingsPlansClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonSavingsPlansClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonSavingsPlansClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.#ctor(System.String,System.String,Amazon.SavingsPlans.AmazonSavingsPlansConfig)">
+            <summary>
+            Constructs AmazonSavingsPlansClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonSavingsPlansClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonSavingsPlansClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonSavingsPlansClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonSavingsPlansClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.#ctor(System.String,System.String,System.String,Amazon.SavingsPlans.AmazonSavingsPlansConfig)">
+            <summary>
+            Constructs AmazonSavingsPlansClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonSavingsPlansClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonSavingsPlansClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.SavingsPlans.AmazonSavingsPlansClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.CreateSavingsPlan(Amazon.SavingsPlans.Model.CreateSavingsPlanRequest)">
+            <summary>
+            Creates a Savings Plan.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateSavingsPlan service method.</param>
+            
+            <returns>The response from the CreateSavingsPlan service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ServiceQuotaExceededException">
+            A service quota has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/CreateSavingsPlan">REST API Reference for CreateSavingsPlan Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.CreateSavingsPlanAsync(Amazon.SavingsPlans.Model.CreateSavingsPlanRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a Savings Plan.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateSavingsPlan service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateSavingsPlan service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ServiceQuotaExceededException">
+            A service quota has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/CreateSavingsPlan">REST API Reference for CreateSavingsPlan Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.DeleteQueuedSavingsPlan(Amazon.SavingsPlans.Model.DeleteQueuedSavingsPlanRequest)">
+            <summary>
+            Deletes the queued purchase for the specified Savings Plan.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteQueuedSavingsPlan service method.</param>
+            
+            <returns>The response from the DeleteQueuedSavingsPlan service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ServiceQuotaExceededException">
+            A service quota has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DeleteQueuedSavingsPlan">REST API Reference for DeleteQueuedSavingsPlan Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.DeleteQueuedSavingsPlanAsync(Amazon.SavingsPlans.Model.DeleteQueuedSavingsPlanRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes the queued purchase for the specified Savings Plan.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteQueuedSavingsPlan service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteQueuedSavingsPlan service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ServiceQuotaExceededException">
+            A service quota has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DeleteQueuedSavingsPlan">REST API Reference for DeleteQueuedSavingsPlan Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.DescribeSavingsPlanRates(Amazon.SavingsPlans.Model.DescribeSavingsPlanRatesRequest)">
+            <summary>
+            Describes the specified Savings Plans rates.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlanRates service method.</param>
+            
+            <returns>The response from the DescribeSavingsPlanRates service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlanRates">REST API Reference for DescribeSavingsPlanRates Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.DescribeSavingsPlanRatesAsync(Amazon.SavingsPlans.Model.DescribeSavingsPlanRatesRequest,System.Threading.CancellationToken)">
+            <summary>
+            Describes the specified Savings Plans rates.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlanRates service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeSavingsPlanRates service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlanRates">REST API Reference for DescribeSavingsPlanRates Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.DescribeSavingsPlans(Amazon.SavingsPlans.Model.DescribeSavingsPlansRequest)">
+            <summary>
+            Describes the specified Savings Plans.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlans service method.</param>
+            
+            <returns>The response from the DescribeSavingsPlans service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlans">REST API Reference for DescribeSavingsPlans Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.DescribeSavingsPlansAsync(Amazon.SavingsPlans.Model.DescribeSavingsPlansRequest,System.Threading.CancellationToken)">
+            <summary>
+            Describes the specified Savings Plans.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlans service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeSavingsPlans service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlans">REST API Reference for DescribeSavingsPlans Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.DescribeSavingsPlansOfferingRates(Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest)">
+            <summary>
+            Describes the specified Savings Plans offering rates.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlansOfferingRates service method.</param>
+            
+            <returns>The response from the DescribeSavingsPlansOfferingRates service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlansOfferingRates">REST API Reference for DescribeSavingsPlansOfferingRates Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.DescribeSavingsPlansOfferingRatesAsync(Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest,System.Threading.CancellationToken)">
+            <summary>
+            Describes the specified Savings Plans offering rates.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlansOfferingRates service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeSavingsPlansOfferingRates service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlansOfferingRates">REST API Reference for DescribeSavingsPlansOfferingRates Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.DescribeSavingsPlansOfferings(Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest)">
+            <summary>
+            Describes the specified Savings Plans offerings.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlansOfferings service method.</param>
+            
+            <returns>The response from the DescribeSavingsPlansOfferings service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlansOfferings">REST API Reference for DescribeSavingsPlansOfferings Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.DescribeSavingsPlansOfferingsAsync(Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Describes the specified Savings Plans offerings.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlansOfferings service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeSavingsPlansOfferings service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlansOfferings">REST API Reference for DescribeSavingsPlansOfferings Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.ListTagsForResource(Amazon.SavingsPlans.Model.ListTagsForResourceRequest)">
+            <summary>
+            Lists the tags for the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListTagsForResource service method.</param>
+            
+            <returns>The response from the ListTagsForResource service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/ListTagsForResource">REST API Reference for ListTagsForResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.ListTagsForResourceAsync(Amazon.SavingsPlans.Model.ListTagsForResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Lists the tags for the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListTagsForResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListTagsForResource service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/ListTagsForResource">REST API Reference for ListTagsForResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.TagResource(Amazon.SavingsPlans.Model.TagResourceRequest)">
+            <summary>
+            Adds the specified tags to the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the TagResource service method.</param>
+            
+            <returns>The response from the TagResource service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ServiceQuotaExceededException">
+            A service quota has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/TagResource">REST API Reference for TagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.TagResourceAsync(Amazon.SavingsPlans.Model.TagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Adds the specified tags to the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the TagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the TagResource service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ServiceQuotaExceededException">
+            A service quota has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/TagResource">REST API Reference for TagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.UntagResource(Amazon.SavingsPlans.Model.UntagResourceRequest)">
+            <summary>
+            Removes the specified tags from the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UntagResource service method.</param>
+            
+            <returns>The response from the UntagResource service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/UntagResource">REST API Reference for UntagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.AmazonSavingsPlansClient.UntagResourceAsync(Amazon.SavingsPlans.Model.UntagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Removes the specified tags from the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UntagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UntagResource service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/UntagResource">REST API Reference for UntagResource Operation</seealso>
+        </member>
+        <member name="T:Amazon.SavingsPlans.IAmazonSavingsPlans">
+             <summary>
+             Interface for accessing SavingsPlans
+            
+             Savings Plans are a pricing model that offer significant savings on AWS usage (for
+             example, on Amazon EC2 instances). You commit to a consistent amount of usage, in
+             USD per hour, for a term of 1 or 3 years, and receive a lower price for that usage.
+             For more information, see the <a href="https://docs.aws.amazon.com/savingsplans/latest/userguide/">AWS
+             Savings Plans User Guide</a>.
+             </summary>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.CreateSavingsPlan(Amazon.SavingsPlans.Model.CreateSavingsPlanRequest)">
+            <summary>
+            Creates a Savings Plan.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateSavingsPlan service method.</param>
+            
+            <returns>The response from the CreateSavingsPlan service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ServiceQuotaExceededException">
+            A service quota has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/CreateSavingsPlan">REST API Reference for CreateSavingsPlan Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.CreateSavingsPlanAsync(Amazon.SavingsPlans.Model.CreateSavingsPlanRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a Savings Plan.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateSavingsPlan service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateSavingsPlan service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ServiceQuotaExceededException">
+            A service quota has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/CreateSavingsPlan">REST API Reference for CreateSavingsPlan Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.DeleteQueuedSavingsPlan(Amazon.SavingsPlans.Model.DeleteQueuedSavingsPlanRequest)">
+            <summary>
+            Deletes the queued purchase for the specified Savings Plan.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteQueuedSavingsPlan service method.</param>
+            
+            <returns>The response from the DeleteQueuedSavingsPlan service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ServiceQuotaExceededException">
+            A service quota has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DeleteQueuedSavingsPlan">REST API Reference for DeleteQueuedSavingsPlan Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.DeleteQueuedSavingsPlanAsync(Amazon.SavingsPlans.Model.DeleteQueuedSavingsPlanRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes the queued purchase for the specified Savings Plan.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteQueuedSavingsPlan service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteQueuedSavingsPlan service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ServiceQuotaExceededException">
+            A service quota has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DeleteQueuedSavingsPlan">REST API Reference for DeleteQueuedSavingsPlan Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.DescribeSavingsPlanRates(Amazon.SavingsPlans.Model.DescribeSavingsPlanRatesRequest)">
+            <summary>
+            Describes the specified Savings Plans rates.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlanRates service method.</param>
+            
+            <returns>The response from the DescribeSavingsPlanRates service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlanRates">REST API Reference for DescribeSavingsPlanRates Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.DescribeSavingsPlanRatesAsync(Amazon.SavingsPlans.Model.DescribeSavingsPlanRatesRequest,System.Threading.CancellationToken)">
+            <summary>
+            Describes the specified Savings Plans rates.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlanRates service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeSavingsPlanRates service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlanRates">REST API Reference for DescribeSavingsPlanRates Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.DescribeSavingsPlans(Amazon.SavingsPlans.Model.DescribeSavingsPlansRequest)">
+            <summary>
+            Describes the specified Savings Plans.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlans service method.</param>
+            
+            <returns>The response from the DescribeSavingsPlans service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlans">REST API Reference for DescribeSavingsPlans Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.DescribeSavingsPlansAsync(Amazon.SavingsPlans.Model.DescribeSavingsPlansRequest,System.Threading.CancellationToken)">
+            <summary>
+            Describes the specified Savings Plans.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlans service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeSavingsPlans service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlans">REST API Reference for DescribeSavingsPlans Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.DescribeSavingsPlansOfferingRates(Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest)">
+            <summary>
+            Describes the specified Savings Plans offering rates.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlansOfferingRates service method.</param>
+            
+            <returns>The response from the DescribeSavingsPlansOfferingRates service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlansOfferingRates">REST API Reference for DescribeSavingsPlansOfferingRates Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.DescribeSavingsPlansOfferingRatesAsync(Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingRatesRequest,System.Threading.CancellationToken)">
+            <summary>
+            Describes the specified Savings Plans offering rates.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlansOfferingRates service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeSavingsPlansOfferingRates service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlansOfferingRates">REST API Reference for DescribeSavingsPlansOfferingRates Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.DescribeSavingsPlansOfferings(Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest)">
+            <summary>
+            Describes the specified Savings Plans offerings.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlansOfferings service method.</param>
+            
+            <returns>The response from the DescribeSavingsPlansOfferings service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlansOfferings">REST API Reference for DescribeSavingsPlansOfferings Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.DescribeSavingsPlansOfferingsAsync(Amazon.SavingsPlans.Model.DescribeSavingsPlansOfferingsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Describes the specified Savings Plans offerings.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeSavingsPlansOfferings service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeSavingsPlansOfferings service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/DescribeSavingsPlansOfferings">REST API Reference for DescribeSavingsPlansOfferings Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.ListTagsForResource(Amazon.SavingsPlans.Model.ListTagsForResourceRequest)">
+            <summary>
+            Lists the tags for the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListTagsForResource service method.</param>
+            
+            <returns>The response from the ListTagsForResource service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/ListTagsForResource">REST API Reference for ListTagsForResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.ListTagsForResourceAsync(Amazon.SavingsPlans.Model.ListTagsForResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Lists the tags for the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListTagsForResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListTagsForResource service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/ListTagsForResource">REST API Reference for ListTagsForResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.TagResource(Amazon.SavingsPlans.Model.TagResourceRequest)">
+            <summary>
+            Adds the specified tags to the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the TagResource service method.</param>
+            
+            <returns>The response from the TagResource service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ServiceQuotaExceededException">
+            A service quota has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/TagResource">REST API Reference for TagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.TagResourceAsync(Amazon.SavingsPlans.Model.TagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Adds the specified tags to the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the TagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the TagResource service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ServiceQuotaExceededException">
+            A service quota has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/TagResource">REST API Reference for TagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.UntagResource(Amazon.SavingsPlans.Model.UntagResourceRequest)">
+            <summary>
+            Removes the specified tags from the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UntagResource service method.</param>
+            
+            <returns>The response from the UntagResource service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/UntagResource">REST API Reference for UntagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.SavingsPlans.IAmazonSavingsPlans.UntagResourceAsync(Amazon.SavingsPlans.Model.UntagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Removes the specified tags from the specified resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UntagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UntagResource service method, as returned by SavingsPlans.</returns>
+            <exception cref="T:Amazon.SavingsPlans.Model.InternalServerException">
+            An unexpected error occurred.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.SavingsPlans.Model.ValidationException">
+            One of the input parameters is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/savingsplans-2019-06-28/UntagResource">REST API Reference for UntagResource Operation</seealso>
+        </member>
+    </members>
+</doc>
