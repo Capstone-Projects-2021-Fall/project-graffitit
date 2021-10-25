@@ -103,8 +103,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\CurveEditUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\TimelineUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Actions\IMenuName.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Extensions\AnimatedParameterExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\treeview\TimelineTreeViewGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Extensions\AnimatedParameterExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Signals\SignalEmitterEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\State\ISequenceState.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Window\Modes\TimelineDisabledMode.cs" />
@@ -165,8 +165,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Utilities\AnimatedPropertyUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Animation\AnimationClipActions.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\TimelineEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\inspectors\BuiltInCurvePresets.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\treeview\IRowGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\inspectors\BuiltInCurvePresets.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Manipulators\AddDelete\AddDeleteItemModeReplace.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Recording\AnimationTrackRecorder.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\inspectors\GroupTrackInspector.cs" />

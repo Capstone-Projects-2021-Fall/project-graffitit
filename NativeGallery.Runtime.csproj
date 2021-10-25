@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{E294412A-E787-03C8-9563-570175F4491E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -64,6 +65,7 @@
     <Compile Include="Assets\Plugins\NativeGallery\Android\NGMediaReceiveCallbackAndroid.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Assets\Plugins\NativeGallery\NativeGallery.Runtime.asmdef" />
     <None Include="Assets\Plugins\NativeGallery\README.txt" />
   </ItemGroup>

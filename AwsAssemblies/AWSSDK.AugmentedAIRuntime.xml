@@ -1,0 +1,2312 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.AugmentedAIRuntime</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeConfig">
+            <summary>
+            Configuration for accessing Amazon AugmentedAIRuntime service
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeException">
+            <summary>
+             Common exception for the AugmentedAIRuntime service.
+             </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonAugmentedAIRuntimeException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonAugmentedAIRuntimeException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonAugmentedAIRuntimeException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonAugmentedAIRuntimeException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonAugmentedAIRuntimeException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonAugmentedAIRuntimeException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Internal.AmazonAugmentedAIRuntimeMetadata">
+            <summary>
+            Service metadata for  Amazon AugmentedAIRuntime service
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Internal.AmazonAugmentedAIRuntimeMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Internal.AmazonAugmentedAIRuntimeMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeRequest">
+            <summary>
+            Base class for AugmentedAIRuntime operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.ConflictException">
+            <summary>
+            Your request has the same name as another active human loop but has different input
+            data. You cannot start two human loops with the same name and different input data.
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ConflictException.#ctor(System.String)">
+            <summary>
+            Constructs a new ConflictException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ConflictException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ConflictException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ConflictException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ConflictException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ConflictException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ConflictException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ConflictException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.DeleteHumanLoopRequest">
+            <summary>
+            Container for the parameters to the DeleteHumanLoop operation.
+            Deletes the specified human loop for a flow definition.
+            
+             
+            <para>
+            If the human loop was deleted, this operation will return a <code>ResourceNotFoundException</code>.
+            
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.DeleteHumanLoopRequest.HumanLoopName">
+            <summary>
+            Gets and sets the property HumanLoopName. 
+            <para>
+            The name of the human loop that you want to delete.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.DeleteHumanLoopResponse">
+            <summary>
+            This is the response object from the DeleteHumanLoop operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopRequest">
+            <summary>
+            Container for the parameters to the DescribeHumanLoop operation.
+            Returns information about the specified human loop. If the human loop was deleted,
+            this operation will return a <code>ResourceNotFoundException</code> error.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopRequest.HumanLoopName">
+            <summary>
+            Gets and sets the property HumanLoopName. 
+            <para>
+            The name of the human loop that you want information about.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopResponse">
+            <summary>
+            This is the response object from the DescribeHumanLoop operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopResponse.CreationTime">
+            <summary>
+            Gets and sets the property CreationTime. 
+            <para>
+            The creation time when Amazon Augmented AI created the human loop.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopResponse.FailureCode">
+            <summary>
+            Gets and sets the property FailureCode. 
+            <para>
+            A failure code that identifies the type of failure.
+            </para>
+             
+            <para>
+            Possible values: <code>ValidationError</code>, <code>Expired</code>, <code>InternalError</code>
+            
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopResponse.FailureReason">
+            <summary>
+            Gets and sets the property FailureReason. 
+            <para>
+            The reason why a human loop failed. The failure reason is returned when the status
+            of the human loop is <code>Failed</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopResponse.FlowDefinitionArn">
+            <summary>
+            Gets and sets the property FlowDefinitionArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the flow definition.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopResponse.HumanLoopArn">
+            <summary>
+            Gets and sets the property HumanLoopArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the human loop.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopResponse.HumanLoopName">
+            <summary>
+            Gets and sets the property HumanLoopName. 
+            <para>
+            The name of the human loop. The name must be lowercase, unique within the Region in
+            your account, and can have up to 63 characters. Valid characters: a-z, 0-9, and -
+            (hyphen).
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopResponse.HumanLoopOutput">
+            <summary>
+            Gets and sets the property HumanLoopOutput. 
+            <para>
+            An object that contains information about the output of the human loop.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopResponse.HumanLoopStatus">
+            <summary>
+            Gets and sets the property HumanLoopStatus. 
+            <para>
+            The status of the human loop. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.HumanLoopDataAttributes">
+            <summary>
+            Attributes of the data specified by the customer. Use these to describe the data to
+            be labeled.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.HumanLoopDataAttributes.ContentClassifiers">
+            <summary>
+            Gets and sets the property ContentClassifiers. 
+            <para>
+            Declares that your content is free of personally identifiable information or adult
+            content.
+            </para>
+             
+            <para>
+            Amazon SageMaker can restrict the Amazon Mechanical Turk workers who can view your
+            task based on this information.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.HumanLoopInput">
+            <summary>
+            An object containing the human loop input in JSON format.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.HumanLoopInput.InputContent">
+            <summary>
+            Gets and sets the property InputContent. 
+            <para>
+            Serialized input from the human loop. The input must be a string representation of
+            a file in JSON format.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.HumanLoopOutput">
+            <summary>
+            Information about where the human output will be stored.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.HumanLoopOutput.OutputS3Uri">
+            <summary>
+            Gets and sets the property OutputS3Uri. 
+            <para>
+            The location of the Amazon S3 object where Amazon Augmented AI stores your human loop
+            output.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.HumanLoopSummary">
+            <summary>
+            Summary information about the human loop.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.HumanLoopSummary.CreationTime">
+            <summary>
+            Gets and sets the property CreationTime. 
+            <para>
+            When Amazon Augmented AI created the human loop.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.HumanLoopSummary.FailureReason">
+            <summary>
+            Gets and sets the property FailureReason. 
+            <para>
+            The reason why the human loop failed. A failure reason is returned when the status
+            of the human loop is <code>Failed</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.HumanLoopSummary.FlowDefinitionArn">
+            <summary>
+            Gets and sets the property FlowDefinitionArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the flow definition used to configure the human
+            loop.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.HumanLoopSummary.HumanLoopName">
+            <summary>
+            Gets and sets the property HumanLoopName. 
+            <para>
+            The name of the human loop.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.HumanLoopSummary.HumanLoopStatus">
+            <summary>
+            Gets and sets the property HumanLoopStatus. 
+            <para>
+            The status of the human loop. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            <summary>
+            We couldn't process your request because of an issue with the server. Try again later.
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.InternalServerException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServerException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.InternalServerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.InternalServerException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.InternalServerException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.InternalServerException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.InternalServerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InternalServerException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.InternalServerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ConflictException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DeleteHumanLoopRequestMarshaller">
+            <summary>
+            DeleteHumanLoop Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DeleteHumanLoopRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DeleteHumanLoopRequestMarshaller.Marshall(Amazon.AugmentedAIRuntime.Model.DeleteHumanLoopRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DeleteHumanLoopRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DeleteHumanLoopResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DeleteHumanLoop operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DeleteHumanLoopResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DeleteHumanLoopResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DeleteHumanLoopResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DescribeHumanLoopRequestMarshaller">
+            <summary>
+            DescribeHumanLoop Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DescribeHumanLoopRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DescribeHumanLoopRequestMarshaller.Marshall(Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DescribeHumanLoopRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DescribeHumanLoopResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DescribeHumanLoop operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DescribeHumanLoopResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DescribeHumanLoopResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.DescribeHumanLoopResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.HumanLoopDataAttributesMarshaller">
+            <summary>
+            HumanLoopDataAttributes Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.HumanLoopDataAttributesMarshaller.Marshall(Amazon.AugmentedAIRuntime.Model.HumanLoopDataAttributes,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.HumanLoopDataAttributesMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.HumanLoopInputMarshaller">
+            <summary>
+            HumanLoopInput Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.HumanLoopInputMarshaller.Marshall(Amazon.AugmentedAIRuntime.Model.HumanLoopInput,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.HumanLoopInputMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.HumanLoopOutputUnmarshaller">
+            <summary>
+            Response Unmarshaller for HumanLoopOutput Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.HumanLoopOutputUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#AugmentedAIRuntime#Model#HumanLoopOutput,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.HumanLoopOutputUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.HumanLoopOutputUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.HumanLoopSummaryUnmarshaller">
+            <summary>
+            Response Unmarshaller for HumanLoopSummary Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.HumanLoopSummaryUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#AugmentedAIRuntime#Model#HumanLoopSummary,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.HumanLoopSummaryUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.HumanLoopSummaryUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalServerException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ListHumanLoopsRequestMarshaller">
+            <summary>
+            ListHumanLoops Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ListHumanLoopsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ListHumanLoopsRequestMarshaller.Marshall(Amazon.AugmentedAIRuntime.Model.ListHumanLoopsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ListHumanLoopsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ListHumanLoopsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListHumanLoops operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ListHumanLoopsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ListHumanLoopsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ListHumanLoopsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceNotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ServiceQuotaExceededException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StartHumanLoopRequestMarshaller">
+            <summary>
+            StartHumanLoop Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StartHumanLoopRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StartHumanLoopRequestMarshaller.Marshall(Amazon.AugmentedAIRuntime.Model.StartHumanLoopRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StartHumanLoopRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StartHumanLoopResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for StartHumanLoop operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StartHumanLoopResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StartHumanLoopResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StartHumanLoopResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StopHumanLoopRequestMarshaller">
+            <summary>
+            StopHumanLoop Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StopHumanLoopRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StopHumanLoopRequestMarshaller.Marshall(Amazon.AugmentedAIRuntime.Model.StopHumanLoopRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StopHumanLoopRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StopHumanLoopResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for StopHumanLoop operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StopHumanLoopResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StopHumanLoopResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.StopHumanLoopResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ThrottlingException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ValidationException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.ListHumanLoopsRequest">
+            <summary>
+            Container for the parameters to the ListHumanLoops operation.
+            Returns information about human loops, given the specified parameters. If a human
+            loop was deleted, it will not be included.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.ListHumanLoopsRequest.CreationTimeAfter">
+            <summary>
+            Gets and sets the property CreationTimeAfter. 
+            <para>
+            (Optional) The timestamp of the date when you want the human loops to begin in ISO
+            8601 format. For example, <code>2020-02-24</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.ListHumanLoopsRequest.CreationTimeBefore">
+            <summary>
+            Gets and sets the property CreationTimeBefore. 
+            <para>
+            (Optional) The timestamp of the date before which you want the human loops to begin
+            in ISO 8601 format. For example, <code>2020-02-24</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.ListHumanLoopsRequest.FlowDefinitionArn">
+            <summary>
+            Gets and sets the property FlowDefinitionArn. 
+            <para>
+            The Amazon Resource Name (ARN) of a flow definition.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.ListHumanLoopsRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The total number of items to return. If the total number of available items is more
+            than the value specified in <code>MaxResults</code>, then a <code>NextToken</code>
+            is returned in the output. You can use this token to display the next page of results.
+            
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.ListHumanLoopsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            A token to display the next page of results.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.ListHumanLoopsRequest.SortOrder">
+            <summary>
+            Gets and sets the property SortOrder. 
+            <para>
+            Optional. The order for displaying results. Valid values: <code>Ascending</code> and
+            <code>Descending</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.ListHumanLoopsResponse">
+            <summary>
+            This is the response object from the ListHumanLoops operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.ListHumanLoopsResponse.HumanLoopSummaries">
+            <summary>
+            Gets and sets the property HumanLoopSummaries. 
+            <para>
+            An array of objects that contain information about the human loops.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.ListHumanLoopsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            A token to display the next page of results.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            <summary>
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ResourceNotFoundException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.ServiceQuotaExceededException">
+            <summary>
+            You exceeded your service quota. Service quotas, also referred to as limits, are the
+            maximum number of service resources or operations for your AWS account. For a list
+            of Amazon A2I service quotes, see <a href="https://docs.aws.amazon.com/general/latest/gr/a2i.html">Amazon
+            Augmented AI Service Quotes</a>. Delete some resources or request an increase in your
+            service quota. You can request a quota increase using Service Quotas or the AWS Support
+            Center. To request an increase, see <a href="https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html">AWS
+            Service Quotas</a> in the <i>AWS General Reference</i>.
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ServiceQuotaExceededException.#ctor(System.String)">
+            <summary>
+            Constructs a new ServiceQuotaExceededException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ServiceQuotaExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ServiceQuotaExceededException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ServiceQuotaExceededException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ServiceQuotaExceededException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ServiceQuotaExceededException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ServiceQuotaExceededException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ServiceQuotaExceededException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.StartHumanLoopRequest">
+            <summary>
+            Container for the parameters to the StartHumanLoop operation.
+            Starts a human loop, provided that at least one activation condition is met.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.StartHumanLoopRequest.DataAttributes">
+            <summary>
+            Gets and sets the property DataAttributes. 
+            <para>
+            Attributes of the specified data. Use <code>DataAttributes</code> to specify if your
+            data is free of personally identifiable information and/or free of adult content.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.StartHumanLoopRequest.FlowDefinitionArn">
+            <summary>
+            Gets and sets the property FlowDefinitionArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the flow definition associated with this human loop.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.StartHumanLoopRequest.HumanLoopInput">
+            <summary>
+            Gets and sets the property HumanLoopInput. 
+            <para>
+            An object that contains information about the human loop.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.StartHumanLoopRequest.HumanLoopName">
+            <summary>
+            Gets and sets the property HumanLoopName. 
+            <para>
+            The name of the human loop.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.StartHumanLoopResponse">
+            <summary>
+            This is the response object from the StartHumanLoop operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.StartHumanLoopResponse.HumanLoopArn">
+            <summary>
+            Gets and sets the property HumanLoopArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the human loop.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.StopHumanLoopRequest">
+            <summary>
+            Container for the parameters to the StopHumanLoop operation.
+            Stops the specified human loop.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.StopHumanLoopRequest.HumanLoopName">
+            <summary>
+            Gets and sets the property HumanLoopName. 
+            <para>
+            The name of the human loop that you want to stop.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.StopHumanLoopResponse">
+            <summary>
+            This is the response object from the StopHumanLoop operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            <summary>
+            You exceeded the maximum number of requests.
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ThrottlingException.#ctor(System.String)">
+            <summary>
+            Constructs a new ThrottlingException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ThrottlingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ThrottlingException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ThrottlingException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ThrottlingException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ThrottlingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ThrottlingException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ThrottlingException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            <summary>
+            The request isn't valid. Check the syntax and try again.
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ValidationException.#ctor(System.String)">
+            <summary>
+            Constructs a new ValidationException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ValidationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ValidationException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ValidationException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ValidationException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ValidationException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.ValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.AugmentedAIRuntimePaginatorFactory">
+             <summary>
+             Paginators for the AugmentedAIRuntime service
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.AugmentedAIRuntimePaginatorFactory.ListHumanLoops(Amazon.AugmentedAIRuntime.Model.ListHumanLoopsRequest)">
+             <summary>
+             Paginator for ListHumanLoops operation
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.IAugmentedAIRuntimePaginatorFactory">
+             <summary>
+             Paginators for the AugmentedAIRuntime service
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.Model.IAugmentedAIRuntimePaginatorFactory.ListHumanLoops(Amazon.AugmentedAIRuntime.Model.ListHumanLoopsRequest)">
+             <summary>
+             Paginator for ListHumanLoops operation
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.IListHumanLoopsPaginator">
+             <summary>
+             Paginator for the ListHumanLoops operation
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.IListHumanLoopsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.IListHumanLoopsPaginator.HumanLoopSummaries">
+            <summary>
+            Enumerable containing all of the HumanLoopSummaries
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.Model.ListHumanLoopsPaginator">
+            <summary>
+            Base class for ListHumanLoops paginators.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.ListHumanLoopsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.Model.ListHumanLoopsPaginator.HumanLoopSummaries">
+            <summary>
+            Enumerable containing all of the HumanLoopSummaries
+            </summary>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.ContentClassifier">
+            <summary>
+            Constants used for properties of type ContentClassifier.
+            </summary>
+        </member>
+        <member name="F:Amazon.AugmentedAIRuntime.ContentClassifier.FreeOfAdultContent">
+            <summary>
+            Constant FreeOfAdultContent for ContentClassifier
+            </summary>
+        </member>
+        <member name="F:Amazon.AugmentedAIRuntime.ContentClassifier.FreeOfPersonallyIdentifiableInformation">
+            <summary>
+            Constant FreeOfPersonallyIdentifiableInformation for ContentClassifier
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.ContentClassifier.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.ContentClassifier.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.ContentClassifier.op_Implicit(System.String)~Amazon.AugmentedAIRuntime.ContentClassifier">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.HumanLoopStatus">
+            <summary>
+            Constants used for properties of type HumanLoopStatus.
+            </summary>
+        </member>
+        <member name="F:Amazon.AugmentedAIRuntime.HumanLoopStatus.Completed">
+            <summary>
+            Constant Completed for HumanLoopStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.AugmentedAIRuntime.HumanLoopStatus.Failed">
+            <summary>
+            Constant Failed for HumanLoopStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.AugmentedAIRuntime.HumanLoopStatus.InProgress">
+            <summary>
+            Constant InProgress for HumanLoopStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.AugmentedAIRuntime.HumanLoopStatus.Stopped">
+            <summary>
+            Constant Stopped for HumanLoopStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.AugmentedAIRuntime.HumanLoopStatus.Stopping">
+            <summary>
+            Constant Stopping for HumanLoopStatus
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.HumanLoopStatus.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.HumanLoopStatus.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.HumanLoopStatus.op_Implicit(System.String)~Amazon.AugmentedAIRuntime.HumanLoopStatus">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.SortOrder">
+            <summary>
+            Constants used for properties of type SortOrder.
+            </summary>
+        </member>
+        <member name="F:Amazon.AugmentedAIRuntime.SortOrder.Ascending">
+            <summary>
+            Constant Ascending for SortOrder
+            </summary>
+        </member>
+        <member name="F:Amazon.AugmentedAIRuntime.SortOrder.Descending">
+            <summary>
+            Constant Descending for SortOrder
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.SortOrder.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.SortOrder.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.SortOrder.op_Implicit(System.String)~Amazon.AugmentedAIRuntime.SortOrder">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient">
+             <summary>
+             Implementation for accessing AugmentedAIRuntime
+            
+             Amazon Augmented AI (Amazon A2I) adds the benefit of human judgment to any machine
+             learning application. When an AI application can't evaluate data with a high degree
+             of confidence, human reviewers can take over. This human review is called a human
+             review workflow. To create and start a human review workflow, you need three resources:
+             a <i>worker task template</i>, a <i>flow definition</i>, and a <i>human loop</i>.
+             
+              
+             <para>
+             For information about these resources and prerequisites for using Amazon A2I, see
+             <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-getting-started.html">Get
+             Started with Amazon Augmented AI</a> in the Amazon SageMaker Developer Guide.
+             </para>
+              
+             <para>
+             This API reference includes information about API actions and data types that you
+             can use to interact with Amazon A2I programmatically. Use this guide to:
+             </para>
+              <ul> <li> 
+             <para>
+             Start a human loop with the <code>StartHumanLoop</code> operation when using Amazon
+             A2I with a <i>custom task type</i>. To learn more about the difference between custom
+             and built-in task types, see <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-task-types-general.html">Use
+             Task Types </a>. To learn how to start a human loop using this API, see <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-start-human-loop.html#a2i-instructions-starthumanloop">Create
+             and Start a Human Loop for a Custom Task Type </a> in the Amazon SageMaker Developer
+             Guide.
+             </para>
+              </li> <li> 
+             <para>
+             Manage your human loops. You can list all human loops that you have created, describe
+             individual human loops, and stop and delete human loops. To learn more, see <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-monitor-humanloop-results.html">Monitor
+             and Manage Your Human Loop </a> in the Amazon SageMaker Developer Guide.
+             </para>
+              </li> </ul> 
+             <para>
+             Amazon A2I integrates APIs from various AWS services to create and start human review
+             workflows for those services. To learn how Amazon A2I uses these APIs, see <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-api-references.html">Use
+             APIs in Amazon A2I</a> in the Amazon SageMaker Developer Guide.
+             </para>
+             </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.#ctor">
+             <summary>
+             Constructs AmazonAugmentedAIRuntimeClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonAugmentedAIRuntimeClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.#ctor(Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeConfig)">
+             <summary>
+             Constructs AmazonAugmentedAIRuntimeClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonAugmentedAIRuntimeClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonAugmentedAIRuntimeClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonAugmentedAIRuntimeClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeConfig)">
+            <summary>
+            Constructs AmazonAugmentedAIRuntimeClient with AWS Credentials and an
+            AmazonAugmentedAIRuntimeClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonAugmentedAIRuntimeClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonAugmentedAIRuntimeClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonAugmentedAIRuntimeClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.#ctor(System.String,System.String,Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeConfig)">
+            <summary>
+            Constructs AmazonAugmentedAIRuntimeClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonAugmentedAIRuntimeClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonAugmentedAIRuntimeClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonAugmentedAIRuntimeClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonAugmentedAIRuntimeClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.#ctor(System.String,System.String,System.String,Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeConfig)">
+            <summary>
+            Constructs AmazonAugmentedAIRuntimeClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonAugmentedAIRuntimeClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonAugmentedAIRuntimeClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.DeleteHumanLoop(Amazon.AugmentedAIRuntime.Model.DeleteHumanLoopRequest)">
+            <summary>
+            Deletes the specified human loop for a flow definition.
+            
+             
+            <para>
+            If the human loop was deleted, this operation will return a <code>ResourceNotFoundException</code>.
+            
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteHumanLoop service method.</param>
+            
+            <returns>The response from the DeleteHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/DeleteHumanLoop">REST API Reference for DeleteHumanLoop Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.DeleteHumanLoopAsync(Amazon.AugmentedAIRuntime.Model.DeleteHumanLoopRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes the specified human loop for a flow definition.
+            
+             
+            <para>
+            If the human loop was deleted, this operation will return a <code>ResourceNotFoundException</code>.
+            
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteHumanLoop service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/DeleteHumanLoop">REST API Reference for DeleteHumanLoop Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.DescribeHumanLoop(Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopRequest)">
+            <summary>
+            Returns information about the specified human loop. If the human loop was deleted,
+            this operation will return a <code>ResourceNotFoundException</code> error.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeHumanLoop service method.</param>
+            
+            <returns>The response from the DescribeHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/DescribeHumanLoop">REST API Reference for DescribeHumanLoop Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.DescribeHumanLoopAsync(Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns information about the specified human loop. If the human loop was deleted,
+            this operation will return a <code>ResourceNotFoundException</code> error.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeHumanLoop service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/DescribeHumanLoop">REST API Reference for DescribeHumanLoop Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.ListHumanLoops(Amazon.AugmentedAIRuntime.Model.ListHumanLoopsRequest)">
+            <summary>
+            Returns information about human loops, given the specified parameters. If a human
+            loop was deleted, it will not be included.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListHumanLoops service method.</param>
+            
+            <returns>The response from the ListHumanLoops service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/ListHumanLoops">REST API Reference for ListHumanLoops Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.ListHumanLoopsAsync(Amazon.AugmentedAIRuntime.Model.ListHumanLoopsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns information about human loops, given the specified parameters. If a human
+            loop was deleted, it will not be included.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListHumanLoops service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListHumanLoops service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/ListHumanLoops">REST API Reference for ListHumanLoops Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.StartHumanLoop(Amazon.AugmentedAIRuntime.Model.StartHumanLoopRequest)">
+            <summary>
+            Starts a human loop, provided that at least one activation condition is met.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StartHumanLoop service method.</param>
+            
+            <returns>The response from the StartHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ConflictException">
+            Your request has the same name as another active human loop but has different input
+            data. You cannot start two human loops with the same name and different input data.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ServiceQuotaExceededException">
+            You exceeded your service quota. Service quotas, also referred to as limits, are the
+            maximum number of service resources or operations for your AWS account. For a list
+            of Amazon A2I service quotes, see <a href="https://docs.aws.amazon.com/general/latest/gr/a2i.html">Amazon
+            Augmented AI Service Quotes</a>. Delete some resources or request an increase in your
+            service quota. You can request a quota increase using Service Quotas or the AWS Support
+            Center. To request an increase, see <a href="https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html">AWS
+            Service Quotas</a> in the <i>AWS General Reference</i>.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/StartHumanLoop">REST API Reference for StartHumanLoop Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.StartHumanLoopAsync(Amazon.AugmentedAIRuntime.Model.StartHumanLoopRequest,System.Threading.CancellationToken)">
+            <summary>
+            Starts a human loop, provided that at least one activation condition is met.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StartHumanLoop service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the StartHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ConflictException">
+            Your request has the same name as another active human loop but has different input
+            data. You cannot start two human loops with the same name and different input data.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ServiceQuotaExceededException">
+            You exceeded your service quota. Service quotas, also referred to as limits, are the
+            maximum number of service resources or operations for your AWS account. For a list
+            of Amazon A2I service quotes, see <a href="https://docs.aws.amazon.com/general/latest/gr/a2i.html">Amazon
+            Augmented AI Service Quotes</a>. Delete some resources or request an increase in your
+            service quota. You can request a quota increase using Service Quotas or the AWS Support
+            Center. To request an increase, see <a href="https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html">AWS
+            Service Quotas</a> in the <i>AWS General Reference</i>.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/StartHumanLoop">REST API Reference for StartHumanLoop Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.StopHumanLoop(Amazon.AugmentedAIRuntime.Model.StopHumanLoopRequest)">
+            <summary>
+            Stops the specified human loop.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StopHumanLoop service method.</param>
+            
+            <returns>The response from the StopHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/StopHumanLoop">REST API Reference for StopHumanLoop Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.AmazonAugmentedAIRuntimeClient.StopHumanLoopAsync(Amazon.AugmentedAIRuntime.Model.StopHumanLoopRequest,System.Threading.CancellationToken)">
+            <summary>
+            Stops the specified human loop.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StopHumanLoop service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the StopHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/StopHumanLoop">REST API Reference for StopHumanLoop Operation</seealso>
+        </member>
+        <member name="T:Amazon.AugmentedAIRuntime.IAmazonAugmentedAIRuntime">
+             <summary>
+             Interface for accessing AugmentedAIRuntime
+            
+             Amazon Augmented AI (Amazon A2I) adds the benefit of human judgment to any machine
+             learning application. When an AI application can't evaluate data with a high degree
+             of confidence, human reviewers can take over. This human review is called a human
+             review workflow. To create and start a human review workflow, you need three resources:
+             a <i>worker task template</i>, a <i>flow definition</i>, and a <i>human loop</i>.
+             
+              
+             <para>
+             For information about these resources and prerequisites for using Amazon A2I, see
+             <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-getting-started.html">Get
+             Started with Amazon Augmented AI</a> in the Amazon SageMaker Developer Guide.
+             </para>
+              
+             <para>
+             This API reference includes information about API actions and data types that you
+             can use to interact with Amazon A2I programmatically. Use this guide to:
+             </para>
+              <ul> <li> 
+             <para>
+             Start a human loop with the <code>StartHumanLoop</code> operation when using Amazon
+             A2I with a <i>custom task type</i>. To learn more about the difference between custom
+             and built-in task types, see <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-task-types-general.html">Use
+             Task Types </a>. To learn how to start a human loop using this API, see <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-start-human-loop.html#a2i-instructions-starthumanloop">Create
+             and Start a Human Loop for a Custom Task Type </a> in the Amazon SageMaker Developer
+             Guide.
+             </para>
+              </li> <li> 
+             <para>
+             Manage your human loops. You can list all human loops that you have created, describe
+             individual human loops, and stop and delete human loops. To learn more, see <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-monitor-humanloop-results.html">Monitor
+             and Manage Your Human Loop </a> in the Amazon SageMaker Developer Guide.
+             </para>
+              </li> </ul> 
+             <para>
+             Amazon A2I integrates APIs from various AWS services to create and start human review
+             workflows for those services. To learn how Amazon A2I uses these APIs, see <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-api-references.html">Use
+             APIs in Amazon A2I</a> in the Amazon SageMaker Developer Guide.
+             </para>
+             </summary>
+        </member>
+        <member name="P:Amazon.AugmentedAIRuntime.IAmazonAugmentedAIRuntime.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.IAmazonAugmentedAIRuntime.DeleteHumanLoop(Amazon.AugmentedAIRuntime.Model.DeleteHumanLoopRequest)">
+            <summary>
+            Deletes the specified human loop for a flow definition.
+            
+             
+            <para>
+            If the human loop was deleted, this operation will return a <code>ResourceNotFoundException</code>.
+            
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteHumanLoop service method.</param>
+            
+            <returns>The response from the DeleteHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/DeleteHumanLoop">REST API Reference for DeleteHumanLoop Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.IAmazonAugmentedAIRuntime.DeleteHumanLoopAsync(Amazon.AugmentedAIRuntime.Model.DeleteHumanLoopRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes the specified human loop for a flow definition.
+            
+             
+            <para>
+            If the human loop was deleted, this operation will return a <code>ResourceNotFoundException</code>.
+            
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteHumanLoop service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/DeleteHumanLoop">REST API Reference for DeleteHumanLoop Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.IAmazonAugmentedAIRuntime.DescribeHumanLoop(Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopRequest)">
+            <summary>
+            Returns information about the specified human loop. If the human loop was deleted,
+            this operation will return a <code>ResourceNotFoundException</code> error.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeHumanLoop service method.</param>
+            
+            <returns>The response from the DescribeHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/DescribeHumanLoop">REST API Reference for DescribeHumanLoop Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.IAmazonAugmentedAIRuntime.DescribeHumanLoopAsync(Amazon.AugmentedAIRuntime.Model.DescribeHumanLoopRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns information about the specified human loop. If the human loop was deleted,
+            this operation will return a <code>ResourceNotFoundException</code> error.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeHumanLoop service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/DescribeHumanLoop">REST API Reference for DescribeHumanLoop Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.IAmazonAugmentedAIRuntime.ListHumanLoops(Amazon.AugmentedAIRuntime.Model.ListHumanLoopsRequest)">
+            <summary>
+            Returns information about human loops, given the specified parameters. If a human
+            loop was deleted, it will not be included.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListHumanLoops service method.</param>
+            
+            <returns>The response from the ListHumanLoops service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/ListHumanLoops">REST API Reference for ListHumanLoops Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.IAmazonAugmentedAIRuntime.ListHumanLoopsAsync(Amazon.AugmentedAIRuntime.Model.ListHumanLoopsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns information about human loops, given the specified parameters. If a human
+            loop was deleted, it will not be included.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListHumanLoops service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListHumanLoops service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/ListHumanLoops">REST API Reference for ListHumanLoops Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.IAmazonAugmentedAIRuntime.StartHumanLoop(Amazon.AugmentedAIRuntime.Model.StartHumanLoopRequest)">
+            <summary>
+            Starts a human loop, provided that at least one activation condition is met.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StartHumanLoop service method.</param>
+            
+            <returns>The response from the StartHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ConflictException">
+            Your request has the same name as another active human loop but has different input
+            data. You cannot start two human loops with the same name and different input data.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ServiceQuotaExceededException">
+            You exceeded your service quota. Service quotas, also referred to as limits, are the
+            maximum number of service resources or operations for your AWS account. For a list
+            of Amazon A2I service quotes, see <a href="https://docs.aws.amazon.com/general/latest/gr/a2i.html">Amazon
+            Augmented AI Service Quotes</a>. Delete some resources or request an increase in your
+            service quota. You can request a quota increase using Service Quotas or the AWS Support
+            Center. To request an increase, see <a href="https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html">AWS
+            Service Quotas</a> in the <i>AWS General Reference</i>.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/StartHumanLoop">REST API Reference for StartHumanLoop Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.IAmazonAugmentedAIRuntime.StartHumanLoopAsync(Amazon.AugmentedAIRuntime.Model.StartHumanLoopRequest,System.Threading.CancellationToken)">
+            <summary>
+            Starts a human loop, provided that at least one activation condition is met.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StartHumanLoop service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the StartHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ConflictException">
+            Your request has the same name as another active human loop but has different input
+            data. You cannot start two human loops with the same name and different input data.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ServiceQuotaExceededException">
+            You exceeded your service quota. Service quotas, also referred to as limits, are the
+            maximum number of service resources or operations for your AWS account. For a list
+            of Amazon A2I service quotes, see <a href="https://docs.aws.amazon.com/general/latest/gr/a2i.html">Amazon
+            Augmented AI Service Quotes</a>. Delete some resources or request an increase in your
+            service quota. You can request a quota increase using Service Quotas or the AWS Support
+            Center. To request an increase, see <a href="https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html">AWS
+            Service Quotas</a> in the <i>AWS General Reference</i>.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/StartHumanLoop">REST API Reference for StartHumanLoop Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.IAmazonAugmentedAIRuntime.StopHumanLoop(Amazon.AugmentedAIRuntime.Model.StopHumanLoopRequest)">
+            <summary>
+            Stops the specified human loop.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StopHumanLoop service method.</param>
+            
+            <returns>The response from the StopHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/StopHumanLoop">REST API Reference for StopHumanLoop Operation</seealso>
+        </member>
+        <member name="M:Amazon.AugmentedAIRuntime.IAmazonAugmentedAIRuntime.StopHumanLoopAsync(Amazon.AugmentedAIRuntime.Model.StopHumanLoopRequest,System.Threading.CancellationToken)">
+            <summary>
+            Stops the specified human loop.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StopHumanLoop service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the StopHumanLoop service method, as returned by AugmentedAIRuntime.</returns>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.InternalServerException">
+            We couldn't process your request because of an issue with the server. Try again later.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ResourceNotFoundException">
+            We couldn't find the requested resource. Check that your resources exists and were
+            created in the same AWS Region as your request, and try your request again.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ThrottlingException">
+            You exceeded the maximum number of requests.
+            </exception>
+            <exception cref="T:Amazon.AugmentedAIRuntime.Model.ValidationException">
+            The request isn't valid. Check the syntax and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-a2i-runtime-2019-11-07/StopHumanLoop">REST API Reference for StopHumanLoop Operation</seealso>
+        </member>
+    </members>
+</doc>

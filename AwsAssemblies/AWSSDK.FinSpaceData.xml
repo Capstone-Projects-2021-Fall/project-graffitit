@@ -1,0 +1,1904 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.FinSpaceData</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.FinSpaceData.AmazonFinSpaceDataConfig">
+            <summary>
+            Configuration for accessing Amazon FinSpaceData service
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.AmazonFinSpaceDataConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.AmazonFinSpaceDataConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.AmazonFinSpaceDataConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.FinSpaceData.AmazonFinSpaceDataException">
+            <summary>
+             Common exception for the FinSpaceData service.
+             </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonFinSpaceDataException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonFinSpaceDataException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonFinSpaceDataException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonFinSpaceDataException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonFinSpaceDataException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonFinSpaceDataException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Internal.AmazonFinSpaceDataMetadata">
+            <summary>
+            Service metadata for  Amazon FinSpaceData service
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Internal.AmazonFinSpaceDataMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Internal.AmazonFinSpaceDataMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.AccessDeniedException">
+            <summary>
+            You do not have sufficient access to perform this action.
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.AccessDeniedException.#ctor(System.String)">
+            <summary>
+            Constructs a new AccessDeniedException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.AccessDeniedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.AccessDeniedException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.AccessDeniedException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.AccessDeniedException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.AccessDeniedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AccessDeniedException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.AccessDeniedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.ChangesetInfo">
+            <summary>
+            A changeset is unit of data in a dataset.
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ChangesetInfo.ChangesetArn">
+            <summary>
+            Gets and sets the property ChangesetArn. 
+            <para>
+            The ARN identifier of the changeset.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ChangesetInfo.ChangesetLabels">
+            <summary>
+            Gets and sets the property ChangesetLabels. 
+            <para>
+            Tags associated with the changeset.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ChangesetInfo.ChangeType">
+            <summary>
+            Gets and sets the property ChangeType. 
+            <para>
+            Change type indicates how a changeset is applied to a dataset.
+            </para>
+             <ul> <li> 
+            <para>
+             <code>REPLACE</code> - Changeset is considered as a replacement to all prior loaded
+            changesets.
+            </para>
+             </li> <li> 
+            <para>
+             <code>APPEND</code> - Changeset is considered as an addition to the end of all prior
+            loaded changesets.
+            </para>
+             </li> <li> 
+            <para>
+             <code>MODIFY</code> - Changeset is considered as a replacement to a specific prior
+            ingested changeset.
+            </para>
+             </li> </ul>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ChangesetInfo.CreateTimestamp">
+            <summary>
+            Gets and sets the property CreateTimestamp. 
+            <para>
+            The timestamp at which the changeset was created in FinSpace.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ChangesetInfo.DatasetId">
+            <summary>
+            Gets and sets the property DatasetId. 
+            <para>
+            The unique identifier for the FinSpace dataset in which the changeset is created.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ChangesetInfo.ErrorInfo">
+            <summary>
+            Gets and sets the property ErrorInfo. 
+            <para>
+            The structure with error messages.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ChangesetInfo.FormatParams">
+            <summary>
+            Gets and sets the property FormatParams. 
+            <para>
+            Structure of the source file(s).
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ChangesetInfo.FormatType">
+            <summary>
+            Gets and sets the property FormatType. 
+            <para>
+            Format type of the input files loaded into the changeset.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ChangesetInfo.Id">
+            <summary>
+            Gets and sets the property Id. 
+            <para>
+            Unique identifier for a changeset.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ChangesetInfo.SourceParams">
+            <summary>
+            Gets and sets the property SourceParams. 
+            <para>
+            Source path from which the files to create the changeset are sourced.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ChangesetInfo.SourceType">
+            <summary>
+            Gets and sets the property SourceType. 
+            <para>
+            Type of the data source from which the files to create the changeset are sourced.
+            </para>
+             <ul> <li> 
+            <para>
+             <code>S3</code> - Amazon S3.
+            </para>
+             </li> </ul>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ChangesetInfo.Status">
+            <summary>
+            Gets and sets the property Status. 
+            <para>
+            The status of changeset creation operation.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ChangesetInfo.UpdatedByChangesetId">
+            <summary>
+            Gets and sets the property UpdatedByChangesetId. 
+            <para>
+            Unique identifier of the changeset that is updated a changeset.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ChangesetInfo.UpdatesChangesetId">
+            <summary>
+            Gets and sets the property UpdatesChangesetId. 
+            <para>
+            Unique identifier of the changeset that is updated.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.CreateChangesetRequest">
+            <summary>
+            Container for the parameters to the CreateChangeset operation.
+            Creates a new changeset in a FinSpace dataset.
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.CreateChangesetRequest.ChangeType">
+            <summary>
+            Gets and sets the property ChangeType. 
+            <para>
+            Option to indicate how a changeset will be applied to a dataset.
+            </para>
+             <ul> <li> 
+            <para>
+             <code>REPLACE</code> - Changeset will be considered as a replacement to all prior
+            loaded changesets.
+            </para>
+             </li> <li> 
+            <para>
+             <code>APPEND</code> - Changeset will be considered as an addition to the end of all
+            prior loaded changesets.
+            </para>
+             </li> </ul>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.CreateChangesetRequest.DatasetId">
+            <summary>
+            Gets and sets the property DatasetId. 
+            <para>
+            The unique identifier for the FinSpace dataset in which the changeset will be created.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.CreateChangesetRequest.FormatParams">
+            <summary>
+            Gets and sets the property FormatParams. 
+            <para>
+            Options that define the structure of the source file(s).
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.CreateChangesetRequest.FormatType">
+            <summary>
+            Gets and sets the property FormatType. 
+            <para>
+            Format type of the input files being loaded into the changeset.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.CreateChangesetRequest.SourceParams">
+            <summary>
+            Gets and sets the property SourceParams. 
+            <para>
+            Source path from which the files to create the changeset will be sourced.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.CreateChangesetRequest.SourceType">
+            <summary>
+            Gets and sets the property SourceType. 
+            <para>
+            Type of the data source from which the files to create the changeset will be sourced.
+            </para>
+             <ul> <li> 
+            <para>
+             <code>S3</code> - Amazon S3.
+            </para>
+             </li> </ul>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.CreateChangesetRequest.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            Metadata tags to apply to this changeset.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.CreateChangesetResponse">
+            <summary>
+            This is the response object from the CreateChangeset operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.CreateChangesetResponse.Changeset">
+            <summary>
+            Gets and sets the property Changeset. 
+            <para>
+            Returns the changeset details.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Credentials">
+            <summary>
+            Set short term API credentials.
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Credentials.AccessKeyId">
+            <summary>
+            Gets and sets the property AccessKeyId. 
+            <para>
+            The access key identifier.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Credentials.SecretAccessKey">
+            <summary>
+            Gets and sets the property SecretAccessKey. 
+            <para>
+            The access key.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Credentials.SessionToken">
+            <summary>
+            Gets and sets the property SessionToken. 
+            <para>
+            The session token.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.ErrorInfo">
+            <summary>
+            Error message.
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ErrorInfo.ErrorCategory">
+            <summary>
+            Gets and sets the property ErrorCategory. 
+            <para>
+            The category of the error.
+            </para>
+             <ul> <li> 
+            <para>
+             <code>VALIDATION</code> -The inputs to this request are invalid.
+            </para>
+             </li> <li> 
+            <para>
+             <code>SERVICE_QUOTA_EXCEEDED</code> - Service quotas have been exceeded. Please contact
+            AWS support to increase quotas.
+            </para>
+             </li> <li> 
+            <para>
+             <code>ACCESS_DENIED</code> - Missing required permission to perform this request.
+            </para>
+             </li> <li> 
+            <para>
+             <code>RESOURCE_NOT_FOUND</code> - One or more inputs to this request were not found.
+            </para>
+             </li> <li> 
+            <para>
+             <code>THROTTLING</code> - The system temporarily lacks sufficient resources to process
+            the request.
+            </para>
+             </li> <li> 
+            <para>
+             <code>INTERNAL_SERVICE_EXCEPTION</code> - An internal service error has occurred.
+            </para>
+             </li> <li> 
+            <para>
+             <code>CANCELLED</code> - A user recoverable error has occurred.
+            </para>
+             </li> </ul>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.ErrorInfo.ErrorMessage">
+            <summary>
+            Gets and sets the property ErrorMessage. 
+            <para>
+            The text of the error message.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.GetProgrammaticAccessCredentialsRequest">
+            <summary>
+            Container for the parameters to the GetProgrammaticAccessCredentials operation.
+            Request programmatic credentials to use with Habanero SDK.
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.GetProgrammaticAccessCredentialsRequest.DurationInMinutes">
+            <summary>
+            Gets and sets the property DurationInMinutes. 
+            <para>
+            The time duration in which the credentials remain valid. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.GetProgrammaticAccessCredentialsRequest.EnvironmentId">
+            <summary>
+            Gets and sets the property EnvironmentId. 
+            <para>
+            The habanero environment identifier.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.GetProgrammaticAccessCredentialsResponse">
+            <summary>
+            This is the response object from the GetProgrammaticAccessCredentials operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.GetProgrammaticAccessCredentialsResponse.Credentials">
+            <summary>
+            Gets and sets the property Credentials. 
+            <para>
+            Returns the programmatic credentials.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.GetProgrammaticAccessCredentialsResponse.DurationInMinutes">
+            <summary>
+            Gets and sets the property DurationInMinutes. 
+            <para>
+            Returns the duration in which the credentials will remain valid.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.GetWorkingLocationRequest">
+            <summary>
+            Container for the parameters to the GetWorkingLocation operation.
+            A temporary Amazon S3 location to copy your files from a source location to stage
+            or use as a scratch space in Habanero notebook.
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.GetWorkingLocationRequest.LocationType">
+            <summary>
+            Gets and sets the property LocationType. 
+            <para>
+            Specify the type of the working location.
+            </para>
+             <ul> <li> 
+            <para>
+             <code>SAGEMAKER</code> - Use the Amazon S3 location as a temporary location to store
+            data content when working with FinSpace Notebooks that run on SageMaker studio.
+            </para>
+             </li> <li> 
+            <para>
+             <code>INGESTION</code> - Use the Amazon S3 location as a staging location to copy
+            your data content and then use the location with the changeset creation operation.
+            </para>
+             </li> </ul>
+            </summary>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.GetWorkingLocationResponse">
+            <summary>
+            This is the response object from the GetWorkingLocation operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.GetWorkingLocationResponse.S3Bucket">
+            <summary>
+            Gets and sets the property S3Bucket. 
+            <para>
+            Returns the Amazon S3 bucket name for the working location.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.GetWorkingLocationResponse.S3Path">
+            <summary>
+            Gets and sets the property S3Path. 
+            <para>
+            Returns the Amazon S3 Path for the working location.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.GetWorkingLocationResponse.S3Uri">
+            <summary>
+            Gets and sets the property S3Uri. 
+            <para>
+            Returns the Amazon S3 URI for the working location.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.InternalServerException">
+            <summary>
+            The request processing has failed because of an unknown error, exception or failure.
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.InternalServerException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServerException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.InternalServerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.InternalServerException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.InternalServerException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.InternalServerException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.InternalServerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InternalServerException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.InternalServerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for AccessDeniedException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ChangesetInfoUnmarshaller">
+            <summary>
+            Response Unmarshaller for ChangesetInfo Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ChangesetInfoUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#FinSpaceData#Model#ChangesetInfo,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ChangesetInfoUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ChangesetInfoUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.CreateChangesetRequestMarshaller">
+            <summary>
+            CreateChangeset Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.CreateChangesetRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.CreateChangesetRequestMarshaller.Marshall(Amazon.FinSpaceData.Model.CreateChangesetRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.CreateChangesetRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.CreateChangesetResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for CreateChangeset operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.CreateChangesetResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.CreateChangesetResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.CreateChangesetResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.CredentialsUnmarshaller">
+            <summary>
+            Response Unmarshaller for Credentials Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.CredentialsUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#FinSpaceData#Model#Credentials,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.CredentialsUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.CredentialsUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ErrorInfoUnmarshaller">
+            <summary>
+            Response Unmarshaller for ErrorInfo Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ErrorInfoUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#FinSpaceData#Model#ErrorInfo,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ErrorInfoUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ErrorInfoUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetProgrammaticAccessCredentialsRequestMarshaller">
+            <summary>
+            GetProgrammaticAccessCredentials Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetProgrammaticAccessCredentialsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetProgrammaticAccessCredentialsRequestMarshaller.Marshall(Amazon.FinSpaceData.Model.GetProgrammaticAccessCredentialsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetProgrammaticAccessCredentialsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetProgrammaticAccessCredentialsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetProgrammaticAccessCredentials operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetProgrammaticAccessCredentialsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetProgrammaticAccessCredentialsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetProgrammaticAccessCredentialsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetWorkingLocationRequestMarshaller">
+            <summary>
+            GetWorkingLocation Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetWorkingLocationRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetWorkingLocationRequestMarshaller.Marshall(Amazon.FinSpaceData.Model.GetWorkingLocationRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetWorkingLocationRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetWorkingLocationResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetWorkingLocation operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetWorkingLocationResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetWorkingLocationResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.GetWorkingLocationResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalServerException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceNotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ThrottlingException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ValidationException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.FinSpaceData.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.ResourceNotFoundException">
+            <summary>
+            One or more resources can't be found.
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ResourceNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ResourceNotFoundException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ResourceNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.ThrottlingException">
+            <summary>
+            The request was denied due to request throttling.
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ThrottlingException.#ctor(System.String)">
+            <summary>
+            Constructs a new ThrottlingException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ThrottlingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ThrottlingException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ThrottlingException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ThrottlingException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ThrottlingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ThrottlingException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ThrottlingException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.FinSpaceData.Model.ValidationException">
+            <summary>
+            The input fails to satisfy the constraints specified by an AWS service.
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ValidationException.#ctor(System.String)">
+            <summary>
+            Constructs a new ValidationException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ValidationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ValidationException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ValidationException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ValidationException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ValidationException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.FinSpaceData.Model.ValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.FinSpaceData.AmazonFinSpaceDataRequest">
+            <summary>
+            Base class for FinSpaceData operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.FinSpaceData.ChangesetStatus">
+            <summary>
+            Constants used for properties of type ChangesetStatus.
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ChangesetStatus.FAILED">
+            <summary>
+            Constant FAILED for ChangesetStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ChangesetStatus.PENDING">
+            <summary>
+            Constant PENDING for ChangesetStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ChangesetStatus.RUNNING">
+            <summary>
+            Constant RUNNING for ChangesetStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ChangesetStatus.STOP_REQUESTED">
+            <summary>
+            Constant STOP_REQUESTED for ChangesetStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ChangesetStatus.SUCCESS">
+            <summary>
+            Constant SUCCESS for ChangesetStatus
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.ChangesetStatus.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.ChangesetStatus.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.ChangesetStatus.op_Implicit(System.String)~Amazon.FinSpaceData.ChangesetStatus">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.FinSpaceData.ChangeType">
+            <summary>
+            Constants used for properties of type ChangeType.
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ChangeType.APPEND">
+            <summary>
+            Constant APPEND for ChangeType
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ChangeType.MODIFY">
+            <summary>
+            Constant MODIFY for ChangeType
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ChangeType.REPLACE">
+            <summary>
+            Constant REPLACE for ChangeType
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.ChangeType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.ChangeType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.ChangeType.op_Implicit(System.String)~Amazon.FinSpaceData.ChangeType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.FinSpaceData.ErrorCategory">
+            <summary>
+            Constants used for properties of type ErrorCategory.
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ErrorCategory.A_user_recoverable_error_has_occurred">
+            <summary>
+            Constant A_user_recoverable_error_has_occurred for ErrorCategory
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ErrorCategory.An_internal_error_has_occurred">
+            <summary>
+            Constant An_internal_error_has_occurred for ErrorCategory
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ErrorCategory.Cancelled">
+            <summary>
+            Constant Cancelled for ErrorCategory
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ErrorCategory.Missing_required_permission_to_perform_this_request">
+            <summary>
+            Constant Missing_required_permission_to_perform_this_request for ErrorCategory
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ErrorCategory.One_or_more_inputs_to_this_request_were_not_found">
+            <summary>
+            Constant One_or_more_inputs_to_this_request_were_not_found for ErrorCategory
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ErrorCategory.Service_limits_have_been_exceeded">
+            <summary>
+            Constant Service_limits_have_been_exceeded for ErrorCategory
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ErrorCategory.The_inputs_to_this_request_are_invalid">
+            <summary>
+            Constant The_inputs_to_this_request_are_invalid for ErrorCategory
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.ErrorCategory.The_system_temporarily_lacks_sufficient_resources_to_process_the_request">
+            <summary>
+            Constant The_system_temporarily_lacks_sufficient_resources_to_process_the_request for ErrorCategory
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.ErrorCategory.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.ErrorCategory.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.ErrorCategory.op_Implicit(System.String)~Amazon.FinSpaceData.ErrorCategory">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.FinSpaceData.FormatType">
+            <summary>
+            Constants used for properties of type FormatType.
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.FormatType.CSV">
+            <summary>
+            Constant CSV for FormatType
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.FormatType.JSON">
+            <summary>
+            Constant JSON for FormatType
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.FormatType.PARQUET">
+            <summary>
+            Constant PARQUET for FormatType
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.FormatType.XML">
+            <summary>
+            Constant XML for FormatType
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.FormatType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.FormatType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.FormatType.op_Implicit(System.String)~Amazon.FinSpaceData.FormatType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.FinSpaceData.LocationType">
+            <summary>
+            Constants used for properties of type LocationType.
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.LocationType.INGESTION">
+            <summary>
+            Constant INGESTION for LocationType
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.LocationType.SAGEMAKER">
+            <summary>
+            Constant SAGEMAKER for LocationType
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.LocationType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.LocationType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.LocationType.op_Implicit(System.String)~Amazon.FinSpaceData.LocationType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.FinSpaceData.SourceType">
+            <summary>
+            Constants used for properties of type SourceType.
+            </summary>
+        </member>
+        <member name="F:Amazon.FinSpaceData.SourceType.S3">
+            <summary>
+            Constant S3 for SourceType
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.SourceType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.SourceType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.FinSpaceData.SourceType.op_Implicit(System.String)~Amazon.FinSpaceData.SourceType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.FinSpaceData.AmazonFinSpaceDataClient">
+             <summary>
+             Implementation for accessing FinSpaceData
+            
+             The FinSpace APIs let you take actions inside the FinSpace environment.
+             </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.#ctor">
+             <summary>
+             Constructs AmazonFinSpaceDataClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonFinSpaceDataClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.#ctor(Amazon.FinSpaceData.AmazonFinSpaceDataConfig)">
+             <summary>
+             Constructs AmazonFinSpaceDataClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonFinSpaceDataClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonFinSpaceDataClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonFinSpaceDataClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.FinSpaceData.AmazonFinSpaceDataConfig)">
+            <summary>
+            Constructs AmazonFinSpaceDataClient with AWS Credentials and an
+            AmazonFinSpaceDataClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonFinSpaceDataClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonFinSpaceDataClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonFinSpaceDataClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.#ctor(System.String,System.String,Amazon.FinSpaceData.AmazonFinSpaceDataConfig)">
+            <summary>
+            Constructs AmazonFinSpaceDataClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonFinSpaceDataClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonFinSpaceDataClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonFinSpaceDataClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonFinSpaceDataClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.#ctor(System.String,System.String,System.String,Amazon.FinSpaceData.AmazonFinSpaceDataConfig)">
+            <summary>
+            Constructs AmazonFinSpaceDataClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonFinSpaceDataClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonFinSpaceDataClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.FinSpaceData.AmazonFinSpaceDataClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.CreateChangeset(Amazon.FinSpaceData.Model.CreateChangesetRequest)">
+            <summary>
+            Creates a new changeset in a FinSpace dataset.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateChangeset service method.</param>
+            
+            <returns>The response from the CreateChangeset service method, as returned by FinSpaceData.</returns>
+            <exception cref="T:Amazon.FinSpaceData.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ResourceNotFoundException">
+            One or more resources can't be found.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/finspace-2020-07-13/CreateChangeset">REST API Reference for CreateChangeset Operation</seealso>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.CreateChangesetAsync(Amazon.FinSpaceData.Model.CreateChangesetRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a new changeset in a FinSpace dataset.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateChangeset service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateChangeset service method, as returned by FinSpaceData.</returns>
+            <exception cref="T:Amazon.FinSpaceData.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ResourceNotFoundException">
+            One or more resources can't be found.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/finspace-2020-07-13/CreateChangeset">REST API Reference for CreateChangeset Operation</seealso>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.GetProgrammaticAccessCredentials(Amazon.FinSpaceData.Model.GetProgrammaticAccessCredentialsRequest)">
+            <summary>
+            Request programmatic credentials to use with Habanero SDK.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetProgrammaticAccessCredentials service method.</param>
+            
+            <returns>The response from the GetProgrammaticAccessCredentials service method, as returned by FinSpaceData.</returns>
+            <exception cref="T:Amazon.FinSpaceData.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/finspace-2020-07-13/GetProgrammaticAccessCredentials">REST API Reference for GetProgrammaticAccessCredentials Operation</seealso>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.GetProgrammaticAccessCredentialsAsync(Amazon.FinSpaceData.Model.GetProgrammaticAccessCredentialsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Request programmatic credentials to use with Habanero SDK.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetProgrammaticAccessCredentials service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetProgrammaticAccessCredentials service method, as returned by FinSpaceData.</returns>
+            <exception cref="T:Amazon.FinSpaceData.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/finspace-2020-07-13/GetProgrammaticAccessCredentials">REST API Reference for GetProgrammaticAccessCredentials Operation</seealso>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.GetWorkingLocation(Amazon.FinSpaceData.Model.GetWorkingLocationRequest)">
+            <summary>
+            A temporary Amazon S3 location to copy your files from a source location to stage
+            or use as a scratch space in Habanero notebook.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetWorkingLocation service method.</param>
+            
+            <returns>The response from the GetWorkingLocation service method, as returned by FinSpaceData.</returns>
+            <exception cref="T:Amazon.FinSpaceData.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/finspace-2020-07-13/GetWorkingLocation">REST API Reference for GetWorkingLocation Operation</seealso>
+        </member>
+        <member name="M:Amazon.FinSpaceData.AmazonFinSpaceDataClient.GetWorkingLocationAsync(Amazon.FinSpaceData.Model.GetWorkingLocationRequest,System.Threading.CancellationToken)">
+            <summary>
+            A temporary Amazon S3 location to copy your files from a source location to stage
+            or use as a scratch space in Habanero notebook.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetWorkingLocation service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetWorkingLocation service method, as returned by FinSpaceData.</returns>
+            <exception cref="T:Amazon.FinSpaceData.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/finspace-2020-07-13/GetWorkingLocation">REST API Reference for GetWorkingLocation Operation</seealso>
+        </member>
+        <member name="T:Amazon.FinSpaceData.IAmazonFinSpaceData">
+             <summary>
+             Interface for accessing FinSpaceData
+            
+             The FinSpace APIs let you take actions inside the FinSpace environment.
+             </summary>
+        </member>
+        <member name="M:Amazon.FinSpaceData.IAmazonFinSpaceData.CreateChangeset(Amazon.FinSpaceData.Model.CreateChangesetRequest)">
+            <summary>
+            Creates a new changeset in a FinSpace dataset.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateChangeset service method.</param>
+            
+            <returns>The response from the CreateChangeset service method, as returned by FinSpaceData.</returns>
+            <exception cref="T:Amazon.FinSpaceData.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ResourceNotFoundException">
+            One or more resources can't be found.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/finspace-2020-07-13/CreateChangeset">REST API Reference for CreateChangeset Operation</seealso>
+        </member>
+        <member name="M:Amazon.FinSpaceData.IAmazonFinSpaceData.CreateChangesetAsync(Amazon.FinSpaceData.Model.CreateChangesetRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a new changeset in a FinSpace dataset.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateChangeset service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateChangeset service method, as returned by FinSpaceData.</returns>
+            <exception cref="T:Amazon.FinSpaceData.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ResourceNotFoundException">
+            One or more resources can't be found.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/finspace-2020-07-13/CreateChangeset">REST API Reference for CreateChangeset Operation</seealso>
+        </member>
+        <member name="M:Amazon.FinSpaceData.IAmazonFinSpaceData.GetProgrammaticAccessCredentials(Amazon.FinSpaceData.Model.GetProgrammaticAccessCredentialsRequest)">
+            <summary>
+            Request programmatic credentials to use with Habanero SDK.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetProgrammaticAccessCredentials service method.</param>
+            
+            <returns>The response from the GetProgrammaticAccessCredentials service method, as returned by FinSpaceData.</returns>
+            <exception cref="T:Amazon.FinSpaceData.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/finspace-2020-07-13/GetProgrammaticAccessCredentials">REST API Reference for GetProgrammaticAccessCredentials Operation</seealso>
+        </member>
+        <member name="M:Amazon.FinSpaceData.IAmazonFinSpaceData.GetProgrammaticAccessCredentialsAsync(Amazon.FinSpaceData.Model.GetProgrammaticAccessCredentialsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Request programmatic credentials to use with Habanero SDK.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetProgrammaticAccessCredentials service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetProgrammaticAccessCredentials service method, as returned by FinSpaceData.</returns>
+            <exception cref="T:Amazon.FinSpaceData.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/finspace-2020-07-13/GetProgrammaticAccessCredentials">REST API Reference for GetProgrammaticAccessCredentials Operation</seealso>
+        </member>
+        <member name="M:Amazon.FinSpaceData.IAmazonFinSpaceData.GetWorkingLocation(Amazon.FinSpaceData.Model.GetWorkingLocationRequest)">
+            <summary>
+            A temporary Amazon S3 location to copy your files from a source location to stage
+            or use as a scratch space in Habanero notebook.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetWorkingLocation service method.</param>
+            
+            <returns>The response from the GetWorkingLocation service method, as returned by FinSpaceData.</returns>
+            <exception cref="T:Amazon.FinSpaceData.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/finspace-2020-07-13/GetWorkingLocation">REST API Reference for GetWorkingLocation Operation</seealso>
+        </member>
+        <member name="M:Amazon.FinSpaceData.IAmazonFinSpaceData.GetWorkingLocationAsync(Amazon.FinSpaceData.Model.GetWorkingLocationRequest,System.Threading.CancellationToken)">
+            <summary>
+            A temporary Amazon S3 location to copy your files from a source location to stage
+            or use as a scratch space in Habanero notebook.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetWorkingLocation service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetWorkingLocation service method, as returned by FinSpaceData.</returns>
+            <exception cref="T:Amazon.FinSpaceData.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.FinSpaceData.Model.ValidationException">
+            The input fails to satisfy the constraints specified by an AWS service.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/finspace-2020-07-13/GetWorkingLocation">REST API Reference for GetWorkingLocation Operation</seealso>
+        </member>
+    </members>
+</doc>

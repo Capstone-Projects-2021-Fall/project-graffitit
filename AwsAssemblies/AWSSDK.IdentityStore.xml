@@ -1,0 +1,1966 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.IdentityStore</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.IdentityStore.AmazonIdentityStoreConfig">
+            <summary>
+            Configuration for accessing Amazon IdentityStore service
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.AmazonIdentityStoreConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.AmazonIdentityStoreConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.AmazonIdentityStoreConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.AmazonIdentityStoreException">
+            <summary>
+             Common exception for the IdentityStore service.
+             </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonIdentityStoreException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonIdentityStoreException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonIdentityStoreException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonIdentityStoreException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonIdentityStoreException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonIdentityStoreException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.IdentityStore.Internal.AmazonIdentityStoreMetadata">
+            <summary>
+            Service metadata for  Amazon IdentityStore service
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Internal.AmazonIdentityStoreMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Internal.AmazonIdentityStoreMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            <summary>
+            You do not have sufficient access to perform this action.
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.AccessDeniedException.#ctor(System.String)">
+            <summary>
+            Constructs a new AccessDeniedException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.AccessDeniedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.AccessDeniedException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.AccessDeniedException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.AccessDeniedException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.AccessDeniedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AccessDeniedException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.AccessDeniedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.AccessDeniedException.RequestId">
+            <summary>
+            Gets and sets the property RequestId. 
+            <para>
+            The identifier for each request. This value is a globally unique ID that is generated
+            by the Identity Store service for each sent request, and is then returned inside the
+            exception if the request fails.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.DescribeGroupRequest">
+            <summary>
+            Container for the parameters to the DescribeGroup operation.
+            Retrieves the group metadata and attributes from <code>GroupId</code> in an identity
+            store.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.DescribeGroupRequest.GroupId">
+            <summary>
+            Gets and sets the property GroupId. 
+            <para>
+            The identifier for a group in the identity store.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.DescribeGroupRequest.IdentityStoreId">
+            <summary>
+            Gets and sets the property IdentityStoreId. 
+            <para>
+            The globally unique identifier for the identity store, such as <code>d-1234567890</code>.
+            In this example, <code>d-</code> is a fixed prefix, and <code>1234567890</code> is
+            a randomly generated string that contains number and lower case letters. This value
+            is generated at the time that a new identity store is created.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.DescribeGroupResponse">
+            <summary>
+            This is the response object from the DescribeGroup operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.DescribeGroupResponse.DisplayName">
+            <summary>
+            Gets and sets the property DisplayName. 
+            <para>
+            Contains the group’s display name value. The length limit is 1,024 characters. This
+            value can consist of letters, accented characters, symbols, numbers, punctuation,
+            tab, new line, carriage return, space, and nonbreaking space in this attribute. The
+            characters <code>&lt;&gt;;:%</code> are excluded. This value is specified at the time
+            that the group is created and stored as an attribute of the group object in the identity
+            store.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.DescribeGroupResponse.GroupId">
+            <summary>
+            Gets and sets the property GroupId. 
+            <para>
+            The identifier for a group in the identity store.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.DescribeUserRequest">
+            <summary>
+            Container for the parameters to the DescribeUser operation.
+            Retrieves the user metadata and attributes from <code>UserId</code> in an identity
+            store.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.DescribeUserRequest.IdentityStoreId">
+            <summary>
+            Gets and sets the property IdentityStoreId. 
+            <para>
+            The globally unique identifier for the identity store, such as <code>d-1234567890</code>.
+            In this example, <code>d-</code> is a fixed prefix, and <code>1234567890</code> is
+            a randomly generated string that contains number and lower case letters. This value
+            is generated at the time that a new identity store is created.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.DescribeUserRequest.UserId">
+            <summary>
+            Gets and sets the property UserId. 
+            <para>
+            The identifier for a user in the identity store.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.DescribeUserResponse">
+            <summary>
+            This is the response object from the DescribeUser operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.DescribeUserResponse.UserId">
+            <summary>
+            Gets and sets the property UserId. 
+            <para>
+            The identifier for a user in the identity store.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.DescribeUserResponse.UserName">
+            <summary>
+            Gets and sets the property UserName. 
+            <para>
+            Contains the user’s user name value. The length limit is 128 characters. This value
+            can consist of letters, accented characters, symbols, numbers, and punctuation. The
+            characters <code>&lt;&gt;;:%</code> are excluded. This value is specified at the time
+            the user is created and stored as an attribute of the user object in the identity
+            store.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Filter">
+            <summary>
+            A query filter used by <code>ListUsers</code> and <code>ListGroup</code>. This filter
+            object provides the attribute name and attribute value to search users or groups.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Filter.AttributePath">
+            <summary>
+            Gets and sets the property AttributePath. 
+            <para>
+            The attribute path that is used to specify which attribute name to search. Length
+            limit is 255 characters. For example, <code>UserName</code> is a valid attribute path
+            for the <code>ListUsers</code> API, and <code>DisplayName</code> is a valid attribute
+            path for the <code>ListGroups</code> API.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Filter.AttributeValue">
+            <summary>
+            Gets and sets the property AttributeValue. 
+            <para>
+            Represents the data for an attribute. Each attribute value is described as a name-value
+            pair. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Group">
+            <summary>
+            A group object, which contains a specified group’s metadata and attributes.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Group.DisplayName">
+            <summary>
+            Gets and sets the property DisplayName. 
+            <para>
+            Contains the group’s display name value. The length limit is 1,024 characters. This
+            value can consist of letters, accented characters, symbols, numbers, punctuation,
+            tab, new line, carriage return, space, and nonbreaking space in this attribute. The
+            characters <code>&lt;&gt;;:%</code> are excluded. This value is specified at the time
+            the group is created and stored as an attribute of the group object in the identity
+            store.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Group.GroupId">
+            <summary>
+            Gets and sets the property GroupId. 
+            <para>
+            The identifier for a group in the identity store.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.InternalServerException">
+            <summary>
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.InternalServerException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServerException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.InternalServerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.InternalServerException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.InternalServerException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.InternalServerException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.InternalServerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InternalServerException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.InternalServerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.InternalServerException.RequestId">
+            <summary>
+            Gets and sets the property RequestId. 
+            <para>
+            The identifier for each request. This value is a globally unique ID that is generated
+            by the Identity Store service for each sent request, and is then returned inside the
+            exception if the request fails.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for AccessDeniedException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeGroupRequestMarshaller">
+            <summary>
+            DescribeGroup Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeGroupRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeGroupRequestMarshaller.Marshall(Amazon.IdentityStore.Model.DescribeGroupRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeGroupRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeGroupResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DescribeGroup operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeGroupResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeGroupResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeGroupResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeUserRequestMarshaller">
+            <summary>
+            DescribeUser Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeUserRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeUserRequestMarshaller.Marshall(Amazon.IdentityStore.Model.DescribeUserRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeUserRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeUserResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DescribeUser operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeUserResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeUserResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.DescribeUserResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.FilterMarshaller">
+            <summary>
+            Filter Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.FilterMarshaller.Marshall(Amazon.IdentityStore.Model.Filter,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.IdentityStore.Model.Internal.MarshallTransformations.FilterMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.GroupUnmarshaller">
+            <summary>
+            Response Unmarshaller for Group Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.GroupUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#IdentityStore#Model#Group,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.GroupUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.GroupUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalServerException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListGroupsRequestMarshaller">
+            <summary>
+            ListGroups Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListGroupsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListGroupsRequestMarshaller.Marshall(Amazon.IdentityStore.Model.ListGroupsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListGroupsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListGroupsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListGroups operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListGroupsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListGroupsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListGroupsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListUsersRequestMarshaller">
+            <summary>
+            ListUsers Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListUsersRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListUsersRequestMarshaller.Marshall(Amazon.IdentityStore.Model.ListUsersRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListUsersRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListUsersResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListUsers operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListUsersResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListUsersResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ListUsersResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceNotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ThrottlingException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.UserUnmarshaller">
+            <summary>
+            Response Unmarshaller for User Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.UserUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#IdentityStore#Model#User,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.UserUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.UserUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ValidationException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.ListGroupsRequest">
+            <summary>
+            Container for the parameters to the ListGroups operation.
+            Lists the attribute name and value of the group that you specified in the search.
+            We only support <code>DisplayName</code> as a valid filter attribute path currently,
+            and filter is required. This API returns minimum attributes, including <code>GroupId</code>
+            and group <code>DisplayName</code> in the response.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ListGroupsRequest.Filters">
+            <summary>
+            Gets and sets the property Filters. 
+            <para>
+            A list of <code>Filter</code> objects, which is used in the <code>ListUsers</code>
+            and <code>ListGroups</code> request. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ListGroupsRequest.IdentityStoreId">
+            <summary>
+            Gets and sets the property IdentityStoreId. 
+            <para>
+            The globally unique identifier for the identity store, such as <code>d-1234567890</code>.
+            In this example, <code>d-</code> is a fixed prefix, and <code>1234567890</code> is
+            a randomly generated string that contains number and lower case letters. This value
+            is generated at the time that a new identity store is created.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ListGroupsRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results to be returned per request. This parameter is used in
+            the <code>ListUsers</code> and <code>ListGroups</code> request to specify how many
+            results to return in one page. The length limit is 50 characters.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ListGroupsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The pagination token used for the <code>ListUsers</code> and <code>ListGroups</code>
+            API operations. This value is generated by the identity store service. It is returned
+            in the API response if the total results are more than the size of one page. This
+            token is also returned when it is used in the API request to search for the next page.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.ListGroupsResponse">
+            <summary>
+            This is the response object from the ListGroups operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ListGroupsResponse.Groups">
+            <summary>
+            Gets and sets the property Groups. 
+            <para>
+            A list of <code>Group</code> objects in the identity store.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ListGroupsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The pagination token used for the <code>ListUsers</code> and <code>ListGroups</code>
+            API operations. This value is generated by the identity store service. It is returned
+            in the API response if the total results are more than the size of one page. This
+            token is also returned when it1 is used in the API request to search for the next
+            page.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.ListUsersRequest">
+            <summary>
+            Container for the parameters to the ListUsers operation.
+            Lists the attribute name and value of the user that you specified in the search. We
+            only support <code>UserName</code> as a valid filter attribute path currently, and
+            filter is required. This API returns minimum attributes, including <code>UserId</code>
+            and <code>UserName</code> in the response.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ListUsersRequest.Filters">
+            <summary>
+            Gets and sets the property Filters. 
+            <para>
+            A list of <code>Filter</code> objects, which is used in the <code>ListUsers</code>
+            and <code>ListGroups</code> request. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ListUsersRequest.IdentityStoreId">
+            <summary>
+            Gets and sets the property IdentityStoreId. 
+            <para>
+            The globally unique identifier for the identity store, such as <code>d-1234567890</code>.
+            In this example, <code>d-</code> is a fixed prefix, and <code>1234567890</code> is
+            a randomly generated string that contains number and lower case letters. This value
+            is generated at the time that a new identity store is created.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ListUsersRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results to be returned per request. This parameter is used in
+            the <code>ListUsers</code> and <code>ListGroups</code> request to specify how many
+            results to return in one page. The length limit is 50 characters.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ListUsersRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The pagination token used for the <code>ListUsers</code> and <code>ListGroups</code>
+            API operations. This value is generated by the identity store service. It is returned
+            in the API response if the total results are more than the size of one page. This
+            token is also returned when it is used in the API request to search for the next page.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.ListUsersResponse">
+            <summary>
+            This is the response object from the ListUsers operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ListUsersResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The pagination token used for the <code>ListUsers</code> and <code>ListGroups</code>
+            API operations. This value is generated by the identity store service. It is returned
+            in the API response if the total results are more than the size of one page. This
+            token is also returned when it is used in the API request to search for the next page.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ListUsersResponse.Users">
+            <summary>
+            Gets and sets the property Users. 
+            <para>
+            A list of <code>User</code> objects in the identity store.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            <summary>
+            Indicates that a requested resource is not found.
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ResourceNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ResourceNotFoundException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ResourceNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ResourceNotFoundException.RequestId">
+            <summary>
+            Gets and sets the property RequestId. 
+            <para>
+            The identifier for each request. This value is a globally unique ID that is generated
+            by the Identity Store service for each sent request, and is then returned inside the
+            exception if the request fails.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ResourceNotFoundException.ResourceId">
+            <summary>
+            Gets and sets the property ResourceId. 
+            <para>
+            The identifier for a resource in the identity store, which can be used as <code>UserId</code>
+            or <code>GroupId</code>. The format for <code>ResourceId</code> is either <code>UUID</code>
+            or <code>1234567890-UUID</code>, where <code>UUID</code> is a randomly generated value
+            for each resource when it is created and <code>1234567890</code> represents the <code>IdentityStoreId</code>
+            string value. In the case that the identity store is migrated from a legacy SSO identity
+            store, the <code>ResourceId</code> for that identity store will be in the format of
+            <code>UUID</code>. Otherwise, it will be in the <code>1234567890-UUID</code> format.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ResourceNotFoundException.ResourceType">
+            <summary>
+            Gets and sets the property ResourceType. 
+            <para>
+            The type of resource in the Identity Store service, which is an enum object. Valid
+            values include USER, GROUP, and IDENTITY_STORE.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.ThrottlingException">
+            <summary>
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ThrottlingException.#ctor(System.String)">
+            <summary>
+            Constructs a new ThrottlingException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ThrottlingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ThrottlingException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ThrottlingException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ThrottlingException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ThrottlingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ThrottlingException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ThrottlingException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ThrottlingException.RequestId">
+            <summary>
+            Gets and sets the property RequestId. 
+            <para>
+            The identifier for each request. This value is a globally unique ID that is generated
+            by the Identity Store service for each sent request, and is then returned inside the
+            exception if the request fails.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.User">
+            <summary>
+            A user object, which contains a specified user’s metadata and attributes.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.User.UserId">
+            <summary>
+            Gets and sets the property UserId. 
+            <para>
+            The identifier for a user in the identity store.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.User.UserName">
+            <summary>
+            Gets and sets the property UserName. 
+            <para>
+            Contains the user’s user name value. The length limit is 128 characters. This value
+            can consist of letters, accented characters, symbols, numbers, and punctuation. The
+            characters <code>&lt;&gt;;:%</code> are excluded. This value is specified at the time
+            the user is created and stored as an attribute of the user object in the identity
+            store.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.ValidationException">
+            <summary>
+            The request failed because it contains a syntax error.
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ValidationException.#ctor(System.String)">
+            <summary>
+            Constructs a new ValidationException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ValidationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ValidationException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ValidationException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ValidationException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ValidationException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.ValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ValidationException.RequestId">
+            <summary>
+            Gets and sets the property RequestId. 
+            <para>
+            The identifier for each request. This value is a globally unique ID that is generated
+            by the Identity Store service for each sent request, and is then returned inside the
+            exception if the request fails.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.IdentityStorePaginatorFactory">
+             <summary>
+             Paginators for the IdentityStore service
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.IdentityStorePaginatorFactory.ListGroups(Amazon.IdentityStore.Model.ListGroupsRequest)">
+             <summary>
+             Paginator for ListGroups operation
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.IdentityStorePaginatorFactory.ListUsers(Amazon.IdentityStore.Model.ListUsersRequest)">
+             <summary>
+             Paginator for ListUsers operation
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.IIdentityStorePaginatorFactory">
+             <summary>
+             Paginators for the IdentityStore service
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.IIdentityStorePaginatorFactory.ListGroups(Amazon.IdentityStore.Model.ListGroupsRequest)">
+             <summary>
+             Paginator for ListGroups operation
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.Model.IIdentityStorePaginatorFactory.ListUsers(Amazon.IdentityStore.Model.ListUsersRequest)">
+             <summary>
+             Paginator for ListUsers operation
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.IListGroupsPaginator">
+             <summary>
+             Paginator for the ListGroups operation
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.IListGroupsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.IListUsersPaginator">
+             <summary>
+             Paginator for the ListUsers operation
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.IListUsersPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.ListGroupsPaginator">
+            <summary>
+            Base class for ListGroups paginators.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ListGroupsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.Model.ListUsersPaginator">
+            <summary>
+            Base class for ListUsers paginators.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.Model.ListUsersPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.AmazonIdentityStoreRequest">
+            <summary>
+            Base class for IdentityStore operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.IdentityStore.ResourceType">
+            <summary>
+            Constants used for properties of type ResourceType.
+            </summary>
+        </member>
+        <member name="F:Amazon.IdentityStore.ResourceType.GROUP">
+            <summary>
+            Constant GROUP for ResourceType
+            </summary>
+        </member>
+        <member name="F:Amazon.IdentityStore.ResourceType.IDENTITY_STORE">
+            <summary>
+            Constant IDENTITY_STORE for ResourceType
+            </summary>
+        </member>
+        <member name="F:Amazon.IdentityStore.ResourceType.USER">
+            <summary>
+            Constant USER for ResourceType
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.ResourceType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.ResourceType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.IdentityStore.ResourceType.op_Implicit(System.String)~Amazon.IdentityStore.ResourceType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.IdentityStore.AmazonIdentityStoreClient">
+             <summary>
+             Implementation for accessing IdentityStore
+            
+             The AWS Single Sign-On (SSO) Identity Store service provides a single place to retrieve
+             all of your identities (users and groups). For more information about AWS, see the
+             <a href="https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html">AWS
+             Single Sign-On User Guide</a>.
+             </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.AmazonIdentityStoreClient.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.#ctor">
+             <summary>
+             Constructs AmazonIdentityStoreClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonIdentityStoreClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.#ctor(Amazon.IdentityStore.AmazonIdentityStoreConfig)">
+             <summary>
+             Constructs AmazonIdentityStoreClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonIdentityStoreClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonIdentityStoreClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonIdentityStoreClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.IdentityStore.AmazonIdentityStoreConfig)">
+            <summary>
+            Constructs AmazonIdentityStoreClient with AWS Credentials and an
+            AmazonIdentityStoreClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonIdentityStoreClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonIdentityStoreClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonIdentityStoreClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.#ctor(System.String,System.String,Amazon.IdentityStore.AmazonIdentityStoreConfig)">
+            <summary>
+            Constructs AmazonIdentityStoreClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonIdentityStoreClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonIdentityStoreClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonIdentityStoreClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonIdentityStoreClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.#ctor(System.String,System.String,System.String,Amazon.IdentityStore.AmazonIdentityStoreConfig)">
+            <summary>
+            Constructs AmazonIdentityStoreClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonIdentityStoreClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonIdentityStoreClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.AmazonIdentityStoreClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.DescribeGroup(Amazon.IdentityStore.Model.DescribeGroupRequest)">
+            <summary>
+            Retrieves the group metadata and attributes from <code>GroupId</code> in an identity
+            store.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeGroup service method.</param>
+            
+            <returns>The response from the DescribeGroup service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/DescribeGroup">REST API Reference for DescribeGroup Operation</seealso>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.DescribeGroupAsync(Amazon.IdentityStore.Model.DescribeGroupRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves the group metadata and attributes from <code>GroupId</code> in an identity
+            store.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeGroup service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeGroup service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/DescribeGroup">REST API Reference for DescribeGroup Operation</seealso>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.DescribeUser(Amazon.IdentityStore.Model.DescribeUserRequest)">
+            <summary>
+            Retrieves the user metadata and attributes from <code>UserId</code> in an identity
+            store.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeUser service method.</param>
+            
+            <returns>The response from the DescribeUser service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/DescribeUser">REST API Reference for DescribeUser Operation</seealso>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.DescribeUserAsync(Amazon.IdentityStore.Model.DescribeUserRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves the user metadata and attributes from <code>UserId</code> in an identity
+            store.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeUser service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeUser service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/DescribeUser">REST API Reference for DescribeUser Operation</seealso>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.ListGroups(Amazon.IdentityStore.Model.ListGroupsRequest)">
+            <summary>
+            Lists the attribute name and value of the group that you specified in the search.
+            We only support <code>DisplayName</code> as a valid filter attribute path currently,
+            and filter is required. This API returns minimum attributes, including <code>GroupId</code>
+            and group <code>DisplayName</code> in the response.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListGroups service method.</param>
+            
+            <returns>The response from the ListGroups service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/ListGroups">REST API Reference for ListGroups Operation</seealso>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.ListGroupsAsync(Amazon.IdentityStore.Model.ListGroupsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Lists the attribute name and value of the group that you specified in the search.
+            We only support <code>DisplayName</code> as a valid filter attribute path currently,
+            and filter is required. This API returns minimum attributes, including <code>GroupId</code>
+            and group <code>DisplayName</code> in the response.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListGroups service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListGroups service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/ListGroups">REST API Reference for ListGroups Operation</seealso>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.ListUsers(Amazon.IdentityStore.Model.ListUsersRequest)">
+            <summary>
+            Lists the attribute name and value of the user that you specified in the search. We
+            only support <code>UserName</code> as a valid filter attribute path currently, and
+            filter is required. This API returns minimum attributes, including <code>UserId</code>
+            and <code>UserName</code> in the response.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListUsers service method.</param>
+            
+            <returns>The response from the ListUsers service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/ListUsers">REST API Reference for ListUsers Operation</seealso>
+        </member>
+        <member name="M:Amazon.IdentityStore.AmazonIdentityStoreClient.ListUsersAsync(Amazon.IdentityStore.Model.ListUsersRequest,System.Threading.CancellationToken)">
+            <summary>
+            Lists the attribute name and value of the user that you specified in the search. We
+            only support <code>UserName</code> as a valid filter attribute path currently, and
+            filter is required. This API returns minimum attributes, including <code>UserId</code>
+            and <code>UserName</code> in the response.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListUsers service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListUsers service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/ListUsers">REST API Reference for ListUsers Operation</seealso>
+        </member>
+        <member name="T:Amazon.IdentityStore.IAmazonIdentityStore">
+             <summary>
+             Interface for accessing IdentityStore
+            
+             The AWS Single Sign-On (SSO) Identity Store service provides a single place to retrieve
+             all of your identities (users and groups). For more information about AWS, see the
+             <a href="https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html">AWS
+             Single Sign-On User Guide</a>.
+             </summary>
+        </member>
+        <member name="P:Amazon.IdentityStore.IAmazonIdentityStore.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.IdentityStore.IAmazonIdentityStore.DescribeGroup(Amazon.IdentityStore.Model.DescribeGroupRequest)">
+            <summary>
+            Retrieves the group metadata and attributes from <code>GroupId</code> in an identity
+            store.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeGroup service method.</param>
+            
+            <returns>The response from the DescribeGroup service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/DescribeGroup">REST API Reference for DescribeGroup Operation</seealso>
+        </member>
+        <member name="M:Amazon.IdentityStore.IAmazonIdentityStore.DescribeGroupAsync(Amazon.IdentityStore.Model.DescribeGroupRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves the group metadata and attributes from <code>GroupId</code> in an identity
+            store.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeGroup service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeGroup service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/DescribeGroup">REST API Reference for DescribeGroup Operation</seealso>
+        </member>
+        <member name="M:Amazon.IdentityStore.IAmazonIdentityStore.DescribeUser(Amazon.IdentityStore.Model.DescribeUserRequest)">
+            <summary>
+            Retrieves the user metadata and attributes from <code>UserId</code> in an identity
+            store.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeUser service method.</param>
+            
+            <returns>The response from the DescribeUser service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/DescribeUser">REST API Reference for DescribeUser Operation</seealso>
+        </member>
+        <member name="M:Amazon.IdentityStore.IAmazonIdentityStore.DescribeUserAsync(Amazon.IdentityStore.Model.DescribeUserRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves the user metadata and attributes from <code>UserId</code> in an identity
+            store.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeUser service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeUser service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/DescribeUser">REST API Reference for DescribeUser Operation</seealso>
+        </member>
+        <member name="M:Amazon.IdentityStore.IAmazonIdentityStore.ListGroups(Amazon.IdentityStore.Model.ListGroupsRequest)">
+            <summary>
+            Lists the attribute name and value of the group that you specified in the search.
+            We only support <code>DisplayName</code> as a valid filter attribute path currently,
+            and filter is required. This API returns minimum attributes, including <code>GroupId</code>
+            and group <code>DisplayName</code> in the response.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListGroups service method.</param>
+            
+            <returns>The response from the ListGroups service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/ListGroups">REST API Reference for ListGroups Operation</seealso>
+        </member>
+        <member name="M:Amazon.IdentityStore.IAmazonIdentityStore.ListGroupsAsync(Amazon.IdentityStore.Model.ListGroupsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Lists the attribute name and value of the group that you specified in the search.
+            We only support <code>DisplayName</code> as a valid filter attribute path currently,
+            and filter is required. This API returns minimum attributes, including <code>GroupId</code>
+            and group <code>DisplayName</code> in the response.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListGroups service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListGroups service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/ListGroups">REST API Reference for ListGroups Operation</seealso>
+        </member>
+        <member name="M:Amazon.IdentityStore.IAmazonIdentityStore.ListUsers(Amazon.IdentityStore.Model.ListUsersRequest)">
+            <summary>
+            Lists the attribute name and value of the user that you specified in the search. We
+            only support <code>UserName</code> as a valid filter attribute path currently, and
+            filter is required. This API returns minimum attributes, including <code>UserId</code>
+            and <code>UserName</code> in the response.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListUsers service method.</param>
+            
+            <returns>The response from the ListUsers service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/ListUsers">REST API Reference for ListUsers Operation</seealso>
+        </member>
+        <member name="M:Amazon.IdentityStore.IAmazonIdentityStore.ListUsersAsync(Amazon.IdentityStore.Model.ListUsersRequest,System.Threading.CancellationToken)">
+            <summary>
+            Lists the attribute name and value of the user that you specified in the search. We
+            only support <code>UserName</code> as a valid filter attribute path currently, and
+            filter is required. This API returns minimum attributes, including <code>UserId</code>
+            and <code>UserName</code> in the response.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListUsers service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListUsers service method, as returned by IdentityStore.</returns>
+            <exception cref="T:Amazon.IdentityStore.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception or failure
+            with an internal server.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ResourceNotFoundException">
+            Indicates that a requested resource is not found.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ThrottlingException">
+            Indicates that the principal has crossed the throttling limits of the API operations.
+            </exception>
+            <exception cref="T:Amazon.IdentityStore.Model.ValidationException">
+            The request failed because it contains a syntax error.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/identitystore-2020-06-15/ListUsers">REST API Reference for ListUsers Operation</seealso>
+        </member>
+    </members>
+</doc>

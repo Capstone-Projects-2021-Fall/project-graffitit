@@ -1,0 +1,1823 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.SageMakerFeatureStoreRuntime</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeConfig">
+            <summary>
+            Configuration for accessing Amazon SageMakerFeatureStoreRuntime service
+            </summary>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeException">
+            <summary>
+             Common exception for the SageMakerFeatureStoreRuntime service.
+             </summary>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonSageMakerFeatureStoreRuntimeException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonSageMakerFeatureStoreRuntimeException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonSageMakerFeatureStoreRuntimeException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonSageMakerFeatureStoreRuntimeException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonSageMakerFeatureStoreRuntimeException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonSageMakerFeatureStoreRuntimeException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Internal.AmazonSageMakerFeatureStoreRuntimeMetadata">
+            <summary>
+            Service metadata for  Amazon SageMakerFeatureStoreRuntime service
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Internal.AmazonSageMakerFeatureStoreRuntimeMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Internal.AmazonSageMakerFeatureStoreRuntimeMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            <summary>
+            You do not have permission to perform an action.
+            </summary>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException.#ctor(System.String)">
+            <summary>
+            Constructs a new AccessForbiddenException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AccessForbiddenException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AccessForbiddenException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessForbiddenException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessForbiddenException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AccessForbiddenException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordError">
+            <summary>
+            The error that has occurred when attempting to retrieve a batch of Records.
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordError.ErrorCode">
+            <summary>
+            Gets and sets the property ErrorCode. 
+            <para>
+            The error code of an error that has occured when attempting to retrieve a batch of
+            Records. For more information on errors, see <a href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_GetRecord.html#API_feature_store_GetRecord_Errors">
+            Errors</a>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordError.ErrorMessage">
+            <summary>
+            Gets and sets the property ErrorMessage. 
+            <para>
+            The error message of an error that has occured when attempting to retrieve a record
+            in the batch.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordError.FeatureGroupName">
+            <summary>
+            Gets and sets the property FeatureGroupName. 
+            <para>
+            The name of the feature group that the record belongs to.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordError.RecordIdentifierValueAsString">
+            <summary>
+            Gets and sets the property RecordIdentifierValueAsString. 
+            <para>
+            The value for the <code>RecordIdentifier</code> in string format of a Record from
+            a <code>FeatureGroup</code> that is causing an error when attempting to be retrieved.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordIdentifier">
+            <summary>
+            The identifier that identifies the batch of Records you are retrieving in a batch.
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordIdentifier.FeatureGroupName">
+            <summary>
+            Gets and sets the property FeatureGroupName. 
+            <para>
+            A <code>FeatureGroupName</code> containing Records you are retrieving in a batch.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordIdentifier.FeatureNames">
+            <summary>
+            Gets and sets the property FeatureNames. 
+            <para>
+            List of names of Features to be retrieved. If not specified, the latest value for
+            all the Features are returned.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordIdentifier.RecordIdentifiersValueAsString">
+            <summary>
+            Gets and sets the property RecordIdentifiersValueAsString. 
+            <para>
+            The value for a list of record identifiers in string format.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordRequest">
+            <summary>
+            Container for the parameters to the BatchGetRecord operation.
+            Retrieves a batch of <code>Records</code> from a <code>FeatureGroup</code>.
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordRequest.Identifiers">
+            <summary>
+            Gets and sets the property Identifiers. 
+            <para>
+            A list of <code>FeatureGroup</code> names, with their corresponding <code>RecordIdentifier</code>
+            value, and Feature name that have been requested to be retrieved in batch.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordResponse">
+            <summary>
+            This is the response object from the BatchGetRecord operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordResponse.Errors">
+            <summary>
+            Gets and sets the property Errors. 
+            <para>
+            A list of errors that have occured when retrieving a batch of Records.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordResponse.Records">
+            <summary>
+            Gets and sets the property Records. 
+            <para>
+            A list of Records you requested to be retrieved in batch.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordResponse.UnprocessedIdentifiers">
+            <summary>
+            Gets and sets the property UnprocessedIdentifiers. 
+            <para>
+            A unprocessed list of <code>FeatureGroup</code> names, with their corresponding <code>RecordIdentifier</code>
+            value, and Feature name.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordResultDetail">
+            <summary>
+            The output of Records that have been retrieved in a batch.
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordResultDetail.FeatureGroupName">
+            <summary>
+            Gets and sets the property FeatureGroupName. 
+            <para>
+            The <code>FeatureGroupName</code> containing Records you retrieved in a batch.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordResultDetail.Record">
+            <summary>
+            Gets and sets the property Record. 
+            <para>
+            The <code>Record</code> retrieved.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordResultDetail.RecordIdentifierValueAsString">
+            <summary>
+            Gets and sets the property RecordIdentifierValueAsString. 
+            <para>
+            The value of the record identifer in string format.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.DeleteRecordRequest">
+            <summary>
+            Container for the parameters to the DeleteRecord operation.
+            Deletes a <code>Record</code> from a <code>FeatureGroup</code>. A new record will
+            show up in the <code>OfflineStore</code> when the <code>DeleteRecord</code> API is
+            called. This record will have a value of <code>True</code> in the <code>is_deleted</code>
+            column.
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.DeleteRecordRequest.EventTime">
+            <summary>
+            Gets and sets the property EventTime. 
+            <para>
+            Timestamp indicating when the deletion event occurred. <code>EventTime</code> can
+            be used to query data at a certain point in time.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.DeleteRecordRequest.FeatureGroupName">
+            <summary>
+            Gets and sets the property FeatureGroupName. 
+            <para>
+            The name of the feature group to delete the record from. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.DeleteRecordRequest.RecordIdentifierValueAsString">
+            <summary>
+            Gets and sets the property RecordIdentifierValueAsString. 
+            <para>
+            The value for the <code>RecordIdentifier</code> that uniquely identifies the record,
+            in string format. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.DeleteRecordResponse">
+            <summary>
+            This is the response object from the DeleteRecord operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.FeatureValue">
+            <summary>
+            The value associated with a feature.
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.FeatureValue.FeatureName">
+            <summary>
+            Gets and sets the property FeatureName. 
+            <para>
+            The name of a feature that a feature value corresponds to.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.FeatureValue.ValueAsString">
+            <summary>
+            Gets and sets the property ValueAsString. 
+            <para>
+            The value associated with a feature, in string format. Note that features types can
+            be String, Integral, or Fractional. This value represents all three types as a string.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.GetRecordRequest">
+            <summary>
+            Container for the parameters to the GetRecord operation.
+            Use for <code>OnlineStore</code> serving from a <code>FeatureStore</code>. Only the
+            latest records stored in the <code>OnlineStore</code> can be retrieved. If no Record
+            with <code>RecordIdentifierValue</code> is found, then an empty result is returned.
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.GetRecordRequest.FeatureGroupName">
+            <summary>
+            Gets and sets the property FeatureGroupName. 
+            <para>
+            The name of the feature group in which you want to put the records.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.GetRecordRequest.FeatureNames">
+            <summary>
+            Gets and sets the property FeatureNames. 
+            <para>
+            List of names of Features to be retrieved. If not specified, the latest value for
+            all the Features are returned.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.GetRecordRequest.RecordIdentifierValueAsString">
+            <summary>
+            Gets and sets the property RecordIdentifierValueAsString. 
+            <para>
+            The value that corresponds to <code>RecordIdentifier</code> type and uniquely identifies
+            the record in the <code>FeatureGroup</code>. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.GetRecordResponse">
+            <summary>
+            This is the response object from the GetRecord operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.GetRecordResponse.Record">
+            <summary>
+            Gets and sets the property Record. 
+            <para>
+            The record you requested. A list of <code>FeatureValues</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            <summary>
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </summary>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalFailureException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalFailureException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalFailureException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalFailureException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalFailureException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InternalFailureException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.AccessForbiddenExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for AccessForbiddenException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.AccessForbiddenExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.AccessForbiddenExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.AccessForbiddenExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordErrorUnmarshaller">
+            <summary>
+            Response Unmarshaller for BatchGetRecordError Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordErrorUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#SageMakerFeatureStoreRuntime#Model#BatchGetRecordError,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordErrorUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordErrorUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordIdentifierMarshaller">
+            <summary>
+            BatchGetRecordIdentifier Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordIdentifierMarshaller.Marshall(Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordIdentifier,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordIdentifierMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordIdentifierUnmarshaller">
+            <summary>
+            Response Unmarshaller for BatchGetRecordIdentifier Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordIdentifierUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#SageMakerFeatureStoreRuntime#Model#BatchGetRecordIdentifier,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordIdentifierUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordIdentifierUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordRequestMarshaller">
+            <summary>
+            BatchGetRecord Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordRequestMarshaller.Marshall(Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for BatchGetRecord operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordResultDetailUnmarshaller">
+            <summary>
+            Response Unmarshaller for BatchGetRecordResultDetail Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordResultDetailUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#SageMakerFeatureStoreRuntime#Model#BatchGetRecordResultDetail,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordResultDetailUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.BatchGetRecordResultDetailUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.DeleteRecordRequestMarshaller">
+            <summary>
+            DeleteRecord Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.DeleteRecordRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.DeleteRecordRequestMarshaller.Marshall(Amazon.SageMakerFeatureStoreRuntime.Model.DeleteRecordRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.DeleteRecordRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.DeleteRecordResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DeleteRecord operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.DeleteRecordResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.DeleteRecordResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.DeleteRecordResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.FeatureValueMarshaller">
+            <summary>
+            FeatureValue Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.FeatureValueMarshaller.Marshall(Amazon.SageMakerFeatureStoreRuntime.Model.FeatureValue,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.FeatureValueMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.FeatureValueUnmarshaller">
+            <summary>
+            Response Unmarshaller for FeatureValue Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.FeatureValueUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#SageMakerFeatureStoreRuntime#Model#FeatureValue,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.FeatureValueUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.FeatureValueUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.GetRecordRequestMarshaller">
+            <summary>
+            GetRecord Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.GetRecordRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.GetRecordRequestMarshaller.Marshall(Amazon.SageMakerFeatureStoreRuntime.Model.GetRecordRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.GetRecordRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.GetRecordResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetRecord operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.GetRecordResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.GetRecordResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.GetRecordResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.InternalFailureExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalFailureException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.InternalFailureExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.InternalFailureExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.InternalFailureExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.PutRecordRequestMarshaller">
+            <summary>
+            PutRecord Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.PutRecordRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.PutRecordRequestMarshaller.Marshall(Amazon.SageMakerFeatureStoreRuntime.Model.PutRecordRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.PutRecordRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.PutRecordResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for PutRecord operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.PutRecordResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.PutRecordResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.PutRecordResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceNotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.ServiceUnavailableExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ServiceUnavailableException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.ServiceUnavailableExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.ServiceUnavailableExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.ServiceUnavailableExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.ValidationErrorExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ValidationErrorException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.ValidationErrorExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.ValidationErrorExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.Internal.MarshallTransformations.ValidationErrorExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.PutRecordRequest">
+            <summary>
+            Container for the parameters to the PutRecord operation.
+            Used for data ingestion into the <code>FeatureStore</code>. The <code>PutRecord</code>
+            API writes to both the <code>OnlineStore</code> and <code>OfflineStore</code>. If
+            the record is the latest record for the <code>recordIdentifier</code>, the record
+            is written to both the <code>OnlineStore</code> and <code>OfflineStore</code>. If
+            the record is a historic record, it is written only to the <code>OfflineStore</code>.
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.PutRecordRequest.FeatureGroupName">
+            <summary>
+            Gets and sets the property FeatureGroupName. 
+            <para>
+            The name of the feature group that you want to insert the record into.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.Model.PutRecordRequest.Record">
+            <summary>
+            Gets and sets the property Record. 
+            <para>
+            List of FeatureValues to be inserted. This will be a full over-write. If you only
+            want to update few of the feature values, do the following:
+            </para>
+             <ul> <li> 
+            <para>
+            Use <code>GetRecord</code> to retrieve the latest record.
+            </para>
+             </li> <li> 
+            <para>
+            Update the record returned from <code>GetRecord</code>. 
+            </para>
+             </li> <li> 
+            <para>
+            Use <code>PutRecord</code> to update feature values.
+            </para>
+             </li> </ul>
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.PutRecordResponse">
+            <summary>
+            This is the response object from the PutRecord operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.ResourceNotFoundException">
+            <summary>
+            A resource that is required to perform an action was not found.
+            </summary>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ResourceNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ResourceNotFoundException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ResourceNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            <summary>
+            The service is currently unavailable.
+            </summary>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException.#ctor(System.String)">
+            <summary>
+            Constructs a new ServiceUnavailableException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ServiceUnavailableException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ServiceUnavailableException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceUnavailableException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceUnavailableException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ServiceUnavailableException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            <summary>
+            There was an error validating your request.
+            </summary>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException.#ctor(System.String)">
+            <summary>
+            Constructs a new ValidationErrorException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ValidationErrorException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ValidationErrorException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationErrorException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationErrorException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ValidationErrorException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeRequest">
+            <summary>
+            Base class for SageMakerFeatureStoreRuntime operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient">
+             <summary>
+             Implementation for accessing SageMakerFeatureStoreRuntime
+            
+             Contains all data plane API operations and data types for the Amazon SageMaker Feature
+             Store. Use this API to put, delete, and retrieve (get) features from a feature store.
+             
+              
+             <para>
+             Use the following operations to configure your <code>OnlineStore</code> and <code>OfflineStore</code>
+             features, and to create and manage feature groups:
+             </para>
+              <ul> <li> 
+             <para>
+              <a href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateFeatureGroup.html">CreateFeatureGroup</a>
+             
+             </para>
+              </li> <li> 
+             <para>
+              <a href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteFeatureGroup.html">DeleteFeatureGroup</a>
+             
+             </para>
+              </li> <li> 
+             <para>
+              <a href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html">DescribeFeatureGroup</a>
+             
+             </para>
+              </li> <li> 
+             <para>
+              <a href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListFeatureGroups.html">ListFeatureGroups</a>
+             
+             </para>
+              </li> </ul>
+             </summary>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.#ctor">
+             <summary>
+             Constructs AmazonSageMakerFeatureStoreRuntimeClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonSageMakerFeatureStoreRuntimeClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.#ctor(Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeConfig)">
+             <summary>
+             Constructs AmazonSageMakerFeatureStoreRuntimeClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonSageMakerFeatureStoreRuntimeClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonSageMakerFeatureStoreRuntimeClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonSageMakerFeatureStoreRuntimeClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeConfig)">
+            <summary>
+            Constructs AmazonSageMakerFeatureStoreRuntimeClient with AWS Credentials and an
+            AmazonSageMakerFeatureStoreRuntimeClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonSageMakerFeatureStoreRuntimeClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonSageMakerFeatureStoreRuntimeClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonSageMakerFeatureStoreRuntimeClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.#ctor(System.String,System.String,Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeConfig)">
+            <summary>
+            Constructs AmazonSageMakerFeatureStoreRuntimeClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonSageMakerFeatureStoreRuntimeClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonSageMakerFeatureStoreRuntimeClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonSageMakerFeatureStoreRuntimeClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonSageMakerFeatureStoreRuntimeClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.#ctor(System.String,System.String,System.String,Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeConfig)">
+            <summary>
+            Constructs AmazonSageMakerFeatureStoreRuntimeClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonSageMakerFeatureStoreRuntimeClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonSageMakerFeatureStoreRuntimeClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.BatchGetRecord(Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordRequest)">
+            <summary>
+            Retrieves a batch of <code>Records</code> from a <code>FeatureGroup</code>.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the BatchGetRecord service method.</param>
+            
+            <returns>The response from the BatchGetRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/BatchGetRecord">REST API Reference for BatchGetRecord Operation</seealso>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.BatchGetRecordAsync(Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves a batch of <code>Records</code> from a <code>FeatureGroup</code>.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the BatchGetRecord service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the BatchGetRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/BatchGetRecord">REST API Reference for BatchGetRecord Operation</seealso>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.DeleteRecord(Amazon.SageMakerFeatureStoreRuntime.Model.DeleteRecordRequest)">
+            <summary>
+            Deletes a <code>Record</code> from a <code>FeatureGroup</code>. A new record will
+            show up in the <code>OfflineStore</code> when the <code>DeleteRecord</code> API is
+            called. This record will have a value of <code>True</code> in the <code>is_deleted</code>
+            column.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteRecord service method.</param>
+            
+            <returns>The response from the DeleteRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/DeleteRecord">REST API Reference for DeleteRecord Operation</seealso>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.DeleteRecordAsync(Amazon.SageMakerFeatureStoreRuntime.Model.DeleteRecordRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes a <code>Record</code> from a <code>FeatureGroup</code>. A new record will
+            show up in the <code>OfflineStore</code> when the <code>DeleteRecord</code> API is
+            called. This record will have a value of <code>True</code> in the <code>is_deleted</code>
+            column.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteRecord service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/DeleteRecord">REST API Reference for DeleteRecord Operation</seealso>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.GetRecord(Amazon.SageMakerFeatureStoreRuntime.Model.GetRecordRequest)">
+            <summary>
+            Use for <code>OnlineStore</code> serving from a <code>FeatureStore</code>. Only the
+            latest records stored in the <code>OnlineStore</code> can be retrieved. If no Record
+            with <code>RecordIdentifierValue</code> is found, then an empty result is returned.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetRecord service method.</param>
+            
+            <returns>The response from the GetRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ResourceNotFoundException">
+            A resource that is required to perform an action was not found.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/GetRecord">REST API Reference for GetRecord Operation</seealso>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.GetRecordAsync(Amazon.SageMakerFeatureStoreRuntime.Model.GetRecordRequest,System.Threading.CancellationToken)">
+            <summary>
+            Use for <code>OnlineStore</code> serving from a <code>FeatureStore</code>. Only the
+            latest records stored in the <code>OnlineStore</code> can be retrieved. If no Record
+            with <code>RecordIdentifierValue</code> is found, then an empty result is returned.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetRecord service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ResourceNotFoundException">
+            A resource that is required to perform an action was not found.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/GetRecord">REST API Reference for GetRecord Operation</seealso>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.PutRecord(Amazon.SageMakerFeatureStoreRuntime.Model.PutRecordRequest)">
+            <summary>
+            Used for data ingestion into the <code>FeatureStore</code>. The <code>PutRecord</code>
+            API writes to both the <code>OnlineStore</code> and <code>OfflineStore</code>. If
+            the record is the latest record for the <code>recordIdentifier</code>, the record
+            is written to both the <code>OnlineStore</code> and <code>OfflineStore</code>. If
+            the record is a historic record, it is written only to the <code>OfflineStore</code>.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutRecord service method.</param>
+            
+            <returns>The response from the PutRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/PutRecord">REST API Reference for PutRecord Operation</seealso>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.AmazonSageMakerFeatureStoreRuntimeClient.PutRecordAsync(Amazon.SageMakerFeatureStoreRuntime.Model.PutRecordRequest,System.Threading.CancellationToken)">
+            <summary>
+            Used for data ingestion into the <code>FeatureStore</code>. The <code>PutRecord</code>
+            API writes to both the <code>OnlineStore</code> and <code>OfflineStore</code>. If
+            the record is the latest record for the <code>recordIdentifier</code>, the record
+            is written to both the <code>OnlineStore</code> and <code>OfflineStore</code>. If
+            the record is a historic record, it is written only to the <code>OfflineStore</code>.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutRecord service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the PutRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/PutRecord">REST API Reference for PutRecord Operation</seealso>
+        </member>
+        <member name="T:Amazon.SageMakerFeatureStoreRuntime.IAmazonSageMakerFeatureStoreRuntime">
+             <summary>
+             Interface for accessing SageMakerFeatureStoreRuntime
+            
+             Contains all data plane API operations and data types for the Amazon SageMaker Feature
+             Store. Use this API to put, delete, and retrieve (get) features from a feature store.
+             
+              
+             <para>
+             Use the following operations to configure your <code>OnlineStore</code> and <code>OfflineStore</code>
+             features, and to create and manage feature groups:
+             </para>
+              <ul> <li> 
+             <para>
+              <a href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateFeatureGroup.html">CreateFeatureGroup</a>
+             
+             </para>
+              </li> <li> 
+             <para>
+              <a href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteFeatureGroup.html">DeleteFeatureGroup</a>
+             
+             </para>
+              </li> <li> 
+             <para>
+              <a href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html">DescribeFeatureGroup</a>
+             
+             </para>
+              </li> <li> 
+             <para>
+              <a href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListFeatureGroups.html">ListFeatureGroups</a>
+             
+             </para>
+              </li> </ul>
+             </summary>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.IAmazonSageMakerFeatureStoreRuntime.BatchGetRecord(Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordRequest)">
+            <summary>
+            Retrieves a batch of <code>Records</code> from a <code>FeatureGroup</code>.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the BatchGetRecord service method.</param>
+            
+            <returns>The response from the BatchGetRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/BatchGetRecord">REST API Reference for BatchGetRecord Operation</seealso>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.IAmazonSageMakerFeatureStoreRuntime.BatchGetRecordAsync(Amazon.SageMakerFeatureStoreRuntime.Model.BatchGetRecordRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves a batch of <code>Records</code> from a <code>FeatureGroup</code>.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the BatchGetRecord service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the BatchGetRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/BatchGetRecord">REST API Reference for BatchGetRecord Operation</seealso>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.IAmazonSageMakerFeatureStoreRuntime.DeleteRecord(Amazon.SageMakerFeatureStoreRuntime.Model.DeleteRecordRequest)">
+            <summary>
+            Deletes a <code>Record</code> from a <code>FeatureGroup</code>. A new record will
+            show up in the <code>OfflineStore</code> when the <code>DeleteRecord</code> API is
+            called. This record will have a value of <code>True</code> in the <code>is_deleted</code>
+            column.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteRecord service method.</param>
+            
+            <returns>The response from the DeleteRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/DeleteRecord">REST API Reference for DeleteRecord Operation</seealso>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.IAmazonSageMakerFeatureStoreRuntime.DeleteRecordAsync(Amazon.SageMakerFeatureStoreRuntime.Model.DeleteRecordRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes a <code>Record</code> from a <code>FeatureGroup</code>. A new record will
+            show up in the <code>OfflineStore</code> when the <code>DeleteRecord</code> API is
+            called. This record will have a value of <code>True</code> in the <code>is_deleted</code>
+            column.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteRecord service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/DeleteRecord">REST API Reference for DeleteRecord Operation</seealso>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.IAmazonSageMakerFeatureStoreRuntime.GetRecord(Amazon.SageMakerFeatureStoreRuntime.Model.GetRecordRequest)">
+            <summary>
+            Use for <code>OnlineStore</code> serving from a <code>FeatureStore</code>. Only the
+            latest records stored in the <code>OnlineStore</code> can be retrieved. If no Record
+            with <code>RecordIdentifierValue</code> is found, then an empty result is returned.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetRecord service method.</param>
+            
+            <returns>The response from the GetRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ResourceNotFoundException">
+            A resource that is required to perform an action was not found.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/GetRecord">REST API Reference for GetRecord Operation</seealso>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.IAmazonSageMakerFeatureStoreRuntime.GetRecordAsync(Amazon.SageMakerFeatureStoreRuntime.Model.GetRecordRequest,System.Threading.CancellationToken)">
+            <summary>
+            Use for <code>OnlineStore</code> serving from a <code>FeatureStore</code>. Only the
+            latest records stored in the <code>OnlineStore</code> can be retrieved. If no Record
+            with <code>RecordIdentifierValue</code> is found, then an empty result is returned.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetRecord service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ResourceNotFoundException">
+            A resource that is required to perform an action was not found.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/GetRecord">REST API Reference for GetRecord Operation</seealso>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.IAmazonSageMakerFeatureStoreRuntime.PutRecord(Amazon.SageMakerFeatureStoreRuntime.Model.PutRecordRequest)">
+            <summary>
+            Used for data ingestion into the <code>FeatureStore</code>. The <code>PutRecord</code>
+            API writes to both the <code>OnlineStore</code> and <code>OfflineStore</code>. If
+            the record is the latest record for the <code>recordIdentifier</code>, the record
+            is written to both the <code>OnlineStore</code> and <code>OfflineStore</code>. If
+            the record is a historic record, it is written only to the <code>OfflineStore</code>.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutRecord service method.</param>
+            
+            <returns>The response from the PutRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/PutRecord">REST API Reference for PutRecord Operation</seealso>
+        </member>
+        <member name="M:Amazon.SageMakerFeatureStoreRuntime.IAmazonSageMakerFeatureStoreRuntime.PutRecordAsync(Amazon.SageMakerFeatureStoreRuntime.Model.PutRecordRequest,System.Threading.CancellationToken)">
+            <summary>
+            Used for data ingestion into the <code>FeatureStore</code>. The <code>PutRecord</code>
+            API writes to both the <code>OnlineStore</code> and <code>OfflineStore</code>. If
+            the record is the latest record for the <code>recordIdentifier</code>, the record
+            is written to both the <code>OnlineStore</code> and <code>OfflineStore</code>. If
+            the record is a historic record, it is written only to the <code>OfflineStore</code>.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutRecord service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the PutRecord service method, as returned by SageMakerFeatureStoreRuntime.</returns>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.AccessForbiddenException">
+            You do not have permission to perform an action.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.InternalFailureException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ServiceUnavailableException">
+            The service is currently unavailable.
+            </exception>
+            <exception cref="T:Amazon.SageMakerFeatureStoreRuntime.Model.ValidationErrorException">
+            There was an error validating your request.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-featurestore-runtime-2020-07-01/PutRecord">REST API Reference for PutRecord Operation</seealso>
+        </member>
+    </members>
+</doc>
