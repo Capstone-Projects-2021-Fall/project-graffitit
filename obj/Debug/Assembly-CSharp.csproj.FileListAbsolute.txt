@@ -1,0 +1,2 @@
+C:\Users\wnz6k\OneDrive\Desktop\Temple\2021 Fall\CIS4398\project-graffitit\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+C:\Users\wnz6k\OneDrive\Desktop\Temple\2021 Fall\CIS4398\project-graffitit\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
