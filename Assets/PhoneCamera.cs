@@ -1,10 +1,13 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PhoneCamera : MonoBehaviour
 {
-
+    private string N_Latitude;
+    private string E_Longtitude;
+    public Text locationText;
     //Camera 
     private bool camAvailable;
     private WebCamTexture backCam;
@@ -45,6 +48,9 @@ public class PhoneCamera : MonoBehaviour
 
         camAvailable = true;
 
+
+        StartCoroutine(startGPS());
+       
     }
 
     // Update is called once per frame
@@ -113,5 +119,41 @@ public class PhoneCamera : MonoBehaviour
     {
         SceneManager.LoadScene("ProfilePage");
     }
+
+    IEnumerator startGPS()
+    {
+        if(!Input.location.isEnabledByUser)
+        {
+            Debug.Log("The user did not enable location service");
+            yield break;
+        } else
+        {
+            Input.location.Start(10.0f, 10.0f);
+        }
+        int maxWait = 20;
+        while(Input.location.status == LocationServiceStatus.Initializing && maxWait > 0)
+        {
+            yield return new WaitForSeconds(1);
+            maxWait--;
+        }
+        if(maxWait<1)
+        {
+            Debug.Log("Time exceeds limit");
+            yield break;
+        }
+        if(Input.location.status==LocationServiceStatus.Failed)
+        {
+            Debug.Log("Detect location failed");
+            yield break;
+        } else
+        {
+            N_Latitude = Input.location.lastData.latitude.ToString();
+            E_Longtitude = Input.location.lastData.longitude.ToString();
+            locationText.text = N_Latitude + E_Longtitude;
+            Input.location.Stop();
+            yield return null;
+        }
+    }
+
 }
 

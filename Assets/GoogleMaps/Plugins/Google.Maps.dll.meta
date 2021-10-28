@@ -4,19 +4,30 @@ labels:
 - gvh
 - gvh_version-0.0.0
 - gvhp_exportpath-GoogleMaps/Plugins/Google.Maps.dll
-timeCreated: 1550462581
-licenseType: Pro
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
   iconMap: {}
   executionOrder:
     Google.Maps.MapsService: 200
+  defineConstraints: []
   isPreloaded: 0
   isOverridable: 0
+  isExplicitlyReferenced: 0
+  validateReferences: 1
   platformData:
   - first:
-      Any:
+      '? ''''': WebStreamed
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Android: Android
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Any: 
     second:
       enabled: 1
       settings: {}
@@ -26,16 +37,6 @@ PluginImporter:
       enabled: 1
       settings:
         DefaultValueInitialized: true
-  - first:
-      Windows Store Apps: WindowsStoreApps
-    second:
-      enabled: 1
-      settings:
-        CPU: AnyCPU
-  - first:
-      Android: Android
-    second:
-      enabled: 1
   - first:
       Standalone: Linux
     second:
@@ -47,7 +48,7 @@ PluginImporter:
     second:
       enabled: 1
       settings:
-        CPU: x86_64
+        CPU: AnyCPU
   - first:
       Standalone: LinuxUniversal
     second:
@@ -73,15 +74,6 @@ PluginImporter:
       settings:
         CPU: AnyCPU
   - first:
-      WebGL: Web
-    second:
-      enabled: 1
-  - first:
-      ? ''
-      : WebStreamed
-    second:
-      enabled: 1
-  - first:
       Standalone: Win
     second:
       enabled: 1
@@ -94,9 +86,21 @@ PluginImporter:
       settings:
         CPU: x86_64
   - first:
+      WebGL: Web
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Windows Store Apps: WindowsStoreApps
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
       iPhone: iOS
     second:
       enabled: 1
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+      settings: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
