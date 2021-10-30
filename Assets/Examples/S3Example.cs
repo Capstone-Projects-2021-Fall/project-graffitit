@@ -58,6 +58,13 @@ namespace AWSSDK.Examples
             GetObjectsListButton.onClick.AddListener(() => { GetObjects(); });
             DeleteObjectButton.onClick.AddListener(() => { DeleteObject(); });
             GetObjectButton.onClick.AddListener(() => { GetObject(); });
+
+            AWSConfigs.HttpClient = AWSConfigs.HttpClientOption.UnityWebRequest;
+
+            AWSConfigs.LoggingConfig.LogTo = LoggingOptions.UnityLogger;
+            AWSConfigs.LoggingConfig.LogResponses = ResponseLoggingOption.Always;
+            AWSConfigs.LoggingConfig.LogMetrics = true;
+            AWSConfigs.CorrectForClockSkew = true;
         }
 
         #region private members
@@ -157,7 +164,8 @@ namespace AWSSDK.Examples
                 Bucket = S3BucketName,
                 Key = fileName,
                 InputStream = stream,
-                CannedACL = S3CannedACL.Private
+                CannedACL = S3CannedACL.Private,
+                Region = _S3Region
             };
 
             ResultText.text += "\nMaking HTTP post call";
@@ -171,7 +179,8 @@ namespace AWSSDK.Examples
                 else if(responseObj.Exception != null)
                 {
                     //ResultText.text += "\nException while posting the result object";
-                    ResultText.text += string.Format("\n receieved error {0}", responseObj.Response.HttpStatusCode.ToString());
+                    Debug.Log(responseObj.Exception.Message);
+                    //ResultText.text += string.Format("\n receieved error {0}", responseObj.Response.HttpStatusCode.ToString());
                     Debug.Log(string.Format("\n receieved error {0}", responseObj.Response.HttpStatusCode.ToString()));
                 }
             });
