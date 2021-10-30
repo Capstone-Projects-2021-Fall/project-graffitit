@@ -798,7 +798,7 @@ MonoBehaviour:
   CognitoIdentityRegion: us-east-2
   S3Region: us-east-2
   S3BucketName: my-graffitit-s3-bucket
-  SampleFileName: 2560x1440-Iceberg-Minimalist-1440P-Resolution-Wallpaper-HD-.jpg
+  SampleFileName: test.txt
   GetBucketListButton: {fileID: 1441414886}
   PostBucketButton: {fileID: 408278450}
   GetObjectsListButton: {fileID: 496104062}
