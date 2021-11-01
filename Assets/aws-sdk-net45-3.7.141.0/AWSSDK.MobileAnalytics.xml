@@ -1,0 +1,736 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.MobileAnalytics</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.MobileAnalytics.AmazonMobileAnalyticsConfig">
+            <summary>
+            Configuration for accessing Amazon MobileAnalytics service
+            </summary>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.AmazonMobileAnalyticsConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.AmazonMobileAnalyticsConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.AmazonMobileAnalyticsConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.MobileAnalytics.AmazonMobileAnalyticsException">
+            <summary>
+             Common exception for the MobileAnalytics service.
+             </summary>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonMobileAnalyticsException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonMobileAnalyticsException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonMobileAnalyticsException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonMobileAnalyticsException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonMobileAnalyticsException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonMobileAnalyticsException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.MobileAnalytics.Internal.AmazonMobileAnalyticsMetadata">
+            <summary>
+            Service metadata for  Amazon MobileAnalytics service
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Internal.AmazonMobileAnalyticsMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Internal.AmazonMobileAnalyticsMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.MobileAnalytics.AmazonMobileAnalyticsRequest">
+            <summary>
+            Base class for MobileAnalytics operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.MobileAnalytics.Model.BadRequestException">
+            <summary>
+            An exception object returned when a request fails.
+            </summary>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.BadRequestException.#ctor(System.String)">
+            <summary>
+            Constructs a new BadRequestException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.BadRequestException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.BadRequestException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.BadRequestException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.BadRequestException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.BadRequestException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the BadRequestException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.BadRequestException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.MobileAnalytics.Model.Event">
+            <summary>
+            A JSON object representing a batch of unique event occurrences in your app.
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Event.Attributes">
+            <summary>
+            Gets and sets the property Attributes. 
+            <para>
+            A collection of key-value pairs that give additional context to the event. The key-value
+            pairs are specified by the developer.
+            </para>
+             
+            <para>
+            This collection can be empty or the attribute object can be omitted.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Event.EventType">
+            <summary>
+            Gets and sets the property EventType. 
+            <para>
+            A name signifying an event that occurred in your app. This is used for grouping and
+            aggregating like events together for reporting purposes.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Event.Metrics">
+            <summary>
+            Gets and sets the property Metrics. 
+            <para>
+            A collection of key-value pairs that gives additional, measurable context to the event.
+            The key-value pairs are specified by the developer.
+            </para>
+             
+            <para>
+            This collection can be empty or the attribute object can be omitted.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Event.Session">
+            <summary>
+            Gets and sets the property Session. 
+            <para>
+            The session the event occured within. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Event.TimestampUtc">
+            <summary>
+            Gets and sets the property TimestampUtc. 
+            <para>
+            The time the event occurred in ISO 8601 standard date time format. For example, 2014-06-30T19:07:47.885Z
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Event.Version">
+            <summary>
+            Gets and sets the property Version. 
+            <para>
+            The version of the event.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Event.Timestamp">
+            <summary>
+            Gets and sets the property TimestampUtc. 
+            <para>
+            This property is deprecated. Setting this property results in non-UTC DateTimes not
+            being marshalled correctly. Use TimestampUtc instead. Setting either Timestamp or
+            TimestampUtc results in both Timestamp and TimestampUtc being assigned, the latest
+            assignment to either one of the two property is reflected in the value of both. Timestamp
+            is provided for backwards compatibility only and assigning a non-Utc DateTime to it
+            results in the wrong timestamp being passed to the service.
+            </para>
+             
+            <para>
+            The time the event occurred in ISO 8601 standard date time format. For example, 2014-06-30T19:07:47.885Z
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for BadRequestException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.EventMarshaller">
+            <summary>
+            Event Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.EventMarshaller.Marshall(Amazon.MobileAnalytics.Model.Event,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.EventMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.EventUnmarshaller">
+            <summary>
+            Response Unmarshaller for Event Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.EventUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#MobileAnalytics#Model#Event,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.EventUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.EventUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.PutEventsRequestMarshaller">
+            <summary>
+            PutEvents Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.PutEventsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.PutEventsRequestMarshaller.Marshall(Amazon.MobileAnalytics.Model.PutEventsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.PutEventsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.PutEventsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for PutEvents operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.PutEventsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.PutEventsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.PutEventsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.SessionMarshaller">
+            <summary>
+            Session Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.SessionMarshaller.Marshall(Amazon.MobileAnalytics.Model.Session,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.SessionMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.SessionUnmarshaller">
+            <summary>
+            Response Unmarshaller for Session Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.SessionUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#MobileAnalytics#Model#Session,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.SessionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Internal.MarshallTransformations.SessionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MobileAnalytics.Model.PutEventsRequest">
+            <summary>
+            Container for the parameters to the PutEvents operation.
+            The PutEvents operation records one or more events. You can have up to 1,500 unique
+            custom events per app, any combination of up to 40 attributes and metrics per custom
+            event, and any number of attribute or metric values.
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.PutEventsRequest.ClientContext">
+            <summary>
+            Gets and sets the property ClientContext. 
+            <para>
+            The client context including the client ID, app title, app version and package name.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.PutEventsRequest.ClientContextEncoding">
+            <summary>
+            Gets and sets the property ClientContextEncoding. 
+            <para>
+            The encoding used for the client context.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.PutEventsRequest.Events">
+            <summary>
+            Gets and sets the property Events. 
+            <para>
+            An array of Event JSON objects
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MobileAnalytics.Model.PutEventsResponse">
+            <summary>
+            This is the response object from the PutEvents operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.MobileAnalytics.Model.Session">
+            <summary>
+            Describes the session. Session information is required on ALL events.
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Session.Duration">
+            <summary>
+            Gets and sets the property Duration. 
+            <para>
+            The duration of the session.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Session.Id">
+            <summary>
+            Gets and sets the property Id. 
+            <para>
+            A unique identifier for the session
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Session.StartTimestampUtc">
+            <summary>
+            Gets and sets the property StartTimestampUtc. 
+            <para>
+            The time the event started in ISO 8601 standard date time format. For example, 2014-06-30T19:07:47.885Z
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Session.StopTimestampUtc">
+            <summary>
+            Gets and sets the property StopTimestampUtc. 
+            <para>
+            The time the event terminated in ISO 8601 standard date time format. For example,
+            2014-06-30T19:07:47.885Z
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Session.StartTimestamp">
+            <summary>
+            Gets and sets the property StartTimestampUtc. 
+            <para>
+            This property is deprecated. Setting this property results in non-UTC DateTimes not
+            being marshalled correctly. Use StartTimestampUtc instead. Setting either StartTimestamp
+            or StartTimestampUtc results in both StartTimestamp and StartTimestampUtc being assigned,
+            the latest assignment to either one of the two property is reflected in the value
+            of both. StartTimestamp is provided for backwards compatibility only and assigning
+            a non-Utc DateTime to it results in the wrong timestamp being passed to the service.
+            </para>
+             
+            <para>
+            The time the event started in ISO 8601 standard date time format. For example, 2014-06-30T19:07:47.885Z
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.Model.Session.StopTimestamp">
+            <summary>
+            Gets and sets the property StopTimestampUtc. 
+            <para>
+            This property is deprecated. Setting this property results in non-UTC DateTimes not
+            being marshalled correctly. Use StopTimestampUtc instead. Setting either StopTimestamp
+            or StopTimestampUtc results in both StopTimestamp and StopTimestampUtc being assigned,
+            the latest assignment to either one of the two property is reflected in the value
+            of both. StopTimestamp is provided for backwards compatibility only and assigning
+            a non-Utc DateTime to it results in the wrong timestamp being passed to the service.
+            </para>
+             
+            <para>
+            The time the event terminated in ISO 8601 standard date time format. For example,
+            2014-06-30T19:07:47.885Z
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient">
+             <summary>
+             Implementation for accessing MobileAnalytics
+            
+             Amazon Mobile Analytics is a service for collecting, visualizing, and understanding
+             app usage data at scale.
+             </summary>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.#ctor">
+             <summary>
+             Constructs AmazonMobileAnalyticsClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonMobileAnalyticsClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.#ctor(Amazon.MobileAnalytics.AmazonMobileAnalyticsConfig)">
+             <summary>
+             Constructs AmazonMobileAnalyticsClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonMobileAnalyticsClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonMobileAnalyticsClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonMobileAnalyticsClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.MobileAnalytics.AmazonMobileAnalyticsConfig)">
+            <summary>
+            Constructs AmazonMobileAnalyticsClient with AWS Credentials and an
+            AmazonMobileAnalyticsClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonMobileAnalyticsClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonMobileAnalyticsClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonMobileAnalyticsClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.#ctor(System.String,System.String,Amazon.MobileAnalytics.AmazonMobileAnalyticsConfig)">
+            <summary>
+            Constructs AmazonMobileAnalyticsClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonMobileAnalyticsClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonMobileAnalyticsClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonMobileAnalyticsClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonMobileAnalyticsClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.#ctor(System.String,System.String,System.String,Amazon.MobileAnalytics.AmazonMobileAnalyticsConfig)">
+            <summary>
+            Constructs AmazonMobileAnalyticsClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonMobileAnalyticsClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonMobileAnalyticsClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.PutEvents(Amazon.MobileAnalytics.Model.PutEventsRequest)">
+            <summary>
+            The PutEvents operation records one or more events. You can have up to 1,500 unique
+            custom events per app, any combination of up to 40 attributes and metrics per custom
+            event, and any number of attribute or metric values.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutEvents service method.</param>
+            
+            <returns>The response from the PutEvents service method, as returned by MobileAnalytics.</returns>
+            <exception cref="T:Amazon.MobileAnalytics.Model.BadRequestException">
+            An exception object returned when a request fails.
+            </exception>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.AmazonMobileAnalyticsClient.PutEventsAsync(Amazon.MobileAnalytics.Model.PutEventsRequest,System.Threading.CancellationToken)">
+            <summary>
+            The PutEvents operation records one or more events. You can have up to 1,500 unique
+            custom events per app, any combination of up to 40 attributes and metrics per custom
+            event, and any number of attribute or metric values.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutEvents service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the PutEvents service method, as returned by MobileAnalytics.</returns>
+            <exception cref="T:Amazon.MobileAnalytics.Model.BadRequestException">
+            An exception object returned when a request fails.
+            </exception>
+        </member>
+        <member name="T:Amazon.MobileAnalytics.IAmazonMobileAnalytics">
+             <summary>
+             Interface for accessing MobileAnalytics
+            
+             Amazon Mobile Analytics is a service for collecting, visualizing, and understanding
+             app usage data at scale.
+             </summary>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.IAmazonMobileAnalytics.PutEvents(Amazon.MobileAnalytics.Model.PutEventsRequest)">
+            <summary>
+            The PutEvents operation records one or more events. You can have up to 1,500 unique
+            custom events per app, any combination of up to 40 attributes and metrics per custom
+            event, and any number of attribute or metric values.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutEvents service method.</param>
+            
+            <returns>The response from the PutEvents service method, as returned by MobileAnalytics.</returns>
+            <exception cref="T:Amazon.MobileAnalytics.Model.BadRequestException">
+            An exception object returned when a request fails.
+            </exception>
+        </member>
+        <member name="M:Amazon.MobileAnalytics.IAmazonMobileAnalytics.PutEventsAsync(Amazon.MobileAnalytics.Model.PutEventsRequest,System.Threading.CancellationToken)">
+            <summary>
+            The PutEvents operation records one or more events. You can have up to 1,500 unique
+            custom events per app, any combination of up to 40 attributes and metrics per custom
+            event, and any number of attribute or metric values.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutEvents service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the PutEvents service method, as returned by MobileAnalytics.</returns>
+            <exception cref="T:Amazon.MobileAnalytics.Model.BadRequestException">
+            An exception object returned when a request fails.
+            </exception>
+        </member>
+    </members>
+</doc>

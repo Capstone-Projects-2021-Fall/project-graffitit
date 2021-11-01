@@ -1,0 +1,3470 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.ConnectParticipant</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.ConnectParticipant.AmazonConnectParticipantConfig">
+            <summary>
+            Configuration for accessing Amazon ConnectParticipant service
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.AmazonConnectParticipantConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.AmazonConnectParticipantConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.AmazonConnectParticipantConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.AmazonConnectParticipantException">
+            <summary>
+             Common exception for the ConnectParticipant service.
+             </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonConnectParticipantException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonConnectParticipantException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonConnectParticipantException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonConnectParticipantException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonConnectParticipantException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonConnectParticipantException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Internal.AmazonConnectParticipantMetadata">
+            <summary>
+            Service metadata for  Amazon ConnectParticipant service
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Internal.AmazonConnectParticipantMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Internal.AmazonConnectParticipantMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            <summary>
+            You do not have sufficient access to perform this action.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.AccessDeniedException.#ctor(System.String)">
+            <summary>
+            Constructs a new AccessDeniedException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.AccessDeniedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.AccessDeniedException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.AccessDeniedException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.AccessDeniedException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.AccessDeniedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AccessDeniedException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.AccessDeniedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.AttachmentItem">
+            <summary>
+            The case-insensitive input to indicate standard MIME type that describes the format
+            of the file that will be uploaded.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.AttachmentItem.AttachmentId">
+            <summary>
+            Gets and sets the property AttachmentId. 
+            <para>
+            A unique identifier for the attachment.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.AttachmentItem.AttachmentName">
+            <summary>
+            Gets and sets the property AttachmentName. 
+            <para>
+            A case-sensitive name of the attachment being uploaded.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.AttachmentItem.ContentType">
+            <summary>
+            Gets and sets the property ContentType. 
+            <para>
+            Describes the MIME file type of the attachment. For a list of supported file types,
+            see <a href="https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-service-limits.html#feature-limits">Feature
+            specifications</a> in the <i>Amazon Connect Administrator Guide</i>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.AttachmentItem.Status">
+            <summary>
+            Gets and sets the property Status. 
+            <para>
+            Status of the attachment.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.CompleteAttachmentUploadRequest">
+            <summary>
+            Container for the parameters to the CompleteAttachmentUpload operation.
+            Allows you to confirm that the attachment has been uploaded using the pre-signed URL
+            provided in StartAttachmentUpload API.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.CompleteAttachmentUploadRequest.AttachmentIds">
+            <summary>
+            Gets and sets the property AttachmentIds. 
+            <para>
+            A list of unique identifiers for the attachments.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.CompleteAttachmentUploadRequest.ClientToken">
+            <summary>
+            Gets and sets the property ClientToken. 
+            <para>
+            A unique, case-sensitive identifier that you provide to ensure the idempotency of
+            the request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.CompleteAttachmentUploadRequest.ConnectionToken">
+            <summary>
+            Gets and sets the property ConnectionToken. 
+            <para>
+            The authentication token associated with the participant's connection.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.CompleteAttachmentUploadResponse">
+            <summary>
+            This is the response object from the CompleteAttachmentUpload operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.ConflictException">
+            <summary>
+            An attachment with that identifier is already being uploaded.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ConflictException.#ctor(System.String)">
+            <summary>
+            Constructs a new ConflictException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ConflictException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ConflictException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ConflictException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ConflictException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ConflictException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ConflictException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ConflictException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.ConnectionCredentials">
+            <summary>
+            Connection credentials.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.ConnectionCredentials.ConnectionToken">
+            <summary>
+            Gets and sets the property ConnectionToken. 
+            <para>
+            The connection token.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.ConnectionCredentials.Expiry">
+            <summary>
+            Gets and sets the property Expiry. 
+            <para>
+            The expiration of the token.
+            </para>
+             
+            <para>
+            It's specified in ISO 8601 format: yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.CreateParticipantConnectionRequest">
+            <summary>
+            Container for the parameters to the CreateParticipantConnection operation.
+            Creates the participant's connection. Note that ParticipantToken is used for invoking
+            this API instead of ConnectionToken.
+            
+             
+            <para>
+            The participant token is valid for the lifetime of the participant – until they are
+            part of a contact.
+            </para>
+             
+            <para>
+            The response URL for <code>WEBSOCKET</code> Type has a connect expiry timeout of 100s.
+            Clients must manually connect to the returned websocket URL and subscribe to the desired
+            topic. 
+            </para>
+             
+            <para>
+            For chat, you need to publish the following on the established websocket connection:
+            </para>
+             
+            <para>
+             <code>{"topic":"aws/subscribe","content":{"topics":["aws/chat"]}}</code> 
+            </para>
+             
+            <para>
+            Upon websocket URL expiry, as specified in the response ConnectionExpiry parameter,
+            clients need to call this API again to obtain a new websocket URL and perform the
+            same steps as before.
+            </para>
+             <note> 
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.CreateParticipantConnectionRequest.ParticipantToken">
+            <summary>
+            Gets and sets the property ParticipantToken. 
+            <para>
+            This is a header parameter.
+            </para>
+             
+            <para>
+            The Participant Token as obtained from <a href="https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html">StartChatContact</a>
+            API response.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.CreateParticipantConnectionRequest.Type">
+            <summary>
+            Gets and sets the property Type. 
+            <para>
+            Type of connection information required.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.CreateParticipantConnectionResponse">
+            <summary>
+            This is the response object from the CreateParticipantConnection operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.CreateParticipantConnectionResponse.ConnectionCredentials">
+            <summary>
+            Gets and sets the property ConnectionCredentials. 
+            <para>
+            Creates the participant's connection credentials. The authentication token associated
+            with the participant's connection.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.CreateParticipantConnectionResponse.Websocket">
+            <summary>
+            Gets and sets the property Websocket. 
+            <para>
+            Creates the participant's websocket connection.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.DisconnectParticipantRequest">
+            <summary>
+            Container for the parameters to the DisconnectParticipant operation.
+            Disconnects a participant. Note that ConnectionToken is used for invoking this API
+            instead of ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.DisconnectParticipantRequest.ClientToken">
+            <summary>
+            Gets and sets the property ClientToken. 
+            <para>
+            A unique, case-sensitive identifier that you provide to ensure the idempotency of
+            the request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.DisconnectParticipantRequest.ConnectionToken">
+            <summary>
+            Gets and sets the property ConnectionToken. 
+            <para>
+            The authentication token associated with the participant's connection.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.DisconnectParticipantResponse">
+            <summary>
+            This is the response object from the DisconnectParticipant operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.GetAttachmentRequest">
+            <summary>
+            Container for the parameters to the GetAttachment operation.
+            Provides a pre-signed URL for download of a completed attachment. This is an asynchronous
+            API for use with active contacts.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetAttachmentRequest.AttachmentId">
+            <summary>
+            Gets and sets the property AttachmentId. 
+            <para>
+            A unique identifier for the attachment.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetAttachmentRequest.ConnectionToken">
+            <summary>
+            Gets and sets the property ConnectionToken. 
+            <para>
+            The authentication token associated with the participant's connection.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.GetAttachmentResponse">
+            <summary>
+            This is the response object from the GetAttachment operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetAttachmentResponse.Url">
+            <summary>
+            Gets and sets the property Url. 
+            <para>
+            The pre-signed URL using which file would be downloaded from Amazon S3 by the API
+            caller.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetAttachmentResponse.UrlExpiry">
+            <summary>
+            Gets and sets the property UrlExpiry. 
+            <para>
+            The expiration time of the URL in ISO timestamp. It's specified in ISO 8601 format:
+            yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.GetTranscriptRequest">
+            <summary>
+            Container for the parameters to the GetTranscript operation.
+            Retrieves a transcript of the session, including details about any attachments. Note
+            that ConnectionToken is used for invoking this API instead of ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetTranscriptRequest.ConnectionToken">
+            <summary>
+            Gets and sets the property ConnectionToken. 
+            <para>
+            The authentication token associated with the participant's connection.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetTranscriptRequest.ContactId">
+            <summary>
+            Gets and sets the property ContactId. 
+            <para>
+            The contactId from the current contact chain for which transcript is needed.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetTranscriptRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results to return in the page. Default: 10. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetTranscriptRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The pagination token. Use the value returned previously in the next subsequent request
+            to retrieve the next set of results.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetTranscriptRequest.ScanDirection">
+            <summary>
+            Gets and sets the property ScanDirection. 
+            <para>
+            The direction from StartPosition from which to retrieve message. Default: BACKWARD
+            when no StartPosition is provided, FORWARD with StartPosition. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetTranscriptRequest.SortOrder">
+            <summary>
+            Gets and sets the property SortOrder. 
+            <para>
+            The sort order for the records. Default: DESCENDING.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetTranscriptRequest.StartPosition">
+            <summary>
+            Gets and sets the property StartPosition. 
+            <para>
+            A filtering option for where to start.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.GetTranscriptResponse">
+            <summary>
+            This is the response object from the GetTranscript operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetTranscriptResponse.InitialContactId">
+            <summary>
+            Gets and sets the property InitialContactId. 
+            <para>
+            The initial contact ID for the contact. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetTranscriptResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The pagination token. Use the value returned previously in the next subsequent request
+            to retrieve the next set of results.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetTranscriptResponse.Transcript">
+            <summary>
+            Gets and sets the property Transcript. 
+            <para>
+            The list of messages in the session.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            <summary>
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.InternalServerException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServerException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.InternalServerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.InternalServerException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.InternalServerException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.InternalServerException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.InternalServerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InternalServerException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.InternalServerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for AccessDeniedException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.AttachmentItemUnmarshaller">
+            <summary>
+            Response Unmarshaller for AttachmentItem Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.AttachmentItemUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ConnectParticipant#Model#AttachmentItem,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.AttachmentItemUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.AttachmentItemUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CompleteAttachmentUploadRequestMarshaller">
+            <summary>
+            CompleteAttachmentUpload Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CompleteAttachmentUploadRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CompleteAttachmentUploadRequestMarshaller.Marshall(Amazon.ConnectParticipant.Model.CompleteAttachmentUploadRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CompleteAttachmentUploadRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CompleteAttachmentUploadResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for CompleteAttachmentUpload operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CompleteAttachmentUploadResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CompleteAttachmentUploadResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CompleteAttachmentUploadResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ConflictException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ConnectionCredentialsUnmarshaller">
+            <summary>
+            Response Unmarshaller for ConnectionCredentials Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ConnectionCredentialsUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ConnectParticipant#Model#ConnectionCredentials,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ConnectionCredentialsUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ConnectionCredentialsUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CreateParticipantConnectionRequestMarshaller">
+            <summary>
+            CreateParticipantConnection Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CreateParticipantConnectionRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CreateParticipantConnectionRequestMarshaller.Marshall(Amazon.ConnectParticipant.Model.CreateParticipantConnectionRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CreateParticipantConnectionRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CreateParticipantConnectionResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for CreateParticipantConnection operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CreateParticipantConnectionResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CreateParticipantConnectionResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.CreateParticipantConnectionResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.DisconnectParticipantRequestMarshaller">
+            <summary>
+            DisconnectParticipant Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.DisconnectParticipantRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.DisconnectParticipantRequestMarshaller.Marshall(Amazon.ConnectParticipant.Model.DisconnectParticipantRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.DisconnectParticipantRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.DisconnectParticipantResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DisconnectParticipant operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.DisconnectParticipantResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.DisconnectParticipantResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.DisconnectParticipantResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetAttachmentRequestMarshaller">
+            <summary>
+            GetAttachment Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetAttachmentRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetAttachmentRequestMarshaller.Marshall(Amazon.ConnectParticipant.Model.GetAttachmentRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetAttachmentRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetAttachmentResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetAttachment operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetAttachmentResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetAttachmentResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetAttachmentResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetTranscriptRequestMarshaller">
+            <summary>
+            GetTranscript Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetTranscriptRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetTranscriptRequestMarshaller.Marshall(Amazon.ConnectParticipant.Model.GetTranscriptRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetTranscriptRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetTranscriptResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetTranscript operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetTranscriptResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetTranscriptResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.GetTranscriptResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalServerException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ItemUnmarshaller">
+            <summary>
+            Response Unmarshaller for Item Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ItemUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ConnectParticipant#Model#Item,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ItemUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ItemUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendEventRequestMarshaller">
+            <summary>
+            SendEvent Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendEventRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendEventRequestMarshaller.Marshall(Amazon.ConnectParticipant.Model.SendEventRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendEventRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendEventResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for SendEvent operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendEventResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendEventResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendEventResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendMessageRequestMarshaller">
+            <summary>
+            SendMessage Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendMessageRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendMessageRequestMarshaller.Marshall(Amazon.ConnectParticipant.Model.SendMessageRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendMessageRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendMessageResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for SendMessage operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendMessageResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendMessageResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.SendMessageResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ServiceQuotaExceededException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.StartAttachmentUploadRequestMarshaller">
+            <summary>
+            StartAttachmentUpload Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.StartAttachmentUploadRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.StartAttachmentUploadRequestMarshaller.Marshall(Amazon.ConnectParticipant.Model.StartAttachmentUploadRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.StartAttachmentUploadRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.StartAttachmentUploadResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for StartAttachmentUpload operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.StartAttachmentUploadResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.StartAttachmentUploadResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.StartAttachmentUploadResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.StartPositionMarshaller">
+            <summary>
+            StartPosition Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.StartPositionMarshaller.Marshall(Amazon.ConnectParticipant.Model.StartPosition,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.StartPositionMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ThrottlingException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.UploadMetadataUnmarshaller">
+            <summary>
+            Response Unmarshaller for UploadMetadata Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.UploadMetadataUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ConnectParticipant#Model#UploadMetadata,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.UploadMetadataUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.UploadMetadataUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ValidationException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.WebsocketUnmarshaller">
+            <summary>
+            Response Unmarshaller for Websocket Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.WebsocketUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ConnectParticipant#Model#Websocket,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.WebsocketUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Internal.MarshallTransformations.WebsocketUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Item">
+            <summary>
+            An item - message or event - that has been sent.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Item.AbsoluteTime">
+            <summary>
+            Gets and sets the property AbsoluteTime. 
+            <para>
+            The time when the message or event was sent.
+            </para>
+             
+            <para>
+            It's specified in ISO 8601 format: yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Item.Attachments">
+            <summary>
+            Gets and sets the property Attachments. 
+            <para>
+            Provides information about the attachments.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Item.Content">
+            <summary>
+            Gets and sets the property Content. 
+            <para>
+            The content of the message or event.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Item.ContentType">
+            <summary>
+            Gets and sets the property ContentType. 
+            <para>
+            The type of content of the item.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Item.DisplayName">
+            <summary>
+            Gets and sets the property DisplayName. 
+            <para>
+            The chat display name of the sender.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Item.Id">
+            <summary>
+            Gets and sets the property Id. 
+            <para>
+            The ID of the item.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Item.ParticipantId">
+            <summary>
+            Gets and sets the property ParticipantId. 
+            <para>
+            The ID of the sender in the session.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Item.ParticipantRole">
+            <summary>
+            Gets and sets the property ParticipantRole. 
+            <para>
+            The role of the sender. For example, is it a customer, agent, or system.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Item.Type">
+            <summary>
+            Gets and sets the property Type. 
+            <para>
+            Type of the item: message or event. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.SendEventRequest">
+            <summary>
+            Container for the parameters to the SendEvent operation.
+            Sends an event. Note that ConnectionToken is used for invoking this API instead of
+            ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.SendEventRequest.ClientToken">
+            <summary>
+            Gets and sets the property ClientToken. 
+            <para>
+            A unique, case-sensitive identifier that you provide to ensure the idempotency of
+            the request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.SendEventRequest.ConnectionToken">
+            <summary>
+            Gets and sets the property ConnectionToken. 
+            <para>
+            The authentication token associated with the participant's connection.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.SendEventRequest.Content">
+            <summary>
+            Gets and sets the property Content. 
+            <para>
+            The content of the event to be sent (for example, message text). This is not yet supported.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.SendEventRequest.ContentType">
+            <summary>
+            Gets and sets the property ContentType. 
+            <para>
+            The content type of the request. Supported types are:
+            </para>
+             <ul> <li> 
+            <para>
+            application/vnd.amazonaws.connect.event.typing
+            </para>
+             </li> <li> 
+            <para>
+            application/vnd.amazonaws.connect.event.connection.acknowledged
+            </para>
+             </li> </ul>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.SendEventResponse">
+            <summary>
+            This is the response object from the SendEvent operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.SendEventResponse.AbsoluteTime">
+            <summary>
+            Gets and sets the property AbsoluteTime. 
+            <para>
+            The time when the event was sent.
+            </para>
+             
+            <para>
+            It's specified in ISO 8601 format: yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.SendEventResponse.Id">
+            <summary>
+            Gets and sets the property Id. 
+            <para>
+            The ID of the response.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.SendMessageRequest">
+            <summary>
+            Container for the parameters to the SendMessage operation.
+            Sends a message. Note that ConnectionToken is used for invoking this API instead of
+            ParticipantToken.
+            
+             <note> 
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.SendMessageRequest.ClientToken">
+            <summary>
+            Gets and sets the property ClientToken. 
+            <para>
+            A unique, case-sensitive identifier that you provide to ensure the idempotency of
+            the request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.SendMessageRequest.ConnectionToken">
+            <summary>
+            Gets and sets the property ConnectionToken. 
+            <para>
+            The authentication token associated with the connection.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.SendMessageRequest.Content">
+            <summary>
+            Gets and sets the property Content. 
+            <para>
+            The content of the message.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.SendMessageRequest.ContentType">
+            <summary>
+            Gets and sets the property ContentType. 
+            <para>
+            The type of the content. Supported types are text/plain.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.SendMessageResponse">
+            <summary>
+            This is the response object from the SendMessage operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.SendMessageResponse.AbsoluteTime">
+            <summary>
+            Gets and sets the property AbsoluteTime. 
+            <para>
+            The time when the message was sent.
+            </para>
+             
+            <para>
+            It's specified in ISO 8601 format: yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.SendMessageResponse.Id">
+            <summary>
+            Gets and sets the property Id. 
+            <para>
+            The ID of the message.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException">
+            <summary>
+            The number of attachments per contact exceeds the quota.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException.#ctor(System.String)">
+            <summary>
+            Constructs a new ServiceQuotaExceededException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ServiceQuotaExceededException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.StartAttachmentUploadRequest">
+            <summary>
+            Container for the parameters to the StartAttachmentUpload operation.
+            Provides a pre-signed Amazon S3 URL in response for uploading the file directly to
+            S3.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.StartAttachmentUploadRequest.AttachmentName">
+            <summary>
+            Gets and sets the property AttachmentName. 
+            <para>
+            A case-sensitive name of the attachment being uploaded.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.StartAttachmentUploadRequest.AttachmentSizeInBytes">
+            <summary>
+            Gets and sets the property AttachmentSizeInBytes. 
+            <para>
+            The size of the attachment in bytes.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.StartAttachmentUploadRequest.ClientToken">
+            <summary>
+            Gets and sets the property ClientToken. 
+            <para>
+            A unique case sensitive identifier to support idempotency of request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.StartAttachmentUploadRequest.ConnectionToken">
+            <summary>
+            Gets and sets the property ConnectionToken. 
+            <para>
+            The authentication token associated with the participant's connection.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.StartAttachmentUploadRequest.ContentType">
+            <summary>
+            Gets and sets the property ContentType. 
+            <para>
+            Describes the MIME file type of the attachment. For a list of supported file types,
+            see <a href="https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-service-limits.html#feature-limits">Feature
+            specifications</a> in the <i>Amazon Connect Administrator Guide</i>.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.StartAttachmentUploadResponse">
+            <summary>
+            This is the response object from the StartAttachmentUpload operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.StartAttachmentUploadResponse.AttachmentId">
+            <summary>
+            Gets and sets the property AttachmentId. 
+            <para>
+            A unique identifier for the attachment.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.StartAttachmentUploadResponse.UploadMetadata">
+            <summary>
+            Gets and sets the property UploadMetadata. 
+            <para>
+            Fields to be used while uploading the attachment.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.StartPosition">
+            <summary>
+            A filtering option for where to start. For example, if you sent 100 messages, start
+            with message 50.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.StartPosition.AbsoluteTime">
+            <summary>
+            Gets and sets the property AbsoluteTime. 
+            <para>
+            The time in ISO format where to start.
+            </para>
+             
+            <para>
+            It's specified in ISO 8601 format: yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.StartPosition.Id">
+            <summary>
+            Gets and sets the property Id. 
+            <para>
+            The ID of the message or event where to start. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.StartPosition.MostRecent">
+            <summary>
+            Gets and sets the property MostRecent. 
+            <para>
+            The start position of the most recent message where you want to start. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            <summary>
+            The request was denied due to request throttling.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ThrottlingException.#ctor(System.String)">
+            <summary>
+            Constructs a new ThrottlingException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ThrottlingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ThrottlingException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ThrottlingException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ThrottlingException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ThrottlingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ThrottlingException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ThrottlingException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.UploadMetadata">
+            <summary>
+            Fields to be used while uploading the attachment.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.UploadMetadata.HeadersToInclude">
+            <summary>
+            Gets and sets the property HeadersToInclude. 
+            <para>
+            The headers to be provided while uploading the file to the URL.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.UploadMetadata.Url">
+            <summary>
+            Gets and sets the property Url. 
+            <para>
+            The pre-signed URL using which file would be downloaded from Amazon S3 by the API
+            caller.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.UploadMetadata.UrlExpiry">
+            <summary>
+            Gets and sets the property UrlExpiry. 
+            <para>
+            The expiration time of the URL in ISO timestamp. It's specified in ISO 8601 format:
+            yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.ValidationException">
+            <summary>
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ValidationException.#ctor(System.String)">
+            <summary>
+            Constructs a new ValidationException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ValidationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ValidationException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ValidationException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ValidationException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ValidationException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.Websocket">
+            <summary>
+            The websocket for the participant's connection.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Websocket.ConnectionExpiry">
+            <summary>
+            Gets and sets the property ConnectionExpiry. 
+            <para>
+            The URL expiration timestamp in ISO date format.
+            </para>
+             
+            <para>
+            It's specified in ISO 8601 format: yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.Websocket.Url">
+            <summary>
+            Gets and sets the property Url. 
+            <para>
+            The URL of the websocket.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.ConnectParticipantPaginatorFactory">
+             <summary>
+             Paginators for the ConnectParticipant service
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.ConnectParticipantPaginatorFactory.GetTranscript(Amazon.ConnectParticipant.Model.GetTranscriptRequest)">
+             <summary>
+             Paginator for GetTranscript operation
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.GetTranscriptPaginator">
+            <summary>
+            Base class for GetTranscript paginators.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.GetTranscriptPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.IConnectParticipantPaginatorFactory">
+             <summary>
+             Paginators for the ConnectParticipant service
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.Model.IConnectParticipantPaginatorFactory.GetTranscript(Amazon.ConnectParticipant.Model.GetTranscriptRequest)">
+             <summary>
+             Paginator for GetTranscript operation
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.Model.IGetTranscriptPaginator">
+             <summary>
+             Paginator for the GetTranscript operation
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.Model.IGetTranscriptPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.AmazonConnectParticipantRequest">
+            <summary>
+            Base class for ConnectParticipant operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.ArtifactStatus">
+            <summary>
+            Constants used for properties of type ArtifactStatus.
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ArtifactStatus.APPROVED">
+            <summary>
+            Constant APPROVED for ArtifactStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ArtifactStatus.IN_PROGRESS">
+            <summary>
+            Constant IN_PROGRESS for ArtifactStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ArtifactStatus.REJECTED">
+            <summary>
+            Constant REJECTED for ArtifactStatus
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ArtifactStatus.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ArtifactStatus.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ArtifactStatus.op_Implicit(System.String)~Amazon.ConnectParticipant.ArtifactStatus">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.ChatItemType">
+            <summary>
+            Constants used for properties of type ChatItemType.
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ChatItemType.ATTACHMENT">
+            <summary>
+            Constant ATTACHMENT for ChatItemType
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ChatItemType.CHAT_ENDED">
+            <summary>
+            Constant CHAT_ENDED for ChatItemType
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ChatItemType.CONNECTION_ACK">
+            <summary>
+            Constant CONNECTION_ACK for ChatItemType
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ChatItemType.EVENT">
+            <summary>
+            Constant EVENT for ChatItemType
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ChatItemType.MESSAGE">
+            <summary>
+            Constant MESSAGE for ChatItemType
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ChatItemType.PARTICIPANT_JOINED">
+            <summary>
+            Constant PARTICIPANT_JOINED for ChatItemType
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ChatItemType.PARTICIPANT_LEFT">
+            <summary>
+            Constant PARTICIPANT_LEFT for ChatItemType
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ChatItemType.TRANSFER_FAILED">
+            <summary>
+            Constant TRANSFER_FAILED for ChatItemType
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ChatItemType.TRANSFER_SUCCEEDED">
+            <summary>
+            Constant TRANSFER_SUCCEEDED for ChatItemType
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ChatItemType.TYPING">
+            <summary>
+            Constant TYPING for ChatItemType
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ChatItemType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ChatItemType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ChatItemType.op_Implicit(System.String)~Amazon.ConnectParticipant.ChatItemType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.ConnectionType">
+            <summary>
+            Constants used for properties of type ConnectionType.
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ConnectionType.CONNECTION_CREDENTIALS">
+            <summary>
+            Constant CONNECTION_CREDENTIALS for ConnectionType
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ConnectionType.WEBSOCKET">
+            <summary>
+            Constant WEBSOCKET for ConnectionType
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ConnectionType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ConnectionType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ConnectionType.op_Implicit(System.String)~Amazon.ConnectParticipant.ConnectionType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.ParticipantRole">
+            <summary>
+            Constants used for properties of type ParticipantRole.
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ParticipantRole.AGENT">
+            <summary>
+            Constant AGENT for ParticipantRole
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ParticipantRole.CUSTOMER">
+            <summary>
+            Constant CUSTOMER for ParticipantRole
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ParticipantRole.SYSTEM">
+            <summary>
+            Constant SYSTEM for ParticipantRole
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ParticipantRole.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ParticipantRole.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ParticipantRole.op_Implicit(System.String)~Amazon.ConnectParticipant.ParticipantRole">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.ScanDirection">
+            <summary>
+            Constants used for properties of type ScanDirection.
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ScanDirection.BACKWARD">
+            <summary>
+            Constant BACKWARD for ScanDirection
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.ScanDirection.FORWARD">
+            <summary>
+            Constant FORWARD for ScanDirection
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ScanDirection.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ScanDirection.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.ScanDirection.op_Implicit(System.String)~Amazon.ConnectParticipant.ScanDirection">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.SortKey">
+            <summary>
+            Constants used for properties of type SortKey.
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.SortKey.ASCENDING">
+            <summary>
+            Constant ASCENDING for SortKey
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectParticipant.SortKey.DESCENDING">
+            <summary>
+            Constant DESCENDING for SortKey
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.SortKey.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.SortKey.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.SortKey.op_Implicit(System.String)~Amazon.ConnectParticipant.SortKey">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.AmazonConnectParticipantClient">
+             <summary>
+             Implementation for accessing ConnectParticipant
+            
+             Amazon Connect is a cloud-based contact center solution that makes it easy to set
+             up and manage a customer contact center and provide reliable customer engagement at
+             any scale.
+             
+              
+             <para>
+             Amazon Connect enables customer contacts through voice or chat.
+             </para>
+              
+             <para>
+             The APIs described here are used by chat participants, such as agents and customers.
+             </para>
+             </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.AmazonConnectParticipantClient.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.#ctor">
+             <summary>
+             Constructs AmazonConnectParticipantClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonConnectParticipantClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.#ctor(Amazon.ConnectParticipant.AmazonConnectParticipantConfig)">
+             <summary>
+             Constructs AmazonConnectParticipantClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonConnectParticipantClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonConnectParticipantClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonConnectParticipantClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.ConnectParticipant.AmazonConnectParticipantConfig)">
+            <summary>
+            Constructs AmazonConnectParticipantClient with AWS Credentials and an
+            AmazonConnectParticipantClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonConnectParticipantClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonConnectParticipantClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonConnectParticipantClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.#ctor(System.String,System.String,Amazon.ConnectParticipant.AmazonConnectParticipantConfig)">
+            <summary>
+            Constructs AmazonConnectParticipantClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonConnectParticipantClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonConnectParticipantClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonConnectParticipantClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonConnectParticipantClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.#ctor(System.String,System.String,System.String,Amazon.ConnectParticipant.AmazonConnectParticipantConfig)">
+            <summary>
+            Constructs AmazonConnectParticipantClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonConnectParticipantClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonConnectParticipantClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.AmazonConnectParticipantClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.CompleteAttachmentUpload(Amazon.ConnectParticipant.Model.CompleteAttachmentUploadRequest)">
+            <summary>
+            Allows you to confirm that the attachment has been uploaded using the pre-signed URL
+            provided in StartAttachmentUpload API.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CompleteAttachmentUpload service method.</param>
+            
+            <returns>The response from the CompleteAttachmentUpload service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ConflictException">
+            An attachment with that identifier is already being uploaded.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException">
+            The number of attachments per contact exceeds the quota.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/CompleteAttachmentUpload">REST API Reference for CompleteAttachmentUpload Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.CompleteAttachmentUploadAsync(Amazon.ConnectParticipant.Model.CompleteAttachmentUploadRequest,System.Threading.CancellationToken)">
+            <summary>
+            Allows you to confirm that the attachment has been uploaded using the pre-signed URL
+            provided in StartAttachmentUpload API.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CompleteAttachmentUpload service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CompleteAttachmentUpload service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ConflictException">
+            An attachment with that identifier is already being uploaded.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException">
+            The number of attachments per contact exceeds the quota.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/CompleteAttachmentUpload">REST API Reference for CompleteAttachmentUpload Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.CreateParticipantConnection(Amazon.ConnectParticipant.Model.CreateParticipantConnectionRequest)">
+            <summary>
+            Creates the participant's connection. Note that ParticipantToken is used for invoking
+            this API instead of ConnectionToken.
+            
+             
+            <para>
+            The participant token is valid for the lifetime of the participant – until they are
+            part of a contact.
+            </para>
+             
+            <para>
+            The response URL for <code>WEBSOCKET</code> Type has a connect expiry timeout of 100s.
+            Clients must manually connect to the returned websocket URL and subscribe to the desired
+            topic. 
+            </para>
+             
+            <para>
+            For chat, you need to publish the following on the established websocket connection:
+            </para>
+             
+            <para>
+             <code>{"topic":"aws/subscribe","content":{"topics":["aws/chat"]}}</code> 
+            </para>
+             
+            <para>
+            Upon websocket URL expiry, as specified in the response ConnectionExpiry parameter,
+            clients need to call this API again to obtain a new websocket URL and perform the
+            same steps as before.
+            </para>
+             <note> 
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateParticipantConnection service method.</param>
+            
+            <returns>The response from the CreateParticipantConnection service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/CreateParticipantConnection">REST API Reference for CreateParticipantConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.CreateParticipantConnectionAsync(Amazon.ConnectParticipant.Model.CreateParticipantConnectionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates the participant's connection. Note that ParticipantToken is used for invoking
+            this API instead of ConnectionToken.
+            
+             
+            <para>
+            The participant token is valid for the lifetime of the participant – until they are
+            part of a contact.
+            </para>
+             
+            <para>
+            The response URL for <code>WEBSOCKET</code> Type has a connect expiry timeout of 100s.
+            Clients must manually connect to the returned websocket URL and subscribe to the desired
+            topic. 
+            </para>
+             
+            <para>
+            For chat, you need to publish the following on the established websocket connection:
+            </para>
+             
+            <para>
+             <code>{"topic":"aws/subscribe","content":{"topics":["aws/chat"]}}</code> 
+            </para>
+             
+            <para>
+            Upon websocket URL expiry, as specified in the response ConnectionExpiry parameter,
+            clients need to call this API again to obtain a new websocket URL and perform the
+            same steps as before.
+            </para>
+             <note> 
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateParticipantConnection service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateParticipantConnection service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/CreateParticipantConnection">REST API Reference for CreateParticipantConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.DisconnectParticipant(Amazon.ConnectParticipant.Model.DisconnectParticipantRequest)">
+            <summary>
+            Disconnects a participant. Note that ConnectionToken is used for invoking this API
+            instead of ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DisconnectParticipant service method.</param>
+            
+            <returns>The response from the DisconnectParticipant service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/DisconnectParticipant">REST API Reference for DisconnectParticipant Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.DisconnectParticipantAsync(Amazon.ConnectParticipant.Model.DisconnectParticipantRequest,System.Threading.CancellationToken)">
+            <summary>
+            Disconnects a participant. Note that ConnectionToken is used for invoking this API
+            instead of ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DisconnectParticipant service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DisconnectParticipant service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/DisconnectParticipant">REST API Reference for DisconnectParticipant Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.GetAttachment(Amazon.ConnectParticipant.Model.GetAttachmentRequest)">
+            <summary>
+            Provides a pre-signed URL for download of a completed attachment. This is an asynchronous
+            API for use with active contacts.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetAttachment service method.</param>
+            
+            <returns>The response from the GetAttachment service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/GetAttachment">REST API Reference for GetAttachment Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.GetAttachmentAsync(Amazon.ConnectParticipant.Model.GetAttachmentRequest,System.Threading.CancellationToken)">
+            <summary>
+            Provides a pre-signed URL for download of a completed attachment. This is an asynchronous
+            API for use with active contacts.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetAttachment service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetAttachment service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/GetAttachment">REST API Reference for GetAttachment Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.GetTranscript(Amazon.ConnectParticipant.Model.GetTranscriptRequest)">
+            <summary>
+            Retrieves a transcript of the session, including details about any attachments. Note
+            that ConnectionToken is used for invoking this API instead of ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetTranscript service method.</param>
+            
+            <returns>The response from the GetTranscript service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/GetTranscript">REST API Reference for GetTranscript Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.GetTranscriptAsync(Amazon.ConnectParticipant.Model.GetTranscriptRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves a transcript of the session, including details about any attachments. Note
+            that ConnectionToken is used for invoking this API instead of ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetTranscript service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetTranscript service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/GetTranscript">REST API Reference for GetTranscript Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.SendEvent(Amazon.ConnectParticipant.Model.SendEventRequest)">
+            <summary>
+            Sends an event. Note that ConnectionToken is used for invoking this API instead of
+            ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendEvent service method.</param>
+            
+            <returns>The response from the SendEvent service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/SendEvent">REST API Reference for SendEvent Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.SendEventAsync(Amazon.ConnectParticipant.Model.SendEventRequest,System.Threading.CancellationToken)">
+            <summary>
+            Sends an event. Note that ConnectionToken is used for invoking this API instead of
+            ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendEvent service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the SendEvent service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/SendEvent">REST API Reference for SendEvent Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.SendMessage(Amazon.ConnectParticipant.Model.SendMessageRequest)">
+            <summary>
+            Sends a message. Note that ConnectionToken is used for invoking this API instead of
+            ParticipantToken.
+            
+             <note> 
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendMessage service method.</param>
+            
+            <returns>The response from the SendMessage service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/SendMessage">REST API Reference for SendMessage Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.SendMessageAsync(Amazon.ConnectParticipant.Model.SendMessageRequest,System.Threading.CancellationToken)">
+            <summary>
+            Sends a message. Note that ConnectionToken is used for invoking this API instead of
+            ParticipantToken.
+            
+             <note> 
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendMessage service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the SendMessage service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/SendMessage">REST API Reference for SendMessage Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.StartAttachmentUpload(Amazon.ConnectParticipant.Model.StartAttachmentUploadRequest)">
+            <summary>
+            Provides a pre-signed Amazon S3 URL in response for uploading the file directly to
+            S3.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StartAttachmentUpload service method.</param>
+            
+            <returns>The response from the StartAttachmentUpload service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException">
+            The number of attachments per contact exceeds the quota.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/StartAttachmentUpload">REST API Reference for StartAttachmentUpload Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.AmazonConnectParticipantClient.StartAttachmentUploadAsync(Amazon.ConnectParticipant.Model.StartAttachmentUploadRequest,System.Threading.CancellationToken)">
+            <summary>
+            Provides a pre-signed Amazon S3 URL in response for uploading the file directly to
+            S3.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StartAttachmentUpload service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the StartAttachmentUpload service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException">
+            The number of attachments per contact exceeds the quota.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/StartAttachmentUpload">REST API Reference for StartAttachmentUpload Operation</seealso>
+        </member>
+        <member name="T:Amazon.ConnectParticipant.IAmazonConnectParticipant">
+             <summary>
+             Interface for accessing ConnectParticipant
+            
+             Amazon Connect is a cloud-based contact center solution that makes it easy to set
+             up and manage a customer contact center and provide reliable customer engagement at
+             any scale.
+             
+              
+             <para>
+             Amazon Connect enables customer contacts through voice or chat.
+             </para>
+              
+             <para>
+             The APIs described here are used by chat participants, such as agents and customers.
+             </para>
+             </summary>
+        </member>
+        <member name="P:Amazon.ConnectParticipant.IAmazonConnectParticipant.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.CompleteAttachmentUpload(Amazon.ConnectParticipant.Model.CompleteAttachmentUploadRequest)">
+            <summary>
+            Allows you to confirm that the attachment has been uploaded using the pre-signed URL
+            provided in StartAttachmentUpload API.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CompleteAttachmentUpload service method.</param>
+            
+            <returns>The response from the CompleteAttachmentUpload service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ConflictException">
+            An attachment with that identifier is already being uploaded.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException">
+            The number of attachments per contact exceeds the quota.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/CompleteAttachmentUpload">REST API Reference for CompleteAttachmentUpload Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.CompleteAttachmentUploadAsync(Amazon.ConnectParticipant.Model.CompleteAttachmentUploadRequest,System.Threading.CancellationToken)">
+            <summary>
+            Allows you to confirm that the attachment has been uploaded using the pre-signed URL
+            provided in StartAttachmentUpload API.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CompleteAttachmentUpload service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CompleteAttachmentUpload service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ConflictException">
+            An attachment with that identifier is already being uploaded.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException">
+            The number of attachments per contact exceeds the quota.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/CompleteAttachmentUpload">REST API Reference for CompleteAttachmentUpload Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.CreateParticipantConnection(Amazon.ConnectParticipant.Model.CreateParticipantConnectionRequest)">
+            <summary>
+            Creates the participant's connection. Note that ParticipantToken is used for invoking
+            this API instead of ConnectionToken.
+            
+             
+            <para>
+            The participant token is valid for the lifetime of the participant – until they are
+            part of a contact.
+            </para>
+             
+            <para>
+            The response URL for <code>WEBSOCKET</code> Type has a connect expiry timeout of 100s.
+            Clients must manually connect to the returned websocket URL and subscribe to the desired
+            topic. 
+            </para>
+             
+            <para>
+            For chat, you need to publish the following on the established websocket connection:
+            </para>
+             
+            <para>
+             <code>{"topic":"aws/subscribe","content":{"topics":["aws/chat"]}}</code> 
+            </para>
+             
+            <para>
+            Upon websocket URL expiry, as specified in the response ConnectionExpiry parameter,
+            clients need to call this API again to obtain a new websocket URL and perform the
+            same steps as before.
+            </para>
+             <note> 
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateParticipantConnection service method.</param>
+            
+            <returns>The response from the CreateParticipantConnection service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/CreateParticipantConnection">REST API Reference for CreateParticipantConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.CreateParticipantConnectionAsync(Amazon.ConnectParticipant.Model.CreateParticipantConnectionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates the participant's connection. Note that ParticipantToken is used for invoking
+            this API instead of ConnectionToken.
+            
+             
+            <para>
+            The participant token is valid for the lifetime of the participant – until they are
+            part of a contact.
+            </para>
+             
+            <para>
+            The response URL for <code>WEBSOCKET</code> Type has a connect expiry timeout of 100s.
+            Clients must manually connect to the returned websocket URL and subscribe to the desired
+            topic. 
+            </para>
+             
+            <para>
+            For chat, you need to publish the following on the established websocket connection:
+            </para>
+             
+            <para>
+             <code>{"topic":"aws/subscribe","content":{"topics":["aws/chat"]}}</code> 
+            </para>
+             
+            <para>
+            Upon websocket URL expiry, as specified in the response ConnectionExpiry parameter,
+            clients need to call this API again to obtain a new websocket URL and perform the
+            same steps as before.
+            </para>
+             <note> 
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateParticipantConnection service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateParticipantConnection service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/CreateParticipantConnection">REST API Reference for CreateParticipantConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.DisconnectParticipant(Amazon.ConnectParticipant.Model.DisconnectParticipantRequest)">
+            <summary>
+            Disconnects a participant. Note that ConnectionToken is used for invoking this API
+            instead of ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DisconnectParticipant service method.</param>
+            
+            <returns>The response from the DisconnectParticipant service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/DisconnectParticipant">REST API Reference for DisconnectParticipant Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.DisconnectParticipantAsync(Amazon.ConnectParticipant.Model.DisconnectParticipantRequest,System.Threading.CancellationToken)">
+            <summary>
+            Disconnects a participant. Note that ConnectionToken is used for invoking this API
+            instead of ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DisconnectParticipant service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DisconnectParticipant service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/DisconnectParticipant">REST API Reference for DisconnectParticipant Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.GetAttachment(Amazon.ConnectParticipant.Model.GetAttachmentRequest)">
+            <summary>
+            Provides a pre-signed URL for download of a completed attachment. This is an asynchronous
+            API for use with active contacts.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetAttachment service method.</param>
+            
+            <returns>The response from the GetAttachment service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/GetAttachment">REST API Reference for GetAttachment Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.GetAttachmentAsync(Amazon.ConnectParticipant.Model.GetAttachmentRequest,System.Threading.CancellationToken)">
+            <summary>
+            Provides a pre-signed URL for download of a completed attachment. This is an asynchronous
+            API for use with active contacts.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetAttachment service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetAttachment service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/GetAttachment">REST API Reference for GetAttachment Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.GetTranscript(Amazon.ConnectParticipant.Model.GetTranscriptRequest)">
+            <summary>
+            Retrieves a transcript of the session, including details about any attachments. Note
+            that ConnectionToken is used for invoking this API instead of ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetTranscript service method.</param>
+            
+            <returns>The response from the GetTranscript service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/GetTranscript">REST API Reference for GetTranscript Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.GetTranscriptAsync(Amazon.ConnectParticipant.Model.GetTranscriptRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves a transcript of the session, including details about any attachments. Note
+            that ConnectionToken is used for invoking this API instead of ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetTranscript service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetTranscript service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/GetTranscript">REST API Reference for GetTranscript Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.SendEvent(Amazon.ConnectParticipant.Model.SendEventRequest)">
+            <summary>
+            Sends an event. Note that ConnectionToken is used for invoking this API instead of
+            ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendEvent service method.</param>
+            
+            <returns>The response from the SendEvent service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/SendEvent">REST API Reference for SendEvent Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.SendEventAsync(Amazon.ConnectParticipant.Model.SendEventRequest,System.Threading.CancellationToken)">
+            <summary>
+            Sends an event. Note that ConnectionToken is used for invoking this API instead of
+            ParticipantToken.
+            
+             
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendEvent service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the SendEvent service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/SendEvent">REST API Reference for SendEvent Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.SendMessage(Amazon.ConnectParticipant.Model.SendMessageRequest)">
+            <summary>
+            Sends a message. Note that ConnectionToken is used for invoking this API instead of
+            ParticipantToken.
+            
+             <note> 
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendMessage service method.</param>
+            
+            <returns>The response from the SendMessage service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/SendMessage">REST API Reference for SendMessage Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.SendMessageAsync(Amazon.ConnectParticipant.Model.SendMessageRequest,System.Threading.CancellationToken)">
+            <summary>
+            Sends a message. Note that ConnectionToken is used for invoking this API instead of
+            ParticipantToken.
+            
+             <note> 
+            <para>
+            The Amazon Connect Participant Service APIs do not use <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
+            Version 4 authentication</a>.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendMessage service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the SendMessage service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/SendMessage">REST API Reference for SendMessage Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.StartAttachmentUpload(Amazon.ConnectParticipant.Model.StartAttachmentUploadRequest)">
+            <summary>
+            Provides a pre-signed Amazon S3 URL in response for uploading the file directly to
+            S3.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StartAttachmentUpload service method.</param>
+            
+            <returns>The response from the StartAttachmentUpload service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException">
+            The number of attachments per contact exceeds the quota.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/StartAttachmentUpload">REST API Reference for StartAttachmentUpload Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectParticipant.IAmazonConnectParticipant.StartAttachmentUploadAsync(Amazon.ConnectParticipant.Model.StartAttachmentUploadRequest,System.Threading.CancellationToken)">
+            <summary>
+            Provides a pre-signed Amazon S3 URL in response for uploading the file directly to
+            S3.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StartAttachmentUpload service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the StartAttachmentUpload service method, as returned by ConnectParticipant.</returns>
+            <exception cref="T:Amazon.ConnectParticipant.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.InternalServerException">
+            This exception occurs when there is an internal failure in the Amazon Connect service.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ServiceQuotaExceededException">
+            The number of attachments per contact exceeds the quota.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.ConnectParticipant.Model.ValidationException">
+            The input fails to satisfy the constraints specified by Amazon Connect.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connectparticipant-2018-09-07/StartAttachmentUpload">REST API Reference for StartAttachmentUpload Operation</seealso>
+        </member>
+    </members>
+</doc>

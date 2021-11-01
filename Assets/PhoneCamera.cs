@@ -2,12 +2,15 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using System;
 public class PhoneCamera : MonoBehaviour
-{
+{ 
+    //Recorded Content
+    public static Texture2D temTexture;
+
+    //Location
     private string N_Latitude;
     private string E_Longtitude;
-    public Text locationText;
     //Camera 
     private bool camAvailable;
     private WebCamTexture backCam;
@@ -77,6 +80,9 @@ public class PhoneCamera : MonoBehaviour
             if(path != null)
             {
                 Texture2D texture = NativeCamera.LoadImageAtPath(path, maxSize);
+                temTexture = texture;
+                S3Manager.fileName = DateTime.Now.ToString("en-US") + ".jpg";
+                S3Manager.filePath = path;
                 NativeGallery.SaveImageToGallery(texture, "test", "myimg.png");
                 if (texture == null)
                 {
@@ -99,6 +105,7 @@ public class PhoneCamera : MonoBehaviour
                 Destroy(texture, 5f);
             }
         }, maxSize);
+        SceneManager.LoadScene("UploadContentPage");
     }
     public static void RecordVideo()
     {
@@ -109,10 +116,14 @@ public class PhoneCamera : MonoBehaviour
             {
                 NativeGallery.SaveVideoToGallery(path, "testvideo", "myvideo.mp4");
                 //Play the recorded video
+                temTexture = NativeCamera.GetVideoThumbnail(path);
+                S3Manager.fileName = DateTime.Now.ToString("en-US") + ".mp4";
+                S3Manager.filePath = path;
                 Handheld.PlayFullScreenMovie("file://" + path);
             }
         });
         Debug.Log("Permission result: " + permission);
+        SceneManager.LoadScene("UploadContentPage");
     }
 
     public static void loadProfilePage()
@@ -149,7 +160,6 @@ public class PhoneCamera : MonoBehaviour
         {
             N_Latitude = Input.location.lastData.latitude.ToString();
             E_Longtitude = Input.location.lastData.longitude.ToString();
-            locationText.text = N_Latitude + E_Longtitude;
             Input.location.Stop();
             yield return null;
         }

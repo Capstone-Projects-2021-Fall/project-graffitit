@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - ProfileControl
     - RecordAction
     - RegisterationPanel
+    - S3Manager
     - UIController
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -58,29 +59,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1510}
+      Script: {instanceID: 1518}
     - Class: 114
-      Script: {instanceID: 1580}
+      Script: {instanceID: 1590}
     - Class: 114
-      Script: {instanceID: 1670}
+      Script: {instanceID: 1684}
     - Class: 114
-      Script: {instanceID: 1858}
+      Script: {instanceID: 1882}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2518}
     - Class: 114
-      Script: {instanceID: 2576}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2740}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 3024}
     - Class: 114
-      Script: {instanceID: 3038}
+      Script: {instanceID: 3128}
     - Class: 114
-      Script: {instanceID: 3992}
+      Script: {instanceID: 4144}
     - Class: 114
-      Script: {instanceID: 4554}
+      Script: {instanceID: 4736}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -119,27 +120,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1510}
+      Script: {instanceID: 1518}
     - Class: 114
-      Script: {instanceID: 1826}
+      Script: {instanceID: 1848}
     - Class: 114
-      Script: {instanceID: 2158}
+      Script: {instanceID: 2204}
     - Class: 114
-      Script: {instanceID: 2434}
+      Script: {instanceID: 2490}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2518}
     - Class: 114
-      Script: {instanceID: 2576}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 2740}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 2786}
+      Script: {instanceID: 2868}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 3024}
     - Class: 114
-      Script: {instanceID: 3038}
+      Script: {instanceID: 3128}
     - Class: 114
-      Script: {instanceID: 3658}
+      Script: {instanceID: 3792}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -180,41 +181,41 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1510}
+      Script: {instanceID: 1518}
     - Class: 114
-      Script: {instanceID: 1580}
+      Script: {instanceID: 1590}
     - Class: 114
-      Script: {instanceID: 1646}
+      Script: {instanceID: 1660}
     - Class: 114
-      Script: {instanceID: 1670}
+      Script: {instanceID: 1684}
     - Class: 114
-      Script: {instanceID: 1858}
+      Script: {instanceID: 1882}
     - Class: 114
-      Script: {instanceID: 2148}
+      Script: {instanceID: 2194}
     - Class: 114
-      Script: {instanceID: 2158}
+      Script: {instanceID: 2204}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2518}
     - Class: 114
-      Script: {instanceID: 2576}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2740}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 3024}
     - Class: 114
-      Script: {instanceID: 3038}
+      Script: {instanceID: 3128}
     - Class: 114
-      Script: {instanceID: 3598}
+      Script: {instanceID: 3728}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 4040}
     - Class: 114
-      Script: {instanceID: 3992}
+      Script: {instanceID: 4144}
     - Class: 114
-      Script: {instanceID: 4008}
+      Script: {instanceID: 4162}
     - Class: 114
-      Script: {instanceID: 4284}
+      Script: {instanceID: 4460}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -253,37 +254,90 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1510}
+      Script: {instanceID: 1518}
     - Class: 114
-      Script: {instanceID: 1858}
+      Script: {instanceID: 1882}
     - Class: 114
-      Script: {instanceID: 2158}
+      Script: {instanceID: 2326}
     - Class: 114
-      Script: {instanceID: 2278}
+      Script: {instanceID: 2490}
     - Class: 114
-      Script: {instanceID: 2434}
+      Script: {instanceID: 2518}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2544}
+      Script: {instanceID: 2632}
     - Class: 114
-      Script: {instanceID: 2564}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 2576}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 2740}
+      Script: {instanceID: 3024}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 3128}
     - Class: 114
-      Script: {instanceID: 3038}
+      Script: {instanceID: 3792}
     - Class: 114
-      Script: {instanceID: 3658}
+      Script: {instanceID: 17336}
     - Class: 114
-      Script: {instanceID: 16568}
+      Script: {instanceID: 17338}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/UploadContentPage.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16572}
+      Script: {instanceID: 1518}
+    - Class: 114
+      Script: {instanceID: 2204}
+    - Class: 114
+      Script: {instanceID: 2448}
+    - Class: 114
+      Script: {instanceID: 2518}
+    - Class: 114
+      Script: {instanceID: 2644}
+    - Class: 114
+      Script: {instanceID: 2822}
+    - Class: 114
+      Script: {instanceID: 2868}
+    - Class: 114
+      Script: {instanceID: 3024}
+    - Class: 114
+      Script: {instanceID: 3128}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -603,7 +657,7 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
-      Hash: 91bb7dcaca5a626edeed9dfecf4417a4
+      Hash: bc1d83e648e1be7c73adc7926a1a3eb1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: S3Manager
@@ -633,7 +687,7 @@ ScriptsOnlyBuild:
     className: NGMediaSaveCallbackiOS
   - hash:
       serializedVersion: 2
-      Hash: fa5c17d4163424cd5acbb6602393dd9b
+      Hash: c9634e0400f3a55e8f1aca689662360a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PhoneCamera
@@ -766,18 +820,6 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: AWSSDK.Core.dll
-    namespaceName: Amazon
-    className: UnityInitializer
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: AWSSDK.Core.dll
-    namespaceName: Amazon.Runtime.Internal
-    className: UnityMainThreadDispatcher
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: Google.Maps.Scripts
     className: DeviceCountryProvider
@@ -843,12 +885,6 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 33522f093e5174ba844ecab7279fec38
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AWSSDK.Examples
-    className: LambdaExample
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -901,12 +937,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayModeRunnerCallback
-  - hash:
-      serializedVersion: 2
-      Hash: 0d82126f99e66ced52298b4134bd761e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AWSSDK.Examples
-    className: CognitoSyncManagerSample
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -1009,12 +1039,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 4209641778ce109b31d4c5ddeed27313
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AWSSDK.Examples
-    className: S3Example
   - hash:
       serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
@@ -1189,4 +1213,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/LoginMenuPage.unity
   - Assets/Scenes/TemHomePage.unity
   - Assets/Scenes/ProfilePage.unity
+  - Assets/Scenes/UploadContentPage.unity
   playerPath: C:/Users/wnz6k/OneDrive/Desktop/demo.apk

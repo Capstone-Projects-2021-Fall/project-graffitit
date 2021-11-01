@@ -1,0 +1,2035 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.QLDBSession</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.QLDBSession.AmazonQLDBSessionConfig">
+            <summary>
+            Configuration for accessing Amazon QLDBSession service
+            </summary>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.AmazonQLDBSessionConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.AmazonQLDBSessionConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.AmazonQLDBSessionConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.AmazonQLDBSessionException">
+            <summary>
+             Common exception for the QLDBSession service.
+             </summary>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonQLDBSessionException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonQLDBSessionException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonQLDBSessionException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonQLDBSessionException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonQLDBSessionException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonQLDBSessionException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.QLDBSession.Internal.AmazonQLDBSessionMetadata">
+            <summary>
+            Service metadata for  Amazon QLDBSession service
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Internal.AmazonQLDBSessionMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Internal.AmazonQLDBSessionMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.AbortTransactionRequest">
+            <summary>
+            Contains the details of the transaction to abort.
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.AbortTransactionResult">
+            <summary>
+            Contains the details of the aborted transaction.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.AbortTransactionResult.TimingInformation">
+            <summary>
+            Gets and sets the property TimingInformation. 
+            <para>
+            Contains server-side performance information for the command.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.BadRequestException">
+            <summary>
+            Returned if the request is malformed or contains an error such as an invalid parameter
+            value or a missing required parameter.
+            </summary>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.BadRequestException.#ctor(System.String)">
+            <summary>
+            Constructs a new BadRequestException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.BadRequestException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.BadRequestException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.BadRequestException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.BadRequestException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.BadRequestException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the BadRequestException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.BadRequestException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.BadRequestException.Code">
+            <summary>
+            Gets and sets the property Code.
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.CapacityExceededException">
+            <summary>
+            Returned when the request exceeds the processing capacity of the ledger.
+            </summary>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.CapacityExceededException.#ctor(System.String)">
+            <summary>
+            Constructs a new CapacityExceededException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.CapacityExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of CapacityExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.CapacityExceededException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of CapacityExceededException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.CapacityExceededException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of CapacityExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.CapacityExceededException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of CapacityExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.CapacityExceededException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the CapacityExceededException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.CapacityExceededException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.CommitTransactionRequest">
+            <summary>
+            Contains the details of the transaction to commit.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.CommitTransactionRequest.CommitDigest">
+            <summary>
+            Gets and sets the property CommitDigest. 
+            <para>
+            Specifies the commit digest for the transaction to commit. For every active transaction,
+            the commit digest must be passed. QLDB validates <code>CommitDigest</code> and rejects
+            the commit with an error if the digest computed on the client does not match the digest
+            computed by QLDB.
+            </para>
+             
+            <para>
+            The purpose of the <code>CommitDigest</code> parameter is to ensure that QLDB commits
+            a transaction if and only if the server has processed the exact set of statements
+            sent by the client, in the same order that client sent them, and with no duplicates.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.CommitTransactionRequest.TransactionId">
+            <summary>
+            Gets and sets the property TransactionId. 
+            <para>
+            Specifies the transaction ID of the transaction to commit.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.CommitTransactionResult">
+            <summary>
+            Contains the details of the committed transaction.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.CommitTransactionResult.CommitDigest">
+            <summary>
+            Gets and sets the property CommitDigest. 
+            <para>
+            The commit digest of the committed transaction.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.CommitTransactionResult.ConsumedIOs">
+            <summary>
+            Gets and sets the property ConsumedIOs. 
+            <para>
+            Contains metrics about the number of I/O requests that were consumed.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.CommitTransactionResult.TimingInformation">
+            <summary>
+            Gets and sets the property TimingInformation. 
+            <para>
+            Contains server-side performance information for the command.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.CommitTransactionResult.TransactionId">
+            <summary>
+            Gets and sets the property TransactionId. 
+            <para>
+            The transaction ID of the committed transaction.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.EndSessionRequest">
+            <summary>
+            Specifies a request to end the session.
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.EndSessionResult">
+            <summary>
+            Contains the details of the ended session.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.EndSessionResult.TimingInformation">
+            <summary>
+            Gets and sets the property TimingInformation. 
+            <para>
+            Contains server-side performance information for the command.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.ExecuteStatementRequest">
+            <summary>
+            Specifies a request to execute a statement.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.ExecuteStatementRequest.Parameters">
+            <summary>
+            Gets and sets the property Parameters. 
+            <para>
+            Specifies the parameters for the parameterized statement in the request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.ExecuteStatementRequest.Statement">
+            <summary>
+            Gets and sets the property Statement. 
+            <para>
+            Specifies the statement of the request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.ExecuteStatementRequest.TransactionId">
+            <summary>
+            Gets and sets the property TransactionId. 
+            <para>
+            Specifies the transaction ID of the request.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.ExecuteStatementResult">
+            <summary>
+            Contains the details of the executed statement.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.ExecuteStatementResult.ConsumedIOs">
+            <summary>
+            Gets and sets the property ConsumedIOs. 
+            <para>
+            Contains metrics about the number of I/O requests that were consumed.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.ExecuteStatementResult.FirstPage">
+            <summary>
+            Gets and sets the property FirstPage. 
+            <para>
+            Contains the details of the first fetched page.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.ExecuteStatementResult.TimingInformation">
+            <summary>
+            Gets and sets the property TimingInformation. 
+            <para>
+            Contains server-side performance information for the command.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.FetchPageRequest">
+            <summary>
+            Specifies the details of the page to be fetched.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.FetchPageRequest.NextPageToken">
+            <summary>
+            Gets and sets the property NextPageToken. 
+            <para>
+            Specifies the next page token of the page to be fetched.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.FetchPageRequest.TransactionId">
+            <summary>
+            Gets and sets the property TransactionId. 
+            <para>
+            Specifies the transaction ID of the page to be fetched.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.FetchPageResult">
+            <summary>
+            Contains the page that was fetched.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.FetchPageResult.ConsumedIOs">
+            <summary>
+            Gets and sets the property ConsumedIOs. 
+            <para>
+            Contains metrics about the number of I/O requests that were consumed.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.FetchPageResult.Page">
+            <summary>
+            Gets and sets the property Page. 
+            <para>
+            Contains details of the fetched page.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.FetchPageResult.TimingInformation">
+            <summary>
+            Gets and sets the property TimingInformation. 
+            <para>
+            Contains server-side performance information for the command.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.AbortTransactionRequestMarshaller">
+            <summary>
+            AbortTransactionRequest Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.AbortTransactionRequestMarshaller.Marshall(Amazon.QLDBSession.Model.AbortTransactionRequest,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.QLDBSession.Model.Internal.MarshallTransformations.AbortTransactionRequestMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.AbortTransactionResultUnmarshaller">
+            <summary>
+            Response Unmarshaller for AbortTransactionResult Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.AbortTransactionResultUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#QLDBSession#Model#AbortTransactionResult,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.AbortTransactionResultUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.AbortTransactionResultUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for BadRequestException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.CapacityExceededExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for CapacityExceededException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.CapacityExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.CapacityExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.CapacityExceededExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.CommitTransactionRequestMarshaller">
+            <summary>
+            CommitTransactionRequest Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.CommitTransactionRequestMarshaller.Marshall(Amazon.QLDBSession.Model.CommitTransactionRequest,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.QLDBSession.Model.Internal.MarshallTransformations.CommitTransactionRequestMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.CommitTransactionResultUnmarshaller">
+            <summary>
+            Response Unmarshaller for CommitTransactionResult Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.CommitTransactionResultUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#QLDBSession#Model#CommitTransactionResult,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.CommitTransactionResultUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.CommitTransactionResultUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.EndSessionRequestMarshaller">
+            <summary>
+            EndSessionRequest Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.EndSessionRequestMarshaller.Marshall(Amazon.QLDBSession.Model.EndSessionRequest,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.QLDBSession.Model.Internal.MarshallTransformations.EndSessionRequestMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.EndSessionResultUnmarshaller">
+            <summary>
+            Response Unmarshaller for EndSessionResult Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.EndSessionResultUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#QLDBSession#Model#EndSessionResult,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.EndSessionResultUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.EndSessionResultUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.ExecuteStatementRequestMarshaller">
+            <summary>
+            ExecuteStatementRequest Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.ExecuteStatementRequestMarshaller.Marshall(Amazon.QLDBSession.Model.ExecuteStatementRequest,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.QLDBSession.Model.Internal.MarshallTransformations.ExecuteStatementRequestMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.ExecuteStatementResultUnmarshaller">
+            <summary>
+            Response Unmarshaller for ExecuteStatementResult Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.ExecuteStatementResultUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#QLDBSession#Model#ExecuteStatementResult,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.ExecuteStatementResultUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.ExecuteStatementResultUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.FetchPageRequestMarshaller">
+            <summary>
+            FetchPageRequest Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.FetchPageRequestMarshaller.Marshall(Amazon.QLDBSession.Model.FetchPageRequest,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.QLDBSession.Model.Internal.MarshallTransformations.FetchPageRequestMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.FetchPageResultUnmarshaller">
+            <summary>
+            Response Unmarshaller for FetchPageResult Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.FetchPageResultUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#QLDBSession#Model#FetchPageResult,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.FetchPageResultUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.FetchPageResultUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.InvalidSessionExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InvalidSessionException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.InvalidSessionExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.InvalidSessionExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.InvalidSessionExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.IOUsageUnmarshaller">
+            <summary>
+            Response Unmarshaller for IOUsage Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.IOUsageUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#QLDBSession#Model#IOUsage,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.IOUsageUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.IOUsageUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.LimitExceededExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for LimitExceededException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.LimitExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.LimitExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.LimitExceededExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.OccConflictExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for OccConflictException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.OccConflictExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.OccConflictExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.OccConflictExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.PageUnmarshaller">
+            <summary>
+            Response Unmarshaller for Page Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.PageUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#QLDBSession#Model#Page,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.PageUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.PageUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.RateExceededExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for RateExceededException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.RateExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.RateExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.RateExceededExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.SendCommandRequestMarshaller">
+            <summary>
+            SendCommand Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.SendCommandRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.SendCommandRequestMarshaller.Marshall(Amazon.QLDBSession.Model.SendCommandRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.SendCommandRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.SendCommandResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for SendCommand operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.SendCommandResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.SendCommandResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.SendCommandResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.StartSessionRequestMarshaller">
+            <summary>
+            StartSessionRequest Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.StartSessionRequestMarshaller.Marshall(Amazon.QLDBSession.Model.StartSessionRequest,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.QLDBSession.Model.Internal.MarshallTransformations.StartSessionRequestMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.StartSessionResultUnmarshaller">
+            <summary>
+            Response Unmarshaller for StartSessionResult Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.StartSessionResultUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#QLDBSession#Model#StartSessionResult,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.StartSessionResultUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.StartSessionResultUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.StartTransactionRequestMarshaller">
+            <summary>
+            StartTransactionRequest Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.StartTransactionRequestMarshaller.Marshall(Amazon.QLDBSession.Model.StartTransactionRequest,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.QLDBSession.Model.Internal.MarshallTransformations.StartTransactionRequestMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.StartTransactionResultUnmarshaller">
+            <summary>
+            Response Unmarshaller for StartTransactionResult Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.StartTransactionResultUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#QLDBSession#Model#StartTransactionResult,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.StartTransactionResultUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.StartTransactionResultUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.TimingInformationUnmarshaller">
+            <summary>
+            Response Unmarshaller for TimingInformation Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.TimingInformationUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#QLDBSession#Model#TimingInformation,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.TimingInformationUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.TimingInformationUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.ValueHolderMarshaller">
+            <summary>
+            ValueHolder Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.ValueHolderMarshaller.Marshall(Amazon.QLDBSession.Model.ValueHolder,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.QLDBSession.Model.Internal.MarshallTransformations.ValueHolderMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Internal.MarshallTransformations.ValueHolderUnmarshaller">
+            <summary>
+            Response Unmarshaller for ValueHolder Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.ValueHolderUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#QLDBSession#Model#ValueHolder,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.Internal.MarshallTransformations.ValueHolderUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Internal.MarshallTransformations.ValueHolderUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.InvalidSessionException">
+            <summary>
+            Returned if the session doesn't exist anymore because it timed out or expired.
+            </summary>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.InvalidSessionException.#ctor(System.String)">
+            <summary>
+            Constructs a new InvalidSessionException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.InvalidSessionException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InvalidSessionException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.InvalidSessionException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InvalidSessionException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.InvalidSessionException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InvalidSessionException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.InvalidSessionException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InvalidSessionException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.InvalidSessionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InvalidSessionException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.InvalidSessionException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.InvalidSessionException.Code">
+            <summary>
+            Gets and sets the property Code.
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.IOUsage">
+            <summary>
+            Contains I/O usage metrics for a command that was invoked.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.IOUsage.ReadIOs">
+            <summary>
+            Gets and sets the property ReadIOs. 
+            <para>
+            The number of read I/O requests that the command made.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.IOUsage.WriteIOs">
+            <summary>
+            Gets and sets the property WriteIOs. 
+            <para>
+            The number of write I/O requests that the command made.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.LimitExceededException">
+            <summary>
+            Returned if a resource limit such as number of active sessions is exceeded.
+            </summary>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.LimitExceededException.#ctor(System.String)">
+            <summary>
+            Constructs a new LimitExceededException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.LimitExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.LimitExceededException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.LimitExceededException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.LimitExceededException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.LimitExceededException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the LimitExceededException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.LimitExceededException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.OccConflictException">
+            <summary>
+            Returned when a transaction cannot be written to the journal due to a failure in the
+            verification phase of <i>optimistic concurrency control</i> (OCC).
+            </summary>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.OccConflictException.#ctor(System.String)">
+            <summary>
+            Constructs a new OccConflictException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.OccConflictException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of OccConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.OccConflictException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of OccConflictException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.OccConflictException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of OccConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.OccConflictException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of OccConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.OccConflictException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the OccConflictException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.OccConflictException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.Page">
+            <summary>
+            Contains details of the fetched page.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Page.NextPageToken">
+            <summary>
+            Gets and sets the property NextPageToken. 
+            <para>
+            The token of the next page.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.Page.Values">
+            <summary>
+            Gets and sets the property Values. 
+            <para>
+            A structure that contains values in multiple encoding formats.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.RateExceededException">
+            <summary>
+            Returned when the rate of requests exceeds the allowed throughput.
+            </summary>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.RateExceededException.#ctor(System.String)">
+            <summary>
+            Constructs a new RateExceededException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.RateExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of RateExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.RateExceededException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of RateExceededException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.RateExceededException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of RateExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.RateExceededException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of RateExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.RateExceededException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the RateExceededException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.QLDBSession.Model.RateExceededException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.SendCommandRequest">
+            <summary>
+            Container for the parameters to the SendCommand operation.
+            Sends a command to an Amazon QLDB ledger.
+            
+             <note> 
+            <para>
+            Instead of interacting directly with this API, we recommend using the QLDB driver
+            or the QLDB shell to execute data transactions on a ledger.
+            </para>
+             <ul> <li> 
+            <para>
+            If you are working with an AWS SDK, use the QLDB driver. The driver provides a high-level
+            abstraction layer above this <i>QLDB Session</i> data plane and manages <code>SendCommand</code>
+            API calls for you. For information and a list of supported programming languages,
+            see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/getting-started-driver.html">Getting
+            started with the driver</a> in the <i>Amazon QLDB Developer Guide</i>.
+            </para>
+             </li> <li> 
+            <para>
+            If you are working with the AWS Command Line Interface (AWS CLI), use the QLDB shell.
+            The shell is a command line interface that uses the QLDB driver to interact with a
+            ledger. For information, see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/data-shell.html">Accessing
+            Amazon QLDB using the QLDB shell</a>.
+            </para>
+             </li> </ul> </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandRequest.AbortTransaction">
+            <summary>
+            Gets and sets the property AbortTransaction. 
+            <para>
+            Command to abort the current transaction.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandRequest.CommitTransaction">
+            <summary>
+            Gets and sets the property CommitTransaction. 
+            <para>
+            Command to commit the specified transaction.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandRequest.EndSession">
+            <summary>
+            Gets and sets the property EndSession. 
+            <para>
+            Command to end the current session.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandRequest.ExecuteStatement">
+            <summary>
+            Gets and sets the property ExecuteStatement. 
+            <para>
+            Command to execute a statement in the specified transaction.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandRequest.FetchPage">
+            <summary>
+            Gets and sets the property FetchPage. 
+            <para>
+            Command to fetch a page.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandRequest.SessionToken">
+            <summary>
+            Gets and sets the property SessionToken. 
+            <para>
+            Specifies the session token for the current command. A session token is constant throughout
+            the life of the session.
+            </para>
+             
+            <para>
+            To obtain a session token, run the <code>StartSession</code> command. This <code>SessionToken</code>
+            is required for every subsequent command that is issued during the current session.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandRequest.StartSession">
+            <summary>
+            Gets and sets the property StartSession. 
+            <para>
+            Command to start a new session. A session token is obtained as part of the response.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandRequest.StartTransaction">
+            <summary>
+            Gets and sets the property StartTransaction. 
+            <para>
+            Command to start a new transaction.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.SendCommandResponse">
+            <summary>
+            This is the response object from the SendCommand operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandResponse.AbortTransaction">
+            <summary>
+            Gets and sets the property AbortTransaction. 
+            <para>
+            Contains the details of the aborted transaction.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandResponse.CommitTransaction">
+            <summary>
+            Gets and sets the property CommitTransaction. 
+            <para>
+            Contains the details of the committed transaction.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandResponse.EndSession">
+            <summary>
+            Gets and sets the property EndSession. 
+            <para>
+            Contains the details of the ended session.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandResponse.ExecuteStatement">
+            <summary>
+            Gets and sets the property ExecuteStatement. 
+            <para>
+            Contains the details of the executed statement.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandResponse.FetchPage">
+            <summary>
+            Gets and sets the property FetchPage. 
+            <para>
+            Contains the details of the fetched page.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandResponse.StartSession">
+            <summary>
+            Gets and sets the property StartSession. 
+            <para>
+            Contains the details of the started session that includes a session token. This <code>SessionToken</code>
+            is required for every subsequent command that is issued during the current session.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.SendCommandResponse.StartTransaction">
+            <summary>
+            Gets and sets the property StartTransaction. 
+            <para>
+            Contains the details of the started transaction.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.StartSessionRequest">
+            <summary>
+            Specifies a request to start a new session.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.StartSessionRequest.LedgerName">
+            <summary>
+            Gets and sets the property LedgerName. 
+            <para>
+            The name of the ledger to start a new session against.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.StartSessionResult">
+            <summary>
+            Contains the details of the started session.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.StartSessionResult.SessionToken">
+            <summary>
+            Gets and sets the property SessionToken. 
+            <para>
+            Session token of the started session. This <code>SessionToken</code> is required for
+            every subsequent command that is issued during the current session.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.StartSessionResult.TimingInformation">
+            <summary>
+            Gets and sets the property TimingInformation. 
+            <para>
+            Contains server-side performance information for the command.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.StartTransactionRequest">
+            <summary>
+            Specifies a request to start a transaction.
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.StartTransactionResult">
+            <summary>
+            Contains the details of the started transaction.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.StartTransactionResult.TimingInformation">
+            <summary>
+            Gets and sets the property TimingInformation. 
+            <para>
+            Contains server-side performance information for the command.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.StartTransactionResult.TransactionId">
+            <summary>
+            Gets and sets the property TransactionId. 
+            <para>
+            The transaction ID of the started transaction.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.TimingInformation">
+            <summary>
+            Contains server-side performance information for a command. Amazon QLDB captures timing
+            information between the times when it receives the request and when it sends the corresponding
+            response.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.TimingInformation.ProcessingTimeMilliseconds">
+            <summary>
+            Gets and sets the property ProcessingTimeMilliseconds. 
+            <para>
+            The amount of time that QLDB spent on processing the command, measured in milliseconds.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.Model.ValueHolder">
+            <summary>
+            A structure that can contain a value in multiple encoding formats.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.ValueHolder.IonBinary">
+            <summary>
+            Gets and sets the property IonBinary. 
+            <para>
+            An Amazon Ion binary value contained in a <code>ValueHolder</code> structure.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.Model.ValueHolder.IonText">
+            <summary>
+            Gets and sets the property IonText. 
+            <para>
+            An Amazon Ion plaintext value contained in a <code>ValueHolder</code> structure.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.AmazonQLDBSessionRequest">
+            <summary>
+            Base class for QLDBSession operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.QLDBSession.AmazonQLDBSessionClient">
+             <summary>
+             Implementation for accessing QLDBSession
+            
+             The transactional data APIs for Amazon QLDB
+             
+              <note> 
+             <para>
+             Instead of interacting directly with this API, we recommend using the QLDB driver
+             or the QLDB shell to execute data transactions on a ledger.
+             </para>
+              <ul> <li> 
+             <para>
+             If you are working with an AWS SDK, use the QLDB driver. The driver provides a high-level
+             abstraction layer above this <i>QLDB Session</i> data plane and manages <code>SendCommand</code>
+             API calls for you. For information and a list of supported programming languages,
+             see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/getting-started-driver.html">Getting
+             started with the driver</a> in the <i>Amazon QLDB Developer Guide</i>.
+             </para>
+              </li> <li> 
+             <para>
+             If you are working with the AWS Command Line Interface (AWS CLI), use the QLDB shell.
+             The shell is a command line interface that uses the QLDB driver to interact with a
+             ledger. For information, see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/data-shell.html">Accessing
+             Amazon QLDB using the QLDB shell</a>.
+             </para>
+              </li> </ul> </note>
+             </summary>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.#ctor">
+             <summary>
+             Constructs AmazonQLDBSessionClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonQLDBSessionClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.#ctor(Amazon.QLDBSession.AmazonQLDBSessionConfig)">
+             <summary>
+             Constructs AmazonQLDBSessionClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonQLDBSessionClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonQLDBSessionClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonQLDBSessionClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.QLDBSession.AmazonQLDBSessionConfig)">
+            <summary>
+            Constructs AmazonQLDBSessionClient with AWS Credentials and an
+            AmazonQLDBSessionClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonQLDBSessionClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonQLDBSessionClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonQLDBSessionClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.#ctor(System.String,System.String,Amazon.QLDBSession.AmazonQLDBSessionConfig)">
+            <summary>
+            Constructs AmazonQLDBSessionClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonQLDBSessionClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonQLDBSessionClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonQLDBSessionClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonQLDBSessionClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.#ctor(System.String,System.String,System.String,Amazon.QLDBSession.AmazonQLDBSessionConfig)">
+            <summary>
+            Constructs AmazonQLDBSessionClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonQLDBSessionClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonQLDBSessionClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.QLDBSession.AmazonQLDBSessionClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.SendCommand(Amazon.QLDBSession.Model.SendCommandRequest)">
+            <summary>
+            Sends a command to an Amazon QLDB ledger.
+            
+             <note> 
+            <para>
+            Instead of interacting directly with this API, we recommend using the QLDB driver
+            or the QLDB shell to execute data transactions on a ledger.
+            </para>
+             <ul> <li> 
+            <para>
+            If you are working with an AWS SDK, use the QLDB driver. The driver provides a high-level
+            abstraction layer above this <i>QLDB Session</i> data plane and manages <code>SendCommand</code>
+            API calls for you. For information and a list of supported programming languages,
+            see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/getting-started-driver.html">Getting
+            started with the driver</a> in the <i>Amazon QLDB Developer Guide</i>.
+            </para>
+             </li> <li> 
+            <para>
+            If you are working with the AWS Command Line Interface (AWS CLI), use the QLDB shell.
+            The shell is a command line interface that uses the QLDB driver to interact with a
+            ledger. For information, see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/data-shell.html">Accessing
+            Amazon QLDB using the QLDB shell</a>.
+            </para>
+             </li> </ul> </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendCommand service method.</param>
+            
+            <returns>The response from the SendCommand service method, as returned by QLDBSession.</returns>
+            <exception cref="T:Amazon.QLDBSession.Model.BadRequestException">
+            Returned if the request is malformed or contains an error such as an invalid parameter
+            value or a missing required parameter.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.CapacityExceededException">
+            Returned when the request exceeds the processing capacity of the ledger.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.InvalidSessionException">
+            Returned if the session doesn't exist anymore because it timed out or expired.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.LimitExceededException">
+            Returned if a resource limit such as number of active sessions is exceeded.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.OccConflictException">
+            Returned when a transaction cannot be written to the journal due to a failure in the
+            verification phase of <i>optimistic concurrency control</i> (OCC).
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.RateExceededException">
+            Returned when the rate of requests exceeds the allowed throughput.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/qldb-session-2019-07-11/SendCommand">REST API Reference for SendCommand Operation</seealso>
+        </member>
+        <member name="M:Amazon.QLDBSession.AmazonQLDBSessionClient.SendCommandAsync(Amazon.QLDBSession.Model.SendCommandRequest,System.Threading.CancellationToken)">
+            <summary>
+            Sends a command to an Amazon QLDB ledger.
+            
+             <note> 
+            <para>
+            Instead of interacting directly with this API, we recommend using the QLDB driver
+            or the QLDB shell to execute data transactions on a ledger.
+            </para>
+             <ul> <li> 
+            <para>
+            If you are working with an AWS SDK, use the QLDB driver. The driver provides a high-level
+            abstraction layer above this <i>QLDB Session</i> data plane and manages <code>SendCommand</code>
+            API calls for you. For information and a list of supported programming languages,
+            see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/getting-started-driver.html">Getting
+            started with the driver</a> in the <i>Amazon QLDB Developer Guide</i>.
+            </para>
+             </li> <li> 
+            <para>
+            If you are working with the AWS Command Line Interface (AWS CLI), use the QLDB shell.
+            The shell is a command line interface that uses the QLDB driver to interact with a
+            ledger. For information, see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/data-shell.html">Accessing
+            Amazon QLDB using the QLDB shell</a>.
+            </para>
+             </li> </ul> </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendCommand service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the SendCommand service method, as returned by QLDBSession.</returns>
+            <exception cref="T:Amazon.QLDBSession.Model.BadRequestException">
+            Returned if the request is malformed or contains an error such as an invalid parameter
+            value or a missing required parameter.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.CapacityExceededException">
+            Returned when the request exceeds the processing capacity of the ledger.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.InvalidSessionException">
+            Returned if the session doesn't exist anymore because it timed out or expired.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.LimitExceededException">
+            Returned if a resource limit such as number of active sessions is exceeded.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.OccConflictException">
+            Returned when a transaction cannot be written to the journal due to a failure in the
+            verification phase of <i>optimistic concurrency control</i> (OCC).
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.RateExceededException">
+            Returned when the rate of requests exceeds the allowed throughput.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/qldb-session-2019-07-11/SendCommand">REST API Reference for SendCommand Operation</seealso>
+        </member>
+        <member name="T:Amazon.QLDBSession.IAmazonQLDBSession">
+             <summary>
+             Interface for accessing QLDBSession
+            
+             The transactional data APIs for Amazon QLDB
+             
+              <note> 
+             <para>
+             Instead of interacting directly with this API, we recommend using the QLDB driver
+             or the QLDB shell to execute data transactions on a ledger.
+             </para>
+              <ul> <li> 
+             <para>
+             If you are working with an AWS SDK, use the QLDB driver. The driver provides a high-level
+             abstraction layer above this <i>QLDB Session</i> data plane and manages <code>SendCommand</code>
+             API calls for you. For information and a list of supported programming languages,
+             see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/getting-started-driver.html">Getting
+             started with the driver</a> in the <i>Amazon QLDB Developer Guide</i>.
+             </para>
+              </li> <li> 
+             <para>
+             If you are working with the AWS Command Line Interface (AWS CLI), use the QLDB shell.
+             The shell is a command line interface that uses the QLDB driver to interact with a
+             ledger. For information, see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/data-shell.html">Accessing
+             Amazon QLDB using the QLDB shell</a>.
+             </para>
+              </li> </ul> </note>
+             </summary>
+        </member>
+        <member name="M:Amazon.QLDBSession.IAmazonQLDBSession.SendCommand(Amazon.QLDBSession.Model.SendCommandRequest)">
+            <summary>
+            Sends a command to an Amazon QLDB ledger.
+            
+             <note> 
+            <para>
+            Instead of interacting directly with this API, we recommend using the QLDB driver
+            or the QLDB shell to execute data transactions on a ledger.
+            </para>
+             <ul> <li> 
+            <para>
+            If you are working with an AWS SDK, use the QLDB driver. The driver provides a high-level
+            abstraction layer above this <i>QLDB Session</i> data plane and manages <code>SendCommand</code>
+            API calls for you. For information and a list of supported programming languages,
+            see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/getting-started-driver.html">Getting
+            started with the driver</a> in the <i>Amazon QLDB Developer Guide</i>.
+            </para>
+             </li> <li> 
+            <para>
+            If you are working with the AWS Command Line Interface (AWS CLI), use the QLDB shell.
+            The shell is a command line interface that uses the QLDB driver to interact with a
+            ledger. For information, see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/data-shell.html">Accessing
+            Amazon QLDB using the QLDB shell</a>.
+            </para>
+             </li> </ul> </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendCommand service method.</param>
+            
+            <returns>The response from the SendCommand service method, as returned by QLDBSession.</returns>
+            <exception cref="T:Amazon.QLDBSession.Model.BadRequestException">
+            Returned if the request is malformed or contains an error such as an invalid parameter
+            value or a missing required parameter.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.CapacityExceededException">
+            Returned when the request exceeds the processing capacity of the ledger.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.InvalidSessionException">
+            Returned if the session doesn't exist anymore because it timed out or expired.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.LimitExceededException">
+            Returned if a resource limit such as number of active sessions is exceeded.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.OccConflictException">
+            Returned when a transaction cannot be written to the journal due to a failure in the
+            verification phase of <i>optimistic concurrency control</i> (OCC).
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.RateExceededException">
+            Returned when the rate of requests exceeds the allowed throughput.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/qldb-session-2019-07-11/SendCommand">REST API Reference for SendCommand Operation</seealso>
+        </member>
+        <member name="M:Amazon.QLDBSession.IAmazonQLDBSession.SendCommandAsync(Amazon.QLDBSession.Model.SendCommandRequest,System.Threading.CancellationToken)">
+            <summary>
+            Sends a command to an Amazon QLDB ledger.
+            
+             <note> 
+            <para>
+            Instead of interacting directly with this API, we recommend using the QLDB driver
+            or the QLDB shell to execute data transactions on a ledger.
+            </para>
+             <ul> <li> 
+            <para>
+            If you are working with an AWS SDK, use the QLDB driver. The driver provides a high-level
+            abstraction layer above this <i>QLDB Session</i> data plane and manages <code>SendCommand</code>
+            API calls for you. For information and a list of supported programming languages,
+            see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/getting-started-driver.html">Getting
+            started with the driver</a> in the <i>Amazon QLDB Developer Guide</i>.
+            </para>
+             </li> <li> 
+            <para>
+            If you are working with the AWS Command Line Interface (AWS CLI), use the QLDB shell.
+            The shell is a command line interface that uses the QLDB driver to interact with a
+            ledger. For information, see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/data-shell.html">Accessing
+            Amazon QLDB using the QLDB shell</a>.
+            </para>
+             </li> </ul> </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendCommand service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the SendCommand service method, as returned by QLDBSession.</returns>
+            <exception cref="T:Amazon.QLDBSession.Model.BadRequestException">
+            Returned if the request is malformed or contains an error such as an invalid parameter
+            value or a missing required parameter.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.CapacityExceededException">
+            Returned when the request exceeds the processing capacity of the ledger.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.InvalidSessionException">
+            Returned if the session doesn't exist anymore because it timed out or expired.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.LimitExceededException">
+            Returned if a resource limit such as number of active sessions is exceeded.
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.OccConflictException">
+            Returned when a transaction cannot be written to the journal due to a failure in the
+            verification phase of <i>optimistic concurrency control</i> (OCC).
+            </exception>
+            <exception cref="T:Amazon.QLDBSession.Model.RateExceededException">
+            Returned when the rate of requests exceeds the allowed throughput.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/qldb-session-2019-07-11/SendCommand">REST API Reference for SendCommand Operation</seealso>
+        </member>
+    </members>
+</doc>

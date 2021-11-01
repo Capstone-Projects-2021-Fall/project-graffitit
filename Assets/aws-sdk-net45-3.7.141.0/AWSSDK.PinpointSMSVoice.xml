@@ -1,0 +1,2737 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.PinpointSMSVoice</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceConfig">
+            <summary>
+            Configuration for accessing Amazon PinpointSMSVoice service
+            </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceException">
+            <summary>
+             Common exception for the PinpointSMSVoice service.
+             </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonPinpointSMSVoiceException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonPinpointSMSVoiceException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonPinpointSMSVoiceException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonPinpointSMSVoiceException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonPinpointSMSVoiceException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonPinpointSMSVoiceException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Internal.AmazonPinpointSMSVoiceMetadata">
+            <summary>
+            Service metadata for  Amazon PinpointSMSVoice service
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Internal.AmazonPinpointSMSVoiceMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Internal.AmazonPinpointSMSVoiceMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.AlreadyExistsException">
+            <summary>
+            The resource specified in your request already exists.
+            </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.AlreadyExistsException.#ctor(System.String)">
+            <summary>
+            Constructs a new AlreadyExistsException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.AlreadyExistsException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AlreadyExistsException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.AlreadyExistsException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AlreadyExistsException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.AlreadyExistsException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AlreadyExistsException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.AlreadyExistsException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AlreadyExistsException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.AlreadyExistsException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AlreadyExistsException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.AlreadyExistsException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            <summary>
+            The input you provided is invalid.
+            </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.BadRequestException.#ctor(System.String)">
+            <summary>
+            Constructs a new BadRequestException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.BadRequestException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.BadRequestException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.BadRequestException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.BadRequestException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of BadRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.BadRequestException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the BadRequestException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.BadRequestException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.CallInstructionsMessageType">
+            <summary>
+            An object that defines a message that contains text formatted using Amazon Pinpoint
+            Voice Instructions markup.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.CallInstructionsMessageType.Text">
+            <summary>
+            Gets and sets the property Text. The language to use when delivering the message.
+            For a complete list of supported languages, see the Amazon Polly Developer Guide.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.CloudWatchLogsDestination">
+            <summary>
+            An object that contains information about an event destination that sends data to
+            Amazon CloudWatch Logs.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.CloudWatchLogsDestination.IamRoleArn">
+            <summary>
+            Gets and sets the property IamRoleArn. The Amazon Resource Name (ARN) of an Amazon
+            Identity and Access Management (IAM) role that is able to write event data to an Amazon
+            CloudWatch destination.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.CloudWatchLogsDestination.LogGroupArn">
+            <summary>
+            Gets and sets the property LogGroupArn. The name of the Amazon CloudWatch Log Group
+            that you want to record events in.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.CreateConfigurationSetEventDestinationRequest">
+            <summary>
+            Container for the parameters to the CreateConfigurationSetEventDestination operation.
+            Create a new event destination in a configuration set.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.CreateConfigurationSetEventDestinationRequest.ConfigurationSetName">
+            <summary>
+            Gets and sets the property ConfigurationSetName. ConfigurationSetName
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.CreateConfigurationSetEventDestinationRequest.EventDestination">
+            <summary>
+            Gets and sets the property EventDestination.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.CreateConfigurationSetEventDestinationRequest.EventDestinationName">
+            <summary>
+            Gets and sets the property EventDestinationName. A name that identifies the event
+            destination.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.CreateConfigurationSetEventDestinationResponse">
+            <summary>
+            An empty object that indicates that the event destination was created successfully.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.CreateConfigurationSetRequest">
+            <summary>
+            Container for the parameters to the CreateConfigurationSet operation.
+            Create a new configuration set. After you create the configuration set, you can add
+            one or more event destinations to it.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.CreateConfigurationSetRequest.ConfigurationSetName">
+            <summary>
+            Gets and sets the property ConfigurationSetName. The name that you want to give the
+            configuration set.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.CreateConfigurationSetResponse">
+            <summary>
+            An empty object that indicates that the configuration set was successfully created.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetEventDestinationRequest">
+            <summary>
+            Container for the parameters to the DeleteConfigurationSetEventDestination operation.
+            Deletes an event destination in a configuration set.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetEventDestinationRequest.ConfigurationSetName">
+            <summary>
+            Gets and sets the property ConfigurationSetName. ConfigurationSetName
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetEventDestinationRequest.EventDestinationName">
+            <summary>
+            Gets and sets the property EventDestinationName. EventDestinationName
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetEventDestinationResponse">
+            <summary>
+            An empty object that indicates that the event destination was deleted successfully.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetRequest">
+            <summary>
+            Container for the parameters to the DeleteConfigurationSet operation.
+            Deletes an existing configuration set.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetRequest.ConfigurationSetName">
+            <summary>
+            Gets and sets the property ConfigurationSetName. ConfigurationSetName
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetResponse">
+            <summary>
+            An empty object that indicates that the configuration set was deleted successfully.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.EventDestination">
+            <summary>
+            An object that defines an event destination.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.EventDestination.CloudWatchLogsDestination">
+            <summary>
+            Gets and sets the property CloudWatchLogsDestination.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.EventDestination.Enabled">
+            <summary>
+            Gets and sets the property Enabled. Indicates whether or not the event destination
+            is enabled. If the event destination is enabled, then Amazon Pinpoint sends response
+            data to the specified event destination.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.EventDestination.KinesisFirehoseDestination">
+            <summary>
+            Gets and sets the property KinesisFirehoseDestination.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.EventDestination.MatchingEventTypes">
+            <summary>
+            Gets and sets the property MatchingEventTypes.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.EventDestination.Name">
+            <summary>
+            Gets and sets the property Name. A name that identifies the event destination configuration.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.EventDestination.SnsDestination">
+            <summary>
+            Gets and sets the property SnsDestination.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.EventDestinationDefinition">
+            <summary>
+            An object that defines a single event destination.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.EventDestinationDefinition.CloudWatchLogsDestination">
+            <summary>
+            Gets and sets the property CloudWatchLogsDestination.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.EventDestinationDefinition.Enabled">
+            <summary>
+            Gets and sets the property Enabled. Indicates whether or not the event destination
+            is enabled. If the event destination is enabled, then Amazon Pinpoint sends response
+            data to the specified event destination.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.EventDestinationDefinition.KinesisFirehoseDestination">
+            <summary>
+            Gets and sets the property KinesisFirehoseDestination.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.EventDestinationDefinition.MatchingEventTypes">
+            <summary>
+            Gets and sets the property MatchingEventTypes.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.EventDestinationDefinition.SnsDestination">
+            <summary>
+            Gets and sets the property SnsDestination.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.GetConfigurationSetEventDestinationsRequest">
+            <summary>
+            Container for the parameters to the GetConfigurationSetEventDestinations operation.
+            Obtain information about an event destination, including the types of events it reports,
+            the Amazon Resource Name (ARN) of the destination, and the name of the event destination.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.GetConfigurationSetEventDestinationsRequest.ConfigurationSetName">
+            <summary>
+            Gets and sets the property ConfigurationSetName. ConfigurationSetName
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.GetConfigurationSetEventDestinationsResponse">
+            <summary>
+            An object that contains information about an event destination.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.GetConfigurationSetEventDestinationsResponse.EventDestinations">
+            <summary>
+            Gets and sets the property EventDestinations.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            <summary>
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServiceErrorException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServiceErrorException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServiceErrorException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServiceErrorException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServiceErrorException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InternalServiceErrorException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.AlreadyExistsExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for AlreadyExistsException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.AlreadyExistsExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.AlreadyExistsExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.AlreadyExistsExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for BadRequestException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.BadRequestExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CallInstructionsMessageTypeMarshaller">
+            <summary>
+            CallInstructionsMessageType Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CallInstructionsMessageTypeMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.CallInstructionsMessageType,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CallInstructionsMessageTypeMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CloudWatchLogsDestinationMarshaller">
+            <summary>
+            CloudWatchLogsDestination Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CloudWatchLogsDestinationMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.CloudWatchLogsDestination,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CloudWatchLogsDestinationMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CloudWatchLogsDestinationUnmarshaller">
+            <summary>
+            Response Unmarshaller for CloudWatchLogsDestination Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CloudWatchLogsDestinationUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#PinpointSMSVoice#Model#CloudWatchLogsDestination,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CloudWatchLogsDestinationUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CloudWatchLogsDestinationUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetEventDestinationRequestMarshaller">
+            <summary>
+            CreateConfigurationSetEventDestination Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetEventDestinationRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetEventDestinationRequestMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.CreateConfigurationSetEventDestinationRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetEventDestinationRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetEventDestinationResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for CreateConfigurationSetEventDestination operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetEventDestinationResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetEventDestinationResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetEventDestinationResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetRequestMarshaller">
+            <summary>
+            CreateConfigurationSet Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetRequestMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.CreateConfigurationSetRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for CreateConfigurationSet operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.CreateConfigurationSetResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetEventDestinationRequestMarshaller">
+            <summary>
+            DeleteConfigurationSetEventDestination Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetEventDestinationRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetEventDestinationRequestMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetEventDestinationRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetEventDestinationRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetEventDestinationResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DeleteConfigurationSetEventDestination operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetEventDestinationResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetEventDestinationResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetEventDestinationResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetRequestMarshaller">
+            <summary>
+            DeleteConfigurationSet Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetRequestMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DeleteConfigurationSet operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.DeleteConfigurationSetResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.EventDestinationDefinitionMarshaller">
+            <summary>
+            EventDestinationDefinition Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.EventDestinationDefinitionMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.EventDestinationDefinition,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.EventDestinationDefinitionMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.EventDestinationUnmarshaller">
+            <summary>
+            Response Unmarshaller for EventDestination Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.EventDestinationUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#PinpointSMSVoice#Model#EventDestination,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.EventDestinationUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.EventDestinationUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.GetConfigurationSetEventDestinationsRequestMarshaller">
+            <summary>
+            GetConfigurationSetEventDestinations Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.GetConfigurationSetEventDestinationsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.GetConfigurationSetEventDestinationsRequestMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.GetConfigurationSetEventDestinationsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.GetConfigurationSetEventDestinationsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.GetConfigurationSetEventDestinationsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetConfigurationSetEventDestinations operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.GetConfigurationSetEventDestinationsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.GetConfigurationSetEventDestinationsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.GetConfigurationSetEventDestinationsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.InternalServiceErrorExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalServiceErrorException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.InternalServiceErrorExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.InternalServiceErrorExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.InternalServiceErrorExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.KinesisFirehoseDestinationMarshaller">
+            <summary>
+            KinesisFirehoseDestination Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.KinesisFirehoseDestinationMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.KinesisFirehoseDestination,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.KinesisFirehoseDestinationMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.KinesisFirehoseDestinationUnmarshaller">
+            <summary>
+            Response Unmarshaller for KinesisFirehoseDestination Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.KinesisFirehoseDestinationUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#PinpointSMSVoice#Model#KinesisFirehoseDestination,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.KinesisFirehoseDestinationUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.KinesisFirehoseDestinationUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.LimitExceededExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for LimitExceededException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.LimitExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.LimitExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.LimitExceededExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.ListConfigurationSetsRequestMarshaller">
+            <summary>
+            ListConfigurationSets Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.ListConfigurationSetsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.ListConfigurationSetsRequestMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.ListConfigurationSetsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.ListConfigurationSetsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.ListConfigurationSetsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListConfigurationSets operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.ListConfigurationSetsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.ListConfigurationSetsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.ListConfigurationSetsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.NotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for NotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.NotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.NotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.NotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.PlainTextMessageTypeMarshaller">
+            <summary>
+            PlainTextMessageType Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.PlainTextMessageTypeMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.PlainTextMessageType,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.PlainTextMessageTypeMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SendVoiceMessageRequestMarshaller">
+            <summary>
+            SendVoiceMessage Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SendVoiceMessageRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SendVoiceMessageRequestMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.SendVoiceMessageRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SendVoiceMessageRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SendVoiceMessageResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for SendVoiceMessage operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SendVoiceMessageResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SendVoiceMessageResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SendVoiceMessageResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SnsDestinationMarshaller">
+            <summary>
+            SnsDestination Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SnsDestinationMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.SnsDestination,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SnsDestinationMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SnsDestinationUnmarshaller">
+            <summary>
+            Response Unmarshaller for SnsDestination Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SnsDestinationUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#PinpointSMSVoice#Model#SnsDestination,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SnsDestinationUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SnsDestinationUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SSMLMessageTypeMarshaller">
+            <summary>
+            SSMLMessageType Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SSMLMessageTypeMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.SSMLMessageType,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.SSMLMessageTypeMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.TooManyRequestsExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for TooManyRequestsException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.TooManyRequestsExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.TooManyRequestsExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.TooManyRequestsExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.UpdateConfigurationSetEventDestinationRequestMarshaller">
+            <summary>
+            UpdateConfigurationSetEventDestination Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.UpdateConfigurationSetEventDestinationRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.UpdateConfigurationSetEventDestinationRequestMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.UpdateConfigurationSetEventDestinationRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.UpdateConfigurationSetEventDestinationRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.UpdateConfigurationSetEventDestinationResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for UpdateConfigurationSetEventDestination operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.UpdateConfigurationSetEventDestinationResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.UpdateConfigurationSetEventDestinationResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.UpdateConfigurationSetEventDestinationResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.VoiceMessageContentMarshaller">
+            <summary>
+            VoiceMessageContent Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.VoiceMessageContentMarshaller.Marshall(Amazon.PinpointSMSVoice.Model.VoiceMessageContent,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.Model.Internal.MarshallTransformations.VoiceMessageContentMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.KinesisFirehoseDestination">
+            <summary>
+            An object that contains information about an event destination that sends data to
+            Amazon Kinesis Data Firehose.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.KinesisFirehoseDestination.DeliveryStreamArn">
+            <summary>
+            Gets and sets the property DeliveryStreamArn. The Amazon Resource Name (ARN) of an
+            IAM role that can write data to an Amazon Kinesis Data Firehose stream.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.KinesisFirehoseDestination.IamRoleArn">
+            <summary>
+            Gets and sets the property IamRoleArn. The Amazon Resource Name (ARN) of the Amazon
+            Kinesis Data Firehose destination that you want to use in the event destination.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.LimitExceededException">
+            <summary>
+            There are too many instances of the specified resource type.
+            </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.LimitExceededException.#ctor(System.String)">
+            <summary>
+            Constructs a new LimitExceededException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.LimitExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.LimitExceededException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.LimitExceededException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.LimitExceededException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.LimitExceededException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the LimitExceededException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.LimitExceededException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.ListConfigurationSetsRequest">
+            <summary>
+            Container for the parameters to the ListConfigurationSets operation.
+            List all of the configuration sets associated with your Amazon Pinpoint account in
+            the current region.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.ListConfigurationSetsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. A token returned from a previous call to the
+            API that indicates the position in the list of results.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.ListConfigurationSetsRequest.PageSize">
+            <summary>
+            Gets and sets the property PageSize. Used to specify the number of items that should
+            be returned in the response.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.ListConfigurationSetsResponse">
+            <summary>
+            An object that contains information about the configuration sets for your account
+            in the current region.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.ListConfigurationSetsResponse.ConfigurationSets">
+            <summary>
+            Gets and sets the property ConfigurationSets. An object that contains a list of configuration
+            sets for your account in the current region.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.ListConfigurationSetsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. A token returned from a previous call to ListConfigurationSets
+            to indicate the position in the list of configuration sets.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            <summary>
+            The resource you attempted to access doesn't exist.
+            </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.NotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new NotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.NotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of NotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.NotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of NotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.NotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of NotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.NotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of NotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.NotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the NotFoundException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.NotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.PlainTextMessageType">
+            <summary>
+            An object that defines a message that contains unformatted text.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.PlainTextMessageType.LanguageCode">
+            <summary>
+            Gets and sets the property LanguageCode. The language to use when delivering the message.
+            For a complete list of supported languages, see the Amazon Polly Developer Guide.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.PlainTextMessageType.Text">
+            <summary>
+            Gets and sets the property Text. The plain (not SSML-formatted) text to deliver to
+            the recipient.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.PlainTextMessageType.VoiceId">
+            <summary>
+            Gets and sets the property VoiceId. The name of the voice that you want to use to
+            deliver the message. For a complete list of supported voices, see the Amazon Polly
+            Developer Guide.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.SendVoiceMessageRequest">
+            <summary>
+            Container for the parameters to the SendVoiceMessage operation.
+            Create a new voice message and send it to a recipient's phone number.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.SendVoiceMessageRequest.CallerId">
+            <summary>
+            Gets and sets the property CallerId. The phone number that appears on recipients'
+            devices when they receive the message.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.SendVoiceMessageRequest.ConfigurationSetName">
+            <summary>
+            Gets and sets the property ConfigurationSetName. The name of the configuration set
+            that you want to use to send the message.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.SendVoiceMessageRequest.Content">
+            <summary>
+            Gets and sets the property Content.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.SendVoiceMessageRequest.DestinationPhoneNumber">
+            <summary>
+            Gets and sets the property DestinationPhoneNumber. The phone number that you want
+            to send the voice message to.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.SendVoiceMessageRequest.OriginationPhoneNumber">
+            <summary>
+            Gets and sets the property OriginationPhoneNumber. The phone number that Amazon Pinpoint
+            should use to send the voice message. This isn't necessarily the phone number that
+            appears on recipients' devices when they receive the message, because you can specify
+            a CallerId parameter in the request.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.SendVoiceMessageResponse">
+            <summary>
+            An object that that contains the Message ID of a Voice message that was sent successfully.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.SendVoiceMessageResponse.MessageId">
+            <summary>
+            Gets and sets the property MessageId. A unique identifier for the voice message.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.SnsDestination">
+            <summary>
+            An object that contains information about an event destination that sends data to
+            Amazon SNS.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.SnsDestination.TopicArn">
+            <summary>
+            Gets and sets the property TopicArn. The Amazon Resource Name (ARN) of the Amazon
+            SNS topic that you want to publish events to.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.SSMLMessageType">
+            <summary>
+            An object that defines a message that contains SSML-formatted text.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.SSMLMessageType.LanguageCode">
+            <summary>
+            Gets and sets the property LanguageCode. The language to use when delivering the message.
+            For a complete list of supported languages, see the Amazon Polly Developer Guide.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.SSMLMessageType.Text">
+            <summary>
+            Gets and sets the property Text. The SSML-formatted text to deliver to the recipient.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.SSMLMessageType.VoiceId">
+            <summary>
+            Gets and sets the property VoiceId. The name of the voice that you want to use to
+            deliver the message. For a complete list of supported voices, see the Amazon Polly
+            Developer Guide.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            <summary>
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.TooManyRequestsException.#ctor(System.String)">
+            <summary>
+            Constructs a new TooManyRequestsException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.TooManyRequestsException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of TooManyRequestsException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.TooManyRequestsException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of TooManyRequestsException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.TooManyRequestsException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of TooManyRequestsException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.TooManyRequestsException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of TooManyRequestsException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.TooManyRequestsException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the TooManyRequestsException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.Model.TooManyRequestsException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.UpdateConfigurationSetEventDestinationRequest">
+            <summary>
+            Container for the parameters to the UpdateConfigurationSetEventDestination operation.
+            Update an event destination in a configuration set. An event destination is a location
+            that you publish information about your voice calls to. For example, you can log an
+            event to an Amazon CloudWatch destination when a call fails.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.UpdateConfigurationSetEventDestinationRequest.ConfigurationSetName">
+            <summary>
+            Gets and sets the property ConfigurationSetName. ConfigurationSetName
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.UpdateConfigurationSetEventDestinationRequest.EventDestination">
+            <summary>
+            Gets and sets the property EventDestination.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.UpdateConfigurationSetEventDestinationRequest.EventDestinationName">
+            <summary>
+            Gets and sets the property EventDestinationName. EventDestinationName
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.UpdateConfigurationSetEventDestinationResponse">
+            <summary>
+            An empty object that indicates that the event destination was updated successfully.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.Model.VoiceMessageContent">
+            <summary>
+            An object that contains a voice message and information about the recipient that you
+            want to send it to.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.VoiceMessageContent.CallInstructionsMessage">
+            <summary>
+            Gets and sets the property CallInstructionsMessage.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.VoiceMessageContent.PlainTextMessage">
+            <summary>
+            Gets and sets the property PlainTextMessage.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.Model.VoiceMessageContent.SSMLMessage">
+            <summary>
+            Gets and sets the property SSMLMessage.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceRequest">
+            <summary>
+            Base class for PinpointSMSVoice operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.EventType">
+            <summary>
+            Constants used for properties of type EventType.
+            </summary>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.EventType.ANSWERED">
+            <summary>
+            Constant ANSWERED for EventType
+            </summary>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.EventType.BUSY">
+            <summary>
+            Constant BUSY for EventType
+            </summary>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.EventType.COMPLETED_CALL">
+            <summary>
+            Constant COMPLETED_CALL for EventType
+            </summary>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.EventType.FAILED">
+            <summary>
+            Constant FAILED for EventType
+            </summary>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.EventType.INITIATED_CALL">
+            <summary>
+            Constant INITIATED_CALL for EventType
+            </summary>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.EventType.NO_ANSWER">
+            <summary>
+            Constant NO_ANSWER for EventType
+            </summary>
+        </member>
+        <member name="F:Amazon.PinpointSMSVoice.EventType.RINGING">
+            <summary>
+            Constant RINGING for EventType
+            </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.EventType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.EventType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.EventType.op_Implicit(System.String)~Amazon.PinpointSMSVoice.EventType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient">
+             <summary>
+             Implementation for accessing PinpointSMSVoice
+            
+             Pinpoint SMS and Voice Messaging public facing APIs
+             </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.#ctor">
+             <summary>
+             Constructs AmazonPinpointSMSVoiceClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonPinpointSMSVoiceClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.#ctor(Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceConfig)">
+             <summary>
+             Constructs AmazonPinpointSMSVoiceClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonPinpointSMSVoiceClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonPinpointSMSVoiceClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonPinpointSMSVoiceClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceConfig)">
+            <summary>
+            Constructs AmazonPinpointSMSVoiceClient with AWS Credentials and an
+            AmazonPinpointSMSVoiceClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonPinpointSMSVoiceClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonPinpointSMSVoiceClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonPinpointSMSVoiceClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.#ctor(System.String,System.String,Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceConfig)">
+            <summary>
+            Constructs AmazonPinpointSMSVoiceClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonPinpointSMSVoiceClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonPinpointSMSVoiceClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonPinpointSMSVoiceClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonPinpointSMSVoiceClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.#ctor(System.String,System.String,System.String,Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceConfig)">
+            <summary>
+            Constructs AmazonPinpointSMSVoiceClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonPinpointSMSVoiceClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonPinpointSMSVoiceClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.CreateConfigurationSet(Amazon.PinpointSMSVoice.Model.CreateConfigurationSetRequest)">
+            <summary>
+            Create a new configuration set. After you create the configuration set, you can add
+            one or more event destinations to it.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateConfigurationSet service method.</param>
+            
+            <returns>The response from the CreateConfigurationSet service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.AlreadyExistsException">
+            The resource specified in your request already exists.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.LimitExceededException">
+            There are too many instances of the specified resource type.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/CreateConfigurationSet">REST API Reference for CreateConfigurationSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.CreateConfigurationSetAsync(Amazon.PinpointSMSVoice.Model.CreateConfigurationSetRequest,System.Threading.CancellationToken)">
+            <summary>
+            Create a new configuration set. After you create the configuration set, you can add
+            one or more event destinations to it.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateConfigurationSet service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateConfigurationSet service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.AlreadyExistsException">
+            The resource specified in your request already exists.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.LimitExceededException">
+            There are too many instances of the specified resource type.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/CreateConfigurationSet">REST API Reference for CreateConfigurationSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.CreateConfigurationSetEventDestination(Amazon.PinpointSMSVoice.Model.CreateConfigurationSetEventDestinationRequest)">
+            <summary>
+            Create a new event destination in a configuration set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateConfigurationSetEventDestination service method.</param>
+            
+            <returns>The response from the CreateConfigurationSetEventDestination service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.AlreadyExistsException">
+            The resource specified in your request already exists.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.LimitExceededException">
+            There are too many instances of the specified resource type.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/CreateConfigurationSetEventDestination">REST API Reference for CreateConfigurationSetEventDestination Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.CreateConfigurationSetEventDestinationAsync(Amazon.PinpointSMSVoice.Model.CreateConfigurationSetEventDestinationRequest,System.Threading.CancellationToken)">
+            <summary>
+            Create a new event destination in a configuration set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateConfigurationSetEventDestination service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateConfigurationSetEventDestination service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.AlreadyExistsException">
+            The resource specified in your request already exists.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.LimitExceededException">
+            There are too many instances of the specified resource type.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/CreateConfigurationSetEventDestination">REST API Reference for CreateConfigurationSetEventDestination Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.DeleteConfigurationSet(Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetRequest)">
+            <summary>
+            Deletes an existing configuration set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteConfigurationSet service method.</param>
+            
+            <returns>The response from the DeleteConfigurationSet service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/DeleteConfigurationSet">REST API Reference for DeleteConfigurationSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.DeleteConfigurationSetAsync(Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes an existing configuration set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteConfigurationSet service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteConfigurationSet service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/DeleteConfigurationSet">REST API Reference for DeleteConfigurationSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.DeleteConfigurationSetEventDestination(Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetEventDestinationRequest)">
+            <summary>
+            Deletes an event destination in a configuration set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteConfigurationSetEventDestination service method.</param>
+            
+            <returns>The response from the DeleteConfigurationSetEventDestination service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/DeleteConfigurationSetEventDestination">REST API Reference for DeleteConfigurationSetEventDestination Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.DeleteConfigurationSetEventDestinationAsync(Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetEventDestinationRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes an event destination in a configuration set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteConfigurationSetEventDestination service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteConfigurationSetEventDestination service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/DeleteConfigurationSetEventDestination">REST API Reference for DeleteConfigurationSetEventDestination Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.GetConfigurationSetEventDestinations(Amazon.PinpointSMSVoice.Model.GetConfigurationSetEventDestinationsRequest)">
+            <summary>
+            Obtain information about an event destination, including the types of events it reports,
+            the Amazon Resource Name (ARN) of the destination, and the name of the event destination.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetConfigurationSetEventDestinations service method.</param>
+            
+            <returns>The response from the GetConfigurationSetEventDestinations service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/GetConfigurationSetEventDestinations">REST API Reference for GetConfigurationSetEventDestinations Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.GetConfigurationSetEventDestinationsAsync(Amazon.PinpointSMSVoice.Model.GetConfigurationSetEventDestinationsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Obtain information about an event destination, including the types of events it reports,
+            the Amazon Resource Name (ARN) of the destination, and the name of the event destination.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetConfigurationSetEventDestinations service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetConfigurationSetEventDestinations service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/GetConfigurationSetEventDestinations">REST API Reference for GetConfigurationSetEventDestinations Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.ListConfigurationSets(Amazon.PinpointSMSVoice.Model.ListConfigurationSetsRequest)">
+            <summary>
+            List all of the configuration sets associated with your Amazon Pinpoint account in
+            the current region.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListConfigurationSets service method.</param>
+            
+            <returns>The response from the ListConfigurationSets service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/ListConfigurationSets">REST API Reference for ListConfigurationSets Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.ListConfigurationSetsAsync(Amazon.PinpointSMSVoice.Model.ListConfigurationSetsRequest,System.Threading.CancellationToken)">
+            <summary>
+            List all of the configuration sets associated with your Amazon Pinpoint account in
+            the current region.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListConfigurationSets service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListConfigurationSets service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/ListConfigurationSets">REST API Reference for ListConfigurationSets Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.SendVoiceMessage(Amazon.PinpointSMSVoice.Model.SendVoiceMessageRequest)">
+            <summary>
+            Create a new voice message and send it to a recipient's phone number.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendVoiceMessage service method.</param>
+            
+            <returns>The response from the SendVoiceMessage service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/SendVoiceMessage">REST API Reference for SendVoiceMessage Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.SendVoiceMessageAsync(Amazon.PinpointSMSVoice.Model.SendVoiceMessageRequest,System.Threading.CancellationToken)">
+            <summary>
+            Create a new voice message and send it to a recipient's phone number.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendVoiceMessage service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the SendVoiceMessage service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/SendVoiceMessage">REST API Reference for SendVoiceMessage Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.UpdateConfigurationSetEventDestination(Amazon.PinpointSMSVoice.Model.UpdateConfigurationSetEventDestinationRequest)">
+            <summary>
+            Update an event destination in a configuration set. An event destination is a location
+            that you publish information about your voice calls to. For example, you can log an
+            event to an Amazon CloudWatch destination when a call fails.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateConfigurationSetEventDestination service method.</param>
+            
+            <returns>The response from the UpdateConfigurationSetEventDestination service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/UpdateConfigurationSetEventDestination">REST API Reference for UpdateConfigurationSetEventDestination Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.AmazonPinpointSMSVoiceClient.UpdateConfigurationSetEventDestinationAsync(Amazon.PinpointSMSVoice.Model.UpdateConfigurationSetEventDestinationRequest,System.Threading.CancellationToken)">
+            <summary>
+            Update an event destination in a configuration set. An event destination is a location
+            that you publish information about your voice calls to. For example, you can log an
+            event to an Amazon CloudWatch destination when a call fails.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateConfigurationSetEventDestination service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UpdateConfigurationSetEventDestination service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/UpdateConfigurationSetEventDestination">REST API Reference for UpdateConfigurationSetEventDestination Operation</seealso>
+        </member>
+        <member name="T:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice">
+             <summary>
+             Interface for accessing PinpointSMSVoice
+            
+             Pinpoint SMS and Voice Messaging public facing APIs
+             </summary>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.CreateConfigurationSet(Amazon.PinpointSMSVoice.Model.CreateConfigurationSetRequest)">
+            <summary>
+            Create a new configuration set. After you create the configuration set, you can add
+            one or more event destinations to it.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateConfigurationSet service method.</param>
+            
+            <returns>The response from the CreateConfigurationSet service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.AlreadyExistsException">
+            The resource specified in your request already exists.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.LimitExceededException">
+            There are too many instances of the specified resource type.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/CreateConfigurationSet">REST API Reference for CreateConfigurationSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.CreateConfigurationSetAsync(Amazon.PinpointSMSVoice.Model.CreateConfigurationSetRequest,System.Threading.CancellationToken)">
+            <summary>
+            Create a new configuration set. After you create the configuration set, you can add
+            one or more event destinations to it.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateConfigurationSet service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateConfigurationSet service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.AlreadyExistsException">
+            The resource specified in your request already exists.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.LimitExceededException">
+            There are too many instances of the specified resource type.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/CreateConfigurationSet">REST API Reference for CreateConfigurationSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.CreateConfigurationSetEventDestination(Amazon.PinpointSMSVoice.Model.CreateConfigurationSetEventDestinationRequest)">
+            <summary>
+            Create a new event destination in a configuration set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateConfigurationSetEventDestination service method.</param>
+            
+            <returns>The response from the CreateConfigurationSetEventDestination service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.AlreadyExistsException">
+            The resource specified in your request already exists.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.LimitExceededException">
+            There are too many instances of the specified resource type.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/CreateConfigurationSetEventDestination">REST API Reference for CreateConfigurationSetEventDestination Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.CreateConfigurationSetEventDestinationAsync(Amazon.PinpointSMSVoice.Model.CreateConfigurationSetEventDestinationRequest,System.Threading.CancellationToken)">
+            <summary>
+            Create a new event destination in a configuration set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateConfigurationSetEventDestination service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateConfigurationSetEventDestination service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.AlreadyExistsException">
+            The resource specified in your request already exists.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.LimitExceededException">
+            There are too many instances of the specified resource type.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/CreateConfigurationSetEventDestination">REST API Reference for CreateConfigurationSetEventDestination Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.DeleteConfigurationSet(Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetRequest)">
+            <summary>
+            Deletes an existing configuration set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteConfigurationSet service method.</param>
+            
+            <returns>The response from the DeleteConfigurationSet service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/DeleteConfigurationSet">REST API Reference for DeleteConfigurationSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.DeleteConfigurationSetAsync(Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes an existing configuration set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteConfigurationSet service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteConfigurationSet service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/DeleteConfigurationSet">REST API Reference for DeleteConfigurationSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.DeleteConfigurationSetEventDestination(Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetEventDestinationRequest)">
+            <summary>
+            Deletes an event destination in a configuration set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteConfigurationSetEventDestination service method.</param>
+            
+            <returns>The response from the DeleteConfigurationSetEventDestination service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/DeleteConfigurationSetEventDestination">REST API Reference for DeleteConfigurationSetEventDestination Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.DeleteConfigurationSetEventDestinationAsync(Amazon.PinpointSMSVoice.Model.DeleteConfigurationSetEventDestinationRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes an event destination in a configuration set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteConfigurationSetEventDestination service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteConfigurationSetEventDestination service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/DeleteConfigurationSetEventDestination">REST API Reference for DeleteConfigurationSetEventDestination Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.GetConfigurationSetEventDestinations(Amazon.PinpointSMSVoice.Model.GetConfigurationSetEventDestinationsRequest)">
+            <summary>
+            Obtain information about an event destination, including the types of events it reports,
+            the Amazon Resource Name (ARN) of the destination, and the name of the event destination.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetConfigurationSetEventDestinations service method.</param>
+            
+            <returns>The response from the GetConfigurationSetEventDestinations service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/GetConfigurationSetEventDestinations">REST API Reference for GetConfigurationSetEventDestinations Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.GetConfigurationSetEventDestinationsAsync(Amazon.PinpointSMSVoice.Model.GetConfigurationSetEventDestinationsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Obtain information about an event destination, including the types of events it reports,
+            the Amazon Resource Name (ARN) of the destination, and the name of the event destination.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetConfigurationSetEventDestinations service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetConfigurationSetEventDestinations service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/GetConfigurationSetEventDestinations">REST API Reference for GetConfigurationSetEventDestinations Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.ListConfigurationSets(Amazon.PinpointSMSVoice.Model.ListConfigurationSetsRequest)">
+            <summary>
+            List all of the configuration sets associated with your Amazon Pinpoint account in
+            the current region.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListConfigurationSets service method.</param>
+            
+            <returns>The response from the ListConfigurationSets service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/ListConfigurationSets">REST API Reference for ListConfigurationSets Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.ListConfigurationSetsAsync(Amazon.PinpointSMSVoice.Model.ListConfigurationSetsRequest,System.Threading.CancellationToken)">
+            <summary>
+            List all of the configuration sets associated with your Amazon Pinpoint account in
+            the current region.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListConfigurationSets service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListConfigurationSets service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/ListConfigurationSets">REST API Reference for ListConfigurationSets Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.SendVoiceMessage(Amazon.PinpointSMSVoice.Model.SendVoiceMessageRequest)">
+            <summary>
+            Create a new voice message and send it to a recipient's phone number.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendVoiceMessage service method.</param>
+            
+            <returns>The response from the SendVoiceMessage service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/SendVoiceMessage">REST API Reference for SendVoiceMessage Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.SendVoiceMessageAsync(Amazon.PinpointSMSVoice.Model.SendVoiceMessageRequest,System.Threading.CancellationToken)">
+            <summary>
+            Create a new voice message and send it to a recipient's phone number.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendVoiceMessage service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the SendVoiceMessage service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/SendVoiceMessage">REST API Reference for SendVoiceMessage Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.UpdateConfigurationSetEventDestination(Amazon.PinpointSMSVoice.Model.UpdateConfigurationSetEventDestinationRequest)">
+            <summary>
+            Update an event destination in a configuration set. An event destination is a location
+            that you publish information about your voice calls to. For example, you can log an
+            event to an Amazon CloudWatch destination when a call fails.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateConfigurationSetEventDestination service method.</param>
+            
+            <returns>The response from the UpdateConfigurationSetEventDestination service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/UpdateConfigurationSetEventDestination">REST API Reference for UpdateConfigurationSetEventDestination Operation</seealso>
+        </member>
+        <member name="M:Amazon.PinpointSMSVoice.IAmazonPinpointSMSVoice.UpdateConfigurationSetEventDestinationAsync(Amazon.PinpointSMSVoice.Model.UpdateConfigurationSetEventDestinationRequest,System.Threading.CancellationToken)">
+            <summary>
+            Update an event destination in a configuration set. An event destination is a location
+            that you publish information about your voice calls to. For example, you can log an
+            event to an Amazon CloudWatch destination when a call fails.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateConfigurationSetEventDestination service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UpdateConfigurationSetEventDestination service method, as returned by PinpointSMSVoice.</returns>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.BadRequestException">
+            The input you provided is invalid.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.InternalServiceErrorException">
+            The API encountered an unexpected error and couldn't complete the request. You might
+            be able to successfully issue the request again in the future.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.NotFoundException">
+            The resource you attempted to access doesn't exist.
+            </exception>
+            <exception cref="T:Amazon.PinpointSMSVoice.Model.TooManyRequestsException">
+            You've issued too many requests to the resource. Wait a few minutes, and then try
+            again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/pinpoint-sms-voice-2018-09-05/UpdateConfigurationSetEventDestination">REST API Reference for UpdateConfigurationSetEventDestination Operation</seealso>
+        </member>
+    </members>
+</doc>

@@ -4,65 +4,57 @@ using Amazon.S3;
 using Amazon.S3.Model;
 using System.IO;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class S3Manager : MonoBehaviour
 {
-    CognitoAWSCredentials credentials;
-
+    public Image previewImg;
+    public InputField description;
+    public Button uploadButton;
     private string S3BucketName;
-    private string fileName;
-    private string filePath;
-    AmazonS3Client client;
-
-    void Awake()
+    public static string fileName;
+    public static string filePath;
+    private IAmazonS3 client;
+    private RegionEndpoint _S3Region;
+    private void Start()
     {
-        UnityInitializer.AttachToGameObject(this.gameObject);
-        AWSConfigs.HttpClient = AWSConfigs.HttpClientOption.UnityWebRequest;
+        previewImg.sprite = Sprite.Create(PhoneCamera.temTexture, new Rect(0.0f, 0.0f, previewImg.flexibleWidth, previewImg.flexibleHeight), new Vector2(0.5f, 0.5f), 100.0f);
+        uploadButton.onClick.AddListener(uploadFileToS3);
 
-        credentials = new CognitoAWSCredentials(
+        CognitoAWSCredentials credentials = new CognitoAWSCredentials(
         "us-east-2:0b2ab95e-b5ce-4a6e-ba47-9d2ef2a72b7e", // Identity pool ID
         RegionEndpoint.USEast2 // Region
         );
 
-        client = new AmazonS3Client(credentials);
+        this.client = new AmazonS3Client(credentials, RegionEndpoint.USEast2);
 
-        S3BucketName = "my-graffitit-s3-bucket";
+        this.S3BucketName = "my-graffitit-s3-bucket";
+
+        previewImg.sprite = Sprite.Create(PhoneCamera.temTexture, new Rect(0, 0, 500, 500), new Vector2());
+        _S3Region = RegionEndpoint.GetBySystemName("us-east-2");
+
 
     }
 
-    public void uploadFileToS3()
+
+    public async void uploadFileToS3()
     {
-        var stream = new FileStream(this.filePath, FileMode.Open, FileAccess.Read, FileShare.Read);
-
-        var request = new PostObjectRequest()
-        {
-            Bucket = this.S3BucketName,
-            Key = this.fileName,
-            InputStream = stream,
-            CannedACL = S3CannedACL.Private,
-            Region = RegionEndpoint.USEast2
-        };
-
-        this.client.PostObjectAsync(request, (responseobj) =>
-        {
-            if(responseobj.Exception == null)
+        try{
+            var putRequest = new PutObjectRequest
             {
-                Debug.Log(string.Format("\nobject {0} posted to bucket {1}", responseobj.Request.Key, responseobj.Request.Bucket));
-            }
-            else if(responseobj.Exception !=null) 
-            {
-                Debug.Log("An error received during posting");
-            }
-        });
+                BucketName = S3BucketName,
+                Key = fileName,
+                FilePath = filePath,
+                ContentType = "image/png"
+            };
+
+            PutObjectResponse response = await client.PutObjectAsync(putRequest);
+        }
+        catch (AmazonS3Exception e)
+        {
+            Debug.Log($"Error: {e.Message}");
+        }
+
     }
 
-    public void setFileName(string name)
-    {
-        this.fileName = name;
-    }
-
-    public void setFilePath(string path)
-    {
-        this.filePath = path;
-    }
 }

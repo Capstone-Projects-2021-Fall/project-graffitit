@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,6 +53,9 @@
     <UnityVersion>2020.3.21f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\RegisterationPanel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
@@ -72,12 +75,10 @@
     <Compile Include="Assets\GoogleMaps\Scripts\DeviceCountryProvider.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets\Examples\LambdaExample.cs" />
     <Compile Include="Assets\UnlockProfile.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-    <Compile Include="Assets\Examples\CognitoSyncManagerSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Popup.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -85,7 +86,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets\Examples\S3Example.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
@@ -102,50 +102,621 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.NetworkManager.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DevOpsGuru.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MobileAnalytics.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GameLift.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticBeanstalk.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisVideoArchivedMedia.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudWatch.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GuardDuty.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaConnect.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTAnalytics.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PersonalizeRuntime.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53RecoveryCluster.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServiceQuotas.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ComputeOptimizer.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSOOIDC.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.VoiceID.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaPackageVod.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Synthetics.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CostExplorer.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudHSM.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTJobsDataPlane.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTWireless.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElastiCache.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AWSHealth.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudFront.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\AWSSDK\AWSSDK.CognitoIdentity.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodePipeline.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServiceDiscovery.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Lightsail.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53RecoveryControlConfig.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Braket.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KafkaConnect.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IVS.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSOOIDC.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Macie2.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WAF.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTThingsGraph.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LicenseManager.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KeyManagementService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Rekognition.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSOAdmin.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AWSSupport.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AWSHealth.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MigrationHub.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTAnalytics.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MemoryDB.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EBS.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ForecastService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CostExplorer.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.S3.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleEmail.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticInference.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Amplify.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SecurityHub.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GreengrassV2.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Proton.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AugmentedAIRuntime.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppRegistry.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticLoadBalancing.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.OpenSearchService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.S3.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppRunner.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.QLDB.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTWireless.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeGuruProfiler.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\aws-crt-http.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Imagebuilder.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Organizations.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Detective.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EC2.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Proton.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WAFRegional.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApplicationAutoScaling.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Athena.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CognitoSync.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DynamoDBv2.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Signer.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Lex.dll" />
     <None Include="Assets\GoogleMaps\Plugins\Google.Maps.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Amplify.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53Resolver.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ACMPCA.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticFileSystem.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.StorageGateway.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SecurityToken.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.NetworkFirewall.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.S3Outposts.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisAnalytics.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53Domains.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppSync.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MWAA.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkMailMessageFlow.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PI.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoT1ClickDevicesService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServerMigrationService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MWAA.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WAFV2.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SageMakerRuntime.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSMContacts.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaLive.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Transfer.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Account.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.QuickSight.xml" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaStoreData.xml" />
     <None Include="Assets\GoogleMaps\Resources\MuskStandard.shader" />
-    <None Include="Assets\AWSSDK\AWSSDK.SecurityToken.dll" />
-    <None Include="Assets\Examples\License.txt" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CostAndUsageReport.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EventBridge.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SageMakerFeatureStoreRuntime.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ECRPublic.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudHSMV2.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisFirehose.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Glacier.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApplicationDiscoveryService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ECS.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Transfer.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AlexaForBusiness.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApiGatewayV2.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Appflow.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SagemakerEdgeManager.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkMail.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppMesh.xml" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\GoogleMaps\Resources\GoogleMapsShaderLib.cginc" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EC2InstanceConnect.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudFront.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppConfig.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudDirectory.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaLive.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisVideoMedia.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DataSync.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LexRuntimeV2.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SnowDeviceManagement.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LexRuntimeV2.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FraudDetector.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ACMPCA.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaTailor.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FMS.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EBS.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ChimeSDKIdentity.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Schemas.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleWorkflow.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FinSpaceData.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticLoadBalancing.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTFleetHub.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeGuruReviewer.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudControlApi.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServiceCatalog.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppIntegrationsService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WAFV2.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.OpsWorksCM.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppStream.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeCommit.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Mgn.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MarketplaceCatalog.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MarketplaceEntitlementService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IotData.dll" />
     <None Include="Assets\GoogleMaps\Resources\BaseMapTextured.shader" />
     <None Include="Assets\GoogleMaps\Resources\BaseMapTexturedUnlit.shader" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GlueDataBrew.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Comprehend.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MarketplaceEntitlementService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleEmailV2.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RAM.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticMapReduce.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudFormation.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AWSMarketplaceMetering.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MemoryDB.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EC2InstanceConnect.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.QuickSight.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Mobile.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Glacier.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Lightsail.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SageMaker.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApplicationCostProfiler.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServiceDiscovery.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ManagedGrafana.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FIS.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EventBridge.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApiGatewayV2.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServerMigrationService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeStar.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Textract.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DirectConnect.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Redshift.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppStream.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DataExchange.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleDB.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.OpsWorksCM.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FMS.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeDeploy.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaPackageVod.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Mobile.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeStarNotifications.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ResourceGroups.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Rekognition.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkDocs.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApplicationAutoScaling.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Connect.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeGuruProfiler.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoT1ClickProjects.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FIS.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WellArchitected.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AmplifyBackend.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ManagedGrafana.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApplicationInsights.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisVideoArchivedMedia.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Core.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SQS.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AccessAnalyzer.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaTailor.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FSx.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SageMakerFeatureStoreRuntime.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudHSM.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoT1ClickDevicesService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.QLDB.dll" />
     <None Include="Assets\MySql.Data\dllme.txt" />
-    <None Include="Assets\AWSSDK\AWSSDK.Lambda.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53RecoveryCluster.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleNotificationService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Kafka.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudWatchLogs.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisVideo.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FinSpaceData.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\License.txt" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Lambda.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53RecoveryControlConfig.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudFormation.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTEvents.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSMIncidents.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MachineLearning.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ChimeSDKIdentity.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleEmailV2.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FSx.xml" />
     <None Include="Assets\GoogleMaps\Plugins\Google.Maps.xml" />
-    <None Include="Assets\AWSSDK\AWSSDK.Core.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PersonalizeEvents.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.TranscribeService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Athena.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSMContacts.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GuardDuty.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaStore.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KafkaConnect.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\aws-crt-auth.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Synthetics.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SecurityToken.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.QLDBSession.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Inspector.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticLoadBalancingV2.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Pricing.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AWSMarketplaceCommerceAnalytics.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudWatchEvents.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.S3Control.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTSiteWise.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Panorama.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.NetworkFirewall.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Organizations.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoT.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudSearchDomain.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IVS.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ConfigService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaPackage.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GameLift.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ChimeSDKMessaging.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.HealthLake.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WellArchitected.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkLink.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RoboMaker.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppConfig.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PinpointEmail.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LicenseManager.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LakeFormation.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LakeFormation.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Honeycode.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ComprehendMedical.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GroundStation.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSO.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Kafka.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AlexaForBusiness.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ConnectContactLens.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Glue.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MQ.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CognitoIdentityProvider.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkSpaces.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisAnalyticsV2.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.TimestreamWrite.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ConfigService.dll" />
     <None Include="Assets\MySql.Data\MySql.Data.DLL" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DataPipeline.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ForecastQueryService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CostAndUsageReport.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CognitoSync.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\Notice.txt" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AutoScaling.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTFleetHub.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DocDB.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WAF.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeArtifact.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.TimestreamWrite.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticMapReduce.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Connect.xml" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Kendra.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\GoogleMaps\Plugins\Google.Maps.Proto.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LookoutEquipment.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleEmail.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EMRContainers.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoT.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeCommit.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.APIGateway.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AccessAnalyzer.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DataPipeline.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleSystemsManagement.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DataSync.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WAFRegional.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DirectoryService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Pinpoint.dll" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SageMakerRuntime.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LookoutforVision.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Pricing.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SecretsManager.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoT1ClickProjects.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Detective.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTJobsDataPlane.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GroundStation.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTDeviceAdvisor.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServiceCatalog.dll" />
     <None Include="Assets\GoogleMaps\Plugins\Google.Maps.Editor.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Budgets.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Textract.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ResourceGroups.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Greengrass.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeStar.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeDeploy.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SageMaker.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AuditManager.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MigrationHubConfig.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ConnectParticipant.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTSecureTunneling.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Backup.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaStoreData.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SagemakerEdgeManager.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkDocs.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RDSDataService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RDS.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.StorageGateway.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Polly.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApplicationCostProfiler.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTSecureTunneling.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticInference.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServerlessApplicationRepository.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Lambda.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeBuild.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Personalize.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Macie2.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Cloud9.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.NimbleStudio.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTEventsData.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AutoScalingPlans.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisAnalyticsV2.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CognitoIdentityProvider.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Signer.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Batch.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudSearchDomain.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticLoadBalancingV2.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Pinpoint.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Braket.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeBuild.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CustomerProfiles.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodePipeline.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTEventsData.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DeviceFarm.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53RecoveryReadiness.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeStarNotifications.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleSystemsManagement.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DocDB.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EKS.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CognitoIdentity.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSMIncidents.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Account.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkLink.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ResourceGroupsTaggingAPI.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DAX.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaPackage.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Snowball.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Polly.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudWatchEvents.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Extensions.CrtIntegration.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ForecastService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Core.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppMesh.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LookoutEquipment.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ConnectWisdomService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Batch.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.XRay.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.StepFunctions.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IdentityManagement.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.TimestreamQuery.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SecretsManager.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MigrationHub.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RDS.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AutoScalingPlans.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Schemas.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MarketplaceCatalog.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Kinesis.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ImportExport.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PI.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ECRPublic.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SavingsPlans.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GreengrassV2.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PersonalizeRuntime.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SQS.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.TimestreamQuery.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Neptune.dll" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApplicationInsights.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkSpaces.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudWatchLogs.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Kinesis.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MQ.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTDeviceAdvisor.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Lex.xml" />
     <None Include="Assets\GoogleMaps\Plugins\Google.Protobuf.dll" />
-    <None Include="Assets\AWSSDK\AWSSDK.CognitoSync.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServerlessApplicationRepository.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ManagedBlockchain.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LexModelsV2.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisVideoSignalingChannels.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53Resolver.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DeviceFarm.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PinpointSMSVoice.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EMRContainers.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Shield.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTSiteWise.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Greengrass.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisVideo.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AmplifyBackend.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkMail.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PersonalizeEvents.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Chime.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ImportExport.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticTranscoder.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DirectoryService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IdentityManagement.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Budgets.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppRunner.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LookoutforVision.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.TranscribeService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.XRay.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisAnalytics.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CognitoIdentity.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AWSMarketplaceMetering.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AugmentedAIRuntime.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DLM.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ECS.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Snowball.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RDSDataService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ECR.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppSync.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SecurityHub.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LexModelBuildingService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeGuruReviewer.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Macie.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaConvert.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GlobalAccelerator.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LexModelsV2.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Panorama.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53Domains.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RedshiftDataAPIService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GlobalAccelerator.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DynamoDBv2.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\aws-crt.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticFileSystem.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Inspector.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.StepFunctions.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Translate.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTEvents.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Outposts.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PinpointEmail.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.HealthLake.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Cloud9.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Outposts.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleDB.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DatabaseMigrationService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AWSSupport.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Redshift.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CertificateManager.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppRegistry.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.VoiceID.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DLM.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.OpsWorks.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ComputeOptimizer.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EC2.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RoboMaker.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.S3Control.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.NimbleStudio.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeStarconnections.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DevOpsGuru.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeStarconnections.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53RecoveryReadiness.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Chime.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CustomerProfiles.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticBeanstalk.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SavingsPlans.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudHSMV2.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudDirectory.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaStore.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ConnectContactLens.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleWorkflow.dll" />
     <None Include="Assets\GoogleMaps\Resources\BaseMapColorUnlit.shader" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LocationService.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudTrail.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PinpointSMSVoice.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Comprehend.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DirectConnect.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudWatch.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DAX.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AWSMarketplaceCommerceAnalytics.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LocationService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Mgn.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Elasticsearch.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Kendra.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudTrail.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Honeycode.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LexModelBuildingService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LookoutMetrics.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PrometheusService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PrometheusService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RAM.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Imagebuilder.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApiGatewayManagementApi.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServiceQuotas.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ComprehendMedical.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ForecastQueryService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Neptune.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ResourceGroupsTaggingAPI.dll" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApplicationDiscoveryService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IdentityStore.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSO.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaConnect.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticTranscoder.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ChimeSDKMessaging.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DatabaseMigrationService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GlueDataBrew.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkMailMessageFlow.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudSearch.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RedshiftDataAPIService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FraudDetector.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SnowDeviceManagement.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IotData.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AuditManager.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.APIGateway.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\AWSSDK\AWSSDK.S3.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Personalize.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.NetworkManager.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Appflow.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElastiCache.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MachineLearning.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.OpenSearchService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IdentityStore.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudSearch.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaConvert.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleNotificationService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.S3Outposts.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LookoutMetrics.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApiGatewayManagementApi.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisVideoSignalingChannels.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ManagedBlockchain.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisFirehose.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MTurk.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudControlApi.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Elasticsearch.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Shield.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisVideoMedia.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DataExchange.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Macie.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MigrationHubConfig.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Finspace.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ConnectParticipant.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSOAdmin.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.OpsWorks.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppIntegrationsService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KeyManagementService.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Finspace.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.QLDBSession.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ConnectWisdomService.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MobileAnalytics.xml" />
     <None Include="Assets\GoogleMaps\Resources\BaseMapColor.shader" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeArtifact.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Translate.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Backup.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CertificateManager.dll" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EKS.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AutoScaling.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Glue.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ECR.dll" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MTurk.xml" />
+    <None Include="Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTThingsGraph.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -361,41 +932,893 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Unity Hub\2020.3.21f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.Lambda">
-      <HintPath>Assets\AWSSDK\AWSSDK.Lambda.dll</HintPath>
-    </Reference>
     <Reference Include="Google.Protobuf">
       <HintPath>Assets\GoogleMaps\Plugins\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="Google.Maps.Proto">
       <HintPath>Assets\GoogleMaps\Plugins\Google.Maps.Proto.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.CognitoIdentity">
-      <HintPath>Assets\AWSSDK\AWSSDK.CognitoIdentity.dll</HintPath>
-    </Reference>
-    <Reference Include="AWSSDK.Core">
-      <HintPath>Assets\AWSSDK\AWSSDK.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="AWSSDK.S3">
-      <HintPath>Assets\AWSSDK\AWSSDK.S3.dll</HintPath>
-    </Reference>
     <Reference Include="Google.Maps.Editor">
       <HintPath>Assets\GoogleMaps\Plugins\Google.Maps.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>Assets\MySql.Data\MySql.Data.DLL</HintPath>
     </Reference>
     <Reference Include="Google.Maps">
       <HintPath>Assets\GoogleMaps\Plugins\Google.Maps.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.CognitoSync">
-      <HintPath>Assets\AWSSDK\AWSSDK.CognitoSync.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.SecurityToken">
-      <HintPath>Assets\AWSSDK\AWSSDK.SecurityToken.dll</HintPath>
+    <Reference Include="AWSSDK.IoTFleetHub">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTFleetHub.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data">
-      <HintPath>Assets\MySql.Data\MySql.Data.DLL</HintPath>
+    <Reference Include="AWSSDK.SagemakerEdgeManager">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SagemakerEdgeManager.dll</HintPath>
+    </Reference>
+    <Reference Include="aws-crt-auth">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\aws-crt-auth.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SavingsPlans">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SavingsPlans.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SimpleEmailV2">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleEmailV2.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Cloud9">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Cloud9.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AlexaForBusiness">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AlexaForBusiness.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.XRay">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.XRay.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Lambda">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Lambda.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.StepFunctions">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.StepFunctions.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Neptune">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Neptune.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.TimestreamWrite">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.TimestreamWrite.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CloudSearchDomain">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudSearchDomain.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ElasticBeanstalk">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticBeanstalk.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IotData">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IotData.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CloudWatchEvents">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudWatchEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ElasticFileSystem">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticFileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CloudDirectory">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.RDSDataService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RDSDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.LexRuntimeV2">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LexRuntimeV2.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AWSHealth">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AWSHealth.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SSMContacts">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSMContacts.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ImportExport">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ImportExport.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ApplicationCostProfiler">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApplicationCostProfiler.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ElasticInference">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticInference.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.KinesisVideoSignalingChannels">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisVideoSignalingChannels.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.WAF">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WAF.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IoTWireless">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTWireless.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Honeycode">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Honeycode.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.WorkMailMessageFlow">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkMailMessageFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ElastiCache">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElastiCache.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IoTJobsDataPlane">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTJobsDataPlane.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ConnectContactLens">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ConnectContactLens.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SecurityHub">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SecurityHub.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.RoboMaker">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RoboMaker.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.WorkDocs">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkDocs.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Outposts">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Outposts.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Route53Domains">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53Domains.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Appflow">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Appflow.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ServiceQuotas">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServiceQuotas.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DevOpsGuru">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DevOpsGuru.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.NetworkFirewall">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.NetworkFirewall.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IoTEventsData">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTEventsData.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.KinesisFirehose">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisFirehose.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Budgets">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Budgets.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AppRunner">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AppMesh">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppMesh.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.TimestreamQuery">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.TimestreamQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ComprehendMedical">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ComprehendMedical.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CodeDeploy">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeDeploy.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AWSSupport">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AWSSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IoT1ClickProjects">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoT1ClickProjects.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.WAFV2">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WAFV2.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Account">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Account.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.FSx">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FSx.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CertificateManager">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CertificateManager.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Panorama">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Panorama.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CloudFront">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudFront.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.LookoutforVision">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LookoutforVision.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MediaPackageVod">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaPackageVod.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.PinpointSMSVoice">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PinpointSMSVoice.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CloudWatchLogs">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudWatchLogs.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.OpenSearchService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.OpenSearchService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CostExplorer">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CostExplorer.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DocDB">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DocDB.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Kendra">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Kendra.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ECS">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ECS.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Personalize">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Personalize.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ECRPublic">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ECRPublic.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SimpleSystemsManagement">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleSystemsManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AppStream">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppStream.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IoTSiteWise">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTSiteWise.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SnowDeviceManagement">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SnowDeviceManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Extensions.CrtIntegration">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Extensions.CrtIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DirectoryService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DirectoryService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.RedshiftDataAPIService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RedshiftDataAPIService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Textract">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Textract.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Synthetics">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Synthetics.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AppConfig">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SimpleDB">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleDB.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AppIntegrationsService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppIntegrationsService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CloudSearch">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.RDS">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RDS.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MediaConnect">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MachineLearning">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IdentityStore">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IdentityStore.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CodeStar">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeStar.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CodeGuruReviewer">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeGuruReviewer.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ApiGatewayManagementApi">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApiGatewayManagementApi.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CodeStarNotifications">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeStarNotifications.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IVS">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IVS.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.EKS">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EKS.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ChimeSDKMessaging">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ChimeSDKMessaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.WorkSpaces">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkSpaces.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AmplifyBackend">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AmplifyBackend.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.QuickSight">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.QuickSight.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SimpleNotificationService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleNotificationService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IdentityManagement">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IdentityManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.QLDB">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.QLDB.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ConnectParticipant">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ConnectParticipant.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Transfer">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Transfer.dll</HintPath>
+    </Reference>
+    <Reference Include="aws-crt-http">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\aws-crt-http.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AppSync">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppSync.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ResourceGroupsTaggingAPI">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ResourceGroupsTaggingAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AugmentedAIRuntime">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AugmentedAIRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Proton">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Proton.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Pricing">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Pricing.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Redshift">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Redshift.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Mgn">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Mgn.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.EC2">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EC2.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MobileAnalytics">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MobileAnalytics.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DirectConnect">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DirectConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="aws-crt">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\aws-crt.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MediaPackage">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaPackage.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.EC2InstanceConnect">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EC2InstanceConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ElasticLoadBalancingV2">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticLoadBalancingV2.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Detective">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Detective.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MarketplaceEntitlementService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MarketplaceEntitlementService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.FIS">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FIS.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CostAndUsageReport">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CostAndUsageReport.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.S3Outposts">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.S3Outposts.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ServerlessApplicationRepository">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServerlessApplicationRepository.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CloudFormation">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudFormation.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DAX">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DAX.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Snowball">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Snowball.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Backup">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Backup.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.WAFRegional">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WAFRegional.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Macie">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Macie.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ElasticMapReduce">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticMapReduce.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ConnectWisdomService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ConnectWisdomService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.PinpointEmail">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PinpointEmail.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Inspector">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Inspector.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Schemas">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Schemas.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Macie2">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Macie2.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Finspace">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Finspace.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.PersonalizeEvents">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PersonalizeEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Chime">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Chime.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.WorkMail">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkMail.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SSOAdmin">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSOAdmin.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.KafkaConnect">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KafkaConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.FMS">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FMS.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ManagedBlockchain">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ManagedBlockchain.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SimpleWorkflow">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleWorkflow.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ConfigService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ConfigService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Athena">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Athena.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ECR">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ECR.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CloudHSMV2">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudHSMV2.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.EventBridge">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EventBridge.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.S3">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.S3.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MemoryDB">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MemoryDB.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IoTAnalytics">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTAnalytics.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.KinesisVideo">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisVideo.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Lex">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Lex.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CodePipeline">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodePipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DataExchange">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DataExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DatabaseMigrationService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DatabaseMigrationService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ForecastQueryService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ForecastQueryService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.OpsWorks">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.OpsWorks.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CodeStarconnections">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeStarconnections.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CognitoIdentityProvider">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CognitoIdentityProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ServiceCatalog">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServiceCatalog.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SimpleEmail">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SimpleEmail.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ChimeSDKIdentity">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ChimeSDKIdentity.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SecretsManager">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SecretsManager.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ElasticLoadBalancing">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticLoadBalancing.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.WellArchitected">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WellArchitected.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CodeCommit">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeCommit.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MigrationHub">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MigrationHub.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Signer">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Signer.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MediaStoreData">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaStoreData.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Greengrass">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Greengrass.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SageMaker">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SageMaker.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Mobile">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.FinSpaceData">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FinSpaceData.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CloudTrail">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudTrail.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MarketplaceCatalog">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MarketplaceCatalog.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Route53RecoveryCluster">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53RecoveryCluster.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DataPipeline">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DataPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MQ">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MQ.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Route53Resolver">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53Resolver.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Route53RecoveryReadiness">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53RecoveryReadiness.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Amplify">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Amplify.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Shield">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Shield.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AutoScaling">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AutoScaling.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AuditManager">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AuditManager.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CloudControlApi">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudControlApi.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Route53RecoveryControlConfig">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53RecoveryControlConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Pinpoint">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Pinpoint.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Kinesis">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Kinesis.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.PersonalizeRuntime">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PersonalizeRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IoTThingsGraph">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTThingsGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Imagebuilder">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Imagebuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CognitoSync">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CognitoSync.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DynamoDBv2">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DynamoDBv2.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.GameLift">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GameLift.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ServiceDiscovery">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServiceDiscovery.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.FraudDetector">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.FraudDetector.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IoTDeviceAdvisor">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTDeviceAdvisor.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Rekognition">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Rekognition.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SageMakerRuntime">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SageMakerRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.GlueDataBrew">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GlueDataBrew.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.LookoutMetrics">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LookoutMetrics.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Route53">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Route53.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CloudHSM">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudHSM.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.TranscribeService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.TranscribeService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.LexModelBuildingService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LexModelBuildingService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.EBS">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EBS.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SageMakerFeatureStoreRuntime">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SageMakerFeatureStoreRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.OpsWorksCM">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.OpsWorksCM.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.EMRContainers">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.EMRContainers.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ManagedGrafana">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ManagedGrafana.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SSOOIDC">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSOOIDC.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.KinesisVideoArchivedMedia">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisVideoArchivedMedia.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MWAA">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MWAA.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DeviceFarm">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DeviceFarm.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MediaConvert">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaConvert.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.HealthLake">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.HealthLake.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ResourceGroups">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ResourceGroups.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Glue">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Glue.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AWSMarketplaceMetering">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AWSMarketplaceMetering.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Translate">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Translate.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.LakeFormation">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LakeFormation.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Braket">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Braket.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.S3Control">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.S3Control.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.KinesisVideoMedia">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisVideoMedia.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DataSync">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DataSync.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Glacier">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Glacier.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SSMIncidents">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSMIncidents.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ForecastService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ForecastService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MediaStore">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaStore.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.GreengrassV2">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GreengrassV2.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.LookoutEquipment">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LookoutEquipment.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.KinesisAnalyticsV2">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisAnalyticsV2.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IoTSecureTunneling">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTSecureTunneling.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ApplicationAutoScaling">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApplicationAutoScaling.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CloudWatch">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CloudWatch.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ServerMigrationService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ServerMigrationService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.RAM">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.RAM.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.NimbleStudio">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.NimbleStudio.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MigrationHubConfig">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MigrationHubConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.VoiceID">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.VoiceID.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.LocationService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LocationService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ApplicationInsights">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.NetworkManager">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.NetworkManager.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Batch">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Batch.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CodeGuruProfiler">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeGuruProfiler.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ComputeOptimizer">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ComputeOptimizer.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.APIGateway">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.APIGateway.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CustomerProfiles">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CustomerProfiles.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Connect">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Connect.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Polly">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Polly.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IoT">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoT.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.QLDBSession">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.QLDBSession.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.GlobalAccelerator">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GlobalAccelerator.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.LicenseManager">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LicenseManager.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DLM">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.DLM.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Comprehend">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Comprehend.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IoTEvents">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoTEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.PI">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PI.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ApplicationDiscoveryService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApplicationDiscoveryService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ElasticTranscoder">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ElasticTranscoder.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.PrometheusService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.PrometheusService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.GroundStation">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GroundStation.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SQS">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SQS.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CognitoIdentity">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CognitoIdentity.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ApiGatewayV2">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ApiGatewayV2.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Kafka">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Kafka.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AWSMarketplaceCommerceAnalytics">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AWSMarketplaceCommerceAnalytics.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SSO">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SSO.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Lightsail">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Lightsail.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.WorkLink">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.WorkLink.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MediaLive">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaLive.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.KinesisAnalytics">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KinesisAnalytics.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CodeArtifact">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeArtifact.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.LexModelsV2">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.LexModelsV2.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.IoT1ClickDevicesService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.IoT1ClickDevicesService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.ACMPCA">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.ACMPCA.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SecurityToken">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.SecurityToken.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.GuardDuty">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.GuardDuty.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AppRegistry">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AppRegistry.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MTurk">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MTurk.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CodeBuild">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.CodeBuild.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Organizations">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Organizations.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AutoScalingPlans">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AutoScalingPlans.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.KeyManagementService">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.KeyManagementService.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Elasticsearch">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.Elasticsearch.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.AccessAnalyzer">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.AccessAnalyzer.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.StorageGateway">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.StorageGateway.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.MediaTailor">
+      <HintPath>Assets\aws-sdk-net45-3.7.141.0\AWSSDK.MediaTailor.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Unity Hub\2020.3.21f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
