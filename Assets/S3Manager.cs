@@ -3,22 +3,23 @@ using Amazon.CognitoIdentity;
 using Amazon.S3;
 using Amazon.S3.Model;
 using System.IO;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class S3Manager : MonoBehaviour
 {
-    public Image previewImg;
+    public RawImage previewImg;
     public InputField description;
     public Button uploadButton;
-    private string S3BucketName;
+    public static string S3BucketName;
     public static string fileName;
     public static string filePath;
-    private IAmazonS3 client;
+    public static IAmazonS3 client;
     private RegionEndpoint _S3Region;
     private void Start()
     {
-        previewImg.sprite = Sprite.Create(PhoneCamera.temTexture, new Rect(0.0f, 0.0f, previewImg.flexibleWidth, previewImg.flexibleHeight), new Vector2(0.5f, 0.5f), 100.0f);
+        previewImg.texture = PhoneCamera.temTexture;
         uploadButton.onClick.AddListener(uploadFileToS3);
 
         CognitoAWSCredentials credentials = new CognitoAWSCredentials(
@@ -26,15 +27,17 @@ public class S3Manager : MonoBehaviour
         RegionEndpoint.USEast2 // Region
         );
 
-        this.client = new AmazonS3Client(credentials, RegionEndpoint.USEast2);
+        client = new AmazonS3Client(credentials, RegionEndpoint.USEast2);
 
-        this.S3BucketName = "my-graffitit-s3-bucket";
+        S3BucketName = "my-graffitit-s3-bucket";
 
-        previewImg.sprite = Sprite.Create(PhoneCamera.temTexture, new Rect(0, 0, 500, 500), new Vector2());
         _S3Region = RegionEndpoint.GetBySystemName("us-east-2");
 
+        _ = ListingObjectsAsync(client, S3BucketName);
 
+        _ = ReadObjectDataAsync(client, S3BucketName, "1280px-Philadelphia_City_Hall_at_night.jpg");
     }
+
 
 
     public async void uploadFileToS3()
@@ -54,7 +57,67 @@ public class S3Manager : MonoBehaviour
         {
             Debug.Log($"Error: {e.Message}");
         }
-
+        SceneManager.LoadScene("TemHomePage");
     }
 
+    public static async Task ListingObjectsAsync(IAmazonS3 client, string bucketname)
+    {
+        try
+        {
+            ListObjectsRequest request = new ListObjectsRequest
+            {
+                BucketName = bucketname,
+                MaxKeys = 10
+            };
+
+            do
+            {
+                ListObjectsResponse response = await client.ListObjectsAsync(request);
+
+                response.S3Objects
+                    .ForEach(obj => Debug.Log($"{obj.Key,-35}{obj.LastModified.ToShortDateString(),10}{obj.Size,10}"));
+
+                if (response.IsTruncated)
+                {
+                    request.Marker = response.NextMarker;
+                } else
+                {
+                    request = null;
+                }
+            } while (request != null);
+        }
+        catch (AmazonS3Exception ex)
+        {
+            Debug.Log($"Error encountered on server. Messagre:'{ex.Message}' getting list of objects.");
+        }
+    }
+
+    public static async Task ReadObjectDataAsync(IAmazonS3 client, string bucketname, string keyName)
+    {
+        string responseBody = string.Empty;
+
+        try
+        {
+            GetObjectRequest request = new GetObjectRequest
+            {
+                BucketName = bucketname,
+                Key = keyName
+            };
+
+            using (GetObjectResponse response = await client.GetObjectAsync(request))
+            using (Stream responseStream = response.ResponseStream)
+            using (StreamReader reader = new StreamReader(responseStream))
+            {
+                responseBody = reader.ReadToEnd();
+                Debug.Log(responseBody);
+                string filePath = $"/data/user/0/com.DefaultCompany.GraffitIT/files/{keyName}";
+            }
+        }
+        catch (AmazonS3Exception e)
+        {
+            Debug.Log($"Error: '{e.Message}'");
+        }
+    }
+
+    
 }

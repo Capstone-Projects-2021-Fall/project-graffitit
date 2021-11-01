@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using MySql.Data.MySqlClient;
-using UnityEngine.UI;
 using System;
 
 public class RegisterationPanel : MonoBehaviour

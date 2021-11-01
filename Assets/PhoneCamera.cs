@@ -8,6 +8,8 @@ public class PhoneCamera : MonoBehaviour
     //Recorded Content
     public static Texture2D temTexture;
 
+    public Text locationText;
+
     //Location
     private string N_Latitude;
     private string E_Longtitude;
@@ -53,7 +55,6 @@ public class PhoneCamera : MonoBehaviour
 
 
         StartCoroutine(startGPS());
-       
     }
 
     // Update is called once per frame
@@ -70,6 +71,8 @@ public class PhoneCamera : MonoBehaviour
 
         int orient = -backCam.videoRotationAngle;
         background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
+
+
     }
 
     public static void TakePicture(int maxSize)
@@ -160,6 +163,7 @@ public class PhoneCamera : MonoBehaviour
         {
             N_Latitude = Input.location.lastData.latitude.ToString();
             E_Longtitude = Input.location.lastData.longitude.ToString();
+            locationText.text = N_Latitude + E_Longtitude;
             Input.location.Stop();
             yield return null;
         }
