@@ -1,0 +1,2 @@
+C:\Users\wnz6k\OneDrive\Desktop\Temple\2021 Fall\CIS4398\project-graffitit\obj\Debug\Unity.TextMeshPro.csproj.AssemblyReference.cache
+C:\Users\wnz6k\OneDrive\Desktop\Temple\2021 Fall\CIS4398\project-graffitit\obj\Debug\Unity.TextMeshPro.csproj.CoreCompileInputs.cache

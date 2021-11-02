@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ProfilePage.unity
     guid: 741f73a5918e4a34aaeef949c0180ebc
+  - enabled: 1
+    path: Assets/Scenes/UploadContentPage.unity
+    guid: 58bf8beff59ca7b46881f2ce9de110ef
   m_configObjects: {}
