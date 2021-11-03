@@ -1,30 +1,34 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using MySql.Data.MySqlClient;
 using System;
+using System.Net.NetworkInformation;
+using Amazon.DynamoDBv2;
+using Amazon.CognitoIdentity;
+using Amazon.DynamoDBv2.DataModel;
+using Amazon;
 
 public class RegisterationPanel : MonoBehaviour
 {
     private TMPro.TMP_InputField email;
     private TMPro.TMP_InputField password;
-    private int currentID = 0;
 
-    static string connStr = "server=graffitit-database-instance-1.cakajll39l1z.us-east-2.rds.amazonaws.com; database=graffitit-database; Username=admin; Password=GraffitIT12";
-    MySqlConnection conn;
+    //Fields for DynamoDB
+    public static CognitoAWSCredentials credentials = new CognitoAWSCredentials(
+    "us-east-2:772d1d1d-22e9-43cd-b015-ed51a12068ab", // Identity pool ID
+    RegionEndpoint.USEast2 // Region
+    );
+    public static AmazonDynamoDBClient client = new AmazonDynamoDBClient(credentials);
+    DynamoDBContext Context = new DynamoDBContext(client);
+
+
+
+
     private void Start()
     {
         email = GameObject.Find("Email").GetComponent<TMPro.TMP_InputField>();
         password = GameObject.Find("Password").GetComponent<TMPro.TMP_InputField>();
-        try
-        {
-            conn = new MySqlConnection(connStr);
-            conn.Open();
-        } catch(MySqlException ex)
-        {
-            Debug.Log(ex.Message);
-        }
 
-        currentID = getDBRowLength();
+        Debug.Log(client.ListTables().ToString());
     }
 
     private void Update()
@@ -42,20 +46,5 @@ public class RegisterationPanel : MonoBehaviour
     }
 
 
-    public void sendToMySQL()
-    {
-        var cmd = new MySqlCommand();
-        cmd.Connection = conn;
-        cmd.CommandText = "INSERT INTO USERS (user_id, user_email, user_password) VALUES (" + currentID + ", " + email.text + ", " + password.text + ")";
-        cmd.ExecuteNonQuery();
-    }
 
-    public int getDBRowLength()
-    {
-        MySqlCommand cmd = conn.CreateCommand();
-        cmd.CommandText = "SELECT COUNT(user_id) FROM USERS";
-        MySqlDataReader reader = cmd.ExecuteReader();
-        int currentid = Int32.Parse(reader.GetString(0));
-        return currentid;
-    }
 }
