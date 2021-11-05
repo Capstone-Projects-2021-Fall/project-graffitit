@@ -9,7 +9,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class S3Manager : MonoBehaviour
 {
-    public RawImage previewImg;
+    public Image previewImg;
+    public static Texture2D contentTexCopy = null;
     public InputField description;
     public Button uploadButton;
     public static string S3BucketName;
@@ -17,9 +18,8 @@ public class S3Manager : MonoBehaviour
     public static string filePath;
     public static IAmazonS3 client;
     private RegionEndpoint _S3Region;
-    private void Start()
+    void Start()
     {
-        previewImg.texture = PhoneCamera.temTexture;
         uploadButton.onClick.AddListener(uploadFileToS3);
 
         CognitoAWSCredentials credentials = new CognitoAWSCredentials(
@@ -33,11 +33,13 @@ public class S3Manager : MonoBehaviour
 
         _S3Region = RegionEndpoint.GetBySystemName("us-east-2");
 
-        _ = ListingObjectsAsync(client, S3BucketName);
+        //_ = ListingObjectsAsync(client, S3BucketName);
 
-        _ = ReadObjectDataAsync(client, S3BucketName, "1280px-Philadelphia_City_Hall_at_night.jpg");
+        //_ = ReadObjectDataAsync(client, S3BucketName, "1280px-Philadelphia_City_Hall_at_night.jpg");
+
+        previewImg.sprite = Sprite.Create(contentTexCopy, new Rect(0.0f, 0.0f, contentTexCopy.width, contentTexCopy.height), new Vector2(0.5f, 0.5f));
+        //Debug.Log(PhoneCamera.temTexture.Equals(null));
     }
-
 
 
     public async void uploadFileToS3()

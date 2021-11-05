@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -52,6 +52,9 @@
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2020.3.21f1</UnityVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\RegisterationPanel.cs" />
@@ -371,6 +374,9 @@
     <Reference Include="AWSSDK.S3">
       <HintPath>Assets\AWSDK\AWSSDK.S3.dll</HintPath>
     </Reference>
+    <Reference Include="AWSSDK.DynamoDBv2">
+      <HintPath>Assets\AWSDK\AWSSDK.DynamoDBv2.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Protobuf">
       <HintPath>Assets\GoogleMaps\Plugins\Google.Protobuf.dll</HintPath>
     </Reference>
@@ -410,20 +416,17 @@
     <Reference Include="AWSSDK.S3Outposts">
       <HintPath>Assets\AWSDK\AWSSDK.S3Outposts.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="AWSSDK.CognitoIdentityProvider">
       <HintPath>Assets\AWSDK\AWSSDK.CognitoIdentityProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Google.Maps.Editor">
       <HintPath>Assets\GoogleMaps\Plugins\Google.Maps.Editor.dll</HintPath>
     </Reference>
     <Reference Include="AWSSDK.AppConfig">
       <HintPath>Assets\AWSDK\AWSSDK.AppConfig.dll</HintPath>
-    </Reference>
-    <Reference Include="AWSSDK.DynamoDBv2">
-      <HintPath>Assets\AWSDK\AWSSDK.DynamoDBv2.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Unity Hub\2020.3.21f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>

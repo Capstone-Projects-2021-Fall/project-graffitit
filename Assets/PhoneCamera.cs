@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System;
 public class PhoneCamera : MonoBehaviour
-{ 
-    //Recorded Content
-    public static Texture2D temTexture;
+{
+    //Recorded content
+    //public static Texture2D temTexture;
 
     public Text locationText;
 
@@ -83,7 +83,7 @@ public class PhoneCamera : MonoBehaviour
             if(path != null)
             {
                 Texture2D texture = NativeCamera.LoadImageAtPath(path, maxSize);
-                temTexture = texture;
+                S3Manager.contentTexCopy = texture;
                 S3Manager.fileName = DateTime.Now.ToString("en-US") + ".jpg";
                 S3Manager.filePath = path;
                 NativeGallery.SaveImageToGallery(texture, "test", "myimg.png");
@@ -105,7 +105,7 @@ public class PhoneCamera : MonoBehaviour
 
                 Destroy(quad, 5f);
 
-                Destroy(texture, 5f);
+                //Destroy(texture, 5f);
             }
         }, maxSize);
         SceneManager.LoadScene("UploadContentPage");
@@ -119,7 +119,7 @@ public class PhoneCamera : MonoBehaviour
             {
                 NativeGallery.SaveVideoToGallery(path, "testvideo", "myvideo.mp4");
                 //Play the recorded video
-                temTexture = NativeCamera.GetVideoThumbnail(path);
+                S3Manager.contentTexCopy = NativeCamera.GetVideoThumbnail(path);
                 S3Manager.fileName = DateTime.Now.ToString("en-US") + ".mp4";
                 S3Manager.filePath = path;
                 Handheld.PlayFullScreenMovie("file://" + path);
