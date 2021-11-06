@@ -9,6 +9,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class S3Manager : MonoBehaviour
 {
+    //Store GPS and create buckets based on GPS
+    //Retreive contents based off GPS
     public Image previewImg;
     public static Texture2D contentTexCopy = null;
     public InputField description;
@@ -110,8 +112,9 @@ public class S3Manager : MonoBehaviour
             using (Stream responseStream = response.ResponseStream)
             using (StreamReader reader = new StreamReader(responseStream))
             {
+                //Process responseBody to original files
                 responseBody = reader.ReadToEnd();
-                Debug.Log(responseBody);
+                Debug.Log(responseBody.Length);
                 string filePath = $"/data/user/0/com.DefaultCompany.GraffitIT/files/{keyName}";
             }
         }

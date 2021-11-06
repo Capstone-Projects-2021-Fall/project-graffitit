@@ -1,24 +1,28 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System;
-using System.Net.NetworkInformation;
 using Amazon.DynamoDBv2;
 using Amazon.CognitoIdentity;
 using Amazon.DynamoDBv2.DataModel;
 using Amazon;
+using Amazon.DynamoDBv2.Model;
+using System.Collections.Generic;
+using System;
+using System.Threading.Tasks;
+using UnityEngine.UI;
 
 public class RegisterationPanel : MonoBehaviour
 {
-    private TMPro.TMP_InputField email;
-    private TMPro.TMP_InputField password;
+    private static TMPro.TMP_InputField email;
+    private static TMPro.TMP_InputField password;
+    private Button registerButton;
 
     //Fields for DynamoDB
     public static CognitoAWSCredentials credentials = new CognitoAWSCredentials(
-    "us-east-2:772d1d1d-22e9-43cd-b015-ed51a12068ab", // Identity pool ID
+    "us-east-2:455127a3-0e56-4e32-9fb3-82f7e9ac6e93", // Identity pool ID
     RegionEndpoint.USEast2 // Region
-    );
+);
     public static AmazonDynamoDBClient client = new AmazonDynamoDBClient(credentials);
-    DynamoDBContext Context = new DynamoDBContext(client);
+    public static DynamoDBContext Context = new DynamoDBContext(client);
 
 
 
@@ -27,8 +31,11 @@ public class RegisterationPanel : MonoBehaviour
     {
         email = GameObject.Find("Email").GetComponent<TMPro.TMP_InputField>();
         password = GameObject.Find("Password").GetComponent<TMPro.TMP_InputField>();
-
-        Debug.Log(client.ListTables().ToString());
+        registerButton = GameObject.Find("RegisterButton").GetComponent<Button>();
+        registerButton.onClick.AddListener(clickToSend);
+        ListTablesResponse result = client.ListTables();
+        List<string> tables = result.TableNames;
+        Debug.Log(String.Format("Retrieved tables {0}", tables[0]));
     }
 
     private void Update()
@@ -45,6 +52,22 @@ public class RegisterationPanel : MonoBehaviour
         SceneManager.LoadScene("TemHomePage");
     }
 
+    public static async Task SingleTableBatchWrite()
+    {
+        GraffitITUsers currentUser = new GraffitITUsers
+        {
+            UserID = 0,
+            UserEmail = email.text,
+            UserPassword = password.text
+        };
 
+        var userBatch = Context.CreateBatchWrite<GraffitITUsers>();
+        userBatch.AddPutItem(currentUser);
+        await userBatch.ExecuteAsync();
+    }
 
+    public void clickToSend()
+    {
+        _ = SingleTableBatchWrite();
+    }
 }
