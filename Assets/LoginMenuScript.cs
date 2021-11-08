@@ -11,11 +11,7 @@ public class LoginMenuScript : MonoBehaviour
     private TMPro.TMP_InputField email;
     private TMPro.TMP_InputField password;
 
-    public static CognitoAWSCredentials credentials = new CognitoAWSCredentials(
-    "us-east-2:455127a3-0e56-4e32-9fb3-82f7e9ac6e93", // Identity pool ID
-    RegionEndpoint.USEast2 // Region
-    );
-    public static AmazonDynamoDBClient client = new AmazonDynamoDBClient(credentials);
+    public static AmazonDynamoDBClient client;
 
 
     void Start()
@@ -23,6 +19,11 @@ public class LoginMenuScript : MonoBehaviour
         email = GameObject.Find("Email").GetComponent<TMPro.TMP_InputField>();
         password = GameObject.Find("Password").GetComponent<TMPro.TMP_InputField>();
 
+        CognitoAWSCredentials credentials = new CognitoAWSCredentials(
+            "us-east-2:455127a3-0e56-4e32-9fb3-82f7e9ac6e93", // Identity pool ID
+            RegionEndpoint.USEast2 // Region
+        );
+        client = new AmazonDynamoDBClient(credentials, RegionEndpoint.USEast2);
 
         RetrieveItem(client);
 

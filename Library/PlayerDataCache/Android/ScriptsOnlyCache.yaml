@@ -282,9 +282,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3820}
     - Class: 114
-      Script: {instanceID: 17314}
+      Script: {instanceID: 16398}
     - Class: 114
-      Script: {instanceID: 17318}
+      Script: {instanceID: 16406}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -691,7 +691,7 @@ ScriptsOnlyBuild:
     className: NGMediaSaveCallbackiOS
   - hash:
       serializedVersion: 2
-      Hash: fa5c17d4163424cd5acbb6602393dd9b
+      Hash: c9634e0400f3a55e8f1aca689662360a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PhoneCamera

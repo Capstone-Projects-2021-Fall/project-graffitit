@@ -18,6 +18,7 @@ public class S3Manager : MonoBehaviour
     public static string S3BucketName;
     public static string fileName;
     public static string filePath;
+    public static string locationString;
     public static IAmazonS3 client;
     private RegionEndpoint _S3Region;
     void Start()
@@ -54,6 +55,8 @@ public class S3Manager : MonoBehaviour
                 FilePath = filePath,
                 ContentType = "image/png"
             };
+
+            putRequest.Metadata.Add("Location-Info", locationString);
 
             PutObjectResponse response = await client.PutObjectAsync(putRequest);
         }
