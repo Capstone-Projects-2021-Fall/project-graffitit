@@ -6,7 +6,6 @@ using Amazon.DynamoDBv2.DataModel;
 using Amazon;
 using Amazon.DynamoDBv2.Model;
 using System.Collections.Generic;
-using System;
 using System.Threading.Tasks;
 using UnityEngine.UI;
 
@@ -18,14 +17,11 @@ public class RegisterationPanel : MonoBehaviour
 
     //Fields for DynamoDB
     public static CognitoAWSCredentials credentials = new CognitoAWSCredentials(
-    "us-east-2:455127a3-0e56-4e32-9fb3-82f7e9ac6e93", // Identity pool ID
-    RegionEndpoint.USEast2 // Region
-);
+        "us-east-2:455127a3-0e56-4e32-9fb3-82f7e9ac6e93", // Identity pool ID
+        RegionEndpoint.USEast2 // Region
+    );
     public static AmazonDynamoDBClient client = new AmazonDynamoDBClient(credentials);
     public static DynamoDBContext Context = new DynamoDBContext(client);
-
-
-
 
     private void Start()
     {
@@ -35,7 +31,7 @@ public class RegisterationPanel : MonoBehaviour
         registerButton.onClick.AddListener(clickToSend);
         ListTablesResponse result = client.ListTables();
         List<string> tables = result.TableNames;
-        Debug.Log(String.Format("Retrieved tables {0}", tables[0]));
+        Debug.Log(string.Format("Retrieved tables {0}", tables[0]));
     }
 
     private void Update()
