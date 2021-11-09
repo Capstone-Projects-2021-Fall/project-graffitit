@@ -8,10 +8,10 @@ public class PhoneCamera : MonoBehaviour
     //Recorded content
     //public static Texture2D temTexture;
 
-
     //Location
-    private string N_Latitude;
-    private string E_Longtitude;
+    private static string N_Latitude;
+    private static string E_Longtitude;
+    public static string locationString;
     //Camera 
     private bool camAvailable;
     private WebCamTexture backCam;
@@ -51,6 +51,9 @@ public class PhoneCamera : MonoBehaviour
         background.texture = backCam;
 
         camAvailable = true;
+
+        StartCoroutine(startGPS());
+        Debug.Log("Location String at PhoneCamera:" + N_Latitude + E_Longtitude);
     }
 
     // Update is called once per frame
@@ -68,7 +71,6 @@ public class PhoneCamera : MonoBehaviour
         int orient = -backCam.videoRotationAngle;
         background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
 
-        InvokeRepeating("startGPS", 2.0f, 5.0f);
     }
 
     public static void TakePicture(int maxSize)
@@ -130,7 +132,7 @@ public class PhoneCamera : MonoBehaviour
         SceneManager.LoadScene("ProfilePage");
     }
 
-    IEnumerator startGPS()
+    static IEnumerator startGPS()
     {
         if(!Input.location.isEnabledByUser)
         {
@@ -159,7 +161,7 @@ public class PhoneCamera : MonoBehaviour
         {
             N_Latitude = Input.location.lastData.latitude.ToString();
             E_Longtitude = Input.location.lastData.longitude.ToString();
-            S3Manager.locationString = N_Latitude + E_Longtitude;
+            locationString = N_Latitude + E_Longtitude;
             Input.location.Stop();
             yield return null;
         }

@@ -18,9 +18,7 @@ public class S3Manager : MonoBehaviour
     public static string S3BucketName;
     public static string fileName;
     public static string filePath;
-    public static string locationString;
     public static IAmazonS3 client;
-    private RegionEndpoint _S3Region;
     void Start()
     {
         uploadButton.onClick.AddListener(uploadFileToS3);
@@ -34,14 +32,13 @@ public class S3Manager : MonoBehaviour
 
         S3BucketName = "my-graffitit-s3-bucket";
 
-        _S3Region = RegionEndpoint.GetBySystemName("us-east-2");
 
         //_ = ListingObjectsAsync(client, S3BucketName);
 
         //_ = ReadObjectDataAsync(client, S3BucketName, "1280px-Philadelphia_City_Hall_at_night.jpg");
 
         previewImg.sprite = Sprite.Create(contentTexCopy, new Rect(0.0f, 0.0f, contentTexCopy.width, contentTexCopy.height), new Vector2(0.5f, 0.5f));
-        //Debug.Log(PhoneCamera.temTexture.Equals(null));
+        Debug.Log(contentTexCopy.Equals(null));
     }
 
 
@@ -56,7 +53,8 @@ public class S3Manager : MonoBehaviour
                 ContentType = "image/png"
             };
 
-            putRequest.Metadata.Add("Location-Info", locationString);
+            Debug.Log(PhoneCamera.locationString);
+            putRequest.Metadata.Add("Location-Info", PhoneCamera.locationString);
 
             PutObjectResponse response = await client.PutObjectAsync(putRequest);
         }
