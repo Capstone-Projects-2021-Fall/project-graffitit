@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System;
+
 public class PhoneCamera : MonoBehaviour
 {
     //Recorded content
@@ -78,6 +79,12 @@ public class PhoneCamera : MonoBehaviour
             if(path != null)
             {
                 Texture2D texture = NativeCamera.LoadImageAtPath(path, maxSize);
+                texture = duplicateTexture(texture);
+                byte[] texBytes = ImageConversion.EncodeToPNG(texture);
+                byte[] compressedBytes = CLZF2.Compress(texBytes);
+                Debug.Log("Original bytes size " + texBytes.Length);
+                Debug.Log("Compressed bytes size " + compressedBytes.Length);
+                texture.LoadImage(compressedBytes);
                 S3Manager.contentTexCopy = texture;
                 DateTime localDate = DateTime.Now;
                 S3Manager.fileName = localDate.ToString().Replace('/','-') + ".png";
@@ -168,5 +175,28 @@ public class PhoneCamera : MonoBehaviour
         }
     }
 
+
+    //Helper function to make Texture2D Readable through script
+    /*https://stackoverflow.com/questions/44733841/how-to-make-texture2d-readable-via-script
+    */
+    public static Texture2D duplicateTexture(Texture2D source)
+    {
+        RenderTexture renderTex = RenderTexture.GetTemporary(
+                    source.width,
+                    source.height,
+                    0,
+                    RenderTextureFormat.Default,
+                    RenderTextureReadWrite.Linear);
+
+        Graphics.Blit(source, renderTex);
+        RenderTexture previous = RenderTexture.active;
+        RenderTexture.active = renderTex;
+        Texture2D readableText = new Texture2D(source.width, source.height);
+        readableText.ReadPixels(new Rect(0, 0, renderTex.width, renderTex.height), 0, 0);
+        readableText.Apply();
+        RenderTexture.active = previous;
+        RenderTexture.ReleaseTemporary(renderTex);
+        return readableText;
+    }
 }
 

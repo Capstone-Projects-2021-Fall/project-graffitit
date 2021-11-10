@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1306
     height: 870
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1306
     height: 870
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 579, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 48
+  controlID: 5944
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 303, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 49
+  controlID: 5945
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 303, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 50
+  controlID: 5946
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 296
     height: 412
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -218,8 +218,8 @@ MonoBehaviour:
     y: 0
     width: 603
     height: 412
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 14}
@@ -273,8 +273,8 @@ MonoBehaviour:
     y: 0
     width: 407
     height: 820
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -336,7 +336,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 1
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -349,18 +349,18 @@ MonoBehaviour:
       y: 21
       width: 601
       height: 370
-    m_Scale: {x: 0.43809485, y: 0.43809485}
-    m_Translation: {x: 300.5, y: 180.626}
+    m_Scale: {x: 0.41294643, y: 0.41294643}
+    m_Translation: {x: 300.5, y: 185}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -685.9245
-      y: -412.29886
-      width: 1371.849
-      height: 844.566
+      x: -727.69727
+      y: -448
+      width: 1455.3945
+      height: 896
     m_MinimalGUI: 1
   m_defaultScale: 0.41294643
   m_LastWindowPixelSize: {x: 1202, y: 782}
@@ -399,7 +399,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0cf1ffff2cf1ffff3cf2ffff44f2ffff4ef2ffff60f2ffff7cf2ffff6ef3ffff8ef3ffff9ef4ffffa6f4ffffb0f4ffffc2f4ffffdef4fffffaf5ffff1af6ffff2af7ffff32f7ffff3cf7ffff4ef7ffff6af7ffff9af8ffffbaf8ffffcaf9ffffd2f9ffffdcf9ffffeef9ffff0afaffff52fbffff
+      m_ExpandedIDs: decafffffecaffff12ccffff1eccffff2cccffff42ccffff62ccffffccceffffc4cfffffe4cffffff2d0fffff8d0ffff0cd1ffff1ed1ffff3cd1ffff16d2ffff36d2ffff44d3ffff4ad3ffff5ed3ffff70d3ffff8ed3ffffccd4ffffecd4fffffad5ffff00d6ffff14d6ffff26d6ffff44d6ffff2ed7ffff4ed7ffff60d8ffff6ad8ffff82d8ffff98d8ffffbad8ffffdcdafffffcdaffff0adcffff10dcffff24dcffff36dcffff54dcffff26ddffff46ddffff54deffff5adeffff6edeffff80deffff9edeffff94dfffffb4dfffffc2e0ffffc8e0ffffdce0ffffeee0ffff0ce1ffffeae1ffff0ae2ffff1ce3ffff26e3ffff3ee3ffff54e3ffff76e3ffffe8eaffffa4ebffffc4ebffffd4ecffffdcecffffe6ecfffff8ecffff14edffff26efffff46efffff56f0ffff5ef0ffff68f0ffff7af0ffff96f0fffffaf1ffff1af2ffff2ef3ffff3af3ffff48f3ffff5ef3ffff7ef3ffff9ef4ffffbaf9ffff52fbffffb4430000c6430000525400005a540000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -577,21 +577,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\wnz6k\OneDrive\Desktop\Temple\2021 Fall\CIS4398\project-graffitit
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b8400000
-    m_LastClickedID: 16568
+    m_SelectedIDs: ce400000
+    m_LastClickedID: 16590
     m_ExpandedIDs: 00000000b8400000ba400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -664,7 +664,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
