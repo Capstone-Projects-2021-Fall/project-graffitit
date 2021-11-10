@@ -15,9 +15,10 @@ public class RegisterationPanel : MonoBehaviour
     private static TMPro.TMP_InputField password;
     private Button registerButton;
 
-
     public static AmazonDynamoDBClient client;
     public static DynamoDBContext context;
+
+    private int currentlyAvailableUserID;
 
     private void Start()
     {
@@ -34,6 +35,7 @@ public class RegisterationPanel : MonoBehaviour
         ListTablesResponse result = client.ListTables();
         List<string> tables = result.TableNames;
         Debug.Log(string.Format("Retrieved tables {0}", tables[0]));
+        currentlyAvailableUserID = getItemCountInTable();
     }
 
     private void Update()
@@ -50,13 +52,15 @@ public class RegisterationPanel : MonoBehaviour
         SceneManager.LoadScene("TemHomePage");
     }
 
-    public static async Task SingleTableBatchWrite(DynamoDBContext Context)
+    public static async Task SingleTableBatchWrite(DynamoDBContext Context, int currentAvailableUserID)
     {
         GraffitITUsers currentUser = new GraffitITUsers
         {
-            UserID = 0,
+            UserID = currentAvailableUserID,
             UserEmail = email.text,
-            UserPassword = password.text
+            UserPassword = password.text,
+            UserName = "",
+            UserBio = ""
         };
 
         var userBatch = Context.CreateBatchWrite<GraffitITUsers>();
@@ -66,6 +70,12 @@ public class RegisterationPanel : MonoBehaviour
 
     public void clickToSend()
     {
-        _ = SingleTableBatchWrite(context);
+        _ = SingleTableBatchWrite(context, currentlyAvailableUserID);
     }
+
+    public int getItemCountInTable()
+    {
+        return (int)client.DescribeTable("GraffitITUsers").Table.ItemCount;
+    }
+    
 }
