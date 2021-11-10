@@ -79,12 +79,6 @@ public class PhoneCamera : MonoBehaviour
             if(path != null)
             {
                 Texture2D texture = NativeCamera.LoadImageAtPath(path, maxSize);
-                texture = duplicateTexture(texture);
-                byte[] texBytes = ImageConversion.EncodeToPNG(texture);
-                byte[] compressedBytes = CLZF2.Compress(texBytes);
-                Debug.Log("Original bytes size " + texBytes.Length);
-                Debug.Log("Compressed bytes size " + compressedBytes.Length);
-                texture.LoadImage(compressedBytes);
                 S3Manager.contentTexCopy = texture;
                 DateTime localDate = DateTime.Now;
                 S3Manager.fileName = localDate.ToString().Replace('/','-') + ".png";
@@ -131,7 +125,7 @@ public class PhoneCamera : MonoBehaviour
                 //Handheld.PlayFullScreenMovie("file://" + path);
                 SceneManager.LoadScene("UploadContentPage");
             }
-        });
+        }, NativeCamera.Quality.Low);
         Debug.Log("Permission result: " + permission);
     }
 
