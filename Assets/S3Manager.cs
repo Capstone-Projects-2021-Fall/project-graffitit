@@ -56,7 +56,7 @@ public class S3Manager : MonoBehaviour
 
             Debug.Log(PhoneCamera.locationString);
             putRequest.Metadata.Add("Location-Info", PhoneCamera.locationString);
-
+            putRequest.Metadata.Add("Post-Description", description.text);
             PutObjectResponse response = await client.PutObjectAsync(putRequest);
         }
         catch (AmazonS3Exception e)

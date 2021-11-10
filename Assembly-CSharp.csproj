@@ -120,10 +120,8 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\AWSDK\aws-crt.dll" />
     <None Include="Assets\AWSDK\aws-crt-auth.dll" />
-    <None Include="Assets\MySql.Data\dllme.txt" />
     <None Include="Assets\GoogleMaps\Plugins\Google.Maps.xml" />
     <None Include="Assets\AWSDK\AWSSDK.CognitoIdentity.dll" />
-    <None Include="Assets\MySql.Data\MySql.Data.DLL" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -398,9 +396,6 @@
     </Reference>
     <Reference Include="AWSSDK.Core">
       <HintPath>Assets\AWSDK\AWSSDK.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Data">
-      <HintPath>Assets\MySql.Data\MySql.Data.DLL</HintPath>
     </Reference>
     <Reference Include="AWSSDK.SecurityToken">
       <HintPath>Assets\AWSDK\AWSSDK.SecurityToken.dll</HintPath>

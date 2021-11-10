@@ -78,6 +78,7 @@ public class PhoneCamera : MonoBehaviour
             Debug.Log("Image path: " + path);
             if(path != null)
             {
+                
                 Texture2D texture = NativeCamera.LoadImageAtPath(path, maxSize);
                 S3Manager.contentTexCopy = texture;
                 DateTime localDate = DateTime.Now;
