@@ -51,9 +51,7 @@ public class PhoneCamera : MonoBehaviour
         background.texture = backCam;
 
         camAvailable = true;
-
         StartCoroutine(startGPS());
-        Debug.Log("Location String at PhoneCamera:" + N_Latitude + E_Longtitude);
     }
 
     // Update is called once per frame
@@ -70,7 +68,6 @@ public class PhoneCamera : MonoBehaviour
 
         int orient = -backCam.videoRotationAngle;
         background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
-
     }
 
     public static void TakePicture(int maxSize)
@@ -82,8 +79,10 @@ public class PhoneCamera : MonoBehaviour
             {
                 Texture2D texture = NativeCamera.LoadImageAtPath(path, maxSize);
                 S3Manager.contentTexCopy = texture;
-                S3Manager.fileName = DateTime.Now.ToString("en-US") + ".jpg";
+                DateTime localDate = DateTime.Now;
+                S3Manager.fileName = localDate.ToString().Replace('/','-') + ".png";
                 S3Manager.filePath = path;
+                S3Manager.contentType = "image/png";
                 NativeGallery.SaveImageToGallery(texture, "test", "myimg.png");
                 if (texture == null)
                 {
@@ -104,9 +103,9 @@ public class PhoneCamera : MonoBehaviour
                 Destroy(quad, 5f);
 
                 //Destroy(texture, 5f);
+                SceneManager.LoadScene("UploadContentPage");
             }
         }, maxSize);
-        SceneManager.LoadScene("UploadContentPage");
     }
     public static void RecordVideo()
     {
@@ -118,13 +117,15 @@ public class PhoneCamera : MonoBehaviour
                 NativeGallery.SaveVideoToGallery(path, "testvideo", "myvideo.mp4");
                 //Play the recorded video
                 S3Manager.contentTexCopy = NativeCamera.GetVideoThumbnail(path);
-                S3Manager.fileName = DateTime.Now.ToString("en-US") + ".mp4";
+                DateTime localDate = DateTime.Now;
+                S3Manager.fileName = localDate.ToString().Replace('/','-') + ".mp4";
                 S3Manager.filePath = path;
-                Handheld.PlayFullScreenMovie("file://" + path);
+                S3Manager.contentType = "video/mp4";
+                //Handheld.PlayFullScreenMovie("file://" + path);
+                SceneManager.LoadScene("UploadContentPage");
             }
         });
         Debug.Log("Permission result: " + permission);
-        SceneManager.LoadScene("UploadContentPage");
     }
 
     public static void loadProfilePage()

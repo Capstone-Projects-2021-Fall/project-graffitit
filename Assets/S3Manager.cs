@@ -12,12 +12,13 @@ public class S3Manager : MonoBehaviour
     //Store GPS and create buckets based on GPS
     //Retreive contents based off GPS
     public Image previewImg;
-    public static Texture2D contentTexCopy = null;
+    public static Texture2D contentTexCopy;
     public InputField description;
     public Button uploadButton;
     public static string S3BucketName;
     public static string fileName;
     public static string filePath;
+    public static string contentType;
     public static IAmazonS3 client;
     void Start()
     {
@@ -50,7 +51,7 @@ public class S3Manager : MonoBehaviour
                 BucketName = S3BucketName,
                 Key = fileName,
                 FilePath = filePath,
-                ContentType = "image/png"
+                ContentType = contentType
             };
 
             Debug.Log(PhoneCamera.locationString);
