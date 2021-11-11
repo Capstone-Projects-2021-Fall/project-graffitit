@@ -38,18 +38,13 @@ public class LoginMenuScript : MonoBehaviour
             TableName = "GraffitITUsers",
             Key = new Dictionary<string, AttributeValue>()
             {
-                {"UserID", new AttributeValue
-                    {
-                       N = "0"
-                    }
-                },
                 {"UserEmail", new AttributeValue
-                    { 
-                       S = "test@gmail.com"
+                    {
+                       S = "first@gmail.com"
                     }
                 }
             },
-            ProjectionExpression = "UserID, UserEmail, UserPassword",
+            ProjectionExpression = "UserEmail, UserName, UserPassword",
             ConsistentRead = true
         };
         var response = await client.GetItemAsync(request);

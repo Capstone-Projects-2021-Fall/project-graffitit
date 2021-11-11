@@ -13,17 +13,18 @@ public class RegisterationPanel : MonoBehaviour
 {
     private static TMPro.TMP_InputField email;
     private static TMPro.TMP_InputField password;
+    private static TMPro.TMP_InputField userName;
     private Button registerButton;
 
     public static AmazonDynamoDBClient client;
     public static DynamoDBContext context;
 
-    private int currentlyAvailableUserID;
 
     private void Start()
     {
         email = GameObject.Find("Email").GetComponent<TMPro.TMP_InputField>();
         password = GameObject.Find("Password").GetComponent<TMPro.TMP_InputField>();
+        userName = GameObject.Find("UserName").GetComponent<TMPro.TMP_InputField>();
         registerButton = GameObject.Find("RegisterButton").GetComponent<Button>();
         CognitoAWSCredentials credentials = new CognitoAWSCredentials(
             "us-east-2:455127a3-0e56-4e32-9fb3-82f7e9ac6e93", // identity pool id
@@ -35,7 +36,6 @@ public class RegisterationPanel : MonoBehaviour
         ListTablesResponse result = client.ListTables();
         List<string> tables = result.TableNames;
         Debug.Log(string.Format("Retrieved tables {0}", tables[0]));
-        currentlyAvailableUserID = getItemCountInTable();
     }
 
     private void Update()
@@ -52,14 +52,13 @@ public class RegisterationPanel : MonoBehaviour
         SceneManager.LoadScene("TemHomePage");
     }
 
-    public static async Task SingleTableBatchWrite(DynamoDBContext Context, int currentAvailableUserID)
+    public static async Task SingleTableBatchWrite(DynamoDBContext Context)
     {
         GraffitITUsers currentUser = new GraffitITUsers
         {
-            UserID = currentAvailableUserID,
             UserEmail = email.text,
             UserPassword = password.text,
-            UserName = "",
+            UserName = userName.text,
             UserBio = ""
         };
 
@@ -70,7 +69,7 @@ public class RegisterationPanel : MonoBehaviour
 
     public void clickToSend()
     {
-        _ = SingleTableBatchWrite(context, currentlyAvailableUserID);
+        _ = SingleTableBatchWrite(context);
     }
 
     public int getItemCountInTable()

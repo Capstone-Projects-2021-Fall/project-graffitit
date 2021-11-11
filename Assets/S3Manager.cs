@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Amazon.S3.Transfer;
+
 public class S3Manager : MonoBehaviour
 {
     //Store GPS and create buckets based on GPS
@@ -40,6 +42,7 @@ public class S3Manager : MonoBehaviour
 
         previewImg.sprite = Sprite.Create(contentTexCopy, new Rect(0.0f, 0.0f, contentTexCopy.width, contentTexCopy.height), new Vector2(0.5f, 0.5f));
         Debug.Log(contentTexCopy.Equals(null));
+
     }
 
 
