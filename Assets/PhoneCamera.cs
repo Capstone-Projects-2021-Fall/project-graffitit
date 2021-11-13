@@ -52,6 +52,7 @@ public class PhoneCamera : MonoBehaviour
         background.texture = backCam;
 
         camAvailable = true;
+
         StartCoroutine(startGPS());
     }
 
@@ -133,6 +134,13 @@ public class PhoneCamera : MonoBehaviour
     public static void loadProfilePage()
     {
         SceneManager.LoadScene("ProfilePage");
+    }
+
+    public static void loadMapDisplay()
+    {
+        StaticGoogleMap.latitude = double.Parse(N_Latitude);
+        StaticGoogleMap.longitude = double.Parse(E_Longtitude);
+        SceneManager.LoadScene("MapScene");
     }
 
     static IEnumerator startGPS()

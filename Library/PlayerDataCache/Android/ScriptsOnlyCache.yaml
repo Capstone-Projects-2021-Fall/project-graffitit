@@ -8,7 +8,9 @@ ScriptsOnlyBuild:
     - RecordAction
     - RegisterationPanel
     - S3Manager
+    - StaticGoogleMap
     - UIController
+    - UnlockProfile
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -98,6 +100,63 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    Assets/Scenes/MapScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1532}
+    - Class: 114
+      Script: {instanceID: 1896}
+    - Class: 114
+      Script: {instanceID: 2342}
+    - Class: 114
+      Script: {instanceID: 2536}
+    - Class: 114
+      Script: {instanceID: 2662}
+    - Class: 114
+      Script: {instanceID: 2708}
+    - Class: 114
+      Script: {instanceID: 2848}
+    - Class: 114
+      Script: {instanceID: 3054}
+    - Class: 114
+      Script: {instanceID: 3152}
+    - Class: 114
+      Script: {instanceID: 48608}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/ProfilePage.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -139,6 +198,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3054}
     - Class: 114
       Script: {instanceID: 3152}
+    - Class: 114
+      Script: {instanceID: 3488}
     - Class: 114
       Script: {instanceID: 3816}
     - Class: 115
@@ -282,9 +343,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3816}
     - Class: 114
-      Script: {instanceID: 16394}
-    - Class: 114
-      Script: {instanceID: 16402}
+      Script: {instanceID: 23468}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -446,144 +505,6 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Unity
-    className: AreaWaterComponent
-  - hash:
-      serializedVersion: 2
-      Hash: f1b5a24fcdb36b690404bbbbd226f56a
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Feature.Style.Settings
-    className: AreaWaterStyleSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Unity.Attribution
-    className: AttributionRenderer
-  - hash:
-      serializedVersion: 2
-      Hash: b7c391ec75ff89b03cfd97e222d3a385
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Unity.Attribution
-    className: AttributionStyle
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Unity
-    className: ExtrudedStructureComponent
-  - hash:
-      serializedVersion: 2
-      Hash: b3975444f508188f0fedca5cff70da06
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Feature.Style.Settings
-    className: ExtrudedStructureStyleSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Impressions
-    className: ImpressionsManager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Unity.Intersections
-    className: IntersectionComponent
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Unity
-    className: LineWaterComponent
-  - hash:
-      serializedVersion: 2
-      Hash: c4780fbd982c4cf5e677695a3a5fa27a
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Feature.Style.Settings
-    className: LineWaterStyleSettings
-  - hash:
-      serializedVersion: 2
-      Hash: d2d1a629844acd81297f0a16a1940c56
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Loading
-    className: MapLoader
-  - hash:
-      serializedVersion: 2
-      Hash: 4593c5a6d28ed8c18fa131840de08334
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps
-    className: MapsService
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Unity
-    className: MetadataRegister
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Logging
-    className: MetricsSampler
-  - hash:
-      serializedVersion: 2
-      Hash: f7ab522494dbbc032e1891ace4ef7731
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Loading
-    className: MixedZoom
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Unity
-    className: ModeledStructureComponent
-  - hash:
-      serializedVersion: 2
-      Hash: 8cecc5889dd26b949f7e7ef53ab09b30
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Feature.Style.Settings
-    className: ModeledStructureStyleSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps
-    className: PlayableLocationsService
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Unity
-    className: RegionComponent
-  - hash:
-      serializedVersion: 2
-      Hash: f1b5a24fcdb36b690404bbbbd226f56a
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Feature.Style.Settings
-    className: RegionStyleSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Unity
-    className: SegmentComponent
-  - hash:
-      serializedVersion: 2
-      Hash: 198faa3e5dc86011401f8a9dccfedad9
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Feature.Style.Settings
-    className: SegmentStyleSettings
-  - hash:
-      serializedVersion: 2
-      Hash: eb1682e5969ef35287f4b7e5fc48cd7f
-    assemblyName: Google.Maps.dll
-    namespaceName: Google.Maps.Feature.Style.Attachment
-    className: StyleAttachment
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ProfileControl
@@ -643,7 +564,7 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: f1d735cc1a21c3704ab52568f4fbfcf8
+      Hash: 91d258529db2b5060a913f2afcea1a21
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
@@ -823,12 +744,6 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Google.Maps.Scripts
-    className: DeviceCountryProvider
-  - hash:
-      serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -895,7 +810,7 @@ ScriptsOnlyBuild:
     className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
-      Hash: e47818b0bc8b1d67068fa375f78fc9c6
+      Hash: 0116655addfafecfa7448fe77f7a708c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UnlockProfile
@@ -1211,6 +1126,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StaticGoogleMap
   platform: 13
   scenePathNames:
   - Assets/Scenes/RegistrationPage.unity
@@ -1218,4 +1139,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/TemHomePage.unity
   - Assets/Scenes/ProfilePage.unity
   - Assets/Scenes/UploadContentPage.unity
+  - Assets/Scenes/MapScene.unity
   playerPath: C:/Users/wnz6k/OneDrive/Desktop/demo.apk
