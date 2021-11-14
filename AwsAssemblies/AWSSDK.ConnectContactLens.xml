@@ -1,0 +1,1404 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.ConnectContactLens</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.ConnectContactLens.AmazonConnectContactLensConfig">
+            <summary>
+            Configuration for accessing Amazon ConnectContactLens service
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.AmazonConnectContactLensConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.AmazonConnectContactLensConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.AmazonConnectContactLensConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.AmazonConnectContactLensException">
+            <summary>
+             Common exception for the ConnectContactLens service.
+             </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonConnectContactLensException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonConnectContactLensException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonConnectContactLensException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonConnectContactLensException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonConnectContactLensException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonConnectContactLensException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Internal.AmazonConnectContactLensMetadata">
+            <summary>
+            Service metadata for  Amazon ConnectContactLens service
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Internal.AmazonConnectContactLensMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Internal.AmazonConnectContactLensMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.AccessDeniedException">
+            <summary>
+            You do not have sufficient access to perform this action.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.AccessDeniedException.#ctor(System.String)">
+            <summary>
+            Constructs a new AccessDeniedException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.AccessDeniedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.AccessDeniedException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.AccessDeniedException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.AccessDeniedException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.AccessDeniedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AccessDeniedException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.AccessDeniedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Categories">
+            <summary>
+            Provides the category rules that are used to automatically categorize contacts based
+            on uttered keywords and phrases.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Categories.MatchedCategories">
+            <summary>
+            Gets and sets the property MatchedCategories. 
+            <para>
+            The category rules that have been matched in the analyzed segment.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Categories.MatchedDetails">
+            <summary>
+            Gets and sets the property MatchedDetails. 
+            <para>
+            The category rule that was matched and when it occurred in the transcript.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.CategoryDetails">
+            <summary>
+            Provides information about the category rule that was matched.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.CategoryDetails.PointsOfInterest">
+            <summary>
+            Gets and sets the property PointsOfInterest. 
+            <para>
+            The section of audio where the category rule was detected.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.CharacterOffsets">
+            <summary>
+            For characters that were detected as issues, where they occur in the transcript.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.CharacterOffsets.BeginOffsetChar">
+            <summary>
+            Gets and sets the property BeginOffsetChar. 
+            <para>
+            The beginning of the issue.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.CharacterOffsets.EndOffsetChar">
+            <summary>
+            Gets and sets the property EndOffsetChar. 
+            <para>
+            The end of the issue.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.InternalServiceException">
+            <summary>
+            Request processing failed due to an error or failure with the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.InternalServiceException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServiceException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.InternalServiceException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.InternalServiceException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.InternalServiceException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.InternalServiceException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.InternalServiceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InternalServiceException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.InternalServiceException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for AccessDeniedException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.CategoriesUnmarshaller">
+            <summary>
+            Response Unmarshaller for Categories Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.CategoriesUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ConnectContactLens#Model#Categories,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.CategoriesUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.CategoriesUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.CategoryDetailsUnmarshaller">
+            <summary>
+            Response Unmarshaller for CategoryDetails Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.CategoryDetailsUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ConnectContactLens#Model#CategoryDetails,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.CategoryDetailsUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.CategoryDetailsUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.CharacterOffsetsUnmarshaller">
+            <summary>
+            Response Unmarshaller for CharacterOffsets Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.CharacterOffsetsUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ConnectContactLens#Model#CharacterOffsets,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.CharacterOffsetsUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.CharacterOffsetsUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalServiceException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.InvalidRequestExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InvalidRequestException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.InvalidRequestExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.InvalidRequestExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.InvalidRequestExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.IssueDetectedUnmarshaller">
+            <summary>
+            Response Unmarshaller for IssueDetected Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.IssueDetectedUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ConnectContactLens#Model#IssueDetected,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.IssueDetectedUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.IssueDetectedUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ListRealtimeContactAnalysisSegmentsRequestMarshaller">
+            <summary>
+            ListRealtimeContactAnalysisSegments Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ListRealtimeContactAnalysisSegmentsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ListRealtimeContactAnalysisSegmentsRequestMarshaller.Marshall(Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ListRealtimeContactAnalysisSegmentsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ListRealtimeContactAnalysisSegmentsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListRealtimeContactAnalysisSegments operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ListRealtimeContactAnalysisSegmentsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ListRealtimeContactAnalysisSegmentsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ListRealtimeContactAnalysisSegmentsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.PointOfInterestUnmarshaller">
+            <summary>
+            Response Unmarshaller for PointOfInterest Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.PointOfInterestUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ConnectContactLens#Model#PointOfInterest,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.PointOfInterestUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.PointOfInterestUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.RealtimeContactAnalysisSegmentUnmarshaller">
+            <summary>
+            Response Unmarshaller for RealtimeContactAnalysisSegment Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.RealtimeContactAnalysisSegmentUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ConnectContactLens#Model#RealtimeContactAnalysisSegment,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.RealtimeContactAnalysisSegmentUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.RealtimeContactAnalysisSegmentUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceNotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ThrottlingException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.TranscriptUnmarshaller">
+            <summary>
+            Response Unmarshaller for Transcript Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.TranscriptUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ConnectContactLens#Model#Transcript,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.TranscriptUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Internal.MarshallTransformations.TranscriptUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.InvalidRequestException">
+            <summary>
+            The request is not valid.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.InvalidRequestException.#ctor(System.String)">
+            <summary>
+            Constructs a new InvalidRequestException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.InvalidRequestException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InvalidRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.InvalidRequestException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InvalidRequestException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.InvalidRequestException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InvalidRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.InvalidRequestException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InvalidRequestException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.InvalidRequestException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InvalidRequestException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.InvalidRequestException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.IssueDetected">
+            <summary>
+            Potential issues that are detected based on an artificial intelligence analysis of
+            each turn in the conversation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.IssueDetected.CharacterOffsets">
+            <summary>
+            Gets and sets the property CharacterOffsets. 
+            <para>
+            The offset for when the issue was detected in the segment.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsRequest">
+            <summary>
+            Container for the parameters to the ListRealtimeContactAnalysisSegments operation.
+            Provides a list of analysis segments for a real-time analysis session.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsRequest.ContactId">
+            <summary>
+            Gets and sets the property ContactId. 
+            <para>
+            The identifier of the contact.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsRequest.InstanceId">
+            <summary>
+            Gets and sets the property InstanceId. 
+            <para>
+            The identifier of the Amazon Connect instance.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximimum number of results to return per page.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token for the next set of results. Use the value returned in the previous response
+            in the next request to retrieve the next set of results.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsResponse">
+            <summary>
+            This is the response object from the ListRealtimeContactAnalysisSegments operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            If there are additional results, this is the token for the next set of results. If
+            response includes <code>nextToken</code> there are two possible scenarios:
+            </para>
+             <ul> <li> 
+            <para>
+            There are more segments so another call is required to get them.
+            </para>
+             </li> <li> 
+            <para>
+            There are no more segments at this time, but more may be available later (real-time
+            analysis is in progress) so the client should call the operation again to get new
+            segments.
+            </para>
+             </li> </ul> 
+            <para>
+            If response does not include <code>nextToken</code>, the analysis is completed (successfully
+            or failed) and there are no more segments to retrieve.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsResponse.Segments">
+            <summary>
+            Gets and sets the property Segments. 
+            <para>
+            An analyzed transcript or category.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.PointOfInterest">
+            <summary>
+            The section of the contact audio where that category rule was detected.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.PointOfInterest.BeginOffsetMillis">
+            <summary>
+            Gets and sets the property BeginOffsetMillis. 
+            <para>
+            The beginning offset in milliseconds where the category rule was detected.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.PointOfInterest.EndOffsetMillis">
+            <summary>
+            Gets and sets the property EndOffsetMillis. 
+            <para>
+            The ending offset in milliseconds where the category rule was detected.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.RealtimeContactAnalysisSegment">
+            <summary>
+            An analyzed segment for a real-time analysis session.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.RealtimeContactAnalysisSegment.Categories">
+            <summary>
+            Gets and sets the property Categories. 
+            <para>
+            The matched category rules.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.RealtimeContactAnalysisSegment.Transcript">
+            <summary>
+            Gets and sets the property Transcript. 
+            <para>
+            The analyzed transcript.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.ResourceNotFoundException">
+            <summary>
+            The specified resource was not found.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ResourceNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ResourceNotFoundException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ResourceNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.ThrottlingException">
+            <summary>
+            The throttling limit has been exceeded.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ThrottlingException.#ctor(System.String)">
+            <summary>
+            Constructs a new ThrottlingException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ThrottlingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ThrottlingException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ThrottlingException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ThrottlingException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ThrottlingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ThrottlingException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ThrottlingException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.Transcript">
+            <summary>
+            A list of messages in the session.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Transcript.BeginOffsetMillis">
+            <summary>
+            Gets and sets the property BeginOffsetMillis. 
+            <para>
+            The beginning offset in the contact for this transcript.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Transcript.Content">
+            <summary>
+            Gets and sets the property Content. 
+            <para>
+            The content of the transcript.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Transcript.EndOffsetMillis">
+            <summary>
+            Gets and sets the property EndOffsetMillis. 
+            <para>
+            The end offset in the contact for this transcript.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Transcript.Id">
+            <summary>
+            Gets and sets the property Id. 
+            <para>
+            The identifier of the transcript.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Transcript.IssuesDetected">
+            <summary>
+            Gets and sets the property IssuesDetected. 
+            <para>
+            List of positions where issues were detected on the transcript.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Transcript.ParticipantId">
+            <summary>
+            Gets and sets the property ParticipantId. 
+            <para>
+            The identifier of the participant.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Transcript.ParticipantRole">
+            <summary>
+            Gets and sets the property ParticipantRole. 
+            <para>
+            The role of participant. For example, is it a customer, agent, or system.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.Transcript.Sentiment">
+            <summary>
+            Gets and sets the property Sentiment. 
+            <para>
+            The sentiment of the detected for this piece of transcript.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.ConnectContactLensPaginatorFactory">
+             <summary>
+             Paginators for the ConnectContactLens service
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.ConnectContactLensPaginatorFactory.ListRealtimeContactAnalysisSegments(Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsRequest)">
+             <summary>
+             Paginator for ListRealtimeContactAnalysisSegments operation
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.IConnectContactLensPaginatorFactory">
+             <summary>
+             Paginators for the ConnectContactLens service
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.Model.IConnectContactLensPaginatorFactory.ListRealtimeContactAnalysisSegments(Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsRequest)">
+             <summary>
+             Paginator for ListRealtimeContactAnalysisSegments operation
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.IListRealtimeContactAnalysisSegmentsPaginator">
+             <summary>
+             Paginator for the ListRealtimeContactAnalysisSegments operation
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.IListRealtimeContactAnalysisSegmentsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsPaginator">
+            <summary>
+            Base class for ListRealtimeContactAnalysisSegments paginators.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.AmazonConnectContactLensRequest">
+            <summary>
+            Base class for ConnectContactLens operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.SentimentValue">
+            <summary>
+            Constants used for properties of type SentimentValue.
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectContactLens.SentimentValue.NEGATIVE">
+            <summary>
+            Constant NEGATIVE for SentimentValue
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectContactLens.SentimentValue.NEUTRAL">
+            <summary>
+            Constant NEUTRAL for SentimentValue
+            </summary>
+        </member>
+        <member name="F:Amazon.ConnectContactLens.SentimentValue.POSITIVE">
+            <summary>
+            Constant POSITIVE for SentimentValue
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.SentimentValue.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.SentimentValue.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.SentimentValue.op_Implicit(System.String)~Amazon.ConnectContactLens.SentimentValue">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.AmazonConnectContactLensClient">
+             <summary>
+             Implementation for accessing ConnectContactLens
+            
+             Contact Lens for Amazon Connect enables you to analyze conversations between customer
+             and agents, by using speech transcription, natural language processing, and intelligent
+             search capabilities. It performs sentiment analysis, detects issues, and enables you
+             to automatically categorize contacts.
+             
+              
+             <para>
+             Contact Lens for Amazon Connect provides both real-time and post-call analytics of
+             customer-agent conversations. For more information, see <a href="https://docs.aws.amazon.com/connect/latest/adminguide/analyze-conversations.html">Analyze
+             conversations using Contact Lens</a> in the <i>Amazon Connect Administrator Guide</i>.
+             
+             </para>
+             </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.AmazonConnectContactLensClient.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.#ctor">
+             <summary>
+             Constructs AmazonConnectContactLensClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonConnectContactLensClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.#ctor(Amazon.ConnectContactLens.AmazonConnectContactLensConfig)">
+             <summary>
+             Constructs AmazonConnectContactLensClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonConnectContactLensClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonConnectContactLensClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonConnectContactLensClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.ConnectContactLens.AmazonConnectContactLensConfig)">
+            <summary>
+            Constructs AmazonConnectContactLensClient with AWS Credentials and an
+            AmazonConnectContactLensClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonConnectContactLensClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonConnectContactLensClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonConnectContactLensClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.#ctor(System.String,System.String,Amazon.ConnectContactLens.AmazonConnectContactLensConfig)">
+            <summary>
+            Constructs AmazonConnectContactLensClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonConnectContactLensClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonConnectContactLensClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonConnectContactLensClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonConnectContactLensClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.#ctor(System.String,System.String,System.String,Amazon.ConnectContactLens.AmazonConnectContactLensConfig)">
+            <summary>
+            Constructs AmazonConnectContactLensClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonConnectContactLensClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonConnectContactLensClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.AmazonConnectContactLensClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.ListRealtimeContactAnalysisSegments(Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsRequest)">
+            <summary>
+            Provides a list of analysis segments for a real-time analysis session.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListRealtimeContactAnalysisSegments service method.</param>
+            
+            <returns>The response from the ListRealtimeContactAnalysisSegments service method, as returned by ConnectContactLens.</returns>
+            <exception cref="T:Amazon.ConnectContactLens.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.InternalServiceException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connect-contact-lens-2020-08-21/ListRealtimeContactAnalysisSegments">REST API Reference for ListRealtimeContactAnalysisSegments Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.AmazonConnectContactLensClient.ListRealtimeContactAnalysisSegmentsAsync(Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Provides a list of analysis segments for a real-time analysis session.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListRealtimeContactAnalysisSegments service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListRealtimeContactAnalysisSegments service method, as returned by ConnectContactLens.</returns>
+            <exception cref="T:Amazon.ConnectContactLens.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.InternalServiceException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connect-contact-lens-2020-08-21/ListRealtimeContactAnalysisSegments">REST API Reference for ListRealtimeContactAnalysisSegments Operation</seealso>
+        </member>
+        <member name="T:Amazon.ConnectContactLens.IAmazonConnectContactLens">
+             <summary>
+             Interface for accessing ConnectContactLens
+            
+             Contact Lens for Amazon Connect enables you to analyze conversations between customer
+             and agents, by using speech transcription, natural language processing, and intelligent
+             search capabilities. It performs sentiment analysis, detects issues, and enables you
+             to automatically categorize contacts.
+             
+              
+             <para>
+             Contact Lens for Amazon Connect provides both real-time and post-call analytics of
+             customer-agent conversations. For more information, see <a href="https://docs.aws.amazon.com/connect/latest/adminguide/analyze-conversations.html">Analyze
+             conversations using Contact Lens</a> in the <i>Amazon Connect Administrator Guide</i>.
+             
+             </para>
+             </summary>
+        </member>
+        <member name="P:Amazon.ConnectContactLens.IAmazonConnectContactLens.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.IAmazonConnectContactLens.ListRealtimeContactAnalysisSegments(Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsRequest)">
+            <summary>
+            Provides a list of analysis segments for a real-time analysis session.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListRealtimeContactAnalysisSegments service method.</param>
+            
+            <returns>The response from the ListRealtimeContactAnalysisSegments service method, as returned by ConnectContactLens.</returns>
+            <exception cref="T:Amazon.ConnectContactLens.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.InternalServiceException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connect-contact-lens-2020-08-21/ListRealtimeContactAnalysisSegments">REST API Reference for ListRealtimeContactAnalysisSegments Operation</seealso>
+        </member>
+        <member name="M:Amazon.ConnectContactLens.IAmazonConnectContactLens.ListRealtimeContactAnalysisSegmentsAsync(Amazon.ConnectContactLens.Model.ListRealtimeContactAnalysisSegmentsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Provides a list of analysis segments for a real-time analysis session.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListRealtimeContactAnalysisSegments service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListRealtimeContactAnalysisSegments service method, as returned by ConnectContactLens.</returns>
+            <exception cref="T:Amazon.ConnectContactLens.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.InternalServiceException">
+            Request processing failed due to an error or failure with the service.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.InvalidRequestException">
+            The request is not valid.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.ConnectContactLens.Model.ThrottlingException">
+            The throttling limit has been exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/connect-contact-lens-2020-08-21/ListRealtimeContactAnalysisSegments">REST API Reference for ListRealtimeContactAnalysisSegments Operation</seealso>
+        </member>
+    </members>
+</doc>

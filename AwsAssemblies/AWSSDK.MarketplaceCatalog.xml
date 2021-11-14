@@ -1,0 +1,3281 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.MarketplaceCatalog</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogConfig">
+            <summary>
+            Configuration for accessing Amazon MarketplaceCatalog service
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogException">
+            <summary>
+             Common exception for the MarketplaceCatalog service.
+             </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonMarketplaceCatalogException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonMarketplaceCatalogException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonMarketplaceCatalogException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonMarketplaceCatalogException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonMarketplaceCatalogException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonMarketplaceCatalogException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Internal.AmazonMarketplaceCatalogMetadata">
+            <summary>
+            Service metadata for  Amazon MarketplaceCatalog service
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Internal.AmazonMarketplaceCatalogMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Internal.AmazonMarketplaceCatalogMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            <summary>
+            Access is denied.
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.AccessDeniedException.#ctor(System.String)">
+            <summary>
+            Constructs a new AccessDeniedException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.AccessDeniedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.AccessDeniedException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.AccessDeniedException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.AccessDeniedException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.AccessDeniedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AccessDeniedException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.AccessDeniedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.CancelChangeSetRequest">
+            <summary>
+            Container for the parameters to the CancelChangeSet operation.
+            Used to cancel an open change request. Must be sent before the status of the request
+            changes to <code>APPLYING</code>, the final stage of completing your change request.
+            You can describe a change during the 60-day request history retention period for API
+            calls.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.CancelChangeSetRequest.Catalog">
+            <summary>
+            Gets and sets the property Catalog. 
+            <para>
+            Required. The catalog related to the request. Fixed value: <code>AWSMarketplace</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.CancelChangeSetRequest.ChangeSetId">
+            <summary>
+            Gets and sets the property ChangeSetId. 
+            <para>
+            Required. The unique identifier of the <code>StartChangeSet</code> request that you
+            want to cancel.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.CancelChangeSetResponse">
+            <summary>
+            This is the response object from the CancelChangeSet operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.CancelChangeSetResponse.ChangeSetArn">
+            <summary>
+            Gets and sets the property ChangeSetArn. 
+            <para>
+            The ARN associated with the change set referenced in this request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.CancelChangeSetResponse.ChangeSetId">
+            <summary>
+            Gets and sets the property ChangeSetId. 
+            <para>
+            The unique identifier for the change set referenced in this request.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Change">
+            <summary>
+            An object that contains the <code>ChangeType</code>, <code>Details</code>, and <code>Entity</code>.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Change.ChangeName">
+            <summary>
+            Gets and sets the property ChangeName. 
+            <para>
+            Optional name for the change.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Change.ChangeType">
+            <summary>
+            Gets and sets the property ChangeType. 
+            <para>
+            Change types are single string values that describe your intention for the change.
+            Each change type is unique for each <code>EntityType</code> provided in the change's
+            scope.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Change.Details">
+            <summary>
+            Gets and sets the property Details. 
+            <para>
+            This object contains details specific to the change type of the requested change.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Change.Entity">
+            <summary>
+            Gets and sets the property Entity. 
+            <para>
+            The entity to be changed.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ChangeSetSummaryListItem">
+            <summary>
+            A summary of a change set returned in a list of change sets when the <code>ListChangeSets</code>
+            action is called.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ChangeSetSummaryListItem.ChangeSetArn">
+            <summary>
+            Gets and sets the property ChangeSetArn. 
+            <para>
+            The ARN associated with the unique identifier for the change set referenced in this
+            request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ChangeSetSummaryListItem.ChangeSetId">
+            <summary>
+            Gets and sets the property ChangeSetId. 
+            <para>
+            The unique identifier for a change set.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ChangeSetSummaryListItem.ChangeSetName">
+            <summary>
+            Gets and sets the property ChangeSetName. 
+            <para>
+            The non-unique name for the change set.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ChangeSetSummaryListItem.EndTime">
+            <summary>
+            Gets and sets the property EndTime. 
+            <para>
+            The time, in ISO 8601 format (2018-02-27T13:45:22Z), when the change set was finished.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ChangeSetSummaryListItem.EntityIdList">
+            <summary>
+            Gets and sets the property EntityIdList. 
+            <para>
+            This object is a list of entity IDs (string) that are a part of a change set. The
+            entity ID list is a maximum of 20 entities. It must contain at least one entity.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ChangeSetSummaryListItem.FailureCode">
+            <summary>
+            Gets and sets the property FailureCode. 
+            <para>
+            Returned if the change set is in <code>FAILED</code> status. Can be either <code>CLIENT_ERROR</code>,
+            which means that there are issues with the request (see the <code>ErrorDetailList</code>
+            of <code>DescribeChangeSet</code>), or <code>SERVER_FAULT</code>, which means that
+            there is a problem in the system, and you should retry your request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ChangeSetSummaryListItem.StartTime">
+            <summary>
+            Gets and sets the property StartTime. 
+            <para>
+            The time, in ISO 8601 format (2018-02-27T13:45:22Z), when the change set was started.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ChangeSetSummaryListItem.Status">
+            <summary>
+            Gets and sets the property Status. 
+            <para>
+            The current status of the change set.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ChangeSummary">
+            <summary>
+            This object is a container for common summary information about the change. The summary
+            doesn't contain the whole change structure.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ChangeSummary.ChangeName">
+            <summary>
+            Gets and sets the property ChangeName. 
+            <para>
+            Optional name for the change.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ChangeSummary.ChangeType">
+            <summary>
+            Gets and sets the property ChangeType. 
+            <para>
+            The type of the change.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ChangeSummary.Details">
+            <summary>
+            Gets and sets the property Details. 
+            <para>
+            This object contains details specific to the change type of the requested change.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ChangeSummary.Entity">
+            <summary>
+            Gets and sets the property Entity. 
+            <para>
+            The entity to be changed.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ChangeSummary.ErrorDetailList">
+            <summary>
+            Gets and sets the property ErrorDetailList. 
+            <para>
+            An array of <code>ErrorDetail</code> objects associated with the change.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.DescribeChangeSetRequest">
+            <summary>
+            Container for the parameters to the DescribeChangeSet operation.
+            Provides information about a given change set.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeChangeSetRequest.Catalog">
+            <summary>
+            Gets and sets the property Catalog. 
+            <para>
+            Required. The catalog related to the request. Fixed value: <code>AWSMarketplace</code>
+            
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeChangeSetRequest.ChangeSetId">
+            <summary>
+            Gets and sets the property ChangeSetId. 
+            <para>
+            Required. The unique identifier for the <code>StartChangeSet</code> request that you
+            want to describe the details for.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.DescribeChangeSetResponse">
+            <summary>
+            This is the response object from the DescribeChangeSet operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeChangeSetResponse.ChangeSet">
+            <summary>
+            Gets and sets the property ChangeSet. 
+            <para>
+            An array of <code>ChangeSummary</code> objects.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeChangeSetResponse.ChangeSetArn">
+            <summary>
+            Gets and sets the property ChangeSetArn. 
+            <para>
+            The ARN associated with the unique identifier for the change set referenced in this
+            request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeChangeSetResponse.ChangeSetId">
+            <summary>
+            Gets and sets the property ChangeSetId. 
+            <para>
+            Required. The unique identifier for the change set referenced in this request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeChangeSetResponse.ChangeSetName">
+            <summary>
+            Gets and sets the property ChangeSetName. 
+            <para>
+            The optional name provided in the <code>StartChangeSet</code> request. If you do not
+            provide a name, one is set by default.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeChangeSetResponse.EndTime">
+            <summary>
+            Gets and sets the property EndTime. 
+            <para>
+            The date and time, in ISO 8601 format (2018-02-27T13:45:22Z), the request transitioned
+            to a terminal state. The change cannot transition to a different state. Null if the
+            request is not in a terminal state. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeChangeSetResponse.FailureCode">
+            <summary>
+            Gets and sets the property FailureCode. 
+            <para>
+            Returned if the change set is in <code>FAILED</code> status. Can be either <code>CLIENT_ERROR</code>,
+            which means that there are issues with the request (see the <code>ErrorDetailList</code>),
+            or <code>SERVER_FAULT</code>, which means that there is a problem in the system, and
+            you should retry your request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeChangeSetResponse.FailureDescription">
+            <summary>
+            Gets and sets the property FailureDescription. 
+            <para>
+            Returned if there is a failure on the change set, but that failure is not related
+            to any of the changes in the request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeChangeSetResponse.StartTime">
+            <summary>
+            Gets and sets the property StartTime. 
+            <para>
+            The date and time, in ISO 8601 format (2018-02-27T13:45:22Z), the request started.
+            
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeChangeSetResponse.Status">
+            <summary>
+            Gets and sets the property Status. 
+            <para>
+            The status of the change request.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.DescribeEntityRequest">
+            <summary>
+            Container for the parameters to the DescribeEntity operation.
+            Returns the metadata and content of the entity.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeEntityRequest.Catalog">
+            <summary>
+            Gets and sets the property Catalog. 
+            <para>
+            Required. The catalog related to the request. Fixed value: <code>AWSMarketplace</code>
+            
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeEntityRequest.EntityId">
+            <summary>
+            Gets and sets the property EntityId. 
+            <para>
+            Required. The unique ID of the entity to describe.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.DescribeEntityResponse">
+            <summary>
+            This is the response object from the DescribeEntity operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeEntityResponse.Details">
+            <summary>
+            Gets and sets the property Details. 
+            <para>
+            This stringified JSON object includes the details of the entity.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeEntityResponse.EntityArn">
+            <summary>
+            Gets and sets the property EntityArn. 
+            <para>
+            The ARN associated to the unique identifier for the change set referenced in this
+            request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeEntityResponse.EntityIdentifier">
+            <summary>
+            Gets and sets the property EntityIdentifier. 
+            <para>
+            The identifier of the entity, in the format of <code>EntityId@RevisionId</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeEntityResponse.EntityType">
+            <summary>
+            Gets and sets the property EntityType. 
+            <para>
+            The named type of the entity, in the format of <code>EntityType@Version</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.DescribeEntityResponse.LastModifiedDate">
+            <summary>
+            Gets and sets the property LastModifiedDate. 
+            <para>
+            The last modified date of the entity, in ISO 8601 format (2018-02-27T13:45:22Z).
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Entity">
+            <summary>
+            An entity contains data that describes your product, its supported features, and how
+            it can be used or launched by your customer.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Entity.Identifier">
+            <summary>
+            Gets and sets the property Identifier. 
+            <para>
+            The identifier for the entity.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Entity.Type">
+            <summary>
+            Gets and sets the property Type. 
+            <para>
+            The type of entity.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.EntitySummary">
+            <summary>
+            This object is a container for common summary information about the entity. The summary
+            doesn't contain the whole entity structure, but it does contain information common
+            across all entities.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.EntitySummary.EntityArn">
+            <summary>
+            Gets and sets the property EntityArn. 
+            <para>
+            The ARN associated with the unique identifier for the entity.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.EntitySummary.EntityId">
+            <summary>
+            Gets and sets the property EntityId. 
+            <para>
+            The unique identifier for the entity.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.EntitySummary.EntityType">
+            <summary>
+            Gets and sets the property EntityType. 
+            <para>
+            The type of the entity.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.EntitySummary.LastModifiedDate">
+            <summary>
+            Gets and sets the property LastModifiedDate. 
+            <para>
+            The last time the entity was published, using ISO 8601 format (2018-02-27T13:45:22Z).
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.EntitySummary.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name for the entity. This value is not unique. It is defined by the seller.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.EntitySummary.Visibility">
+            <summary>
+            Gets and sets the property Visibility. 
+            <para>
+            The visibility status of the entity to buyers. This value can be <code>Public</code>
+            (everyone can view the entity), <code>Limited</code> (the entity is visible to limited
+            accounts only), or <code>Restricted</code> (the entity was published and then unpublished
+            and only existing buyers can view it). 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ErrorDetail">
+            <summary>
+            Details about the error.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ErrorDetail.ErrorCode">
+            <summary>
+            Gets and sets the property ErrorCode. 
+            <para>
+            The error code that identifies the type of error.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ErrorDetail.ErrorMessage">
+            <summary>
+            Gets and sets the property ErrorMessage. 
+            <para>
+            The message for the error.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Filter">
+            <summary>
+            A filter object, used to optionally filter results from calls to the <code>ListEntities</code>
+            and <code>ListChangeSets</code> actions.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Filter.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            For <code>ListEntities</code>, the supported value for this is an <code>EntityId</code>.
+            </para>
+             
+            <para>
+            For <code>ListChangeSets</code>, the supported values are as follows:
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Filter.ValueList">
+            <summary>
+            Gets and sets the property ValueList. 
+            <para>
+             <code>ListEntities</code> - This is a list of unique <code>EntityId</code>s.
+            </para>
+             
+            <para>
+             <code>ListChangeSets</code> - The supported filter names and associated <code>ValueList</code>s
+            is as follows:
+            </para>
+             <ul> <li> 
+            <para>
+             <code>ChangeSetName</code> - The supported <code>ValueList</code> is a list of non-unique
+            <code>ChangeSetName</code>s. These are defined when you call the <code>StartChangeSet</code>
+            action.
+            </para>
+             </li> <li> 
+            <para>
+             <code>Status</code> - The supported <code>ValueList</code> is a list of statuses
+            for all change set requests.
+            </para>
+             </li> <li> 
+            <para>
+             <code>EntityId</code> - The supported <code>ValueList</code> is a list of unique
+            <code>EntityId</code>s.
+            </para>
+             </li> <li> 
+            <para>
+             <code>BeforeStartTime</code> - The supported <code>ValueList</code> is a list of
+            all change sets that started before the filter value.
+            </para>
+             </li> <li> 
+            <para>
+             <code>AfterStartTime</code> - The supported <code>ValueList</code> is a list of all
+            change sets that started after the filter value.
+            </para>
+             </li> <li> 
+            <para>
+             <code>BeforeEndTime</code> - The supported <code>ValueList</code> is a list of all
+            change sets that ended before the filter value.
+            </para>
+             </li> <li> 
+            <para>
+             <code>AfterEndTime</code> - The supported <code>ValueList</code> is a list of all
+            change sets that ended after the filter value.
+            </para>
+             </li> </ul>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            <summary>
+            There was an internal service exception.
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.InternalServiceException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServiceException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.InternalServiceException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.InternalServiceException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.InternalServiceException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.InternalServiceException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.InternalServiceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InternalServiceException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.InternalServiceException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for AccessDeniedException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.CancelChangeSetRequestMarshaller">
+            <summary>
+            CancelChangeSet Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.CancelChangeSetRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.CancelChangeSetRequestMarshaller.Marshall(Amazon.MarketplaceCatalog.Model.CancelChangeSetRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.CancelChangeSetRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.CancelChangeSetResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for CancelChangeSet operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.CancelChangeSetResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.CancelChangeSetResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.CancelChangeSetResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ChangeMarshaller">
+            <summary>
+            Change Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ChangeMarshaller.Marshall(Amazon.MarketplaceCatalog.Model.Change,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ChangeMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ChangeSetSummaryListItemUnmarshaller">
+            <summary>
+            Response Unmarshaller for ChangeSetSummaryListItem Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ChangeSetSummaryListItemUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#MarketplaceCatalog#Model#ChangeSetSummaryListItem,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ChangeSetSummaryListItemUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ChangeSetSummaryListItemUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ChangeSummaryUnmarshaller">
+            <summary>
+            Response Unmarshaller for ChangeSummary Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ChangeSummaryUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#MarketplaceCatalog#Model#ChangeSummary,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ChangeSummaryUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ChangeSummaryUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeChangeSetRequestMarshaller">
+            <summary>
+            DescribeChangeSet Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeChangeSetRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeChangeSetRequestMarshaller.Marshall(Amazon.MarketplaceCatalog.Model.DescribeChangeSetRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeChangeSetRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeChangeSetResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DescribeChangeSet operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeChangeSetResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeChangeSetResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeChangeSetResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeEntityRequestMarshaller">
+            <summary>
+            DescribeEntity Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeEntityRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeEntityRequestMarshaller.Marshall(Amazon.MarketplaceCatalog.Model.DescribeEntityRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeEntityRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeEntityResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DescribeEntity operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeEntityResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeEntityResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.DescribeEntityResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.EntityMarshaller">
+            <summary>
+            Entity Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.EntityMarshaller.Marshall(Amazon.MarketplaceCatalog.Model.Entity,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.EntityMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.EntitySummaryUnmarshaller">
+            <summary>
+            Response Unmarshaller for EntitySummary Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.EntitySummaryUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#MarketplaceCatalog#Model#EntitySummary,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.EntitySummaryUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.EntitySummaryUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.EntityUnmarshaller">
+            <summary>
+            Response Unmarshaller for Entity Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.EntityUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#MarketplaceCatalog#Model#Entity,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.EntityUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.EntityUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ErrorDetailUnmarshaller">
+            <summary>
+            Response Unmarshaller for ErrorDetail Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ErrorDetailUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#MarketplaceCatalog#Model#ErrorDetail,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ErrorDetailUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ErrorDetailUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.FilterMarshaller">
+            <summary>
+            Filter Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.FilterMarshaller.Marshall(Amazon.MarketplaceCatalog.Model.Filter,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.FilterMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalServiceException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListChangeSetsRequestMarshaller">
+            <summary>
+            ListChangeSets Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListChangeSetsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListChangeSetsRequestMarshaller.Marshall(Amazon.MarketplaceCatalog.Model.ListChangeSetsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListChangeSetsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListChangeSetsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListChangeSets operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListChangeSetsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListChangeSetsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListChangeSetsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListEntitiesRequestMarshaller">
+            <summary>
+            ListEntities Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListEntitiesRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListEntitiesRequestMarshaller.Marshall(Amazon.MarketplaceCatalog.Model.ListEntitiesRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListEntitiesRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListEntitiesResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListEntities operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListEntitiesResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListEntitiesResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ListEntitiesResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ResourceInUseExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceInUseException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ResourceInUseExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ResourceInUseExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ResourceInUseExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceNotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ResourceNotSupportedExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceNotSupportedException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ResourceNotSupportedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ResourceNotSupportedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ResourceNotSupportedExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ServiceQuotaExceededException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.SortMarshaller">
+            <summary>
+            Sort Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.SortMarshaller.Marshall(Amazon.MarketplaceCatalog.Model.Sort,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.SortMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.StartChangeSetRequestMarshaller">
+            <summary>
+            StartChangeSet Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.StartChangeSetRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.StartChangeSetRequestMarshaller.Marshall(Amazon.MarketplaceCatalog.Model.StartChangeSetRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.StartChangeSetRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.StartChangeSetResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for StartChangeSet operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.StartChangeSetResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.StartChangeSetResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.StartChangeSetResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ThrottlingException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ValidationException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ListChangeSetsRequest">
+            <summary>
+            Container for the parameters to the ListChangeSets operation.
+            Returns the list of change sets owned by the account being used to make the call.
+            You can filter this list by providing any combination of <code>entityId</code>, <code>ChangeSetName</code>,
+            and status. If you provide more than one filter, the API operation applies a logical
+            AND between the filters.
+            
+             
+            <para>
+            You can describe a change during the 60-day request history retention period for API
+            calls.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListChangeSetsRequest.Catalog">
+            <summary>
+            Gets and sets the property Catalog. 
+            <para>
+            The catalog related to the request. Fixed value: <code>AWSMarketplace</code> 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListChangeSetsRequest.FilterList">
+            <summary>
+            Gets and sets the property FilterList. 
+            <para>
+            An array of filter objects.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListChangeSetsRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results returned by a single call. This value must be provided
+            in the next call to retrieve the next set of results. By default, this value is 20.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListChangeSetsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token value retrieved from a previous call to access the next page of results.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListChangeSetsRequest.Sort">
+            <summary>
+            Gets and sets the property Sort. 
+            <para>
+            An object that contains two attributes, <code>SortBy</code> and <code>SortOrder</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ListChangeSetsResponse">
+            <summary>
+            This is the response object from the ListChangeSets operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListChangeSetsResponse.ChangeSetSummaryList">
+            <summary>
+            Gets and sets the property ChangeSetSummaryList. 
+            <para>
+             Array of <code>ChangeSetSummaryListItem</code> objects.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListChangeSetsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The value of the next token, if it exists. Null if there are no more results.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ListEntitiesRequest">
+            <summary>
+            Container for the parameters to the ListEntities operation.
+            Provides the list of entities of a given type.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListEntitiesRequest.Catalog">
+            <summary>
+            Gets and sets the property Catalog. 
+            <para>
+            The catalog related to the request. Fixed value: <code>AWSMarketplace</code> 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListEntitiesRequest.EntityType">
+            <summary>
+            Gets and sets the property EntityType. 
+            <para>
+            The type of entities to retrieve.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListEntitiesRequest.FilterList">
+            <summary>
+            Gets and sets the property FilterList. 
+            <para>
+            An array of filter objects. Each filter object contains two attributes, <code>filterName</code>
+            and <code>filterValues</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListEntitiesRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            Specifies the upper limit of the elements on a single page. If a value isn't provided,
+            the default value is 20.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListEntitiesRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The value of the next token, if it exists. Null if there are no more results.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListEntitiesRequest.Sort">
+            <summary>
+            Gets and sets the property Sort. 
+            <para>
+            An object that contains two attributes, <code>SortBy</code> and <code>SortOrder</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ListEntitiesResponse">
+            <summary>
+            This is the response object from the ListEntities operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListEntitiesResponse.EntitySummaryList">
+            <summary>
+            Gets and sets the property EntitySummaryList. 
+            <para>
+             Array of <code>EntitySummary</code> object.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListEntitiesResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The value of the next token if it exists. Null if there is no more result.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ResourceInUseException">
+            <summary>
+            The resource is currently in use.
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceInUseException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceInUseException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceInUseException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceInUseException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceInUseException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceInUseException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceInUseException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceInUseException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceInUseException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceInUseException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceInUseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ResourceInUseException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceInUseException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            <summary>
+            The specified resource wasn't found.
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ResourceNotFoundException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ResourceNotSupportedException">
+            <summary>
+            Currently, the specified resource is not supported.
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceNotSupportedException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotSupportedException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceNotSupportedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotSupportedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceNotSupportedException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotSupportedException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceNotSupportedException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotSupportedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceNotSupportedException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotSupportedException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceNotSupportedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ResourceNotSupportedException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ResourceNotSupportedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ServiceQuotaExceededException">
+            <summary>
+            The maximum number of open requests per account has been exceeded.
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ServiceQuotaExceededException.#ctor(System.String)">
+            <summary>
+            Constructs a new ServiceQuotaExceededException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ServiceQuotaExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ServiceQuotaExceededException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ServiceQuotaExceededException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ServiceQuotaExceededException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ServiceQuotaExceededException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ServiceQuotaExceededException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ServiceQuotaExceededException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.Sort">
+            <summary>
+            An object that contains two attributes, <code>SortBy</code> and <code>SortOrder</code>.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Sort.SortBy">
+            <summary>
+            Gets and sets the property SortBy. 
+            <para>
+            For <code>ListEntities</code>, supported attributes include <code>LastModifiedDate</code>
+            (default), <code>Visibility</code>, <code>EntityId</code>, and <code>Name</code>.
+            </para>
+             
+            <para>
+            For <code>ListChangeSets</code>, supported attributes include <code>StartTime</code>
+            and <code>EndTime</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.Sort.SortOrder">
+            <summary>
+            Gets and sets the property SortOrder. 
+            <para>
+            The sorting order. Can be <code>ASCENDING</code> or <code>DESCENDING</code>. The default
+            value is <code>DESCENDING</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.StartChangeSetRequest">
+            <summary>
+            Container for the parameters to the StartChangeSet operation.
+            This operation allows you to request changes for your entities. Within a single ChangeSet,
+            you cannot start the same change type against the same entity multiple times. Additionally,
+            when a ChangeSet is running, all the entities targeted by the different changes are
+            locked until the ChangeSet has completed (either succeeded, cancelled, or failed).
+            If you try to start a ChangeSet containing a change against an entity that is already
+            locked, you will receive a <code>ResourceInUseException</code>.
+            
+             
+            <para>
+            For example, you cannot start the ChangeSet described in the <a href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_StartChangeSet.html#API_StartChangeSet_Examples">example</a>
+            later in this topic, because it contains two changes to execute the same change type
+            (<code>AddRevisions</code>) against the same entity (<code>entity-id@1)</code>.
+            </para>
+             
+            <para>
+            For more information about working with change sets, see <a href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html#working-with-change-sets">
+            Working with change sets</a>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.StartChangeSetRequest.Catalog">
+            <summary>
+            Gets and sets the property Catalog. 
+            <para>
+            The catalog related to the request. Fixed value: <code>AWSMarketplace</code> 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.StartChangeSetRequest.ChangeSet">
+            <summary>
+            Gets and sets the property ChangeSet. 
+            <para>
+            Array of <code>change</code> object.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.StartChangeSetRequest.ChangeSetName">
+            <summary>
+            Gets and sets the property ChangeSetName. 
+            <para>
+            Optional case sensitive string of up to 100 ASCII characters. The change set name
+            can be used to filter the list of change sets. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.StartChangeSetRequest.ClientRequestToken">
+            <summary>
+            Gets and sets the property ClientRequestToken. 
+            <para>
+            A unique token to identify the request to ensure idempotency.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.StartChangeSetResponse">
+            <summary>
+            This is the response object from the StartChangeSet operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.StartChangeSetResponse.ChangeSetArn">
+            <summary>
+            Gets and sets the property ChangeSetArn. 
+            <para>
+            The ARN associated to the unique identifier generated for the request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.StartChangeSetResponse.ChangeSetId">
+            <summary>
+            Gets and sets the property ChangeSetId. 
+            <para>
+            Unique identifier generated for the request.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            <summary>
+            Too many requests.
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ThrottlingException.#ctor(System.String)">
+            <summary>
+            Constructs a new ThrottlingException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ThrottlingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ThrottlingException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ThrottlingException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ThrottlingException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ThrottlingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ThrottlingException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ThrottlingException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            <summary>
+            An error occurred during validation.
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ValidationException.#ctor(System.String)">
+            <summary>
+            Constructs a new ValidationException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ValidationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ValidationException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ValidationException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ValidationException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ValidationException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.ValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.IListChangeSetsPaginator">
+             <summary>
+             Paginator for the ListChangeSets operation
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.IListChangeSetsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.IListEntitiesPaginator">
+             <summary>
+             Paginator for the ListEntities operation
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.IListEntitiesPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.IMarketplaceCatalogPaginatorFactory">
+             <summary>
+             Paginators for the MarketplaceCatalog service
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.IMarketplaceCatalogPaginatorFactory.ListChangeSets(Amazon.MarketplaceCatalog.Model.ListChangeSetsRequest)">
+             <summary>
+             Paginator for ListChangeSets operation
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.IMarketplaceCatalogPaginatorFactory.ListEntities(Amazon.MarketplaceCatalog.Model.ListEntitiesRequest)">
+             <summary>
+             Paginator for ListEntities operation
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ListChangeSetsPaginator">
+            <summary>
+            Base class for ListChangeSets paginators.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListChangeSetsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.ListEntitiesPaginator">
+            <summary>
+            Base class for ListEntities paginators.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.Model.ListEntitiesPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.Model.MarketplaceCatalogPaginatorFactory">
+             <summary>
+             Paginators for the MarketplaceCatalog service
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.MarketplaceCatalogPaginatorFactory.ListChangeSets(Amazon.MarketplaceCatalog.Model.ListChangeSetsRequest)">
+             <summary>
+             Paginator for ListChangeSets operation
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.Model.MarketplaceCatalogPaginatorFactory.ListEntities(Amazon.MarketplaceCatalog.Model.ListEntitiesRequest)">
+             <summary>
+             Paginator for ListEntities operation
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogRequest">
+            <summary>
+            Base class for MarketplaceCatalog operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.ChangeStatus">
+            <summary>
+            Constants used for properties of type ChangeStatus.
+            </summary>
+        </member>
+        <member name="F:Amazon.MarketplaceCatalog.ChangeStatus.APPLYING">
+            <summary>
+            Constant APPLYING for ChangeStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.MarketplaceCatalog.ChangeStatus.CANCELLED">
+            <summary>
+            Constant CANCELLED for ChangeStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.MarketplaceCatalog.ChangeStatus.FAILED">
+            <summary>
+            Constant FAILED for ChangeStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.MarketplaceCatalog.ChangeStatus.PREPARING">
+            <summary>
+            Constant PREPARING for ChangeStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.MarketplaceCatalog.ChangeStatus.SUCCEEDED">
+            <summary>
+            Constant SUCCEEDED for ChangeStatus
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.ChangeStatus.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.ChangeStatus.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.ChangeStatus.op_Implicit(System.String)~Amazon.MarketplaceCatalog.ChangeStatus">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.FailureCode">
+            <summary>
+            Constants used for properties of type FailureCode.
+            </summary>
+        </member>
+        <member name="F:Amazon.MarketplaceCatalog.FailureCode.CLIENT_ERROR">
+            <summary>
+            Constant CLIENT_ERROR for FailureCode
+            </summary>
+        </member>
+        <member name="F:Amazon.MarketplaceCatalog.FailureCode.SERVER_FAULT">
+            <summary>
+            Constant SERVER_FAULT for FailureCode
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.FailureCode.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.FailureCode.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.FailureCode.op_Implicit(System.String)~Amazon.MarketplaceCatalog.FailureCode">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.SortOrder">
+            <summary>
+            Constants used for properties of type SortOrder.
+            </summary>
+        </member>
+        <member name="F:Amazon.MarketplaceCatalog.SortOrder.ASCENDING">
+            <summary>
+            Constant ASCENDING for SortOrder
+            </summary>
+        </member>
+        <member name="F:Amazon.MarketplaceCatalog.SortOrder.DESCENDING">
+            <summary>
+            Constant DESCENDING for SortOrder
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.SortOrder.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.SortOrder.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.SortOrder.op_Implicit(System.String)~Amazon.MarketplaceCatalog.SortOrder">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient">
+             <summary>
+             Implementation for accessing MarketplaceCatalog
+            
+             Catalog API actions allow you to manage your entities through list, describe, and
+             update capabilities. An entity can be a product or an offer on AWS Marketplace. 
+             
+              
+             <para>
+             You can automate your entity update process by integrating the AWS Marketplace Catalog
+             API with your AWS Marketplace product build or deployment pipelines. You can also
+             create your own applications on top of the Catalog API to manage your products on
+             AWS Marketplace.
+             </para>
+             </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.#ctor">
+             <summary>
+             Constructs AmazonMarketplaceCatalogClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonMarketplaceCatalogClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.#ctor(Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogConfig)">
+             <summary>
+             Constructs AmazonMarketplaceCatalogClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonMarketplaceCatalogClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonMarketplaceCatalogClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonMarketplaceCatalogClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogConfig)">
+            <summary>
+            Constructs AmazonMarketplaceCatalogClient with AWS Credentials and an
+            AmazonMarketplaceCatalogClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonMarketplaceCatalogClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonMarketplaceCatalogClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonMarketplaceCatalogClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.#ctor(System.String,System.String,Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogConfig)">
+            <summary>
+            Constructs AmazonMarketplaceCatalogClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonMarketplaceCatalogClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonMarketplaceCatalogClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonMarketplaceCatalogClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonMarketplaceCatalogClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.#ctor(System.String,System.String,System.String,Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogConfig)">
+            <summary>
+            Constructs AmazonMarketplaceCatalogClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonMarketplaceCatalogClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonMarketplaceCatalogClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.CancelChangeSet(Amazon.MarketplaceCatalog.Model.CancelChangeSetRequest)">
+            <summary>
+            Used to cancel an open change request. Must be sent before the status of the request
+            changes to <code>APPLYING</code>, the final stage of completing your change request.
+            You can describe a change during the 60-day request history retention period for API
+            calls.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CancelChangeSet service method.</param>
+            
+            <returns>The response from the CancelChangeSet service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceInUseException">
+            The resource is currently in use.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/CancelChangeSet">REST API Reference for CancelChangeSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.CancelChangeSetAsync(Amazon.MarketplaceCatalog.Model.CancelChangeSetRequest,System.Threading.CancellationToken)">
+            <summary>
+            Used to cancel an open change request. Must be sent before the status of the request
+            changes to <code>APPLYING</code>, the final stage of completing your change request.
+            You can describe a change during the 60-day request history retention period for API
+            calls.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CancelChangeSet service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CancelChangeSet service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceInUseException">
+            The resource is currently in use.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/CancelChangeSet">REST API Reference for CancelChangeSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.DescribeChangeSet(Amazon.MarketplaceCatalog.Model.DescribeChangeSetRequest)">
+            <summary>
+            Provides information about a given change set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeChangeSet service method.</param>
+            
+            <returns>The response from the DescribeChangeSet service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/DescribeChangeSet">REST API Reference for DescribeChangeSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.DescribeChangeSetAsync(Amazon.MarketplaceCatalog.Model.DescribeChangeSetRequest,System.Threading.CancellationToken)">
+            <summary>
+            Provides information about a given change set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeChangeSet service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeChangeSet service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/DescribeChangeSet">REST API Reference for DescribeChangeSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.DescribeEntity(Amazon.MarketplaceCatalog.Model.DescribeEntityRequest)">
+            <summary>
+            Returns the metadata and content of the entity.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeEntity service method.</param>
+            
+            <returns>The response from the DescribeEntity service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotSupportedException">
+            Currently, the specified resource is not supported.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/DescribeEntity">REST API Reference for DescribeEntity Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.DescribeEntityAsync(Amazon.MarketplaceCatalog.Model.DescribeEntityRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the metadata and content of the entity.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeEntity service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeEntity service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotSupportedException">
+            Currently, the specified resource is not supported.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/DescribeEntity">REST API Reference for DescribeEntity Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.ListChangeSets(Amazon.MarketplaceCatalog.Model.ListChangeSetsRequest)">
+            <summary>
+            Returns the list of change sets owned by the account being used to make the call.
+            You can filter this list by providing any combination of <code>entityId</code>, <code>ChangeSetName</code>,
+            and status. If you provide more than one filter, the API operation applies a logical
+            AND between the filters.
+            
+             
+            <para>
+            You can describe a change during the 60-day request history retention period for API
+            calls.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListChangeSets service method.</param>
+            
+            <returns>The response from the ListChangeSets service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/ListChangeSets">REST API Reference for ListChangeSets Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.ListChangeSetsAsync(Amazon.MarketplaceCatalog.Model.ListChangeSetsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the list of change sets owned by the account being used to make the call.
+            You can filter this list by providing any combination of <code>entityId</code>, <code>ChangeSetName</code>,
+            and status. If you provide more than one filter, the API operation applies a logical
+            AND between the filters.
+            
+             
+            <para>
+            You can describe a change during the 60-day request history retention period for API
+            calls.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListChangeSets service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListChangeSets service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/ListChangeSets">REST API Reference for ListChangeSets Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.ListEntities(Amazon.MarketplaceCatalog.Model.ListEntitiesRequest)">
+            <summary>
+            Provides the list of entities of a given type.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListEntities service method.</param>
+            
+            <returns>The response from the ListEntities service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/ListEntities">REST API Reference for ListEntities Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.ListEntitiesAsync(Amazon.MarketplaceCatalog.Model.ListEntitiesRequest,System.Threading.CancellationToken)">
+            <summary>
+            Provides the list of entities of a given type.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListEntities service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListEntities service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/ListEntities">REST API Reference for ListEntities Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.StartChangeSet(Amazon.MarketplaceCatalog.Model.StartChangeSetRequest)">
+            <summary>
+            This operation allows you to request changes for your entities. Within a single ChangeSet,
+            you cannot start the same change type against the same entity multiple times. Additionally,
+            when a ChangeSet is running, all the entities targeted by the different changes are
+            locked until the ChangeSet has completed (either succeeded, cancelled, or failed).
+            If you try to start a ChangeSet containing a change against an entity that is already
+            locked, you will receive a <code>ResourceInUseException</code>.
+            
+             
+            <para>
+            For example, you cannot start the ChangeSet described in the <a href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_StartChangeSet.html#API_StartChangeSet_Examples">example</a>
+            later in this topic, because it contains two changes to execute the same change type
+            (<code>AddRevisions</code>) against the same entity (<code>entity-id@1)</code>.
+            </para>
+             
+            <para>
+            For more information about working with change sets, see <a href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html#working-with-change-sets">
+            Working with change sets</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StartChangeSet service method.</param>
+            
+            <returns>The response from the StartChangeSet service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceInUseException">
+            The resource is currently in use.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ServiceQuotaExceededException">
+            The maximum number of open requests per account has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/StartChangeSet">REST API Reference for StartChangeSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.AmazonMarketplaceCatalogClient.StartChangeSetAsync(Amazon.MarketplaceCatalog.Model.StartChangeSetRequest,System.Threading.CancellationToken)">
+            <summary>
+            This operation allows you to request changes for your entities. Within a single ChangeSet,
+            you cannot start the same change type against the same entity multiple times. Additionally,
+            when a ChangeSet is running, all the entities targeted by the different changes are
+            locked until the ChangeSet has completed (either succeeded, cancelled, or failed).
+            If you try to start a ChangeSet containing a change against an entity that is already
+            locked, you will receive a <code>ResourceInUseException</code>.
+            
+             
+            <para>
+            For example, you cannot start the ChangeSet described in the <a href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_StartChangeSet.html#API_StartChangeSet_Examples">example</a>
+            later in this topic, because it contains two changes to execute the same change type
+            (<code>AddRevisions</code>) against the same entity (<code>entity-id@1)</code>.
+            </para>
+             
+            <para>
+            For more information about working with change sets, see <a href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html#working-with-change-sets">
+            Working with change sets</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StartChangeSet service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the StartChangeSet service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceInUseException">
+            The resource is currently in use.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ServiceQuotaExceededException">
+            The maximum number of open requests per account has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/StartChangeSet">REST API Reference for StartChangeSet Operation</seealso>
+        </member>
+        <member name="T:Amazon.MarketplaceCatalog.IAmazonMarketplaceCatalog">
+             <summary>
+             Interface for accessing MarketplaceCatalog
+            
+             Catalog API actions allow you to manage your entities through list, describe, and
+             update capabilities. An entity can be a product or an offer on AWS Marketplace. 
+             
+              
+             <para>
+             You can automate your entity update process by integrating the AWS Marketplace Catalog
+             API with your AWS Marketplace product build or deployment pipelines. You can also
+             create your own applications on top of the Catalog API to manage your products on
+             AWS Marketplace.
+             </para>
+             </summary>
+        </member>
+        <member name="P:Amazon.MarketplaceCatalog.IAmazonMarketplaceCatalog.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.IAmazonMarketplaceCatalog.CancelChangeSet(Amazon.MarketplaceCatalog.Model.CancelChangeSetRequest)">
+            <summary>
+            Used to cancel an open change request. Must be sent before the status of the request
+            changes to <code>APPLYING</code>, the final stage of completing your change request.
+            You can describe a change during the 60-day request history retention period for API
+            calls.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CancelChangeSet service method.</param>
+            
+            <returns>The response from the CancelChangeSet service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceInUseException">
+            The resource is currently in use.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/CancelChangeSet">REST API Reference for CancelChangeSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.IAmazonMarketplaceCatalog.CancelChangeSetAsync(Amazon.MarketplaceCatalog.Model.CancelChangeSetRequest,System.Threading.CancellationToken)">
+            <summary>
+            Used to cancel an open change request. Must be sent before the status of the request
+            changes to <code>APPLYING</code>, the final stage of completing your change request.
+            You can describe a change during the 60-day request history retention period for API
+            calls.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CancelChangeSet service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CancelChangeSet service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceInUseException">
+            The resource is currently in use.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/CancelChangeSet">REST API Reference for CancelChangeSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.IAmazonMarketplaceCatalog.DescribeChangeSet(Amazon.MarketplaceCatalog.Model.DescribeChangeSetRequest)">
+            <summary>
+            Provides information about a given change set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeChangeSet service method.</param>
+            
+            <returns>The response from the DescribeChangeSet service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/DescribeChangeSet">REST API Reference for DescribeChangeSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.IAmazonMarketplaceCatalog.DescribeChangeSetAsync(Amazon.MarketplaceCatalog.Model.DescribeChangeSetRequest,System.Threading.CancellationToken)">
+            <summary>
+            Provides information about a given change set.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeChangeSet service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeChangeSet service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/DescribeChangeSet">REST API Reference for DescribeChangeSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.IAmazonMarketplaceCatalog.DescribeEntity(Amazon.MarketplaceCatalog.Model.DescribeEntityRequest)">
+            <summary>
+            Returns the metadata and content of the entity.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeEntity service method.</param>
+            
+            <returns>The response from the DescribeEntity service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotSupportedException">
+            Currently, the specified resource is not supported.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/DescribeEntity">REST API Reference for DescribeEntity Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.IAmazonMarketplaceCatalog.DescribeEntityAsync(Amazon.MarketplaceCatalog.Model.DescribeEntityRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the metadata and content of the entity.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeEntity service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeEntity service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotSupportedException">
+            Currently, the specified resource is not supported.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/DescribeEntity">REST API Reference for DescribeEntity Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.IAmazonMarketplaceCatalog.ListChangeSets(Amazon.MarketplaceCatalog.Model.ListChangeSetsRequest)">
+            <summary>
+            Returns the list of change sets owned by the account being used to make the call.
+            You can filter this list by providing any combination of <code>entityId</code>, <code>ChangeSetName</code>,
+            and status. If you provide more than one filter, the API operation applies a logical
+            AND between the filters.
+            
+             
+            <para>
+            You can describe a change during the 60-day request history retention period for API
+            calls.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListChangeSets service method.</param>
+            
+            <returns>The response from the ListChangeSets service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/ListChangeSets">REST API Reference for ListChangeSets Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.IAmazonMarketplaceCatalog.ListChangeSetsAsync(Amazon.MarketplaceCatalog.Model.ListChangeSetsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the list of change sets owned by the account being used to make the call.
+            You can filter this list by providing any combination of <code>entityId</code>, <code>ChangeSetName</code>,
+            and status. If you provide more than one filter, the API operation applies a logical
+            AND between the filters.
+            
+             
+            <para>
+            You can describe a change during the 60-day request history retention period for API
+            calls.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListChangeSets service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListChangeSets service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/ListChangeSets">REST API Reference for ListChangeSets Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.IAmazonMarketplaceCatalog.ListEntities(Amazon.MarketplaceCatalog.Model.ListEntitiesRequest)">
+            <summary>
+            Provides the list of entities of a given type.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListEntities service method.</param>
+            
+            <returns>The response from the ListEntities service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/ListEntities">REST API Reference for ListEntities Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.IAmazonMarketplaceCatalog.ListEntitiesAsync(Amazon.MarketplaceCatalog.Model.ListEntitiesRequest,System.Threading.CancellationToken)">
+            <summary>
+            Provides the list of entities of a given type.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListEntities service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListEntities service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/ListEntities">REST API Reference for ListEntities Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.IAmazonMarketplaceCatalog.StartChangeSet(Amazon.MarketplaceCatalog.Model.StartChangeSetRequest)">
+            <summary>
+            This operation allows you to request changes for your entities. Within a single ChangeSet,
+            you cannot start the same change type against the same entity multiple times. Additionally,
+            when a ChangeSet is running, all the entities targeted by the different changes are
+            locked until the ChangeSet has completed (either succeeded, cancelled, or failed).
+            If you try to start a ChangeSet containing a change against an entity that is already
+            locked, you will receive a <code>ResourceInUseException</code>.
+            
+             
+            <para>
+            For example, you cannot start the ChangeSet described in the <a href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_StartChangeSet.html#API_StartChangeSet_Examples">example</a>
+            later in this topic, because it contains two changes to execute the same change type
+            (<code>AddRevisions</code>) against the same entity (<code>entity-id@1)</code>.
+            </para>
+             
+            <para>
+            For more information about working with change sets, see <a href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html#working-with-change-sets">
+            Working with change sets</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StartChangeSet service method.</param>
+            
+            <returns>The response from the StartChangeSet service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceInUseException">
+            The resource is currently in use.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ServiceQuotaExceededException">
+            The maximum number of open requests per account has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/StartChangeSet">REST API Reference for StartChangeSet Operation</seealso>
+        </member>
+        <member name="M:Amazon.MarketplaceCatalog.IAmazonMarketplaceCatalog.StartChangeSetAsync(Amazon.MarketplaceCatalog.Model.StartChangeSetRequest,System.Threading.CancellationToken)">
+            <summary>
+            This operation allows you to request changes for your entities. Within a single ChangeSet,
+            you cannot start the same change type against the same entity multiple times. Additionally,
+            when a ChangeSet is running, all the entities targeted by the different changes are
+            locked until the ChangeSet has completed (either succeeded, cancelled, or failed).
+            If you try to start a ChangeSet containing a change against an entity that is already
+            locked, you will receive a <code>ResourceInUseException</code>.
+            
+             
+            <para>
+            For example, you cannot start the ChangeSet described in the <a href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_StartChangeSet.html#API_StartChangeSet_Examples">example</a>
+            later in this topic, because it contains two changes to execute the same change type
+            (<code>AddRevisions</code>) against the same entity (<code>entity-id@1)</code>.
+            </para>
+             
+            <para>
+            For more information about working with change sets, see <a href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html#working-with-change-sets">
+            Working with change sets</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the StartChangeSet service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the StartChangeSet service method, as returned by MarketplaceCatalog.</returns>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.AccessDeniedException">
+            Access is denied.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.InternalServiceException">
+            There was an internal service exception.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceInUseException">
+            The resource is currently in use.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ResourceNotFoundException">
+            The specified resource wasn't found.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ServiceQuotaExceededException">
+            The maximum number of open requests per account has been exceeded.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ThrottlingException">
+            Too many requests.
+            </exception>
+            <exception cref="T:Amazon.MarketplaceCatalog.Model.ValidationException">
+            An error occurred during validation.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/marketplace-catalog-2018-09-17/StartChangeSet">REST API Reference for StartChangeSet Operation</seealso>
+        </member>
+    </members>
+</doc>

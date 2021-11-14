@@ -1,0 +1,1053 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.PersonalizeRuntime</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeConfig">
+            <summary>
+            Configuration for accessing Amazon PersonalizeRuntime service
+            </summary>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeException">
+            <summary>
+             Common exception for the PersonalizeRuntime service.
+             </summary>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonPersonalizeRuntimeException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonPersonalizeRuntimeException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonPersonalizeRuntimeException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonPersonalizeRuntimeException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonPersonalizeRuntimeException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonPersonalizeRuntimeException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Internal.AmazonPersonalizeRuntimeMetadata">
+            <summary>
+            Service metadata for  Amazon PersonalizeRuntime service
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Internal.AmazonPersonalizeRuntimeMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Internal.AmazonPersonalizeRuntimeMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeRequest">
+            <summary>
+            Base class for PersonalizeRuntime operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingRequest">
+            <summary>
+            Container for the parameters to the GetPersonalizedRanking operation.
+            Re-ranks a list of recommended items for the given user. The first item in the list
+            is deemed the most likely item to be of interest to the user.
+            
+             <note> 
+            <para>
+            The solution backing the campaign must have been created using a recipe of type PERSONALIZED_RANKING.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingRequest.CampaignArn">
+            <summary>
+            Gets and sets the property CampaignArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the campaign to use for generating the personalized
+            ranking.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingRequest.Context">
+            <summary>
+            Gets and sets the property Context. 
+            <para>
+            The contextual metadata to use when getting recommendations. Contextual metadata includes
+            any interaction information that might be relevant when getting a user's recommendations,
+            such as the user's current location or device type.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingRequest.FilterArn">
+            <summary>
+            Gets and sets the property FilterArn. 
+            <para>
+            The Amazon Resource Name (ARN) of a filter you created to include items or exclude
+            items from recommendations for a given user. For more information, see <a href="https://docs.aws.amazon.com/personalize/latest/dg/filter.html">Filtering
+            Recommendations</a>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingRequest.FilterValues">
+            <summary>
+            Gets and sets the property FilterValues. 
+            <para>
+            The values to use when filtering recommendations. For each placeholder parameter in
+            your filter expression, provide the parameter name (in matching case) as a key and
+            the filter value(s) as the corresponding value. Separate multiple values for one parameter
+            with a comma. 
+            </para>
+             
+            <para>
+            For filter expressions that use an <code>INCLUDE</code> element to include items,
+            you must provide values for all parameters that are defined in the expression. For
+            filters with expressions that use an <code>EXCLUDE</code> element to exclude items,
+            you can omit the <code>filter-values</code>.In this case, Amazon Personalize doesn't
+            use that portion of the expression to filter recommendations.
+            </para>
+             
+            <para>
+            For more information, see <a href="https://docs.aws.amazon.com/personalize/latest/dg/filter.html">Filtering
+            Recommendations</a>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingRequest.InputList">
+            <summary>
+            Gets and sets the property InputList. 
+            <para>
+            A list of items (by <code>itemId</code>) to rank. If an item was not included in the
+            training dataset, the item is appended to the end of the reranked list. The maximum
+            is 500.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingRequest.UserId">
+            <summary>
+            Gets and sets the property UserId. 
+            <para>
+            The user for which you want the campaign to provide a personalized ranking.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingResponse">
+            <summary>
+            This is the response object from the GetPersonalizedRanking operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingResponse.PersonalizedRanking">
+            <summary>
+            Gets and sets the property PersonalizedRanking. 
+            <para>
+            A list of items in order of most likely interest to the user. The maximum is 500.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingResponse.RecommendationId">
+            <summary>
+            Gets and sets the property RecommendationId. 
+            <para>
+            The ID of the recommendation.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Model.GetRecommendationsRequest">
+            <summary>
+            Container for the parameters to the GetRecommendations operation.
+            Returns a list of recommended items. The required input depends on the recipe type
+            used to create the solution backing the campaign, as follows:
+            
+             <ul> <li> 
+            <para>
+            RELATED_ITEMS - <code>itemId</code> required, <code>userId</code> not used
+            </para>
+             </li> <li> 
+            <para>
+            USER_PERSONALIZATION - <code>itemId</code> optional, <code>userId</code> required
+            </para>
+             </li> </ul> <note> 
+            <para>
+            Campaigns that are backed by a solution created using a recipe of type PERSONALIZED_RANKING
+            use the API.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetRecommendationsRequest.CampaignArn">
+            <summary>
+            Gets and sets the property CampaignArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the campaign to use for getting recommendations.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetRecommendationsRequest.Context">
+            <summary>
+            Gets and sets the property Context. 
+            <para>
+            The contextual metadata to use when getting recommendations. Contextual metadata includes
+            any interaction information that might be relevant when getting a user's recommendations,
+            such as the user's current location or device type.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetRecommendationsRequest.FilterArn">
+            <summary>
+            Gets and sets the property FilterArn. 
+            <para>
+            The ARN of the filter to apply to the returned recommendations. For more information,
+            see <a href="https://docs.aws.amazon.com/personalize/latest/dg/filter.html">Filtering
+            Recommendations</a>.
+            </para>
+             
+            <para>
+            When using this parameter, be sure the filter resource is <code>ACTIVE</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetRecommendationsRequest.FilterValues">
+            <summary>
+            Gets and sets the property FilterValues. 
+            <para>
+            The values to use when filtering recommendations. For each placeholder parameter in
+            your filter expression, provide the parameter name (in matching case) as a key and
+            the filter value(s) as the corresponding value. Separate multiple values for one parameter
+            with a comma. 
+            </para>
+             
+            <para>
+            For filter expressions that use an <code>INCLUDE</code> element to include items,
+            you must provide values for all parameters that are defined in the expression. For
+            filters with expressions that use an <code>EXCLUDE</code> element to exclude items,
+            you can omit the <code>filter-values</code>.In this case, Amazon Personalize doesn't
+            use that portion of the expression to filter recommendations.
+            </para>
+             
+            <para>
+            For more information, see <a href="https://docs.aws.amazon.com/personalize/latest/dg/filter.html">Filtering
+            Recommendations</a>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetRecommendationsRequest.ItemId">
+            <summary>
+            Gets and sets the property ItemId. 
+            <para>
+            The item ID to provide recommendations for.
+            </para>
+             
+            <para>
+            Required for <code>RELATED_ITEMS</code> recipe type.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetRecommendationsRequest.NumResults">
+            <summary>
+            Gets and sets the property NumResults. 
+            <para>
+            The number of results to return. The default is 25. The maximum is 500.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetRecommendationsRequest.UserId">
+            <summary>
+            Gets and sets the property UserId. 
+            <para>
+            The user ID to provide recommendations for.
+            </para>
+             
+            <para>
+            Required for <code>USER_PERSONALIZATION</code> recipe type.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Model.GetRecommendationsResponse">
+            <summary>
+            This is the response object from the GetRecommendations operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetRecommendationsResponse.ItemList">
+            <summary>
+            Gets and sets the property ItemList. 
+            <para>
+            A list of recommendations sorted in ascending order by prediction score. There can
+            be a maximum of 500 items in the list.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.GetRecommendationsResponse.RecommendationId">
+            <summary>
+            Gets and sets the property RecommendationId. 
+            <para>
+            The ID of the recommendation.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetPersonalizedRankingRequestMarshaller">
+            <summary>
+            GetPersonalizedRanking Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetPersonalizedRankingRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetPersonalizedRankingRequestMarshaller.Marshall(Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetPersonalizedRankingRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetPersonalizedRankingResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetPersonalizedRanking operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetPersonalizedRankingResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetPersonalizedRankingResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetPersonalizedRankingResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetRecommendationsRequestMarshaller">
+            <summary>
+            GetRecommendations Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetRecommendationsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetRecommendationsRequestMarshaller.Marshall(Amazon.PersonalizeRuntime.Model.GetRecommendationsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetRecommendationsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetRecommendationsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetRecommendations operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetRecommendationsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetRecommendationsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.GetRecommendationsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.InvalidInputExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InvalidInputException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.InvalidInputExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.InvalidInputExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.InvalidInputExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.PredictedItemUnmarshaller">
+            <summary>
+            Response Unmarshaller for PredictedItem Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.PredictedItemUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#PersonalizeRuntime#Model#PredictedItem,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.PredictedItemUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.PredictedItemUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceNotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Model.InvalidInputException">
+            <summary>
+            Provide a valid value for the field or parameter.
+            </summary>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.InvalidInputException.#ctor(System.String)">
+            <summary>
+            Constructs a new InvalidInputException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.InvalidInputException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InvalidInputException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.InvalidInputException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InvalidInputException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.InvalidInputException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InvalidInputException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.InvalidInputException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InvalidInputException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.InvalidInputException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InvalidInputException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.InvalidInputException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Model.PredictedItem">
+            <summary>
+            An object that identifies an item.
+            
+             
+            <para>
+            The and APIs return a list of <code>PredictedItem</code>s.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.PredictedItem.ItemId">
+            <summary>
+            Gets and sets the property ItemId. 
+            <para>
+            The recommended item ID.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.Model.PredictedItem.Score">
+            <summary>
+            Gets and sets the property Score. 
+            <para>
+            A numeric representation of the model's certainty that the item will be the next user
+            selection. For more information on scoring logic, see <a>how-scores-work</a>.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException">
+            <summary>
+            The specified resource does not exist.
+            </summary>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ResourceNotFoundException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient">
+             <summary>
+             Implementation for accessing PersonalizeRuntime
+            
+             
+             </summary>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.#ctor">
+             <summary>
+             Constructs AmazonPersonalizeRuntimeClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonPersonalizeRuntimeClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.#ctor(Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeConfig)">
+             <summary>
+             Constructs AmazonPersonalizeRuntimeClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonPersonalizeRuntimeClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonPersonalizeRuntimeClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonPersonalizeRuntimeClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeConfig)">
+            <summary>
+            Constructs AmazonPersonalizeRuntimeClient with AWS Credentials and an
+            AmazonPersonalizeRuntimeClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonPersonalizeRuntimeClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonPersonalizeRuntimeClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonPersonalizeRuntimeClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.#ctor(System.String,System.String,Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeConfig)">
+            <summary>
+            Constructs AmazonPersonalizeRuntimeClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonPersonalizeRuntimeClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonPersonalizeRuntimeClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonPersonalizeRuntimeClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonPersonalizeRuntimeClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.#ctor(System.String,System.String,System.String,Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeConfig)">
+            <summary>
+            Constructs AmazonPersonalizeRuntimeClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonPersonalizeRuntimeClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonPersonalizeRuntimeClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.GetPersonalizedRanking(Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingRequest)">
+            <summary>
+            Re-ranks a list of recommended items for the given user. The first item in the list
+            is deemed the most likely item to be of interest to the user.
+            
+             <note> 
+            <para>
+            The solution backing the campaign must have been created using a recipe of type PERSONALIZED_RANKING.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetPersonalizedRanking service method.</param>
+            
+            <returns>The response from the GetPersonalizedRanking service method, as returned by PersonalizeRuntime.</returns>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.InvalidInputException">
+            Provide a valid value for the field or parameter.
+            </exception>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException">
+            The specified resource does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/personalize-runtime-2018-05-22/GetPersonalizedRanking">REST API Reference for GetPersonalizedRanking Operation</seealso>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.GetPersonalizedRankingAsync(Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingRequest,System.Threading.CancellationToken)">
+            <summary>
+            Re-ranks a list of recommended items for the given user. The first item in the list
+            is deemed the most likely item to be of interest to the user.
+            
+             <note> 
+            <para>
+            The solution backing the campaign must have been created using a recipe of type PERSONALIZED_RANKING.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetPersonalizedRanking service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetPersonalizedRanking service method, as returned by PersonalizeRuntime.</returns>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.InvalidInputException">
+            Provide a valid value for the field or parameter.
+            </exception>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException">
+            The specified resource does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/personalize-runtime-2018-05-22/GetPersonalizedRanking">REST API Reference for GetPersonalizedRanking Operation</seealso>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.GetRecommendations(Amazon.PersonalizeRuntime.Model.GetRecommendationsRequest)">
+            <summary>
+            Returns a list of recommended items. The required input depends on the recipe type
+            used to create the solution backing the campaign, as follows:
+            
+             <ul> <li> 
+            <para>
+            RELATED_ITEMS - <code>itemId</code> required, <code>userId</code> not used
+            </para>
+             </li> <li> 
+            <para>
+            USER_PERSONALIZATION - <code>itemId</code> optional, <code>userId</code> required
+            </para>
+             </li> </ul> <note> 
+            <para>
+            Campaigns that are backed by a solution created using a recipe of type PERSONALIZED_RANKING
+            use the API.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetRecommendations service method.</param>
+            
+            <returns>The response from the GetRecommendations service method, as returned by PersonalizeRuntime.</returns>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.InvalidInputException">
+            Provide a valid value for the field or parameter.
+            </exception>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException">
+            The specified resource does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/personalize-runtime-2018-05-22/GetRecommendations">REST API Reference for GetRecommendations Operation</seealso>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.AmazonPersonalizeRuntimeClient.GetRecommendationsAsync(Amazon.PersonalizeRuntime.Model.GetRecommendationsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns a list of recommended items. The required input depends on the recipe type
+            used to create the solution backing the campaign, as follows:
+            
+             <ul> <li> 
+            <para>
+            RELATED_ITEMS - <code>itemId</code> required, <code>userId</code> not used
+            </para>
+             </li> <li> 
+            <para>
+            USER_PERSONALIZATION - <code>itemId</code> optional, <code>userId</code> required
+            </para>
+             </li> </ul> <note> 
+            <para>
+            Campaigns that are backed by a solution created using a recipe of type PERSONALIZED_RANKING
+            use the API.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetRecommendations service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetRecommendations service method, as returned by PersonalizeRuntime.</returns>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.InvalidInputException">
+            Provide a valid value for the field or parameter.
+            </exception>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException">
+            The specified resource does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/personalize-runtime-2018-05-22/GetRecommendations">REST API Reference for GetRecommendations Operation</seealso>
+        </member>
+        <member name="T:Amazon.PersonalizeRuntime.IAmazonPersonalizeRuntime">
+             <summary>
+             Interface for accessing PersonalizeRuntime
+            
+             
+             </summary>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.IAmazonPersonalizeRuntime.GetPersonalizedRanking(Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingRequest)">
+            <summary>
+            Re-ranks a list of recommended items for the given user. The first item in the list
+            is deemed the most likely item to be of interest to the user.
+            
+             <note> 
+            <para>
+            The solution backing the campaign must have been created using a recipe of type PERSONALIZED_RANKING.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetPersonalizedRanking service method.</param>
+            
+            <returns>The response from the GetPersonalizedRanking service method, as returned by PersonalizeRuntime.</returns>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.InvalidInputException">
+            Provide a valid value for the field or parameter.
+            </exception>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException">
+            The specified resource does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/personalize-runtime-2018-05-22/GetPersonalizedRanking">REST API Reference for GetPersonalizedRanking Operation</seealso>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.IAmazonPersonalizeRuntime.GetPersonalizedRankingAsync(Amazon.PersonalizeRuntime.Model.GetPersonalizedRankingRequest,System.Threading.CancellationToken)">
+            <summary>
+            Re-ranks a list of recommended items for the given user. The first item in the list
+            is deemed the most likely item to be of interest to the user.
+            
+             <note> 
+            <para>
+            The solution backing the campaign must have been created using a recipe of type PERSONALIZED_RANKING.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetPersonalizedRanking service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetPersonalizedRanking service method, as returned by PersonalizeRuntime.</returns>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.InvalidInputException">
+            Provide a valid value for the field or parameter.
+            </exception>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException">
+            The specified resource does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/personalize-runtime-2018-05-22/GetPersonalizedRanking">REST API Reference for GetPersonalizedRanking Operation</seealso>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.IAmazonPersonalizeRuntime.GetRecommendations(Amazon.PersonalizeRuntime.Model.GetRecommendationsRequest)">
+            <summary>
+            Returns a list of recommended items. The required input depends on the recipe type
+            used to create the solution backing the campaign, as follows:
+            
+             <ul> <li> 
+            <para>
+            RELATED_ITEMS - <code>itemId</code> required, <code>userId</code> not used
+            </para>
+             </li> <li> 
+            <para>
+            USER_PERSONALIZATION - <code>itemId</code> optional, <code>userId</code> required
+            </para>
+             </li> </ul> <note> 
+            <para>
+            Campaigns that are backed by a solution created using a recipe of type PERSONALIZED_RANKING
+            use the API.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetRecommendations service method.</param>
+            
+            <returns>The response from the GetRecommendations service method, as returned by PersonalizeRuntime.</returns>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.InvalidInputException">
+            Provide a valid value for the field or parameter.
+            </exception>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException">
+            The specified resource does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/personalize-runtime-2018-05-22/GetRecommendations">REST API Reference for GetRecommendations Operation</seealso>
+        </member>
+        <member name="M:Amazon.PersonalizeRuntime.IAmazonPersonalizeRuntime.GetRecommendationsAsync(Amazon.PersonalizeRuntime.Model.GetRecommendationsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns a list of recommended items. The required input depends on the recipe type
+            used to create the solution backing the campaign, as follows:
+            
+             <ul> <li> 
+            <para>
+            RELATED_ITEMS - <code>itemId</code> required, <code>userId</code> not used
+            </para>
+             </li> <li> 
+            <para>
+            USER_PERSONALIZATION - <code>itemId</code> optional, <code>userId</code> required
+            </para>
+             </li> </ul> <note> 
+            <para>
+            Campaigns that are backed by a solution created using a recipe of type PERSONALIZED_RANKING
+            use the API.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetRecommendations service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetRecommendations service method, as returned by PersonalizeRuntime.</returns>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.InvalidInputException">
+            Provide a valid value for the field or parameter.
+            </exception>
+            <exception cref="T:Amazon.PersonalizeRuntime.Model.ResourceNotFoundException">
+            The specified resource does not exist.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/personalize-runtime-2018-05-22/GetRecommendations">REST API Reference for GetRecommendations Operation</seealso>
+        </member>
+    </members>
+</doc>

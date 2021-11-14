@@ -1,0 +1,782 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.SagemakerEdgeManager</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerConfig">
+            <summary>
+            Configuration for accessing Amazon SagemakerEdgeManager service
+            </summary>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerException">
+            <summary>
+             Common exception for the SagemakerEdgeManager service.
+             </summary>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonSagemakerEdgeManagerException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonSagemakerEdgeManagerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonSagemakerEdgeManagerException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonSagemakerEdgeManagerException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonSagemakerEdgeManagerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonSagemakerEdgeManagerException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Internal.AmazonSagemakerEdgeManagerMetadata">
+            <summary>
+            Service metadata for  Amazon SagemakerEdgeManager service
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Internal.AmazonSagemakerEdgeManagerMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Internal.AmazonSagemakerEdgeManagerMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerRequest">
+            <summary>
+            Base class for SagemakerEdgeManager operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Model.EdgeMetric">
+            <summary>
+            Information required for edge device metrics.
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.EdgeMetric.Dimension">
+            <summary>
+            Gets and sets the property Dimension. 
+            <para>
+            The dimension of metrics published.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.EdgeMetric.MetricName">
+            <summary>
+            Gets and sets the property MetricName. 
+            <para>
+            Returns the name of the metric.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.EdgeMetric.Timestamp">
+            <summary>
+            Gets and sets the property Timestamp. 
+            <para>
+            Timestamp of when the metric was requested.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.EdgeMetric.Value">
+            <summary>
+            Gets and sets the property Value. 
+            <para>
+            Returns the value of the metric.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Model.GetDeviceRegistrationRequest">
+            <summary>
+            Container for the parameters to the GetDeviceRegistration operation.
+            Use to check if a device is registered with SageMaker Edge Manager.
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.GetDeviceRegistrationRequest.DeviceFleetName">
+            <summary>
+            Gets and sets the property DeviceFleetName. 
+            <para>
+            The name of the fleet that the device belongs to.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.GetDeviceRegistrationRequest.DeviceName">
+            <summary>
+            Gets and sets the property DeviceName. 
+            <para>
+            The unique name of the device you want to get the registration status from.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Model.GetDeviceRegistrationResponse">
+            <summary>
+            This is the response object from the GetDeviceRegistration operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.GetDeviceRegistrationResponse.CacheTTL">
+            <summary>
+            Gets and sets the property CacheTTL. 
+            <para>
+            The amount of time, in seconds, that the registration status is stored on the device’s
+            cache before it is refreshed.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.GetDeviceRegistrationResponse.DeviceRegistration">
+            <summary>
+            Gets and sets the property DeviceRegistration. 
+            <para>
+            Describes if the device is currently registered with SageMaker Edge Manager.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Model.InternalServiceException">
+            <summary>
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </summary>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.InternalServiceException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServiceException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.InternalServiceException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.InternalServiceException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.InternalServiceException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.InternalServiceException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServiceException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.InternalServiceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InternalServiceException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.InternalServiceException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.EdgeMetricMarshaller">
+            <summary>
+            EdgeMetric Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.EdgeMetricMarshaller.Marshall(Amazon.SagemakerEdgeManager.Model.EdgeMetric,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.EdgeMetricMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.GetDeviceRegistrationRequestMarshaller">
+            <summary>
+            GetDeviceRegistration Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.GetDeviceRegistrationRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.GetDeviceRegistrationRequestMarshaller.Marshall(Amazon.SagemakerEdgeManager.Model.GetDeviceRegistrationRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.GetDeviceRegistrationRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.GetDeviceRegistrationResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetDeviceRegistration operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.GetDeviceRegistrationResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.GetDeviceRegistrationResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.GetDeviceRegistrationResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalServiceException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.InternalServiceExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.ModelMarshaller">
+            <summary>
+            Model Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.ModelMarshaller.Marshall(Amazon.SagemakerEdgeManager.Model.Model,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.ModelMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.SendHeartbeatRequestMarshaller">
+            <summary>
+            SendHeartbeat Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.SendHeartbeatRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.SendHeartbeatRequestMarshaller.Marshall(Amazon.SagemakerEdgeManager.Model.SendHeartbeatRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.SendHeartbeatRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.SendHeartbeatResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for SendHeartbeat operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.SendHeartbeatResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.SendHeartbeatResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.Internal.MarshallTransformations.SendHeartbeatResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Model.Model">
+            <summary>
+            Information about a model deployed on an edge device that is registered with SageMaker
+            Edge Manager.
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.Model.LatestInference">
+            <summary>
+            Gets and sets the property LatestInference. 
+            <para>
+            The timestamp of the last inference that was made.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.Model.LatestSampleTime">
+            <summary>
+            Gets and sets the property LatestSampleTime. 
+            <para>
+            The timestamp of the last data sample taken.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.Model.ModelMetrics">
+            <summary>
+            Gets and sets the property ModelMetrics. 
+            <para>
+            Information required for model metrics.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.Model.ModelName">
+            <summary>
+            Gets and sets the property ModelName. 
+            <para>
+            The name of the model.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.Model.ModelVersion">
+            <summary>
+            Gets and sets the property ModelVersion. 
+            <para>
+            The version of the model.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Model.SendHeartbeatRequest">
+            <summary>
+            Container for the parameters to the SendHeartbeat operation.
+            Use to get the current status of devices registered on SageMaker Edge Manager.
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.SendHeartbeatRequest.AgentMetrics">
+            <summary>
+            Gets and sets the property AgentMetrics. 
+            <para>
+            For internal use. Returns a list of SageMaker Edge Manager agent operating metrics.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.SendHeartbeatRequest.AgentVersion">
+            <summary>
+            Gets and sets the property AgentVersion. 
+            <para>
+            Returns the version of the agent.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.SendHeartbeatRequest.DeviceFleetName">
+            <summary>
+            Gets and sets the property DeviceFleetName. 
+            <para>
+            The name of the fleet that the device belongs to.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.SendHeartbeatRequest.DeviceName">
+            <summary>
+            Gets and sets the property DeviceName. 
+            <para>
+            The unique name of the device.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.Model.SendHeartbeatRequest.Models">
+            <summary>
+            Gets and sets the property Models. 
+            <para>
+            Returns a list of models deployed on the the device.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.Model.SendHeartbeatResponse">
+            <summary>
+            This is the response object from the SendHeartbeat operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient">
+             <summary>
+             Implementation for accessing SagemakerEdgeManager
+            
+             SageMaker Edge Manager dataplane service for communicating with active agents.
+             </summary>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.#ctor">
+             <summary>
+             Constructs AmazonSagemakerEdgeManagerClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonSagemakerEdgeManagerClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.#ctor(Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerConfig)">
+             <summary>
+             Constructs AmazonSagemakerEdgeManagerClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonSagemakerEdgeManagerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonSagemakerEdgeManagerClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonSagemakerEdgeManagerClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerConfig)">
+            <summary>
+            Constructs AmazonSagemakerEdgeManagerClient with AWS Credentials and an
+            AmazonSagemakerEdgeManagerClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonSagemakerEdgeManagerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonSagemakerEdgeManagerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonSagemakerEdgeManagerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.#ctor(System.String,System.String,Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerConfig)">
+            <summary>
+            Constructs AmazonSagemakerEdgeManagerClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonSagemakerEdgeManagerClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonSagemakerEdgeManagerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonSagemakerEdgeManagerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonSagemakerEdgeManagerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.#ctor(System.String,System.String,System.String,Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerConfig)">
+            <summary>
+            Constructs AmazonSagemakerEdgeManagerClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonSagemakerEdgeManagerClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonSagemakerEdgeManagerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.GetDeviceRegistration(Amazon.SagemakerEdgeManager.Model.GetDeviceRegistrationRequest)">
+            <summary>
+            Use to check if a device is registered with SageMaker Edge Manager.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetDeviceRegistration service method.</param>
+            
+            <returns>The response from the GetDeviceRegistration service method, as returned by SagemakerEdgeManager.</returns>
+            <exception cref="T:Amazon.SagemakerEdgeManager.Model.InternalServiceException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-edge-2020-09-23/GetDeviceRegistration">REST API Reference for GetDeviceRegistration Operation</seealso>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.GetDeviceRegistrationAsync(Amazon.SagemakerEdgeManager.Model.GetDeviceRegistrationRequest,System.Threading.CancellationToken)">
+            <summary>
+            Use to check if a device is registered with SageMaker Edge Manager.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetDeviceRegistration service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetDeviceRegistration service method, as returned by SagemakerEdgeManager.</returns>
+            <exception cref="T:Amazon.SagemakerEdgeManager.Model.InternalServiceException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-edge-2020-09-23/GetDeviceRegistration">REST API Reference for GetDeviceRegistration Operation</seealso>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.SendHeartbeat(Amazon.SagemakerEdgeManager.Model.SendHeartbeatRequest)">
+            <summary>
+            Use to get the current status of devices registered on SageMaker Edge Manager.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendHeartbeat service method.</param>
+            
+            <returns>The response from the SendHeartbeat service method, as returned by SagemakerEdgeManager.</returns>
+            <exception cref="T:Amazon.SagemakerEdgeManager.Model.InternalServiceException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-edge-2020-09-23/SendHeartbeat">REST API Reference for SendHeartbeat Operation</seealso>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.AmazonSagemakerEdgeManagerClient.SendHeartbeatAsync(Amazon.SagemakerEdgeManager.Model.SendHeartbeatRequest,System.Threading.CancellationToken)">
+            <summary>
+            Use to get the current status of devices registered on SageMaker Edge Manager.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendHeartbeat service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the SendHeartbeat service method, as returned by SagemakerEdgeManager.</returns>
+            <exception cref="T:Amazon.SagemakerEdgeManager.Model.InternalServiceException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-edge-2020-09-23/SendHeartbeat">REST API Reference for SendHeartbeat Operation</seealso>
+        </member>
+        <member name="T:Amazon.SagemakerEdgeManager.IAmazonSagemakerEdgeManager">
+             <summary>
+             Interface for accessing SagemakerEdgeManager
+            
+             SageMaker Edge Manager dataplane service for communicating with active agents.
+             </summary>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.IAmazonSagemakerEdgeManager.GetDeviceRegistration(Amazon.SagemakerEdgeManager.Model.GetDeviceRegistrationRequest)">
+            <summary>
+            Use to check if a device is registered with SageMaker Edge Manager.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetDeviceRegistration service method.</param>
+            
+            <returns>The response from the GetDeviceRegistration service method, as returned by SagemakerEdgeManager.</returns>
+            <exception cref="T:Amazon.SagemakerEdgeManager.Model.InternalServiceException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-edge-2020-09-23/GetDeviceRegistration">REST API Reference for GetDeviceRegistration Operation</seealso>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.IAmazonSagemakerEdgeManager.GetDeviceRegistrationAsync(Amazon.SagemakerEdgeManager.Model.GetDeviceRegistrationRequest,System.Threading.CancellationToken)">
+            <summary>
+            Use to check if a device is registered with SageMaker Edge Manager.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetDeviceRegistration service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetDeviceRegistration service method, as returned by SagemakerEdgeManager.</returns>
+            <exception cref="T:Amazon.SagemakerEdgeManager.Model.InternalServiceException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-edge-2020-09-23/GetDeviceRegistration">REST API Reference for GetDeviceRegistration Operation</seealso>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.IAmazonSagemakerEdgeManager.SendHeartbeat(Amazon.SagemakerEdgeManager.Model.SendHeartbeatRequest)">
+            <summary>
+            Use to get the current status of devices registered on SageMaker Edge Manager.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendHeartbeat service method.</param>
+            
+            <returns>The response from the SendHeartbeat service method, as returned by SagemakerEdgeManager.</returns>
+            <exception cref="T:Amazon.SagemakerEdgeManager.Model.InternalServiceException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-edge-2020-09-23/SendHeartbeat">REST API Reference for SendHeartbeat Operation</seealso>
+        </member>
+        <member name="M:Amazon.SagemakerEdgeManager.IAmazonSagemakerEdgeManager.SendHeartbeatAsync(Amazon.SagemakerEdgeManager.Model.SendHeartbeatRequest,System.Threading.CancellationToken)">
+            <summary>
+            Use to get the current status of devices registered on SageMaker Edge Manager.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the SendHeartbeat service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the SendHeartbeat service method, as returned by SagemakerEdgeManager.</returns>
+            <exception cref="T:Amazon.SagemakerEdgeManager.Model.InternalServiceException">
+            An internal failure occurred. Try your request again. If the problem persists, contact
+            AWS customer support.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-edge-2020-09-23/SendHeartbeat">REST API Reference for SendHeartbeat Operation</seealso>
+        </member>
+    </members>
+</doc>
