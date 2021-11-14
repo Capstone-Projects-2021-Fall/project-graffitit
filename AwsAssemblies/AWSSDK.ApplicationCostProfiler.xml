@@ -1,0 +1,2337 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.ApplicationCostProfiler</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerConfig">
+            <summary>
+            Configuration for accessing Amazon ApplicationCostProfiler service
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerException">
+            <summary>
+             Common exception for the ApplicationCostProfiler service.
+             </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonApplicationCostProfilerException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonApplicationCostProfilerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonApplicationCostProfilerException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonApplicationCostProfilerException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonApplicationCostProfilerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonApplicationCostProfilerException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Internal.AmazonApplicationCostProfilerMetadata">
+            <summary>
+            Service metadata for  Amazon ApplicationCostProfiler service
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Internal.AmazonApplicationCostProfilerMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Internal.AmazonApplicationCostProfilerMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            <summary>
+            You do not have permission to perform this action.
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.AccessDeniedException.#ctor(System.String)">
+            <summary>
+            Constructs a new AccessDeniedException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.AccessDeniedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.AccessDeniedException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.AccessDeniedException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.AccessDeniedException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.AccessDeniedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AccessDeniedException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.AccessDeniedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.DeleteReportDefinitionRequest">
+            <summary>
+            Container for the parameters to the DeleteReportDefinition operation.
+            Deletes the specified report definition in AWS Application Cost Profiler. This stops
+            the report from being generated.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.DeleteReportDefinitionRequest.ReportId">
+            <summary>
+            Gets and sets the property ReportId. 
+            <para>
+            Required. ID of the report to delete.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.DeleteReportDefinitionResponse">
+            <summary>
+            This is the response object from the DeleteReportDefinition operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.DeleteReportDefinitionResponse.ReportId">
+            <summary>
+            Gets and sets the property ReportId. 
+            <para>
+            ID of the report that was deleted.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.GetReportDefinitionRequest">
+            <summary>
+            Container for the parameters to the GetReportDefinition operation.
+            Retrieves the definition of a report already configured in AWS Application Cost Profiler.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.GetReportDefinitionRequest.ReportId">
+            <summary>
+            Gets and sets the property ReportId. 
+            <para>
+            ID of the report to retrieve.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.GetReportDefinitionResponse">
+            <summary>
+            This is the response object from the GetReportDefinition operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.GetReportDefinitionResponse.CreatedAt">
+            <summary>
+            Gets and sets the property CreatedAt. 
+            <para>
+            Timestamp (milliseconds) when this report definition was created.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.GetReportDefinitionResponse.DestinationS3Location">
+            <summary>
+            Gets and sets the property DestinationS3Location. 
+            <para>
+            Amazon Simple Storage Service (Amazon S3) location where the report is uploaded.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.GetReportDefinitionResponse.Format">
+            <summary>
+            Gets and sets the property Format. 
+            <para>
+            Format of the generated report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.GetReportDefinitionResponse.LastUpdated">
+            <summary>
+            Gets and sets the property LastUpdated. 
+            <para>
+            Timestamp (milliseconds) when this report definition was last updated.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.GetReportDefinitionResponse.ReportDescription">
+            <summary>
+            Gets and sets the property ReportDescription. 
+            <para>
+            Description of the report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.GetReportDefinitionResponse.ReportFrequency">
+            <summary>
+            Gets and sets the property ReportFrequency. 
+            <para>
+            Cadence used to generate the report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.GetReportDefinitionResponse.ReportId">
+            <summary>
+            Gets and sets the property ReportId. 
+            <para>
+            ID of the report retrieved.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.ImportApplicationUsageRequest">
+            <summary>
+            Container for the parameters to the ImportApplicationUsage operation.
+            Ingests application usage data from Amazon Simple Storage Service (Amazon S3).
+            
+             
+            <para>
+            The data must already exist in the S3 location. As part of the action, AWS Application
+            Cost Profiler copies the object from your S3 bucket to an S3 bucket owned by Amazon
+            for processing asynchronously.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ImportApplicationUsageRequest.SourceS3Location">
+            <summary>
+            Gets and sets the property SourceS3Location. 
+            <para>
+            Amazon S3 location to import application usage data from.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.ImportApplicationUsageResponse">
+            <summary>
+            This is the response object from the ImportApplicationUsage operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ImportApplicationUsageResponse.ImportId">
+            <summary>
+            Gets and sets the property ImportId. 
+            <para>
+            ID of the import request.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            <summary>
+            An internal server error occurred. Retry your request.
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.InternalServerException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServerException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.InternalServerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.InternalServerException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.InternalServerException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.InternalServerException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.InternalServerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the InternalServerException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.InternalServerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for AccessDeniedException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.AccessDeniedExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.DeleteReportDefinitionRequestMarshaller">
+            <summary>
+            DeleteReportDefinition Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.DeleteReportDefinitionRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.DeleteReportDefinitionRequestMarshaller.Marshall(Amazon.ApplicationCostProfiler.Model.DeleteReportDefinitionRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.DeleteReportDefinitionRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.DeleteReportDefinitionResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DeleteReportDefinition operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.DeleteReportDefinitionResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.DeleteReportDefinitionResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.DeleteReportDefinitionResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.GetReportDefinitionRequestMarshaller">
+            <summary>
+            GetReportDefinition Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.GetReportDefinitionRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.GetReportDefinitionRequestMarshaller.Marshall(Amazon.ApplicationCostProfiler.Model.GetReportDefinitionRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.GetReportDefinitionRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.GetReportDefinitionResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetReportDefinition operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.GetReportDefinitionResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.GetReportDefinitionResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.GetReportDefinitionResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ImportApplicationUsageRequestMarshaller">
+            <summary>
+            ImportApplicationUsage Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ImportApplicationUsageRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ImportApplicationUsageRequestMarshaller.Marshall(Amazon.ApplicationCostProfiler.Model.ImportApplicationUsageRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ImportApplicationUsageRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ImportApplicationUsageResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ImportApplicationUsage operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ImportApplicationUsageResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ImportApplicationUsageResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ImportApplicationUsageResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InternalServerException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.InternalServerExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ListReportDefinitionsRequestMarshaller">
+            <summary>
+            ListReportDefinitions Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ListReportDefinitionsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ListReportDefinitionsRequestMarshaller.Marshall(Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ListReportDefinitionsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ListReportDefinitionsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListReportDefinitions operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ListReportDefinitionsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ListReportDefinitionsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ListReportDefinitionsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.PutReportDefinitionRequestMarshaller">
+            <summary>
+            PutReportDefinition Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.PutReportDefinitionRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.PutReportDefinitionRequestMarshaller.Marshall(Amazon.ApplicationCostProfiler.Model.PutReportDefinitionRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.PutReportDefinitionRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.PutReportDefinitionResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for PutReportDefinition operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.PutReportDefinitionResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.PutReportDefinitionResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.PutReportDefinitionResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ReportDefinitionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ReportDefinition Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ReportDefinitionUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ApplicationCostProfiler#Model#ReportDefinition,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ReportDefinitionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ReportDefinitionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.S3LocationMarshaller">
+            <summary>
+            S3Location Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.S3LocationMarshaller.Marshall(Amazon.ApplicationCostProfiler.Model.S3Location,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.S3LocationMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.S3LocationUnmarshaller">
+            <summary>
+            Response Unmarshaller for S3Location Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.S3LocationUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ApplicationCostProfiler#Model#S3Location,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.S3LocationUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.S3LocationUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ServiceQuotaExceededException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ServiceQuotaExceededExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.SourceS3LocationMarshaller">
+            <summary>
+            SourceS3Location Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.SourceS3LocationMarshaller.Marshall(Amazon.ApplicationCostProfiler.Model.SourceS3Location,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.SourceS3LocationMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ThrottlingException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ThrottlingExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.UpdateReportDefinitionRequestMarshaller">
+            <summary>
+            UpdateReportDefinition Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.UpdateReportDefinitionRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.UpdateReportDefinitionRequestMarshaller.Marshall(Amazon.ApplicationCostProfiler.Model.UpdateReportDefinitionRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.UpdateReportDefinitionRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.UpdateReportDefinitionResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for UpdateReportDefinition operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.UpdateReportDefinitionResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.UpdateReportDefinitionResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.UpdateReportDefinitionResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ValidationException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.Internal.MarshallTransformations.ValidationExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsRequest">
+            <summary>
+            Container for the parameters to the ListReportDefinitions operation.
+            Retrieves a list of all reports and their configurations for your AWS account.
+            
+             
+            <para>
+            The maximum number of reports is one.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results to return.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token value from a previous call to access the next page of results.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsResponse">
+            <summary>
+            This is the response object from the ListReportDefinitions operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The value of the next token, if it exists. Null if there are no more results.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsResponse.ReportDefinitions">
+            <summary>
+            Gets and sets the property ReportDefinitions. 
+            <para>
+            The retrieved reports.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.PutReportDefinitionRequest">
+            <summary>
+            Container for the parameters to the PutReportDefinition operation.
+            Creates the report definition for a report in Application Cost Profiler.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.PutReportDefinitionRequest.DestinationS3Location">
+            <summary>
+            Gets and sets the property DestinationS3Location. 
+            <para>
+            Required. Amazon Simple Storage Service (Amazon S3) location where Application Cost
+            Profiler uploads the report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.PutReportDefinitionRequest.Format">
+            <summary>
+            Gets and sets the property Format. 
+            <para>
+            Required. The format to use for the generated report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.PutReportDefinitionRequest.ReportDescription">
+            <summary>
+            Gets and sets the property ReportDescription. 
+            <para>
+            Required. Description of the report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.PutReportDefinitionRequest.ReportFrequency">
+            <summary>
+            Gets and sets the property ReportFrequency. 
+            <para>
+            Required. The cadence to generate the report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.PutReportDefinitionRequest.ReportId">
+            <summary>
+            Gets and sets the property ReportId. 
+            <para>
+            Required. ID of the report. You can choose any valid string matching the pattern for
+            the ID.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.PutReportDefinitionResponse">
+            <summary>
+            This is the response object from the PutReportDefinition operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.PutReportDefinitionResponse.ReportId">
+            <summary>
+            Gets and sets the property ReportId. 
+            <para>
+            ID of the report.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.ReportDefinition">
+            <summary>
+            The configuration of a report in AWS Application Cost Profiler.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ReportDefinition.CreatedAt">
+            <summary>
+            Gets and sets the property CreatedAt. 
+            <para>
+            Timestamp (milliseconds) when this report definition was created.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ReportDefinition.DestinationS3Location">
+            <summary>
+            Gets and sets the property DestinationS3Location. 
+            <para>
+            The location in Amazon Simple Storage Service (Amazon S3) the reports should be saved
+            to.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ReportDefinition.Format">
+            <summary>
+            Gets and sets the property Format. 
+            <para>
+            The format used for the generated reports.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ReportDefinition.LastUpdatedAt">
+            <summary>
+            Gets and sets the property LastUpdatedAt. 
+            <para>
+            Timestamp (milliseconds) when this report definition was last updated.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ReportDefinition.ReportDescription">
+            <summary>
+            Gets and sets the property ReportDescription. 
+            <para>
+            Description of the report
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ReportDefinition.ReportFrequency">
+            <summary>
+            Gets and sets the property ReportFrequency. 
+            <para>
+            The cadence at which the report is generated.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ReportDefinition.ReportId">
+            <summary>
+            Gets and sets the property ReportId. 
+            <para>
+            The ID of the report.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.S3Location">
+            <summary>
+            Represents the Amazon Simple Storage Service (Amazon S3) location where AWS Application
+            Cost Profiler reports are generated and then written to.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.S3Location.Bucket">
+            <summary>
+            Gets and sets the property Bucket. 
+            <para>
+            Name of the S3 bucket.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.S3Location.Prefix">
+            <summary>
+            Gets and sets the property Prefix. 
+            <para>
+            Prefix for the location to write to.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.ServiceQuotaExceededException">
+            <summary>
+            Your request exceeds one or more of the service quotas.
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ServiceQuotaExceededException.#ctor(System.String)">
+            <summary>
+            Constructs a new ServiceQuotaExceededException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ServiceQuotaExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ServiceQuotaExceededException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ServiceQuotaExceededException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ServiceQuotaExceededException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ServiceQuotaExceededException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ServiceQuotaExceededException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ServiceQuotaExceededException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.SourceS3Location">
+            <summary>
+            Represents the Amazon Simple Storage Service (Amazon S3) location where usage data
+            is read from.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.SourceS3Location.Bucket">
+            <summary>
+            Gets and sets the property Bucket. 
+            <para>
+            Name of the bucket.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.SourceS3Location.Key">
+            <summary>
+            Gets and sets the property Key. 
+            <para>
+            Key of the object.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.SourceS3Location.Region">
+            <summary>
+            Gets and sets the property Region. 
+            <para>
+            Region of the bucket. Only required for Regions that are disabled by default. For
+            more infomration about Regions that are disabled by default, see <a href="https://docs.aws.amazon.com/general/latest/gr/rande-manage.html#rande-manage-enable">
+            Enabling a Region</a> in the <i>AWS General Reference guide</i>.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            <summary>
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ThrottlingException.#ctor(System.String)">
+            <summary>
+            Constructs a new ThrottlingException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ThrottlingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ThrottlingException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ThrottlingException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ThrottlingException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ThrottlingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ThrottlingException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ThrottlingException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.UpdateReportDefinitionRequest">
+            <summary>
+            Container for the parameters to the UpdateReportDefinition operation.
+            Updates existing report in AWS Application Cost Profiler.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.UpdateReportDefinitionRequest.DestinationS3Location">
+            <summary>
+            Gets and sets the property DestinationS3Location. 
+            <para>
+            Required. Amazon Simple Storage Service (Amazon S3) location where Application Cost
+            Profiler uploads the report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.UpdateReportDefinitionRequest.Format">
+            <summary>
+            Gets and sets the property Format. 
+            <para>
+            Required. The format to use for the generated report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.UpdateReportDefinitionRequest.ReportDescription">
+            <summary>
+            Gets and sets the property ReportDescription. 
+            <para>
+            Required. Description of the report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.UpdateReportDefinitionRequest.ReportFrequency">
+            <summary>
+            Gets and sets the property ReportFrequency. 
+            <para>
+            Required. The cadence to generate the report.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.UpdateReportDefinitionRequest.ReportId">
+            <summary>
+            Gets and sets the property ReportId. 
+            <para>
+            Required. ID of the report to update.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.UpdateReportDefinitionResponse">
+            <summary>
+            This is the response object from the UpdateReportDefinition operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.UpdateReportDefinitionResponse.ReportId">
+            <summary>
+            Gets and sets the property ReportId. 
+            <para>
+            ID of the report.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            <summary>
+            The input fails to satisfy the constraints for the API.
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ValidationException.#ctor(System.String)">
+            <summary>
+            Constructs a new ValidationException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ValidationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ValidationException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ValidationException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ValidationException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ValidationException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.ApplicationCostProfilerPaginatorFactory">
+             <summary>
+             Paginators for the ApplicationCostProfiler service
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.ApplicationCostProfilerPaginatorFactory.ListReportDefinitions(Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsRequest)">
+             <summary>
+             Paginator for ListReportDefinitions operation
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.IApplicationCostProfilerPaginatorFactory">
+             <summary>
+             Paginators for the ApplicationCostProfiler service
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Model.IApplicationCostProfilerPaginatorFactory.ListReportDefinitions(Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsRequest)">
+             <summary>
+             Paginator for ListReportDefinitions operation
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.IListReportDefinitionsPaginator">
+             <summary>
+             Paginator for the ListReportDefinitions operation
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.IListReportDefinitionsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.IListReportDefinitionsPaginator.ReportDefinitions">
+            <summary>
+            Enumerable containing all of the ReportDefinitions
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsPaginator">
+            <summary>
+            Base class for ListReportDefinitions paginators.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsPaginator.ReportDefinitions">
+            <summary>
+            Enumerable containing all of the ReportDefinitions
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerRequest">
+            <summary>
+            Base class for ApplicationCostProfiler operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.Format">
+            <summary>
+            Constants used for properties of type Format.
+            </summary>
+        </member>
+        <member name="F:Amazon.ApplicationCostProfiler.Format.CSV">
+            <summary>
+            Constant CSV for Format
+            </summary>
+        </member>
+        <member name="F:Amazon.ApplicationCostProfiler.Format.PARQUET">
+            <summary>
+            Constant PARQUET for Format
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Format.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Format.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.Format.op_Implicit(System.String)~Amazon.ApplicationCostProfiler.Format">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.ReportFrequency">
+            <summary>
+            Constants used for properties of type ReportFrequency.
+            </summary>
+        </member>
+        <member name="F:Amazon.ApplicationCostProfiler.ReportFrequency.ALL">
+            <summary>
+            Constant ALL for ReportFrequency
+            </summary>
+        </member>
+        <member name="F:Amazon.ApplicationCostProfiler.ReportFrequency.DAILY">
+            <summary>
+            Constant DAILY for ReportFrequency
+            </summary>
+        </member>
+        <member name="F:Amazon.ApplicationCostProfiler.ReportFrequency.MONTHLY">
+            <summary>
+            Constant MONTHLY for ReportFrequency
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.ReportFrequency.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.ReportFrequency.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.ReportFrequency.op_Implicit(System.String)~Amazon.ApplicationCostProfiler.ReportFrequency">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.S3BucketRegion">
+            <summary>
+            Constants used for properties of type S3BucketRegion.
+            </summary>
+        </member>
+        <member name="F:Amazon.ApplicationCostProfiler.S3BucketRegion.AfSouth1">
+            <summary>
+            Constant AfSouth1 for S3BucketRegion
+            </summary>
+        </member>
+        <member name="F:Amazon.ApplicationCostProfiler.S3BucketRegion.ApEast1">
+            <summary>
+            Constant ApEast1 for S3BucketRegion
+            </summary>
+        </member>
+        <member name="F:Amazon.ApplicationCostProfiler.S3BucketRegion.EuSouth1">
+            <summary>
+            Constant EuSouth1 for S3BucketRegion
+            </summary>
+        </member>
+        <member name="F:Amazon.ApplicationCostProfiler.S3BucketRegion.MeSouth1">
+            <summary>
+            Constant MeSouth1 for S3BucketRegion
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.S3BucketRegion.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.S3BucketRegion.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.S3BucketRegion.op_Implicit(System.String)~Amazon.ApplicationCostProfiler.S3BucketRegion">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient">
+             <summary>
+             Implementation for accessing ApplicationCostProfiler
+            
+             This reference provides descriptions of the AWS Application Cost Profiler API.
+             
+              
+             <para>
+             The AWS Application Cost Profiler API provides programmatic access to view, create,
+             update, and delete application cost report definitions, as well as to import your
+             usage data into the Application Cost Profiler service.
+             </para>
+              
+             <para>
+             For more information about using this service, see the <a href="https://docs.aws.amazon.com/application-cost-profiler/latest/userguide/introduction.html">AWS
+             Application Cost Profiler User Guide</a>.
+             </para>
+             </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.#ctor">
+             <summary>
+             Constructs AmazonApplicationCostProfilerClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonApplicationCostProfilerClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.#ctor(Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerConfig)">
+             <summary>
+             Constructs AmazonApplicationCostProfilerClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonApplicationCostProfilerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonApplicationCostProfilerClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonApplicationCostProfilerClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerConfig)">
+            <summary>
+            Constructs AmazonApplicationCostProfilerClient with AWS Credentials and an
+            AmazonApplicationCostProfilerClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonApplicationCostProfilerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonApplicationCostProfilerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonApplicationCostProfilerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.#ctor(System.String,System.String,Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerConfig)">
+            <summary>
+            Constructs AmazonApplicationCostProfilerClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonApplicationCostProfilerClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonApplicationCostProfilerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonApplicationCostProfilerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonApplicationCostProfilerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.#ctor(System.String,System.String,System.String,Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerConfig)">
+            <summary>
+            Constructs AmazonApplicationCostProfilerClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonApplicationCostProfilerClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonApplicationCostProfilerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.DeleteReportDefinition(Amazon.ApplicationCostProfiler.Model.DeleteReportDefinitionRequest)">
+            <summary>
+            Deletes the specified report definition in AWS Application Cost Profiler. This stops
+            the report from being generated.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteReportDefinition service method.</param>
+            
+            <returns>The response from the DeleteReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/DeleteReportDefinition">REST API Reference for DeleteReportDefinition Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.DeleteReportDefinitionAsync(Amazon.ApplicationCostProfiler.Model.DeleteReportDefinitionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes the specified report definition in AWS Application Cost Profiler. This stops
+            the report from being generated.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteReportDefinition service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/DeleteReportDefinition">REST API Reference for DeleteReportDefinition Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.GetReportDefinition(Amazon.ApplicationCostProfiler.Model.GetReportDefinitionRequest)">
+            <summary>
+            Retrieves the definition of a report already configured in AWS Application Cost Profiler.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetReportDefinition service method.</param>
+            
+            <returns>The response from the GetReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/GetReportDefinition">REST API Reference for GetReportDefinition Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.GetReportDefinitionAsync(Amazon.ApplicationCostProfiler.Model.GetReportDefinitionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves the definition of a report already configured in AWS Application Cost Profiler.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetReportDefinition service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/GetReportDefinition">REST API Reference for GetReportDefinition Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.ImportApplicationUsage(Amazon.ApplicationCostProfiler.Model.ImportApplicationUsageRequest)">
+            <summary>
+            Ingests application usage data from Amazon Simple Storage Service (Amazon S3).
+            
+             
+            <para>
+            The data must already exist in the S3 location. As part of the action, AWS Application
+            Cost Profiler copies the object from your S3 bucket to an S3 bucket owned by Amazon
+            for processing asynchronously.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ImportApplicationUsage service method.</param>
+            
+            <returns>The response from the ImportApplicationUsage service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/ImportApplicationUsage">REST API Reference for ImportApplicationUsage Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.ImportApplicationUsageAsync(Amazon.ApplicationCostProfiler.Model.ImportApplicationUsageRequest,System.Threading.CancellationToken)">
+            <summary>
+            Ingests application usage data from Amazon Simple Storage Service (Amazon S3).
+            
+             
+            <para>
+            The data must already exist in the S3 location. As part of the action, AWS Application
+            Cost Profiler copies the object from your S3 bucket to an S3 bucket owned by Amazon
+            for processing asynchronously.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ImportApplicationUsage service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ImportApplicationUsage service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/ImportApplicationUsage">REST API Reference for ImportApplicationUsage Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.ListReportDefinitions(Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsRequest)">
+            <summary>
+            Retrieves a list of all reports and their configurations for your AWS account.
+            
+             
+            <para>
+            The maximum number of reports is one.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListReportDefinitions service method.</param>
+            
+            <returns>The response from the ListReportDefinitions service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/ListReportDefinitions">REST API Reference for ListReportDefinitions Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.ListReportDefinitionsAsync(Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves a list of all reports and their configurations for your AWS account.
+            
+             
+            <para>
+            The maximum number of reports is one.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListReportDefinitions service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListReportDefinitions service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/ListReportDefinitions">REST API Reference for ListReportDefinitions Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.PutReportDefinition(Amazon.ApplicationCostProfiler.Model.PutReportDefinitionRequest)">
+            <summary>
+            Creates the report definition for a report in Application Cost Profiler.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutReportDefinition service method.</param>
+            
+            <returns>The response from the PutReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ServiceQuotaExceededException">
+            Your request exceeds one or more of the service quotas.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/PutReportDefinition">REST API Reference for PutReportDefinition Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.PutReportDefinitionAsync(Amazon.ApplicationCostProfiler.Model.PutReportDefinitionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates the report definition for a report in Application Cost Profiler.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutReportDefinition service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the PutReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ServiceQuotaExceededException">
+            Your request exceeds one or more of the service quotas.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/PutReportDefinition">REST API Reference for PutReportDefinition Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.UpdateReportDefinition(Amazon.ApplicationCostProfiler.Model.UpdateReportDefinitionRequest)">
+            <summary>
+            Updates existing report in AWS Application Cost Profiler.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateReportDefinition service method.</param>
+            
+            <returns>The response from the UpdateReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/UpdateReportDefinition">REST API Reference for UpdateReportDefinition Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.AmazonApplicationCostProfilerClient.UpdateReportDefinitionAsync(Amazon.ApplicationCostProfiler.Model.UpdateReportDefinitionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Updates existing report in AWS Application Cost Profiler.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateReportDefinition service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UpdateReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/UpdateReportDefinition">REST API Reference for UpdateReportDefinition Operation</seealso>
+        </member>
+        <member name="T:Amazon.ApplicationCostProfiler.IAmazonApplicationCostProfiler">
+             <summary>
+             Interface for accessing ApplicationCostProfiler
+            
+             This reference provides descriptions of the AWS Application Cost Profiler API.
+             
+              
+             <para>
+             The AWS Application Cost Profiler API provides programmatic access to view, create,
+             update, and delete application cost report definitions, as well as to import your
+             usage data into the Application Cost Profiler service.
+             </para>
+              
+             <para>
+             For more information about using this service, see the <a href="https://docs.aws.amazon.com/application-cost-profiler/latest/userguide/introduction.html">AWS
+             Application Cost Profiler User Guide</a>.
+             </para>
+             </summary>
+        </member>
+        <member name="P:Amazon.ApplicationCostProfiler.IAmazonApplicationCostProfiler.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.IAmazonApplicationCostProfiler.DeleteReportDefinition(Amazon.ApplicationCostProfiler.Model.DeleteReportDefinitionRequest)">
+            <summary>
+            Deletes the specified report definition in AWS Application Cost Profiler. This stops
+            the report from being generated.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteReportDefinition service method.</param>
+            
+            <returns>The response from the DeleteReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/DeleteReportDefinition">REST API Reference for DeleteReportDefinition Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.IAmazonApplicationCostProfiler.DeleteReportDefinitionAsync(Amazon.ApplicationCostProfiler.Model.DeleteReportDefinitionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes the specified report definition in AWS Application Cost Profiler. This stops
+            the report from being generated.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteReportDefinition service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/DeleteReportDefinition">REST API Reference for DeleteReportDefinition Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.IAmazonApplicationCostProfiler.GetReportDefinition(Amazon.ApplicationCostProfiler.Model.GetReportDefinitionRequest)">
+            <summary>
+            Retrieves the definition of a report already configured in AWS Application Cost Profiler.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetReportDefinition service method.</param>
+            
+            <returns>The response from the GetReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/GetReportDefinition">REST API Reference for GetReportDefinition Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.IAmazonApplicationCostProfiler.GetReportDefinitionAsync(Amazon.ApplicationCostProfiler.Model.GetReportDefinitionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves the definition of a report already configured in AWS Application Cost Profiler.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetReportDefinition service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/GetReportDefinition">REST API Reference for GetReportDefinition Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.IAmazonApplicationCostProfiler.ImportApplicationUsage(Amazon.ApplicationCostProfiler.Model.ImportApplicationUsageRequest)">
+            <summary>
+            Ingests application usage data from Amazon Simple Storage Service (Amazon S3).
+            
+             
+            <para>
+            The data must already exist in the S3 location. As part of the action, AWS Application
+            Cost Profiler copies the object from your S3 bucket to an S3 bucket owned by Amazon
+            for processing asynchronously.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ImportApplicationUsage service method.</param>
+            
+            <returns>The response from the ImportApplicationUsage service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/ImportApplicationUsage">REST API Reference for ImportApplicationUsage Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.IAmazonApplicationCostProfiler.ImportApplicationUsageAsync(Amazon.ApplicationCostProfiler.Model.ImportApplicationUsageRequest,System.Threading.CancellationToken)">
+            <summary>
+            Ingests application usage data from Amazon Simple Storage Service (Amazon S3).
+            
+             
+            <para>
+            The data must already exist in the S3 location. As part of the action, AWS Application
+            Cost Profiler copies the object from your S3 bucket to an S3 bucket owned by Amazon
+            for processing asynchronously.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ImportApplicationUsage service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ImportApplicationUsage service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/ImportApplicationUsage">REST API Reference for ImportApplicationUsage Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.IAmazonApplicationCostProfiler.ListReportDefinitions(Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsRequest)">
+            <summary>
+            Retrieves a list of all reports and their configurations for your AWS account.
+            
+             
+            <para>
+            The maximum number of reports is one.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListReportDefinitions service method.</param>
+            
+            <returns>The response from the ListReportDefinitions service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/ListReportDefinitions">REST API Reference for ListReportDefinitions Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.IAmazonApplicationCostProfiler.ListReportDefinitionsAsync(Amazon.ApplicationCostProfiler.Model.ListReportDefinitionsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves a list of all reports and their configurations for your AWS account.
+            
+             
+            <para>
+            The maximum number of reports is one.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListReportDefinitions service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListReportDefinitions service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/ListReportDefinitions">REST API Reference for ListReportDefinitions Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.IAmazonApplicationCostProfiler.PutReportDefinition(Amazon.ApplicationCostProfiler.Model.PutReportDefinitionRequest)">
+            <summary>
+            Creates the report definition for a report in Application Cost Profiler.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutReportDefinition service method.</param>
+            
+            <returns>The response from the PutReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ServiceQuotaExceededException">
+            Your request exceeds one or more of the service quotas.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/PutReportDefinition">REST API Reference for PutReportDefinition Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.IAmazonApplicationCostProfiler.PutReportDefinitionAsync(Amazon.ApplicationCostProfiler.Model.PutReportDefinitionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates the report definition for a report in Application Cost Profiler.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutReportDefinition service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the PutReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ServiceQuotaExceededException">
+            Your request exceeds one or more of the service quotas.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/PutReportDefinition">REST API Reference for PutReportDefinition Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.IAmazonApplicationCostProfiler.UpdateReportDefinition(Amazon.ApplicationCostProfiler.Model.UpdateReportDefinitionRequest)">
+            <summary>
+            Updates existing report in AWS Application Cost Profiler.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateReportDefinition service method.</param>
+            
+            <returns>The response from the UpdateReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/UpdateReportDefinition">REST API Reference for UpdateReportDefinition Operation</seealso>
+        </member>
+        <member name="M:Amazon.ApplicationCostProfiler.IAmazonApplicationCostProfiler.UpdateReportDefinitionAsync(Amazon.ApplicationCostProfiler.Model.UpdateReportDefinitionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Updates existing report in AWS Application Cost Profiler.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateReportDefinition service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UpdateReportDefinition service method, as returned by ApplicationCostProfiler.</returns>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.AccessDeniedException">
+            You do not have permission to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.InternalServerException">
+            An internal server error occurred. Retry your request.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ThrottlingException">
+            The calls to AWS Application Cost Profiler API are throttled. The request was denied.
+            </exception>
+            <exception cref="T:Amazon.ApplicationCostProfiler.Model.ValidationException">
+            The input fails to satisfy the constraints for the API.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/AWSApplicationCostProfiler-2020-09-10/UpdateReportDefinition">REST API Reference for UpdateReportDefinition Operation</seealso>
+        </member>
+    </members>
+</doc>
