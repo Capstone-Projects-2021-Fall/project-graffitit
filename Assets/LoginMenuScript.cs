@@ -3,8 +3,11 @@ using Amazon.CognitoIdentity;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using Amazon.DynamoDBv2.Model;
+using Amazon.S3;
+using Amazon.S3.Model;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -16,7 +19,7 @@ public class LoginMenuScript : MonoBehaviour
     private static TMPro.TMP_InputField password;
     private static Button loginButton;
 
-
+    //DB
     private static AmazonDynamoDBClient client;
     private static DynamoDBContext context;
 

@@ -101,33 +101,7 @@ public class S3Manager : MonoBehaviour
         }
     }
 
-    public static async Task ReadObjectDataAsync(IAmazonS3 client, string bucketname, string keyName)
-    {
-        string responseBody = string.Empty;
-
-        try
-        {
-            GetObjectRequest request = new GetObjectRequest
-            {
-                BucketName = bucketname,
-                Key = keyName
-            };
-
-            using (GetObjectResponse response = await client.GetObjectAsync(request))
-            using (Stream responseStream = response.ResponseStream)
-            using (StreamReader reader = new StreamReader(responseStream))
-            {
-                //Process responseBody to original files
-                responseBody = reader.ReadToEnd();
-                Debug.Log(responseBody.Length);
-                string filePath = $"/data/user/0/com.DefaultCompany.GraffitIT/files/{keyName}";
-            }
-        }
-        catch (AmazonS3Exception e)
-        {
-            Debug.Log($"Error: '{e.Message}'");
-        }
-    }
+    
 
     
 }
