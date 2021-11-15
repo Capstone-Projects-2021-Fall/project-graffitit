@@ -1,0 +1,3336 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.CodeStarconnections</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.CodeStarconnections.AmazonCodeStarconnectionsConfig">
+            <summary>
+            Configuration for accessing Amazon CodeStarconnections service
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.AmazonCodeStarconnectionsConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.AmazonCodeStarconnectionsConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.AmazonCodeStarconnectionsConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.AmazonCodeStarconnectionsException">
+            <summary>
+             Common exception for the CodeStarconnections service.
+             </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonCodeStarconnectionsException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonCodeStarconnectionsException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonCodeStarconnectionsException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonCodeStarconnectionsException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonCodeStarconnectionsException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the AmazonCodeStarconnectionsException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Internal.AmazonCodeStarconnectionsMetadata">
+            <summary>
+            Service metadata for  Amazon CodeStarconnections service
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Internal.AmazonCodeStarconnectionsMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Internal.AmazonCodeStarconnectionsMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.AmazonCodeStarconnectionsRequest">
+            <summary>
+            Base class for CodeStarconnections operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.ConflictException">
+            <summary>
+            Two conflicting operations have been made on the same resource.
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ConflictException.#ctor(System.String)">
+            <summary>
+            Constructs a new ConflictException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ConflictException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ConflictException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ConflictException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ConflictException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ConflictException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ConflictException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ConflictException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Connection">
+            <summary>
+            A resource that is used to connect third-party source providers with services like
+            AWS CodePipeline.
+            
+             
+            <para>
+            Note: A connection created through CloudFormation, the CLI, or the SDK is in `PENDING`
+            status by default. You can make its status `AVAILABLE` by updating the connection
+            in the console.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Connection.ConnectionArn">
+            <summary>
+            Gets and sets the property ConnectionArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the connection. The ARN is used as the connection
+            reference when the connection is shared between AWS services.
+            </para>
+             <note> 
+            <para>
+            The ARN is never reused if the connection is deleted.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Connection.ConnectionName">
+            <summary>
+            Gets and sets the property ConnectionName. 
+            <para>
+            The name of the connection. Connection names must be unique in an AWS user account.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Connection.ConnectionStatus">
+            <summary>
+            Gets and sets the property ConnectionStatus. 
+            <para>
+            The current status of the connection. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Connection.HostArn">
+            <summary>
+            Gets and sets the property HostArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the host associated with the connection.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Connection.OwnerAccountId">
+            <summary>
+            Gets and sets the property OwnerAccountId. 
+            <para>
+            The identifier of the external provider where your third-party code repository is
+            configured. For Bitbucket, this is the account ID of the owner of the Bitbucket repository.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Connection.ProviderType">
+            <summary>
+            Gets and sets the property ProviderType. 
+            <para>
+            The name of the external provider where your third-party code repository is configured.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.CreateConnectionRequest">
+            <summary>
+            Container for the parameters to the CreateConnection operation.
+            Creates a connection that can then be given to other AWS services like CodePipeline
+            so that it can access third-party code repositories. The connection is in pending
+            status until the third-party connection handshake is completed from the console.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.CreateConnectionRequest.ConnectionName">
+            <summary>
+            Gets and sets the property ConnectionName. 
+            <para>
+            The name of the connection to be created. The name must be unique in the calling AWS
+            account.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.CreateConnectionRequest.HostArn">
+            <summary>
+            Gets and sets the property HostArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the host associated with the connection to be created.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.CreateConnectionRequest.ProviderType">
+            <summary>
+            Gets and sets the property ProviderType. 
+            <para>
+            The name of the external provider where your third-party code repository is configured.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.CreateConnectionRequest.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            The key-value pair to use when tagging the resource.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.CreateConnectionResponse">
+            <summary>
+            This is the response object from the CreateConnection operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.CreateConnectionResponse.ConnectionArn">
+            <summary>
+            Gets and sets the property ConnectionArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the connection to be created. The ARN is used as
+            the connection reference when the connection is shared between AWS services.
+            </para>
+             <note> 
+            <para>
+            The ARN is never reused if the connection is deleted.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.CreateConnectionResponse.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            Specifies the tags applied to the resource.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.CreateHostRequest">
+            <summary>
+            Container for the parameters to the CreateHost operation.
+            Creates a resource that represents the infrastructure where a third-party provider
+            is installed. The host is used when you create connections to an installed third-party
+            provider type, such as GitHub Enterprise Server. You create one host for all connections
+            to that provider.
+            
+             <note> 
+            <para>
+            A host created through the CLI or the SDK is in `PENDING` status by default. You can
+            make its status `AVAILABLE` by setting up the host in the console.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.CreateHostRequest.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the host to be created. The name must be unique in the calling AWS account.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.CreateHostRequest.ProviderEndpoint">
+            <summary>
+            Gets and sets the property ProviderEndpoint. 
+            <para>
+            The endpoint of the infrastructure to be represented by the host after it is created.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.CreateHostRequest.ProviderType">
+            <summary>
+            Gets and sets the property ProviderType. 
+            <para>
+            The name of the installed provider to be associated with your connection. The host
+            resource represents the infrastructure where your provider type is installed. The
+            valid provider type is GitHub Enterprise Server.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.CreateHostRequest.Tags">
+            <summary>
+            Gets and sets the property Tags.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.CreateHostRequest.VpcConfiguration">
+            <summary>
+            Gets and sets the property VpcConfiguration. 
+            <para>
+            The VPC configuration to be provisioned for the host. A VPC must be configured and
+            the infrastructure to be represented by the host must already be connected to the
+            VPC.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.CreateHostResponse">
+            <summary>
+            This is the response object from the CreateHost operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.CreateHostResponse.HostArn">
+            <summary>
+            Gets and sets the property HostArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the host to be created.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.CreateHostResponse.Tags">
+            <summary>
+            Gets and sets the property Tags.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.DeleteConnectionRequest">
+            <summary>
+            Container for the parameters to the DeleteConnection operation.
+            The connection to be deleted.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.DeleteConnectionRequest.ConnectionArn">
+            <summary>
+            Gets and sets the property ConnectionArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the connection to be deleted.
+            </para>
+             <note> 
+            <para>
+            The ARN is never reused if the connection is deleted.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.DeleteConnectionResponse">
+            <summary>
+            This is the response object from the DeleteConnection operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.DeleteHostRequest">
+            <summary>
+            Container for the parameters to the DeleteHost operation.
+            The host to be deleted. Before you delete a host, all connections associated to the
+            host must be deleted.
+            
+             <note> 
+            <para>
+            A host cannot be deleted if it is in the VPC_CONFIG_INITIALIZING or VPC_CONFIG_DELETING
+            state.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.DeleteHostRequest.HostArn">
+            <summary>
+            Gets and sets the property HostArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the host to be deleted.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.DeleteHostResponse">
+            <summary>
+            This is the response object from the DeleteHost operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.GetConnectionRequest">
+            <summary>
+            Container for the parameters to the GetConnection operation.
+            Returns the connection ARN and details such as status, owner, and provider type.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.GetConnectionRequest.ConnectionArn">
+            <summary>
+            Gets and sets the property ConnectionArn. 
+            <para>
+            The Amazon Resource Name (ARN) of a connection.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.GetConnectionResponse">
+            <summary>
+            This is the response object from the GetConnection operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.GetConnectionResponse.Connection">
+            <summary>
+            Gets and sets the property Connection. 
+            <para>
+            The connection details, such as status, owner, and provider type.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.GetHostRequest">
+            <summary>
+            Container for the parameters to the GetHost operation.
+            Returns the host ARN and details such as status, provider type, endpoint, and, if
+            applicable, the VPC configuration.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.GetHostRequest.HostArn">
+            <summary>
+            Gets and sets the property HostArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the requested host.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.GetHostResponse">
+            <summary>
+            This is the response object from the GetHost operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.GetHostResponse.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the requested host.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.GetHostResponse.ProviderEndpoint">
+            <summary>
+            Gets and sets the property ProviderEndpoint. 
+            <para>
+            The endpoint of the infrastructure represented by the requested host.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.GetHostResponse.ProviderType">
+            <summary>
+            Gets and sets the property ProviderType. 
+            <para>
+            The provider type of the requested host, such as GitHub Enterprise Server.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.GetHostResponse.Status">
+            <summary>
+            Gets and sets the property Status. 
+            <para>
+            The status of the requested host.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.GetHostResponse.VpcConfiguration">
+            <summary>
+            Gets and sets the property VpcConfiguration. 
+            <para>
+            The VPC configuration of the requested host.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Host">
+            <summary>
+            A resource that represents the infrastructure where a third-party provider is installed.
+            The host is used when you create connections to an installed third-party provider
+            type, such as GitHub Enterprise Server. You create one host for all connections to
+            that provider.
+            
+             <note> 
+            <para>
+            A host created through the CLI or the SDK is in `PENDING` status by default. You can
+            make its status `AVAILABLE` by setting up the host in the console.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Host.HostArn">
+            <summary>
+            Gets and sets the property HostArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the host.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Host.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the host.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Host.ProviderEndpoint">
+            <summary>
+            Gets and sets the property ProviderEndpoint. 
+            <para>
+            The endpoint of the infrastructure where your provider type is installed.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Host.ProviderType">
+            <summary>
+            Gets and sets the property ProviderType. 
+            <para>
+            The name of the installed provider to be associated with your connection. The host
+            resource represents the infrastructure where your provider type is installed. The
+            valid provider type is GitHub Enterprise Server.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Host.Status">
+            <summary>
+            Gets and sets the property Status. 
+            <para>
+            The status of the host, such as PENDING, AVAILABLE, VPC_CONFIG_DELETING, VPC_CONFIG_INITIALIZING,
+            and VPC_CONFIG_FAILED_INITIALIZATION.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Host.StatusMessage">
+            <summary>
+            Gets and sets the property StatusMessage. 
+            <para>
+            The status description for the host.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Host.VpcConfiguration">
+            <summary>
+            Gets and sets the property VpcConfiguration. 
+            <para>
+            The VPC configuration provisioned for the host.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ConflictException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ConflictExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ConnectionUnmarshaller">
+            <summary>
+            Response Unmarshaller for Connection Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ConnectionUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#CodeStarconnections#Model#Connection,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ConnectionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ConnectionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateConnectionRequestMarshaller">
+            <summary>
+            CreateConnection Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateConnectionRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateConnectionRequestMarshaller.Marshall(Amazon.CodeStarconnections.Model.CreateConnectionRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateConnectionRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateConnectionResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for CreateConnection operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateConnectionResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateConnectionResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateConnectionResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateHostRequestMarshaller">
+            <summary>
+            CreateHost Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateHostRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateHostRequestMarshaller.Marshall(Amazon.CodeStarconnections.Model.CreateHostRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateHostRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateHostResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for CreateHost operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateHostResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateHostResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.CreateHostResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteConnectionRequestMarshaller">
+            <summary>
+            DeleteConnection Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteConnectionRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteConnectionRequestMarshaller.Marshall(Amazon.CodeStarconnections.Model.DeleteConnectionRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteConnectionRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteConnectionResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DeleteConnection operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteConnectionResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteConnectionResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteConnectionResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteHostRequestMarshaller">
+            <summary>
+            DeleteHost Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteHostRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteHostRequestMarshaller.Marshall(Amazon.CodeStarconnections.Model.DeleteHostRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteHostRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteHostResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DeleteHost operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteHostResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteHostResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.DeleteHostResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetConnectionRequestMarshaller">
+            <summary>
+            GetConnection Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetConnectionRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetConnectionRequestMarshaller.Marshall(Amazon.CodeStarconnections.Model.GetConnectionRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetConnectionRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetConnectionResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetConnection operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetConnectionResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetConnectionResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetConnectionResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetHostRequestMarshaller">
+            <summary>
+            GetHost Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetHostRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetHostRequestMarshaller.Marshall(Amazon.CodeStarconnections.Model.GetHostRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetHostRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetHostResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetHost operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetHostResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetHostResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.GetHostResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.HostUnmarshaller">
+            <summary>
+            Response Unmarshaller for Host Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.HostUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#CodeStarconnections#Model#Host,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.HostUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.HostUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.LimitExceededExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for LimitExceededException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.LimitExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.LimitExceededExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.LimitExceededExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListConnectionsRequestMarshaller">
+            <summary>
+            ListConnections Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListConnectionsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListConnectionsRequestMarshaller.Marshall(Amazon.CodeStarconnections.Model.ListConnectionsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListConnectionsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListConnectionsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListConnections operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListConnectionsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListConnectionsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListConnectionsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListHostsRequestMarshaller">
+            <summary>
+            ListHosts Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListHostsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListHostsRequestMarshaller.Marshall(Amazon.CodeStarconnections.Model.ListHostsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListHostsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListHostsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListHosts operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListHostsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListHostsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListHostsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller">
+            <summary>
+            ListTagsForResource Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller.Marshall(Amazon.CodeStarconnections.Model.ListTagsForResourceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListTagsForResourceRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListTagsForResource operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ListTagsForResourceResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceNotFoundException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ResourceNotFoundExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ResourceUnavailableExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ResourceUnavailableException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ResourceUnavailableExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ResourceUnavailableExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.ResourceUnavailableExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagMarshaller">
+            <summary>
+            Tag Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagMarshaller.Marshall(Amazon.CodeStarconnections.Model.Tag,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller">
+            <summary>
+            TagResource Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller.Marshall(Amazon.CodeStarconnections.Model.TagResourceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagResourceRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for TagResource operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagResourceResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagUnmarshaller">
+            <summary>
+            Response Unmarshaller for Tag Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#CodeStarconnections#Model#Tag,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.TagUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UnsupportedOperationExceptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for UnsupportedOperationException Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UnsupportedOperationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UnsupportedOperationExceptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,Amazon.Runtime.Internal.ErrorResponse)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <param name="errorResponse"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UnsupportedOperationExceptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller">
+            <summary>
+            UntagResource Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller.Marshall(Amazon.CodeStarconnections.Model.UntagResourceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UntagResourceRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for UntagResource operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UntagResourceResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UpdateHostRequestMarshaller">
+            <summary>
+            UpdateHost Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UpdateHostRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UpdateHostRequestMarshaller.Marshall(Amazon.CodeStarconnections.Model.UpdateHostRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UpdateHostRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UpdateHostResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for UpdateHost operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UpdateHostResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UpdateHostResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.UpdateHostResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.VpcConfigurationMarshaller">
+            <summary>
+            VpcConfiguration Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.VpcConfigurationMarshaller.Marshall(Amazon.CodeStarconnections.Model.VpcConfiguration,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.VpcConfigurationMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.VpcConfigurationUnmarshaller">
+            <summary>
+            Response Unmarshaller for VpcConfiguration Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.VpcConfigurationUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#CodeStarconnections#Model#VpcConfiguration,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.VpcConfigurationUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Internal.MarshallTransformations.VpcConfigurationUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.LimitExceededException">
+            <summary>
+            Exceeded the maximum limit for connections.
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.LimitExceededException.#ctor(System.String)">
+            <summary>
+            Constructs a new LimitExceededException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.LimitExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.LimitExceededException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.LimitExceededException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.LimitExceededException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of LimitExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.LimitExceededException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the LimitExceededException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.LimitExceededException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.ListConnectionsRequest">
+            <summary>
+            Container for the parameters to the ListConnections operation.
+            Lists the connections associated with your account.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.ListConnectionsRequest.HostArnFilter">
+            <summary>
+            Gets and sets the property HostArnFilter. 
+            <para>
+            Filters the list of connections to those associated with a specified host.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.ListConnectionsRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results to return in a single call. To retrieve the remaining
+            results, make another call with the returned <code>nextToken</code> value.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.ListConnectionsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token that was returned from the previous <code>ListConnections</code> call, which
+            can be used to return the next set of connections in the list.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.ListConnectionsRequest.ProviderTypeFilter">
+            <summary>
+            Gets and sets the property ProviderTypeFilter. 
+            <para>
+            Filters the list of connections to those associated with a specified provider, such
+            as Bitbucket.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.ListConnectionsResponse">
+            <summary>
+            This is the response object from the ListConnections operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.ListConnectionsResponse.Connections">
+            <summary>
+            Gets and sets the property Connections. 
+            <para>
+            A list of connections and the details for each connection, such as status, owner,
+            and provider type.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.ListConnectionsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            A token that can be used in the next <code>ListConnections</code> call. To view all
+            items in the list, continue to call this operation with each subsequent token until
+            no more <code>nextToken</code> values are returned.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.ListHostsRequest">
+            <summary>
+            Container for the parameters to the ListHosts operation.
+            Lists the hosts associated with your account.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.ListHostsRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of results to return in a single call. To retrieve the remaining
+            results, make another call with the returned <code>nextToken</code> value.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.ListHostsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token that was returned from the previous <code>ListHosts</code> call, which can
+            be used to return the next set of hosts in the list.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.ListHostsResponse">
+            <summary>
+            This is the response object from the ListHosts operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.ListHostsResponse.Hosts">
+            <summary>
+            Gets and sets the property Hosts. 
+            <para>
+            A list of hosts and the details for each host, such as status, endpoint, and provider
+            type.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.ListHostsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            A token that can be used in the next <code>ListHosts</code> call. To view all items
+            in the list, continue to call this operation with each subsequent token until no more
+            <code>nextToken</code> values are returned.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.ListTagsForResourceRequest">
+            <summary>
+            Container for the parameters to the ListTagsForResource operation.
+            Gets the set of key-value pairs (metadata) that are used to manage the resource.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.ListTagsForResourceRequest.ResourceArn">
+            <summary>
+            Gets and sets the property ResourceArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the resource for which you want to get information
+            about tags, if any.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.ListTagsForResourceResponse">
+            <summary>
+            This is the response object from the ListTagsForResource operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.ListTagsForResourceResponse.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            A list of tag key and value pairs associated with the specified resource.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            <summary>
+            Resource not found. Verify the connection resource ARN and try again.
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ResourceNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ResourceNotFoundException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ResourceNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            <summary>
+            Resource not found. Verify the ARN for the host resource and try again.
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ResourceUnavailableException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceUnavailableException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ResourceUnavailableException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceUnavailableException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ResourceUnavailableException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceUnavailableException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ResourceUnavailableException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceUnavailableException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ResourceUnavailableException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceUnavailableException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ResourceUnavailableException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the ResourceUnavailableException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ResourceUnavailableException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.Tag">
+            <summary>
+            A tag is a key-value pair that is used to manage the resource.
+            
+             
+            <para>
+            This tag is available for use by AWS services that support tags.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Tag.Key">
+            <summary>
+            Gets and sets the property Key. 
+            <para>
+            The tag's key.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.Tag.Value">
+            <summary>
+            Gets and sets the property Value. 
+            <para>
+            The tag's value.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.TagResourceRequest">
+            <summary>
+            Container for the parameters to the TagResource operation.
+            Adds to or modifies the tags of the given resource. Tags are metadata that can be
+            used to manage a resource.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.TagResourceRequest.ResourceArn">
+            <summary>
+            Gets and sets the property ResourceArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the resource to which you want to add or update
+            tags.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.TagResourceRequest.Tags">
+            <summary>
+            Gets and sets the property Tags. 
+            <para>
+            The tags you want to modify or add to the resource.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.TagResourceResponse">
+            <summary>
+            This is the response object from the TagResource operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.UnsupportedOperationException">
+            <summary>
+            The operation is not supported. Check the connection status and try again.
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.UnsupportedOperationException.#ctor(System.String)">
+            <summary>
+            Constructs a new UnsupportedOperationException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.UnsupportedOperationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of UnsupportedOperationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.UnsupportedOperationException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of UnsupportedOperationException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.UnsupportedOperationException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of UnsupportedOperationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.UnsupportedOperationException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of UnsupportedOperationException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.UnsupportedOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructs a new instance of the UnsupportedOperationException class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.UnsupportedOperationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (Nothing in Visual Basic). </exception>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.UntagResourceRequest">
+            <summary>
+            Container for the parameters to the UntagResource operation.
+            Removes tags from an AWS resource.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.UntagResourceRequest.ResourceArn">
+            <summary>
+            Gets and sets the property ResourceArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the resource to remove tags from.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.UntagResourceRequest.TagKeys">
+            <summary>
+            Gets and sets the property TagKeys. 
+            <para>
+            The list of keys for the tags to be removed from the resource.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.UntagResourceResponse">
+            <summary>
+            This is the response object from the UntagResource operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.UpdateHostRequest">
+            <summary>
+            Container for the parameters to the UpdateHost operation.
+            Updates a specified host with the provided configurations.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.UpdateHostRequest.HostArn">
+            <summary>
+            Gets and sets the property HostArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the host to be updated.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.UpdateHostRequest.ProviderEndpoint">
+            <summary>
+            Gets and sets the property ProviderEndpoint. 
+            <para>
+            The URL or endpoint of the host to be updated.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.UpdateHostRequest.VpcConfiguration">
+            <summary>
+            Gets and sets the property VpcConfiguration. 
+            <para>
+            The VPC configuration of the host to be updated. A VPC must be configured and the
+            infrastructure to be represented by the host must already be connected to the VPC.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.UpdateHostResponse">
+            <summary>
+            This is the response object from the UpdateHost operation.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.VpcConfiguration">
+            <summary>
+            The VPC configuration provisioned for the host.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.VpcConfiguration.SecurityGroupIds">
+            <summary>
+            Gets and sets the property SecurityGroupIds. 
+            <para>
+            The ID of the security group or security groups associated with the Amazon VPC connected
+            to the infrastructure where your provider type is installed.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.VpcConfiguration.SubnetIds">
+            <summary>
+            Gets and sets the property SubnetIds. 
+            <para>
+            The ID of the subnet or subnets associated with the Amazon VPC connected to the infrastructure
+            where your provider type is installed.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.VpcConfiguration.TlsCertificate">
+            <summary>
+            Gets and sets the property TlsCertificate. 
+            <para>
+            The value of the Transport Layer Security (TLS) certificate associated with the infrastructure
+            where your provider type is installed.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.VpcConfiguration.VpcId">
+            <summary>
+            Gets and sets the property VpcId. 
+            <para>
+            The ID of the Amazon VPC connected to the infrastructure where your provider type
+            is installed.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.CodeStarconnectionsPaginatorFactory">
+             <summary>
+             Paginators for the CodeStarconnections service
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.CodeStarconnectionsPaginatorFactory.ListConnections(Amazon.CodeStarconnections.Model.ListConnectionsRequest)">
+             <summary>
+             Paginator for ListConnections operation
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.CodeStarconnectionsPaginatorFactory.ListHosts(Amazon.CodeStarconnections.Model.ListHostsRequest)">
+             <summary>
+             Paginator for ListHosts operation
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.ICodeStarconnectionsPaginatorFactory">
+             <summary>
+             Paginators for the CodeStarconnections service
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ICodeStarconnectionsPaginatorFactory.ListConnections(Amazon.CodeStarconnections.Model.ListConnectionsRequest)">
+             <summary>
+             Paginator for ListConnections operation
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.Model.ICodeStarconnectionsPaginatorFactory.ListHosts(Amazon.CodeStarconnections.Model.ListHostsRequest)">
+             <summary>
+             Paginator for ListHosts operation
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.IListConnectionsPaginator">
+             <summary>
+             Paginator for the ListConnections operation
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.IListConnectionsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.IListHostsPaginator">
+             <summary>
+             Paginator for the ListHosts operation
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.IListHostsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.ListConnectionsPaginator">
+            <summary>
+            Base class for ListConnections paginators.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.ListConnectionsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.Model.ListHostsPaginator">
+            <summary>
+            Base class for ListHosts paginators.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.Model.ListHostsPaginator.Responses">
+            <summary>
+            Enumerable containing all full responses for the operation
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.ConnectionStatus">
+            <summary>
+            Constants used for properties of type ConnectionStatus.
+            </summary>
+        </member>
+        <member name="F:Amazon.CodeStarconnections.ConnectionStatus.AVAILABLE">
+            <summary>
+            Constant AVAILABLE for ConnectionStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.CodeStarconnections.ConnectionStatus.ERROR">
+            <summary>
+            Constant ERROR for ConnectionStatus
+            </summary>
+        </member>
+        <member name="F:Amazon.CodeStarconnections.ConnectionStatus.PENDING">
+            <summary>
+            Constant PENDING for ConnectionStatus
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.ConnectionStatus.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.ConnectionStatus.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.ConnectionStatus.op_Implicit(System.String)~Amazon.CodeStarconnections.ConnectionStatus">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.ProviderType">
+            <summary>
+            Constants used for properties of type ProviderType.
+            </summary>
+        </member>
+        <member name="F:Amazon.CodeStarconnections.ProviderType.Bitbucket">
+            <summary>
+            Constant Bitbucket for ProviderType
+            </summary>
+        </member>
+        <member name="F:Amazon.CodeStarconnections.ProviderType.GitHub">
+            <summary>
+            Constant GitHub for ProviderType
+            </summary>
+        </member>
+        <member name="F:Amazon.CodeStarconnections.ProviderType.GitHubEnterpriseServer">
+            <summary>
+            Constant GitHubEnterpriseServer for ProviderType
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.ProviderType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.ProviderType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.ProviderType.op_Implicit(System.String)~Amazon.CodeStarconnections.ProviderType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient">
+             <summary>
+             Implementation for accessing CodeStarconnections
+            
+             AWS CodeStar Connections 
+             <para>
+             This AWS CodeStar Connections API Reference provides descriptions and usage examples
+             of the operations and data types for the AWS CodeStar Connections API. You can use
+             the connections API to work with connections and installations.
+             </para>
+              
+             <para>
+              <i>Connections</i> are configurations that you use to connect AWS resources to external
+             code repositories. Each connection is a resource that can be given to services such
+             as CodePipeline to connect to a third-party repository such as Bitbucket. For example,
+             you can add the connection in CodePipeline so that it triggers your pipeline when
+             a code change is made to your third-party code repository. Each connection is named
+             and associated with a unique ARN that is used to reference the connection.
+             </para>
+              
+             <para>
+             When you create a connection, the console initiates a third-party connection handshake.
+             <i>Installations</i> are the apps that are used to conduct this handshake. For example,
+             the installation for the Bitbucket provider type is the Bitbucket app. When you create
+             a connection, you can choose an existing installation or create one.
+             </para>
+              
+             <para>
+             When you want to create a connection to an installed provider type such as GitHub
+             Enterprise Server, you create a <i>host</i> for your connections.
+             </para>
+              
+             <para>
+             You can work with connections by calling:
+             </para>
+              <ul> <li> 
+             <para>
+              <a>CreateConnection</a>, which creates a uniquely named connection that can be referenced
+             by services such as CodePipeline.
+             </para>
+              </li> <li> 
+             <para>
+              <a>DeleteConnection</a>, which deletes the specified connection.
+             </para>
+              </li> <li> 
+             <para>
+              <a>GetConnection</a>, which returns information about the connection, including the
+             connection status.
+             </para>
+              </li> <li> 
+             <para>
+              <a>ListConnections</a>, which lists the connections associated with your account.
+             </para>
+              </li> </ul> 
+             <para>
+             You can work with hosts by calling:
+             </para>
+              <ul> <li> 
+             <para>
+              <a>CreateHost</a>, which creates a host that represents the infrastructure where
+             your provider is installed.
+             </para>
+              </li> <li> 
+             <para>
+              <a>DeleteHost</a>, which deletes the specified host.
+             </para>
+              </li> <li> 
+             <para>
+              <a>GetHost</a>, which returns information about the host, including the setup status.
+             </para>
+              </li> <li> 
+             <para>
+              <a>ListHosts</a>, which lists the hosts associated with your account.
+             </para>
+              </li> </ul> 
+             <para>
+             You can work with tags in AWS CodeStar Connections by calling the following:
+             </para>
+              <ul> <li> 
+             <para>
+              <a>ListTagsForResource</a>, which gets information about AWS tags for a specified
+             Amazon Resource Name (ARN) in AWS CodeStar Connections.
+             </para>
+              </li> <li> 
+             <para>
+              <a>TagResource</a>, which adds or updates tags for a resource in AWS CodeStar Connections.
+             </para>
+              </li> <li> 
+             <para>
+              <a>UntagResource</a>, which removes tags for a resource in AWS CodeStar Connections.
+             </para>
+              </li> </ul> 
+             <para>
+             For information about how to use AWS CodeStar Connections, see the <a href="https://docs.aws.amazon.com/dtconsole/latest/userguide/welcome-connections.html">Developer
+             Tools User Guide</a>.
+             </para>
+             </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.#ctor">
+             <summary>
+             Constructs AmazonCodeStarconnectionsClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonCodeStarconnectionsClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.#ctor(Amazon.CodeStarconnections.AmazonCodeStarconnectionsConfig)">
+             <summary>
+             Constructs AmazonCodeStarconnectionsClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonCodeStarconnectionsClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonCodeStarconnectionsClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonCodeStarconnectionsClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.CodeStarconnections.AmazonCodeStarconnectionsConfig)">
+            <summary>
+            Constructs AmazonCodeStarconnectionsClient with AWS Credentials and an
+            AmazonCodeStarconnectionsClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonCodeStarconnectionsClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonCodeStarconnectionsClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonCodeStarconnectionsClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.#ctor(System.String,System.String,Amazon.CodeStarconnections.AmazonCodeStarconnectionsConfig)">
+            <summary>
+            Constructs AmazonCodeStarconnectionsClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonCodeStarconnectionsClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonCodeStarconnectionsClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonCodeStarconnectionsClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonCodeStarconnectionsClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.#ctor(System.String,System.String,System.String,Amazon.CodeStarconnections.AmazonCodeStarconnectionsConfig)">
+            <summary>
+            Constructs AmazonCodeStarconnectionsClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonCodeStarconnectionsClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonCodeStarconnectionsClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.CreateConnection(Amazon.CodeStarconnections.Model.CreateConnectionRequest)">
+            <summary>
+            Creates a connection that can then be given to other AWS services like CodePipeline
+            so that it can access third-party code repositories. The connection is in pending
+            status until the third-party connection handshake is completed from the console.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateConnection service method.</param>
+            
+            <returns>The response from the CreateConnection service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.LimitExceededException">
+            Exceeded the maximum limit for connections.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/CreateConnection">REST API Reference for CreateConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.CreateConnectionAsync(Amazon.CodeStarconnections.Model.CreateConnectionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a connection that can then be given to other AWS services like CodePipeline
+            so that it can access third-party code repositories. The connection is in pending
+            status until the third-party connection handshake is completed from the console.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateConnection service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateConnection service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.LimitExceededException">
+            Exceeded the maximum limit for connections.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/CreateConnection">REST API Reference for CreateConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.CreateHost(Amazon.CodeStarconnections.Model.CreateHostRequest)">
+            <summary>
+            Creates a resource that represents the infrastructure where a third-party provider
+            is installed. The host is used when you create connections to an installed third-party
+            provider type, such as GitHub Enterprise Server. You create one host for all connections
+            to that provider.
+            
+             <note> 
+            <para>
+            A host created through the CLI or the SDK is in `PENDING` status by default. You can
+            make its status `AVAILABLE` by setting up the host in the console.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateHost service method.</param>
+            
+            <returns>The response from the CreateHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.LimitExceededException">
+            Exceeded the maximum limit for connections.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/CreateHost">REST API Reference for CreateHost Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.CreateHostAsync(Amazon.CodeStarconnections.Model.CreateHostRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a resource that represents the infrastructure where a third-party provider
+            is installed. The host is used when you create connections to an installed third-party
+            provider type, such as GitHub Enterprise Server. You create one host for all connections
+            to that provider.
+            
+             <note> 
+            <para>
+            A host created through the CLI or the SDK is in `PENDING` status by default. You can
+            make its status `AVAILABLE` by setting up the host in the console.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateHost service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.LimitExceededException">
+            Exceeded the maximum limit for connections.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/CreateHost">REST API Reference for CreateHost Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.DeleteConnection(Amazon.CodeStarconnections.Model.DeleteConnectionRequest)">
+            <summary>
+            The connection to be deleted.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteConnection service method.</param>
+            
+            <returns>The response from the DeleteConnection service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/DeleteConnection">REST API Reference for DeleteConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.DeleteConnectionAsync(Amazon.CodeStarconnections.Model.DeleteConnectionRequest,System.Threading.CancellationToken)">
+            <summary>
+            The connection to be deleted.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteConnection service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteConnection service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/DeleteConnection">REST API Reference for DeleteConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.DeleteHost(Amazon.CodeStarconnections.Model.DeleteHostRequest)">
+            <summary>
+            The host to be deleted. Before you delete a host, all connections associated to the
+            host must be deleted.
+            
+             <note> 
+            <para>
+            A host cannot be deleted if it is in the VPC_CONFIG_INITIALIZING or VPC_CONFIG_DELETING
+            state.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteHost service method.</param>
+            
+            <returns>The response from the DeleteHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/DeleteHost">REST API Reference for DeleteHost Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.DeleteHostAsync(Amazon.CodeStarconnections.Model.DeleteHostRequest,System.Threading.CancellationToken)">
+            <summary>
+            The host to be deleted. Before you delete a host, all connections associated to the
+            host must be deleted.
+            
+             <note> 
+            <para>
+            A host cannot be deleted if it is in the VPC_CONFIG_INITIALIZING or VPC_CONFIG_DELETING
+            state.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteHost service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/DeleteHost">REST API Reference for DeleteHost Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.GetConnection(Amazon.CodeStarconnections.Model.GetConnectionRequest)">
+            <summary>
+            Returns the connection ARN and details such as status, owner, and provider type.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetConnection service method.</param>
+            
+            <returns>The response from the GetConnection service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/GetConnection">REST API Reference for GetConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.GetConnectionAsync(Amazon.CodeStarconnections.Model.GetConnectionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the connection ARN and details such as status, owner, and provider type.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetConnection service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetConnection service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/GetConnection">REST API Reference for GetConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.GetHost(Amazon.CodeStarconnections.Model.GetHostRequest)">
+            <summary>
+            Returns the host ARN and details such as status, provider type, endpoint, and, if
+            applicable, the VPC configuration.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetHost service method.</param>
+            
+            <returns>The response from the GetHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/GetHost">REST API Reference for GetHost Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.GetHostAsync(Amazon.CodeStarconnections.Model.GetHostRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the host ARN and details such as status, provider type, endpoint, and, if
+            applicable, the VPC configuration.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetHost service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/GetHost">REST API Reference for GetHost Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.ListConnections(Amazon.CodeStarconnections.Model.ListConnectionsRequest)">
+            <summary>
+            Lists the connections associated with your account.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListConnections service method.</param>
+            
+            <returns>The response from the ListConnections service method, as returned by CodeStarconnections.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/ListConnections">REST API Reference for ListConnections Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.ListConnectionsAsync(Amazon.CodeStarconnections.Model.ListConnectionsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Lists the connections associated with your account.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListConnections service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListConnections service method, as returned by CodeStarconnections.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/ListConnections">REST API Reference for ListConnections Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.ListHosts(Amazon.CodeStarconnections.Model.ListHostsRequest)">
+            <summary>
+            Lists the hosts associated with your account.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListHosts service method.</param>
+            
+            <returns>The response from the ListHosts service method, as returned by CodeStarconnections.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/ListHosts">REST API Reference for ListHosts Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.ListHostsAsync(Amazon.CodeStarconnections.Model.ListHostsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Lists the hosts associated with your account.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListHosts service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListHosts service method, as returned by CodeStarconnections.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/ListHosts">REST API Reference for ListHosts Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.ListTagsForResource(Amazon.CodeStarconnections.Model.ListTagsForResourceRequest)">
+            <summary>
+            Gets the set of key-value pairs (metadata) that are used to manage the resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListTagsForResource service method.</param>
+            
+            <returns>The response from the ListTagsForResource service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/ListTagsForResource">REST API Reference for ListTagsForResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.ListTagsForResourceAsync(Amazon.CodeStarconnections.Model.ListTagsForResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Gets the set of key-value pairs (metadata) that are used to manage the resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListTagsForResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListTagsForResource service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/ListTagsForResource">REST API Reference for ListTagsForResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.TagResource(Amazon.CodeStarconnections.Model.TagResourceRequest)">
+            <summary>
+            Adds to or modifies the tags of the given resource. Tags are metadata that can be
+            used to manage a resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the TagResource service method.</param>
+            
+            <returns>The response from the TagResource service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.LimitExceededException">
+            Exceeded the maximum limit for connections.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/TagResource">REST API Reference for TagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.TagResourceAsync(Amazon.CodeStarconnections.Model.TagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Adds to or modifies the tags of the given resource. Tags are metadata that can be
+            used to manage a resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the TagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the TagResource service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.LimitExceededException">
+            Exceeded the maximum limit for connections.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/TagResource">REST API Reference for TagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.UntagResource(Amazon.CodeStarconnections.Model.UntagResourceRequest)">
+            <summary>
+            Removes tags from an AWS resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UntagResource service method.</param>
+            
+            <returns>The response from the UntagResource service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/UntagResource">REST API Reference for UntagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.UntagResourceAsync(Amazon.CodeStarconnections.Model.UntagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Removes tags from an AWS resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UntagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UntagResource service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/UntagResource">REST API Reference for UntagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.UpdateHost(Amazon.CodeStarconnections.Model.UpdateHostRequest)">
+            <summary>
+            Updates a specified host with the provided configurations.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateHost service method.</param>
+            
+            <returns>The response from the UpdateHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ConflictException">
+            Two conflicting operations have been made on the same resource.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.UnsupportedOperationException">
+            The operation is not supported. Check the connection status and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/UpdateHost">REST API Reference for UpdateHost Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.AmazonCodeStarconnectionsClient.UpdateHostAsync(Amazon.CodeStarconnections.Model.UpdateHostRequest,System.Threading.CancellationToken)">
+            <summary>
+            Updates a specified host with the provided configurations.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateHost service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UpdateHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ConflictException">
+            Two conflicting operations have been made on the same resource.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.UnsupportedOperationException">
+            The operation is not supported. Check the connection status and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/UpdateHost">REST API Reference for UpdateHost Operation</seealso>
+        </member>
+        <member name="T:Amazon.CodeStarconnections.IAmazonCodeStarconnections">
+             <summary>
+             Interface for accessing CodeStarconnections
+            
+             AWS CodeStar Connections 
+             <para>
+             This AWS CodeStar Connections API Reference provides descriptions and usage examples
+             of the operations and data types for the AWS CodeStar Connections API. You can use
+             the connections API to work with connections and installations.
+             </para>
+              
+             <para>
+              <i>Connections</i> are configurations that you use to connect AWS resources to external
+             code repositories. Each connection is a resource that can be given to services such
+             as CodePipeline to connect to a third-party repository such as Bitbucket. For example,
+             you can add the connection in CodePipeline so that it triggers your pipeline when
+             a code change is made to your third-party code repository. Each connection is named
+             and associated with a unique ARN that is used to reference the connection.
+             </para>
+              
+             <para>
+             When you create a connection, the console initiates a third-party connection handshake.
+             <i>Installations</i> are the apps that are used to conduct this handshake. For example,
+             the installation for the Bitbucket provider type is the Bitbucket app. When you create
+             a connection, you can choose an existing installation or create one.
+             </para>
+              
+             <para>
+             When you want to create a connection to an installed provider type such as GitHub
+             Enterprise Server, you create a <i>host</i> for your connections.
+             </para>
+              
+             <para>
+             You can work with connections by calling:
+             </para>
+              <ul> <li> 
+             <para>
+              <a>CreateConnection</a>, which creates a uniquely named connection that can be referenced
+             by services such as CodePipeline.
+             </para>
+              </li> <li> 
+             <para>
+              <a>DeleteConnection</a>, which deletes the specified connection.
+             </para>
+              </li> <li> 
+             <para>
+              <a>GetConnection</a>, which returns information about the connection, including the
+             connection status.
+             </para>
+              </li> <li> 
+             <para>
+              <a>ListConnections</a>, which lists the connections associated with your account.
+             </para>
+              </li> </ul> 
+             <para>
+             You can work with hosts by calling:
+             </para>
+              <ul> <li> 
+             <para>
+              <a>CreateHost</a>, which creates a host that represents the infrastructure where
+             your provider is installed.
+             </para>
+              </li> <li> 
+             <para>
+              <a>DeleteHost</a>, which deletes the specified host.
+             </para>
+              </li> <li> 
+             <para>
+              <a>GetHost</a>, which returns information about the host, including the setup status.
+             </para>
+              </li> <li> 
+             <para>
+              <a>ListHosts</a>, which lists the hosts associated with your account.
+             </para>
+              </li> </ul> 
+             <para>
+             You can work with tags in AWS CodeStar Connections by calling the following:
+             </para>
+              <ul> <li> 
+             <para>
+              <a>ListTagsForResource</a>, which gets information about AWS tags for a specified
+             Amazon Resource Name (ARN) in AWS CodeStar Connections.
+             </para>
+              </li> <li> 
+             <para>
+              <a>TagResource</a>, which adds or updates tags for a resource in AWS CodeStar Connections.
+             </para>
+              </li> <li> 
+             <para>
+              <a>UntagResource</a>, which removes tags for a resource in AWS CodeStar Connections.
+             </para>
+              </li> </ul> 
+             <para>
+             For information about how to use AWS CodeStar Connections, see the <a href="https://docs.aws.amazon.com/dtconsole/latest/userguide/welcome-connections.html">Developer
+             Tools User Guide</a>.
+             </para>
+             </summary>
+        </member>
+        <member name="P:Amazon.CodeStarconnections.IAmazonCodeStarconnections.Paginators">
+            <summary>
+            Paginators for the service
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.CreateConnection(Amazon.CodeStarconnections.Model.CreateConnectionRequest)">
+            <summary>
+            Creates a connection that can then be given to other AWS services like CodePipeline
+            so that it can access third-party code repositories. The connection is in pending
+            status until the third-party connection handshake is completed from the console.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateConnection service method.</param>
+            
+            <returns>The response from the CreateConnection service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.LimitExceededException">
+            Exceeded the maximum limit for connections.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/CreateConnection">REST API Reference for CreateConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.CreateConnectionAsync(Amazon.CodeStarconnections.Model.CreateConnectionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a connection that can then be given to other AWS services like CodePipeline
+            so that it can access third-party code repositories. The connection is in pending
+            status until the third-party connection handshake is completed from the console.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateConnection service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateConnection service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.LimitExceededException">
+            Exceeded the maximum limit for connections.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/CreateConnection">REST API Reference for CreateConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.CreateHost(Amazon.CodeStarconnections.Model.CreateHostRequest)">
+            <summary>
+            Creates a resource that represents the infrastructure where a third-party provider
+            is installed. The host is used when you create connections to an installed third-party
+            provider type, such as GitHub Enterprise Server. You create one host for all connections
+            to that provider.
+            
+             <note> 
+            <para>
+            A host created through the CLI or the SDK is in `PENDING` status by default. You can
+            make its status `AVAILABLE` by setting up the host in the console.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateHost service method.</param>
+            
+            <returns>The response from the CreateHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.LimitExceededException">
+            Exceeded the maximum limit for connections.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/CreateHost">REST API Reference for CreateHost Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.CreateHostAsync(Amazon.CodeStarconnections.Model.CreateHostRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a resource that represents the infrastructure where a third-party provider
+            is installed. The host is used when you create connections to an installed third-party
+            provider type, such as GitHub Enterprise Server. You create one host for all connections
+            to that provider.
+            
+             <note> 
+            <para>
+            A host created through the CLI or the SDK is in `PENDING` status by default. You can
+            make its status `AVAILABLE` by setting up the host in the console.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateHost service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.LimitExceededException">
+            Exceeded the maximum limit for connections.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/CreateHost">REST API Reference for CreateHost Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.DeleteConnection(Amazon.CodeStarconnections.Model.DeleteConnectionRequest)">
+            <summary>
+            The connection to be deleted.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteConnection service method.</param>
+            
+            <returns>The response from the DeleteConnection service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/DeleteConnection">REST API Reference for DeleteConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.DeleteConnectionAsync(Amazon.CodeStarconnections.Model.DeleteConnectionRequest,System.Threading.CancellationToken)">
+            <summary>
+            The connection to be deleted.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteConnection service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteConnection service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/DeleteConnection">REST API Reference for DeleteConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.DeleteHost(Amazon.CodeStarconnections.Model.DeleteHostRequest)">
+            <summary>
+            The host to be deleted. Before you delete a host, all connections associated to the
+            host must be deleted.
+            
+             <note> 
+            <para>
+            A host cannot be deleted if it is in the VPC_CONFIG_INITIALIZING or VPC_CONFIG_DELETING
+            state.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteHost service method.</param>
+            
+            <returns>The response from the DeleteHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/DeleteHost">REST API Reference for DeleteHost Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.DeleteHostAsync(Amazon.CodeStarconnections.Model.DeleteHostRequest,System.Threading.CancellationToken)">
+            <summary>
+            The host to be deleted. Before you delete a host, all connections associated to the
+            host must be deleted.
+            
+             <note> 
+            <para>
+            A host cannot be deleted if it is in the VPC_CONFIG_INITIALIZING or VPC_CONFIG_DELETING
+            state.
+            </para>
+             </note>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteHost service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/DeleteHost">REST API Reference for DeleteHost Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.GetConnection(Amazon.CodeStarconnections.Model.GetConnectionRequest)">
+            <summary>
+            Returns the connection ARN and details such as status, owner, and provider type.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetConnection service method.</param>
+            
+            <returns>The response from the GetConnection service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/GetConnection">REST API Reference for GetConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.GetConnectionAsync(Amazon.CodeStarconnections.Model.GetConnectionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the connection ARN and details such as status, owner, and provider type.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetConnection service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetConnection service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/GetConnection">REST API Reference for GetConnection Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.GetHost(Amazon.CodeStarconnections.Model.GetHostRequest)">
+            <summary>
+            Returns the host ARN and details such as status, provider type, endpoint, and, if
+            applicable, the VPC configuration.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetHost service method.</param>
+            
+            <returns>The response from the GetHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/GetHost">REST API Reference for GetHost Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.GetHostAsync(Amazon.CodeStarconnections.Model.GetHostRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the host ARN and details such as status, provider type, endpoint, and, if
+            applicable, the VPC configuration.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetHost service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/GetHost">REST API Reference for GetHost Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.ListConnections(Amazon.CodeStarconnections.Model.ListConnectionsRequest)">
+            <summary>
+            Lists the connections associated with your account.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListConnections service method.</param>
+            
+            <returns>The response from the ListConnections service method, as returned by CodeStarconnections.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/ListConnections">REST API Reference for ListConnections Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.ListConnectionsAsync(Amazon.CodeStarconnections.Model.ListConnectionsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Lists the connections associated with your account.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListConnections service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListConnections service method, as returned by CodeStarconnections.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/ListConnections">REST API Reference for ListConnections Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.ListHosts(Amazon.CodeStarconnections.Model.ListHostsRequest)">
+            <summary>
+            Lists the hosts associated with your account.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListHosts service method.</param>
+            
+            <returns>The response from the ListHosts service method, as returned by CodeStarconnections.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/ListHosts">REST API Reference for ListHosts Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.ListHostsAsync(Amazon.CodeStarconnections.Model.ListHostsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Lists the hosts associated with your account.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListHosts service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListHosts service method, as returned by CodeStarconnections.</returns>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/ListHosts">REST API Reference for ListHosts Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.ListTagsForResource(Amazon.CodeStarconnections.Model.ListTagsForResourceRequest)">
+            <summary>
+            Gets the set of key-value pairs (metadata) that are used to manage the resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListTagsForResource service method.</param>
+            
+            <returns>The response from the ListTagsForResource service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/ListTagsForResource">REST API Reference for ListTagsForResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.ListTagsForResourceAsync(Amazon.CodeStarconnections.Model.ListTagsForResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Gets the set of key-value pairs (metadata) that are used to manage the resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListTagsForResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListTagsForResource service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/ListTagsForResource">REST API Reference for ListTagsForResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.TagResource(Amazon.CodeStarconnections.Model.TagResourceRequest)">
+            <summary>
+            Adds to or modifies the tags of the given resource. Tags are metadata that can be
+            used to manage a resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the TagResource service method.</param>
+            
+            <returns>The response from the TagResource service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.LimitExceededException">
+            Exceeded the maximum limit for connections.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/TagResource">REST API Reference for TagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.TagResourceAsync(Amazon.CodeStarconnections.Model.TagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Adds to or modifies the tags of the given resource. Tags are metadata that can be
+            used to manage a resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the TagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the TagResource service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.LimitExceededException">
+            Exceeded the maximum limit for connections.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/TagResource">REST API Reference for TagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.UntagResource(Amazon.CodeStarconnections.Model.UntagResourceRequest)">
+            <summary>
+            Removes tags from an AWS resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UntagResource service method.</param>
+            
+            <returns>The response from the UntagResource service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/UntagResource">REST API Reference for UntagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.UntagResourceAsync(Amazon.CodeStarconnections.Model.UntagResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Removes tags from an AWS resource.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UntagResource service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UntagResource service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/UntagResource">REST API Reference for UntagResource Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.UpdateHost(Amazon.CodeStarconnections.Model.UpdateHostRequest)">
+            <summary>
+            Updates a specified host with the provided configurations.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateHost service method.</param>
+            
+            <returns>The response from the UpdateHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ConflictException">
+            Two conflicting operations have been made on the same resource.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.UnsupportedOperationException">
+            The operation is not supported. Check the connection status and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/UpdateHost">REST API Reference for UpdateHost Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeStarconnections.IAmazonCodeStarconnections.UpdateHostAsync(Amazon.CodeStarconnections.Model.UpdateHostRequest,System.Threading.CancellationToken)">
+            <summary>
+            Updates a specified host with the provided configurations.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateHost service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UpdateHost service method, as returned by CodeStarconnections.</returns>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ConflictException">
+            Two conflicting operations have been made on the same resource.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceNotFoundException">
+            Resource not found. Verify the connection resource ARN and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.ResourceUnavailableException">
+            Resource not found. Verify the ARN for the host resource and try again.
+            </exception>
+            <exception cref="T:Amazon.CodeStarconnections.Model.UnsupportedOperationException">
+            The operation is not supported. Check the connection status and try again.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codestar-connections-2019-12-01/UpdateHost">REST API Reference for UpdateHost Operation</seealso>
+        </member>
+    </members>
+</doc>
