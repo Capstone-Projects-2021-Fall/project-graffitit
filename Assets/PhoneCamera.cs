@@ -1,22 +1,18 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using Amazon;
-using Amazon.S3;
-using Amazon.S3.Model;
+using UnityEngine.UI;
 using System;
-using System.Threading.Tasks;
 
 public class PhoneCamera : MonoBehaviour
 {
-    //S3
-    private static IAmazonS3 _s3Client;
+    //Recorded content
+    //public static Texture2D temTexture;
 
-    private const string BUCKET_NAME = "my-graffitit-s3-bucket";
-
-
+    //Location
+    private static string N_Latitude;
+    private static string E_Longtitude;
+    public static string locationString;
     //Camera 
     private bool camAvailable;
     private WebCamTexture backCam;
@@ -24,7 +20,6 @@ public class PhoneCamera : MonoBehaviour
 
     public RawImage background;
     public AspectRatioFitter fit;
-    public static Texture temTexture;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +53,7 @@ public class PhoneCamera : MonoBehaviour
 
         camAvailable = true;
 
+        StartCoroutine(startGPS());
     }
 
     // Update is called once per frame
@@ -78,15 +74,19 @@ public class PhoneCamera : MonoBehaviour
 
     public static void TakePicture(int maxSize)
     {
-        NativeCamera.Permission permission = NativeCamera.TakePicture(async (path) =>
+        NativeCamera.Permission permission = NativeCamera.TakePicture((path) =>
         {
             Debug.Log("Image path: " + path);
             if(path != null)
             {
+                
                 Texture2D texture = NativeCamera.LoadImageAtPath(path, maxSize);
+                S3Manager.contentTexCopy = texture;
+                DateTime localDate = DateTime.Now;
+                S3Manager.fileName = localDate.ToString().Replace('/','-') + ".png";
+                S3Manager.filePath = path;
+                S3Manager.contentType = "image/png";
                 NativeGallery.SaveImageToGallery(texture, "test", "myimg.png");
-                _s3Client = new AmazonS3Client();
-                await UploadObjectFromFileAsync(_s3Client, BUCKET_NAME, "myimg.png", path);
                 if (texture == null)
                 {
                     Debug.Log("Couldn't load texture from " + path);
@@ -105,7 +105,8 @@ public class PhoneCamera : MonoBehaviour
 
                 Destroy(quad, 5f);
 
-                Destroy(texture, 5f);
+                //Destroy(texture, 5f);
+                SceneManager.LoadScene("UploadContentPage");
             }
         }, maxSize);
     }
@@ -118,9 +119,15 @@ public class PhoneCamera : MonoBehaviour
             {
                 NativeGallery.SaveVideoToGallery(path, "testvideo", "myvideo.mp4");
                 //Play the recorded video
-                Handheld.PlayFullScreenMovie("file://" + path);
+                S3Manager.contentTexCopy = NativeCamera.GetVideoThumbnail(path);
+                DateTime localDate = DateTime.Now;
+                S3Manager.fileName = localDate.ToString().Replace('/','-') + ".mp4";
+                S3Manager.filePath = path;
+                S3Manager.contentType = "video/mp4";
+                //Handheld.PlayFullScreenMovie("file://" + path);
+                SceneManager.LoadScene("UploadContentPage");
             }
-        });
+        }, NativeCamera.Quality.Low);
         Debug.Log("Permission result: " + permission);
     }
 
@@ -129,46 +136,70 @@ public class PhoneCamera : MonoBehaviour
         SceneManager.LoadScene("ProfilePage");
     }
 
-    //--------------S3 Functions---------------------
-    private static async Task UploadObjectFromFileAsync(
-            IAmazonS3 client,
-            string bucketName,
-            string objectName,
-            string filePath)
+    public static void loadMapDisplay()
     {
-        try
-        {
-            var putRequest = new PutObjectRequest
-            {
-                BucketName = bucketName,
-                Key = objectName,
-                FilePath = filePath,
-                ContentType = "text/plain"
-            };
-            Console.WriteLine("It gets to the try block");
-            putRequest.Metadata.Add("x-amz-meta-title", "someTitle");
+        StaticGoogleMap.latitude = double.Parse(N_Latitude);
+        StaticGoogleMap.longitude = double.Parse(E_Longtitude);
+        SceneManager.LoadScene("MapScene");
+    }
 
-            PutObjectResponse response = await client.PutObjectAsync(putRequest);
-        }
-        catch (AmazonS3Exception e)
+    static IEnumerator startGPS()
+    {
+        if(!Input.location.isEnabledByUser)
         {
-            Console.WriteLine("Something bad happen");
-            Console.WriteLine($"Error: {e.Message}");
+            Debug.Log("The user did not enable location service");
+            yield break;
+        } else
+        {
+            Input.location.Start(10.0f, 10.0f);
+        }
+        int maxWait = 20;
+        while(Input.location.status == LocationServiceStatus.Initializing && maxWait > 0)
+        {
+            yield return new WaitForSeconds(1);
+            maxWait--;
+        }
+        if(maxWait<1)
+        {
+            Debug.Log("Time exceeds limit");
+            yield break;
+        }
+        if(Input.location.status==LocationServiceStatus.Failed)
+        {
+            Debug.Log("Detect location failed");
+            yield break;
+        } else
+        {
+            N_Latitude = Input.location.lastData.latitude.ToString();
+            E_Longtitude = Input.location.lastData.longitude.ToString();
+            locationString = N_Latitude + E_Longtitude;
+            Input.location.Stop();
+            yield return null;
         }
     }
-    private static async Task UploadObjectFromContentAsync(IAmazonS3 client,
-            string bucketName,
-            string objectName,
-            string content)
-    {
-        var putRequest = new PutObjectRequest
-        {
-            BucketName = bucketName,
-            Key = objectName,
-            ContentBody = content
-        };
 
-        PutObjectResponse response = await client.PutObjectAsync(putRequest);
+
+    //Helper function to make Texture2D Readable through script
+    /*https://stackoverflow.com/questions/44733841/how-to-make-texture2d-readable-via-script
+    */
+    public static Texture2D duplicateTexture(Texture2D source)
+    {
+        RenderTexture renderTex = RenderTexture.GetTemporary(
+                    source.width,
+                    source.height,
+                    0,
+                    RenderTextureFormat.Default,
+                    RenderTextureReadWrite.Linear);
+
+        Graphics.Blit(source, renderTex);
+        RenderTexture previous = RenderTexture.active;
+        RenderTexture.active = renderTex;
+        Texture2D readableText = new Texture2D(source.width, source.height);
+        readableText.ReadPixels(new Rect(0, 0, renderTex.width, renderTex.height), 0, 0);
+        readableText.Apply();
+        RenderTexture.active = previous;
+        RenderTexture.ReleaseTemporary(renderTex);
+        return readableText;
     }
 }
 

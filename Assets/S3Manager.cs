@@ -7,19 +7,23 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Amazon.S3.Transfer;
+
 public class S3Manager : MonoBehaviour
 {
-    public RawImage previewImg;
+    //Store GPS and create buckets based on GPS
+    //Retreive contents based off GPS
+    public Image previewImg;
+    public static Texture2D contentTexCopy;
     public InputField description;
     public Button uploadButton;
     public static string S3BucketName;
     public static string fileName;
     public static string filePath;
+    public static string contentType;
     public static IAmazonS3 client;
-    private RegionEndpoint _S3Region;
-    private void Start()
+    void Start()
     {
-        previewImg.texture = PhoneCamera.temTexture;
         uploadButton.onClick.AddListener(uploadFileToS3);
 
         CognitoAWSCredentials credentials = new CognitoAWSCredentials(
@@ -31,13 +35,15 @@ public class S3Manager : MonoBehaviour
 
         S3BucketName = "my-graffitit-s3-bucket";
 
-        _S3Region = RegionEndpoint.GetBySystemName("us-east-2");
 
-        _ = ListingObjectsAsync(client, S3BucketName);
+        //_ = ListingObjectsAsync(client, S3BucketName);
 
-        _ = ReadObjectDataAsync(client, S3BucketName, "1280px-Philadelphia_City_Hall_at_night.jpg");
+        //_ = ReadObjectDataAsync(client, S3BucketName, "1280px-Philadelphia_City_Hall_at_night.jpg");
+
+        previewImg.sprite = Sprite.Create(contentTexCopy, new Rect(0.0f, 0.0f, contentTexCopy.width, contentTexCopy.height), new Vector2(0.5f, 0.5f));
+        Debug.Log(contentTexCopy.Equals(null));
+
     }
-
 
 
     public async void uploadFileToS3()
@@ -48,9 +54,12 @@ public class S3Manager : MonoBehaviour
                 BucketName = S3BucketName,
                 Key = fileName,
                 FilePath = filePath,
-                ContentType = "image/png"
+                ContentType = contentType
             };
 
+            Debug.Log(PhoneCamera.locationString);
+            putRequest.Metadata.Add("Location-Info", PhoneCamera.locationString);
+            putRequest.Metadata.Add("Post-Description", description.text);
             PutObjectResponse response = await client.PutObjectAsync(putRequest);
         }
         catch (AmazonS3Exception e)
@@ -92,32 +101,7 @@ public class S3Manager : MonoBehaviour
         }
     }
 
-    public static async Task ReadObjectDataAsync(IAmazonS3 client, string bucketname, string keyName)
-    {
-        string responseBody = string.Empty;
-
-        try
-        {
-            GetObjectRequest request = new GetObjectRequest
-            {
-                BucketName = bucketname,
-                Key = keyName
-            };
-
-            using (GetObjectResponse response = await client.GetObjectAsync(request))
-            using (Stream responseStream = response.ResponseStream)
-            using (StreamReader reader = new StreamReader(responseStream))
-            {
-                responseBody = reader.ReadToEnd();
-                Debug.Log(responseBody);
-                string filePath = $"/data/user/0/com.DefaultCompany.GraffitIT/files/{keyName}";
-            }
-        }
-        catch (AmazonS3Exception e)
-        {
-            Debug.Log($"Error: '{e.Message}'");
-        }
-    }
+    
 
     
 }
