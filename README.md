@@ -20,3 +20,9 @@ Soobin Kim <br>
 Mario Libohova <br>
 Peter Marion <br>
 Wayne Zheng <br>
+
+## Testing Procedure
+
+
+## Pre-Release
+[Link to our current release](https://github.com/Capstone-Projects-2021-Fall/project-graffitit/releases/tag/V1.1.0-Beta)
