@@ -1,9 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
-using UnityEngine.Experimental.XR;
-using System;
+using UnityEngine.XR.ARSubsystems;
 
 public class ARTapToPlace : MonoBehaviour
 {
@@ -48,7 +46,7 @@ public class ARTapToPlace : MonoBehaviour
     {
         var screenCenter = Camera.main.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
         var hits = new List<ARRaycastHit>();
-        arRay.Raycast(screenCenter, hits, UnityEngine.XR.ARSubsystems.TrackableType.Planes);
+        arRay.Raycast(screenCenter, hits, TrackableType.All);
 
         placementPoseIsValid = hits.Count > 0;
         if (placementPoseIsValid)
