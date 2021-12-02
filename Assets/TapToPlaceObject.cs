@@ -8,7 +8,7 @@ using UnityEngine.XR.ARSubsystems;
 public class TapToPlaceObject : MonoBehaviour
 {
     public GameObject gameObjectToInstantiate;
-
+    public GameObject placementIndicator;
     private GameObject spawnedObject;
     private ARRaycastManager _arRaycastManager;
     private Vector2 touchPosition;
@@ -37,11 +37,12 @@ public class TapToPlaceObject : MonoBehaviour
     {
         if (!TryGetTouchPosition(out Vector2 touchPosition))
             return;
-        if(_arRaycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
+        if(_arRaycastManager.Raycast(touchPosition, hits, TrackableType.Planes))
         {
             var hitPose = hits[0].pose;
-
-            if(spawnedObject == null)
+            placementIndicator.SetActive(true);
+            placementIndicator.transform.SetPositionAndRotation(hitPose.position, hitPose.rotation);
+            if (spawnedObject == null)
             {
                 spawnedObject = Instantiate(gameObjectToInstantiate, hitPose.position, hitPose.rotation);
             }

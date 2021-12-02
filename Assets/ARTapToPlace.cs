@@ -1,20 +1,24 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.Experimental.XR;
+using System;
 using UnityEngine.XR.ARSubsystems;
 
 public class ARTapToPlace : MonoBehaviour
 {
+    public GameObject objectToPlace;
     public GameObject placementIndicator;
+    private ARRaycastManager raycastManager;
     private ARSessionOrigin arOrigin;
-    private ARRaycastManager arRay;
     private Pose placementPose;
     private bool placementPoseIsValid = false;
-    public GameObject objectToPlace;
+    // Start is called before the first frame update
     void Start()
     {
         arOrigin = FindObjectOfType<ARSessionOrigin>();
-        arRay = FindObjectOfType<ARRaycastManager>();
+        raycastManager = FindObjectOfType<ARRaycastManager>();
     }
 
     // Update is called once per frame
@@ -27,6 +31,11 @@ public class ARTapToPlace : MonoBehaviour
         {
             PlaceObject();
         }
+    }
+
+    private void PlaceObject()
+    {
+        Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
     }
 
     private void UpdatePlacementIndicator()
@@ -42,11 +51,11 @@ public class ARTapToPlace : MonoBehaviour
         }
     }
 
-    void UpdatePlacementPose()
+    private void UpdatePlacementPose()
     {
         var screenCenter = Camera.main.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
         var hits = new List<ARRaycastHit>();
-        arRay.Raycast(screenCenter, hits, TrackableType.All);
+        raycastManager.Raycast(screenCenter, hits, TrackableType.All);
 
         placementPoseIsValid = hits.Count > 0;
         if (placementPoseIsValid)
@@ -54,13 +63,9 @@ public class ARTapToPlace : MonoBehaviour
             placementPose = hits[0].pose;
 
             var cameraForward = Camera.main.transform.forward;
-            var cameraBearing = new Vector3(cameraForward.x, 0f, cameraForward.z).normalized;
+            var cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
             placementPose.rotation = Quaternion.LookRotation(cameraBearing);
         }
-    }
 
-    private void PlaceObject()
-    {
-        Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
     }
 }
