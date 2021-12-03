@@ -14,11 +14,15 @@ public class ARTapToPlace : MonoBehaviour
     private ARSessionOrigin arOrigin;
     private Pose placementPose;
     private bool placementPoseIsValid = false;
+    private float latitude;
+    private float longitude;
     // Start is called before the first frame update
     void Start()
     {
         arOrigin = FindObjectOfType<ARSessionOrigin>();
         raycastManager = FindObjectOfType<ARRaycastManager>();
+        InvokeRepeating("startGPS", 3f, 3f);
+
     }
 
     // Update is called once per frame
@@ -55,7 +59,7 @@ public class ARTapToPlace : MonoBehaviour
     {
         var screenCenter = Camera.main.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
         var hits = new List<ARRaycastHit>();
-        raycastManager.Raycast(screenCenter, hits, TrackableType.All);
+        raycastManager.Raycast(screenCenter, hits, TrackableType.Planes);
 
         placementPoseIsValid = hits.Count > 0;
         if (placementPoseIsValid)
@@ -67,5 +71,27 @@ public class ARTapToPlace : MonoBehaviour
             placementPose.rotation = Quaternion.LookRotation(cameraBearing);
         }
 
+    }
+    public void startGPS()
+    {
+        if (!Input.location.isEnabledByUser)
+        {
+            Debug.Log("The user did not enable location service");
+        }
+        else
+        {
+            Input.location.Start(5.0f, 5.0f);
+        }
+        if (Input.location.status == LocationServiceStatus.Failed)
+        {
+            Debug.Log("Detect location failed");
+        }
+        else
+        {
+   
+            latitude = Input.location.lastData.latitude;
+            longitude = Input.location.lastData.longitude;
+            Debug.Log("latitude in AR Scene: " + latitude + "longitude in AR Scene: " + longitude);
+        }
     }
 }
