@@ -995,7 +995,6 @@ GameObject:
   - component: {fileID: 633987599}
   - component: {fileID: 633987598}
   - component: {fileID: 633987597}
-  - component: {fileID: 633987596}
   m_Layer: 5
   m_Name: ARButton
   m_TagString: Untagged
@@ -1023,18 +1022,6 @@ RectTransform:
   m_AnchoredPosition: {x: -160, y: 0}
   m_SizeDelta: {x: 150, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &633987596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633987594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d273512debb054e1c80f82dc001e74a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &633987597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,13 +1066,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 963194229}
+        m_TargetAssemblyTypeName: PhoneCamera, Assembly-CSharp
+        m_MethodName: loadARScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1844,7 +1831,6 @@ GameObject:
   - component: {fileID: 1234358942}
   - component: {fileID: 1234358941}
   - component: {fileID: 1234358940}
-  - component: {fileID: 1234358943}
   m_Layer: 5
   m_Name: HomeButton
   m_TagString: Untagged
@@ -1954,18 +1940,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234358938}
   m_CullTransparentMesh: 1
---- !u!114 &1234358943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1234358938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d273512debb054e1c80f82dc001e74a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1450762557
 GameObject:
   m_ObjectHideFlags: 0
