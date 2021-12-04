@@ -5,6 +5,11 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.Experimental.XR;
 using System;
 using UnityEngine.XR.ARSubsystems;
+using Amazon.S3Control.Model;
+using Amazon.S3;
+using Amazon.CognitoIdentity;
+using Amazon;
+using Amazon.S3.Model;
 
 public class ARTapToPlace : MonoBehaviour
 {
@@ -16,13 +21,25 @@ public class ARTapToPlace : MonoBehaviour
     private bool placementPoseIsValid = false;
     private float latitude;
     private float longitude;
+
+    private IAmazonS3 client;
+
     // Start is called before the first frame update
     void Start()
     {
         arOrigin = FindObjectOfType<ARSessionOrigin>();
         raycastManager = FindObjectOfType<ARRaycastManager>();
-        InvokeRepeating("startGPS", 3f, 3f);
 
+        CognitoAWSCredentials credentials = new CognitoAWSCredentials(
+        "us-east-2:0b2ab95e-b5ce-4a6e-ba47-9d2ef2a72b7e", // Identity pool ID
+        RegionEndpoint.USEast2 // Region
+        );
+
+        client = new AmazonS3Client(credentials, RegionEndpoint.USEast2);
+
+        updateS3ObjectMeta();
+
+        InvokeRepeating("startGPS", 3f, 3f);
     }
 
     // Update is called once per frame
@@ -93,5 +110,33 @@ public class ARTapToPlace : MonoBehaviour
             longitude = Input.location.lastData.longitude;
             Debug.Log("latitude in AR Scene: " + latitude + "longitude in AR Scene: " + longitude);
         }
+    }
+
+    //use to send the additional data about the recorded audiovisual content
+    //required client, filename/key
+    //
+    public void updateS3ObjectMeta()
+    {
+        //use CopyObjectRequest
+        //use .Metadata.Add
+        //put in the pose.position
+        //put in the pose.rotation
+        //issue the request with client.copyObject(request)
+
+        CopyObjectRequest copyRequest = new CopyObjectRequest
+        {
+            SourceBucket = "my-graffitit-s3-bucket",
+            SourceKey = "1280px-Philadelphia_City_Hall_at_night.jpg",
+            DestinationBucket = "my-graffitit-s3-bucket",
+            DestinationKey = "1280px-Philadelphia_City_Hall_at_night.jpg",
+            MetadataDirective = S3MetadataDirective.REPLACE,
+            CannedACL = S3CannedACL.PublicRead
+        };
+        copyRequest.Metadata.Add("AR-Position", placementPose.position.ToString());
+        copyRequest.Metadata.Add("AR-Rotation", placementPose.rotation.ToString());
+
+        client.CopyObject(copyRequest);
+
+
     }
 }
