@@ -178,6 +178,10 @@ public class PhoneCamera : MonoBehaviour
         }
     }
 
+    public static void loadARScene()
+    {
+        SceneManager.LoadScene("ARScene");
+    }
 
     //Helper function to make Texture2D Readable through script
     /*https://stackoverflow.com/questions/44733841/how-to-make-texture2d-readable-via-script
