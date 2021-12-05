@@ -4,6 +4,8 @@ using Amazon.S3;
 using Amazon.S3.Model;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -95,5 +97,34 @@ public class StaticGoogleMap : MonoBehaviour
                 filesAndLocation.Add(files[i], location);
         }
         return filesAndLocation;
+    }
+
+    public static async Task GetImageTextureAsync(IAmazonS3 client, string bucketname, string keyName, byte[] contentBodyBytes)
+    {
+        try
+        {
+            GetObjectRequest request = new GetObjectRequest
+            {
+                BucketName = bucketname,
+                Key = keyName
+            };
+
+            using (GetObjectResponse response = await client.GetObjectAsync(request))
+            using (Stream responseStream = response.ResponseStream)
+            using (StreamReader reader = new StreamReader(responseStream))
+            using (var memstream = new MemoryStream())
+            {
+                var buffer = new byte[512];
+                var bytesRead = default(int);
+                while ((bytesRead = reader.BaseStream.Read(buffer, 0, buffer.Length)) > 0)
+                    memstream.Write(buffer, 0, bytesRead);
+
+                contentBodyBytes = memstream.ToArray();
+            }
+        }
+        catch (AmazonS3Exception e)
+        {
+            Debug.Log($"Error: '{e.Message}'");
+        }
     }
 }

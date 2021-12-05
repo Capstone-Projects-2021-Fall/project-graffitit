@@ -37,8 +37,6 @@ public class ARTapToPlace : MonoBehaviour
 
         client = new AmazonS3Client(credentials, RegionEndpoint.USEast2);
 
-        updateS3ObjectMeta();
-
         InvokeRepeating("startGPS", 3f, 3f);
     }
 
@@ -114,8 +112,7 @@ public class ARTapToPlace : MonoBehaviour
 
     //use to send the additional data about the recorded audiovisual content
     //required client, filename/key
-    //
-    public void updateS3ObjectMeta()
+    public void updateS3ObjectMeta(AmazonS3Client client, string key)
     {
         //use CopyObjectRequest
         //use .Metadata.Add
@@ -126,17 +123,65 @@ public class ARTapToPlace : MonoBehaviour
         CopyObjectRequest copyRequest = new CopyObjectRequest
         {
             SourceBucket = "my-graffitit-s3-bucket",
-            SourceKey = "1280px-Philadelphia_City_Hall_at_night.jpg",
+            SourceKey = key,
             DestinationBucket = "my-graffitit-s3-bucket",
-            DestinationKey = "1280px-Philadelphia_City_Hall_at_night.jpg",
+            DestinationKey = key,
             MetadataDirective = S3MetadataDirective.REPLACE,
             CannedACL = S3CannedACL.PublicRead
         };
-        copyRequest.Metadata.Add("AR-Position", placementPose.position.ToString());
-        copyRequest.Metadata.Add("AR-Rotation", placementPose.rotation.ToString());
-
+        copyRequest.Metadata.Add("AR-Position-Rotation", placementPose.position.ToString()+ "|" + placementPose.rotation.ToString());
         client.CopyObject(copyRequest);
+    }
 
+    //This function allows the applicatoin to get all the keys in the S3
+    public string[] getListFilesInBucket(AmazonS3Client client)
+    {
+        List<string> filesList = new List<string>();
+        var listResponse = client.ListObjects("my-graffitit-s3-bucket");
+        foreach (S3Object obj in listResponse.S3Objects)
+        {
+            filesList.Add(obj.Key);
+        }
+        return filesList.ToArray();
+    }
 
+    //This function allows us to filter out keys that have location data attached
+    public Dictionary<string, string> getLocationStringsOnServer(string[] files, AmazonS3Client client)
+    {
+        Dictionary<string, string> filesAndLocation = new Dictionary<string, string>();
+
+        for (int i = 0; i < files.Length; i++)
+        {
+            var request = new GetObjectMetadataRequest()
+            {
+                BucketName = "my-graffitit-s3-bucket",
+                Key = files[i],
+            };
+            var response = client.GetObjectMetadata(request);
+            string location = response.Metadata["x-amz-meta-location-info"];
+            if (location != null)
+                filesAndLocation.Add(files[i], location);
+        }
+        return filesAndLocation;
+    }
+
+    //This function will be used to get the position and the rotation data about the files that are
+    //nearby the user currently
+    public Dictionary<string, string> getARPositionAndRotation(string[] files, AmazonS3Client client)
+    {
+        Dictionary<string, string> filteredFiles = new Dictionary<string, string>();
+        for(int i = 0; i < files.Length; i++)
+        {
+            var request = new GetObjectMetadataRequest()
+            {
+                BucketName = "my-graffitit-s3-bucket",
+                Key = files[i],
+            };
+            var response = client.GetObjectMetadata(request);
+            string posAndRot = response.Metadata["x-amz-meta-AR-Position-Rotation"];
+            if (posAndRot != null)
+                filteredFiles.Add(files[i], posAndRot);
+        }
+        return filteredFiles;
     }
 }
