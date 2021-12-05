@@ -66,7 +66,8 @@ public class S3Manager : MonoBehaviour
         {
             Debug.Log($"Error: {e.Message}");
         }
-        SceneManager.LoadScene("TemHomePage");
+        ARTapToPlace.hideCanvas = false;
+        SceneManager.LoadScene("ARScene");
     }
 
     public static async Task ListingObjectsAsync(IAmazonS3 client, string bucketname)

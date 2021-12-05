@@ -10,6 +10,8 @@ using Amazon.S3;
 using Amazon.CognitoIdentity;
 using Amazon;
 using Amazon.S3.Model;
+using UnityEngine.SceneManagement;
+using System.Threading;
 
 public class ARTapToPlace : MonoBehaviour
 {
@@ -21,7 +23,8 @@ public class ARTapToPlace : MonoBehaviour
     private bool placementPoseIsValid = false;
     private float latitude;
     private float longitude;
-
+    private Canvas canvas;
+    public static bool hideCanvas;
     private IAmazonS3 client;
 
     // Start is called before the first frame update
@@ -29,7 +32,15 @@ public class ARTapToPlace : MonoBehaviour
     {
         arOrigin = FindObjectOfType<ARSessionOrigin>();
         raycastManager = FindObjectOfType<ARRaycastManager>();
-
+        canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        if(hideCanvas)
+        {
+            canvas.enabled = false;
+        } 
+        else
+        {
+            canvas.enabled = true;
+        } 
         CognitoAWSCredentials credentials = new CognitoAWSCredentials(
         "us-east-2:0b2ab95e-b5ce-4a6e-ba47-9d2ef2a72b7e", // Identity pool ID
         RegionEndpoint.USEast2 // Region
@@ -55,6 +66,14 @@ public class ARTapToPlace : MonoBehaviour
     private void PlaceObject()
     {
         Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
+        if(canvas.enabled == true)
+        {
+            Destroy(canvas);
+            Debug.Log("TexturePlane in the AR Scene: " + objectToPlace.transform.Find("TexturePlane") is null);
+            Debug.Log("PhoneCamera temTexture: " + PhoneCamera.temTexture is null);
+            //objectToPlace.transform.Find("TexturePlane").GetComponent<Renderer>().material.mainTexture = PhoneCamera.temTexture;
+            //SceneManager.LoadScene("TemHomePage");
+        }
     }
 
     private void UpdatePlacementIndicator()
