@@ -111,6 +111,7 @@ public class PhoneCamera : MonoBehaviour
             }
         }, maxSize);
     }
+
     public static void RecordVideo()
     {
         NativeCamera.Permission permission = NativeCamera.RecordVideo((path) =>
