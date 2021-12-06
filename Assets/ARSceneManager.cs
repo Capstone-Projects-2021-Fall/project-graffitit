@@ -69,7 +69,7 @@ public class ARSceneManager : MonoBehaviour
             if (!textures.ContainsKey(key))
                 textures.Add(key, tex);
 
-            if (limit >= limit)
+            if (lim >= limit)
                 break;
         }
         texturesLoaded = true;

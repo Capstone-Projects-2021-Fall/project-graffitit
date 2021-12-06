@@ -7,6 +7,7 @@
     "com.unity.quicksearch": "2.0.2",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.4.8",
+    "com.unity.toolchain.win-x86_64-linux-x86_64": "0.1.21-preview",
     "com.unity.xr.arcore": "4.1.7",
     "com.unity.xr.arfoundation": "4.1.7",
     "com.unity.xr.arkit": "4.1.7",
