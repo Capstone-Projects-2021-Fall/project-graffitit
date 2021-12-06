@@ -172,7 +172,7 @@ public class PhoneCamera : MonoBehaviour
         {
             N_Latitude = Input.location.lastData.latitude.ToString();
             E_Longtitude = Input.location.lastData.longitude.ToString();
-            locationString = N_Latitude + E_Longtitude;
+            locationString = N_Latitude + "," + E_Longtitude;
             Input.location.Stop();
             yield return null;
         }

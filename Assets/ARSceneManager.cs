@@ -21,6 +21,7 @@ public class ARSceneManager : MonoBehaviour
     private Dictionary<string, byte[]> contentBodyBytes = null;
     public int limit = 5;
     private Dictionary<string, string> locations;
+    private Dictionary<string, string> positions;
     void Start()
     {
         ar = this.GetComponent<ARTapToPlace>();
@@ -44,6 +45,7 @@ public class ARSceneManager : MonoBehaviour
         {
             loadTextures();
             locations = getLocationStringsOnServer(keys, client);
+            positions = getARPositionAndRotation(keys, client);
             loadLocations();
         }
             
@@ -55,6 +57,14 @@ public class ARSceneManager : MonoBehaviour
         {
             string v = location.Value;
             Debug.Log(v + " " + location.Key);
+
+        }
+
+        foreach (KeyValuePair<string, string> pos in positions)
+        {
+            string v = pos.Value;
+            Debug.Log(v + " " + pos.Key);
+            Debug.Log(StringToVector3(v));
         }
     }
     public async Task loadImages()
@@ -155,4 +165,43 @@ public class ARSceneManager : MonoBehaviour
         }
         return filesAndLocation;
     }
+
+    public Dictionary<string, string> getARPositionAndRotation(string[] files, AmazonS3Client client)
+    {
+        Dictionary<string, string> filteredFiles = new Dictionary<string, string>();
+        for (int i = 0; i < files.Length; i++)
+        {
+            var request = new GetObjectMetadataRequest()
+            {
+                BucketName = "my-graffitit-s3-bucket",
+                Key = files[i],
+            };
+            var response = client.GetObjectMetadata(request);
+            string posAndRot = response.Metadata["x-amz-meta-ar-position"];
+            if (posAndRot != null)
+                filteredFiles.Add(files[i], posAndRot);
+        }
+        return filteredFiles;
+    }
+
+    public static Vector3 StringToVector3(string sVector)
+    {
+        // Remove the parentheses
+        if (sVector.StartsWith("(") && sVector.EndsWith(")"))
+        {
+            sVector = sVector.Substring(1, sVector.Length - 2);
+        }
+
+        // split the items
+        string[] sArray = sVector.Split(',');
+
+        // store as a Vector3
+        Vector3 result = new Vector3(
+            float.Parse(sArray[0]),
+            float.Parse(sArray[1]),
+            float.Parse(sArray[2]));
+
+        return result;
+    }
+
 }
