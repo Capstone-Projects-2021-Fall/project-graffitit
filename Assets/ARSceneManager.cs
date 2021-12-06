@@ -109,7 +109,7 @@ public class ARSceneManager : MonoBehaviour
         {
             Vector2 gps = StringToVector2(locations[key]);
             Debug.Log(gps);
-            Vector2 currentGPS = loc;//new Vector2(ARTapToPlace.latitude, ARTapToPlace.longitude);
+            Vector2 currentGPS = new Vector2(ARTapToPlace.latitude, ARTapToPlace.longitude);
             Debug.Log(currentGPS);
             float dist = Vector2.Distance(gps, currentGPS);
             Debug.Log(dist);
