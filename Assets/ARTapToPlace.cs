@@ -21,8 +21,8 @@ public class ARTapToPlace : MonoBehaviour
     private ARSessionOrigin arOrigin;
     private Pose placementPose;
     private bool placementPoseIsValid = false;
-    public float latitude;
-    public float longitude;
+    public static float latitude;
+    public static float longitude;
     public Canvas canvas;
     public static bool hideCanvas;
     public AmazonS3Client client;

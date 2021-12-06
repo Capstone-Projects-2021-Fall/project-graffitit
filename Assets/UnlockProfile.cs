@@ -96,7 +96,7 @@ public class UnlockProfile : MonoBehaviour
 
                Destroy(quad, 5f);
 
-               profileImage.sprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f);
+               //profileImage.sprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f);
                //Destroy(texture, 5f);
 
                proImgPath = path;

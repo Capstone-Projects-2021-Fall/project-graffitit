@@ -11,7 +11,7 @@ public class RecordAction : MonoBehaviour
 
 	Action videoAction = () =>
 	{
-		PhoneCamera.RecordVideo();
+		PhoneCamera.PickImage();
 	};
 	// Start is called before the first frame update
 	public void invokePopup()
@@ -19,9 +19,9 @@ public class RecordAction : MonoBehaviour
 		Popup popup = UIController.Instance.CreatePopup();
 		//Init popup with params (canvas, text, text, text, action)
 		popup.Init(UIController.Instance.MainCanvas,
-			"Do you want to take a picture or record a video?",
-			"Image",
-			"Video",
+			"Do you want to take or select the image?",
+			"Take",
+			"Select",
 			imageAction,
 			videoAction
 			);

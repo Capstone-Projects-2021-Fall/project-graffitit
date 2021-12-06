@@ -2,6 +2,7 @@ using Amazon;
 using Amazon.CognitoIdentity;
 using Amazon.S3;
 using Amazon.S3.Model;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -76,7 +77,7 @@ public class ARSceneManager : MonoBehaviour
     {
         foreach (KeyValuePair<string, GameObject> obj in gameobjects)
         {
-            Destroy(obj.Value);
+            //Destroy(obj.Value);
         }
         gameobjects.Clear();
         contentBodyBytes.Clear();
@@ -86,6 +87,7 @@ public class ARSceneManager : MonoBehaviour
         int lim = 0;
         foreach (string key in keys)
         {
+            Debug.Log(key);
             if (isNearByObject(key)){
                 lim += 1;
                 await ReadObjectDataAsync(client, "my-graffitit-s3-bucket", key);
@@ -103,16 +105,22 @@ public class ARSceneManager : MonoBehaviour
 
     bool isNearByObject(string key)
     {
-        if (!locations.ContainsKey(key))
+        try
+        {
+            Vector2 gps = StringToVector2(locations[key]);
+            Debug.Log(gps);
+            Vector2 currentGPS = new Vector2(ARTapToPlace.latitude, ARTapToPlace.longitude);
+            Debug.Log(currentGPS);
+            float dist = Vector2.Distance(gps, currentGPS);
+            Debug.Log(dist);
+            if (dist < 2)
+                return true;
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e);
             return false;
-        Vector2 gps = StringToVector2(locations[key]);
-        Debug.Log(gps);
-        Vector2 currentGPS = new Vector2(ar.latitude, ar.longitude);
-        Debug.Log(currentGPS);
-        float dist = Vector2.Distance(gps, currentGPS);
-        Debug.Log(dist);
-        if(dist < 0.01f)
-            return true;
+        }
         return false;
     }
     void loadTextures()
