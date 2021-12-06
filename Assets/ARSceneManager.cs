@@ -43,10 +43,11 @@ public class ARSceneManager : MonoBehaviour
     {
         if (texturesLoaded)
         {
-            loadTextures();
+            
             locations = getLocationStringsOnServer(keys, client);
             positions = getARPositionAndRotation(keys, client);
             loadLocations();
+            loadTextures();
         }
             
     }
@@ -57,6 +58,9 @@ public class ARSceneManager : MonoBehaviour
         {
             string v = location.Value;
             Debug.Log(v + " " + location.Key);
+        
+
+
 
         }
 
@@ -64,7 +68,6 @@ public class ARSceneManager : MonoBehaviour
         {
             string v = pos.Value;
             Debug.Log(v + " " + pos.Key);
-            Debug.Log(StringToVector3(v));
         }
     }
     public async Task loadImages()
@@ -85,15 +88,18 @@ public class ARSceneManager : MonoBehaviour
         texturesLoaded = true;
     }
 
+    bool isNearByObject()
+    {
+        return true;
+    }
     void loadTextures()
     {
-        int limit = 0;
 
         foreach (KeyValuePair<string, Texture> tex in textures)
         {
             Texture text = tex.Value;
             GameObject obj = Instantiate(prefab, gameObject.transform);
-            obj.transform.localPosition += Random.onUnitSphere*0.5f;
+            obj.transform.localPosition += StringToVector3(positions[tex.Key]);
             GameObject contentPlane = obj.GetComponentInChildren<ContentPlane>().gameObject;
             Material mat = new Material(Shader.Find("Unlit/PlaneTexture"));
             mat.SetTexture("_MainTex", text);
@@ -200,6 +206,25 @@ public class ARSceneManager : MonoBehaviour
             float.Parse(sArray[0]),
             float.Parse(sArray[1]),
             float.Parse(sArray[2]));
+
+        return result;
+    }
+
+    public static Vector3 StringToVector2(string sVector)
+    {
+        // Remove the parentheses
+        if (sVector.StartsWith("(") && sVector.EndsWith(")"))
+        {
+            sVector = sVector.Substring(1, sVector.Length - 2);
+        }
+
+        // split the items
+        string[] sArray = sVector.Split(',');
+
+        // store as a Vector2
+        Vector2 result = new Vector2(
+            float.Parse(sArray[0]),
+            float.Parse(sArray[1]));
 
         return result;
     }
