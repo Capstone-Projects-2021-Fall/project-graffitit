@@ -112,6 +112,47 @@ public class PhoneCamera : MonoBehaviour
         }, maxSize);
     }
 
+<<<<<<< Updated upstream
+=======
+    public static void PickImage()
+    {
+        NativeGallery.Permission permission = NativeGallery.GetImageFromGallery((path) =>
+        {
+            Debug.Log("Image path:" + path);
+            if (path != null)
+            {
+                Texture2D texture = NativeGallery.LoadImageAtPath(path, 512);
+                S3Manager.contentTexCopy = texture;
+                DateTime localDate = DateTime.Now;
+                S3Manager.fileName = localDate.ToString().Replace('/', '-') + ".png";
+                S3Manager.filePath = path;
+                S3Manager.contentType = "image/png";
+                if (texture == null)
+                {
+                    Debug.Log("Couldn't load texture from " + path);
+                    return;
+                }
+
+                GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
+                quad.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 2.5f;
+                quad.transform.forward = Camera.main.transform.forward;
+                quad.transform.localScale = new Vector3(1f, texture.height / (float)texture.width, 1f);
+
+                Material material = quad.GetComponent<Renderer>().material;
+                if (!material.shader.isSupported)
+                    material.shader = Shader.Find("legacy Shader/Diffuse");
+
+                material.mainTexture = texture;
+
+                Destroy(quad, 5f);
+
+                //Destroy(texture, 5f);
+                SceneManager.LoadScene("UploadContentPage");
+
+            }
+        });
+    }
+>>>>>>> Stashed changes
     public static void RecordVideo()
     {
         NativeCamera.Permission permission = NativeCamera.RecordVideo((path) =>
