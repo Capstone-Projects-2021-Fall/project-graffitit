@@ -25,7 +25,7 @@ public class ARTapToPlace : MonoBehaviour
     private float longitude;
     private Canvas canvas;
     public static bool hideCanvas;
-    public AmazonS3 client;
+    public AmazonS3Client client;
     public ARSceneManager arScene;
 
     // Start is called before the first frame update
@@ -151,6 +151,8 @@ public class ARTapToPlace : MonoBehaviour
             MetadataDirective = S3MetadataDirective.REPLACE,
             CannedACL = S3CannedACL.PublicRead
         };
+        copyRequest.Metadata.Add("Location-Info", PhoneCamera.locationString);
+        copyRequest.Metadata.Add("Post-Description", S3Manager.descriptionText);
         copyRequest.Metadata.Add("AR-Position", placementPose.position.ToString());
         client.CopyObject(copyRequest);
     }
