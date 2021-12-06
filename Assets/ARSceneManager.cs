@@ -38,7 +38,7 @@ public class ARSceneManager : MonoBehaviour
         client = new AmazonS3Client(credentials, RegionEndpoint.USEast2);
         keys = getListFilesInBucket(client);
         gameobjects = new Dictionary<string, GameObject>();
-        InvokeRepeating("loadImages", 0f, 2f);
+        InvokeRepeating("loadImages", 0f, 60f);
     }
 
     // Update is called once per frame
