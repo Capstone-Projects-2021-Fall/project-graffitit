@@ -22,6 +22,7 @@ public class ARSceneManager : MonoBehaviour
     public int limit = 5;
     private Dictionary<string, string> locations;
     private Dictionary<string, string> positions;
+    public Vector2 loc;
     void Start()
     {
         ar = this.GetComponent<ARTapToPlace>();
@@ -35,6 +36,7 @@ public class ARSceneManager : MonoBehaviour
         client = new AmazonS3Client(credentials, RegionEndpoint.USEast2);
         keys = getListFilesInBucket(client);
         gameobjects = new Dictionary<string, GameObject>();
+        locations = getLocationStringsOnServer(keys, client);
         loadImages();
     }
 
@@ -44,9 +46,9 @@ public class ARSceneManager : MonoBehaviour
         if (texturesLoaded)
         {
             
-            locations = getLocationStringsOnServer(keys, client);
+            
             positions = getARPositionAndRotation(keys, client);
-            loadLocations();
+            
             loadTextures();
         }
             
@@ -75,22 +77,28 @@ public class ARSceneManager : MonoBehaviour
         int lim = 0;
         foreach (string key in keys)
         {
-            lim += 1;
-            await ReadObjectDataAsync(client, "my-graffitit-s3-bucket", key);
-            Texture2D tex = new Texture2D(512, 512);
-            tex.LoadImage(contentBodyBytes[key]);
-            if (!textures.ContainsKey(key))
-                textures.Add(key, tex);
+            if (isNearByObject(key)){
+                lim += 1;
+                await ReadObjectDataAsync(client, "my-graffitit-s3-bucket", key);
+                Texture2D tex = new Texture2D(512, 512);
+                tex.LoadImage(contentBodyBytes[key]);
+                if (!textures.ContainsKey(key))
+                    textures.Add(key, tex);
 
-            if (lim >= limit)
-                break;
+                if (lim >= limit)
+                    break;
+            }
         }
         texturesLoaded = true;
     }
 
-    bool isNearByObject()
+    bool isNearByObject(string key)
     {
-        return true;
+        Vector2 gps = StringToVector2(locations[key]);
+        float dist = Vector2.Distance(gps, loc);
+        if(dist < 0.01f)
+            return true;
+        return false;
     }
     void loadTextures()
     {
