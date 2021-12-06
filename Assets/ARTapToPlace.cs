@@ -21,27 +21,21 @@ public class ARTapToPlace : MonoBehaviour
     private ARSessionOrigin arOrigin;
     private Pose placementPose;
     private bool placementPoseIsValid = false;
-    private float latitude;
-    private float longitude;
-    private Canvas canvas;
+    public float latitude;
+    public float longitude;
+    public Canvas canvas;
     public static bool hideCanvas;
     public AmazonS3Client client;
     public ARSceneManager arScene;
+    public static bool placeOBJ = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        placementIndicator.SetActive(false);
+        canvas.enabled = false;
         arOrigin = FindObjectOfType<ARSessionOrigin>();
         raycastManager = FindObjectOfType<ARRaycastManager>();
-        canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
-        if(hideCanvas)
-        {
-            canvas.enabled = false;
-        } 
-        else
-        {
-            canvas.enabled = true;
-        } 
         CognitoAWSCredentials credentials = new CognitoAWSCredentials(
         "us-east-2:0b2ab95e-b5ce-4a6e-ba47-9d2ef2a72b7e", // Identity pool ID
         RegionEndpoint.USEast2 // Region
@@ -55,27 +49,37 @@ public class ARTapToPlace : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdatePlacementPose();
-        UpdatePlacementIndicator();
-
-        if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        if (placeOBJ)
         {
-            PlaceObject();
+            canvas.enabled = true;
+            UpdatePlacementPose();
+            UpdatePlacementIndicator();
+
+            if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                
+                PlaceObject();
+            }
         }
+
     }
 
     private void PlaceObject()
     {
         //Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
-        if(canvas.enabled == true)
+        
+        if (canvas.enabled == true)
         {
             updateS3ObjectMeta(client, S3Manager.fileName);
-            Destroy(canvas);
+            canvas.enabled = false;
+            placeOBJ = false;
+            //Destroy(canvas);
             Debug.Log("TexturePlane in the AR Scene: " + objectToPlace.transform.Find("TexturePlane") is null);
             Debug.Log("PhoneCamera temTexture: " + PhoneCamera.temTexture is null);
             //objectToPlace.transform.Find("TexturePlane").GetComponent<Renderer>().material.mainTexture = PhoneCamera.temTexture;
             //SceneManager.LoadScene("TemHomePage");
         }
+        
         arScene.loadImages();
     }
 
@@ -151,7 +155,7 @@ public class ARTapToPlace : MonoBehaviour
             MetadataDirective = S3MetadataDirective.REPLACE,
             CannedACL = S3CannedACL.PublicRead
         };
-        copyRequest.Metadata.Add("Location-Info", PhoneCamera.locationString);
+        copyRequest.Metadata.Add("Location-Info", latitude.ToString() + "," + longitude.ToString());
         copyRequest.Metadata.Add("Post-Description", S3Manager.descriptionText);
         copyRequest.Metadata.Add("AR-Position", placementPose.position.ToString());
         client.CopyObject(copyRequest);

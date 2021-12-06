@@ -6,12 +6,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
+using TMPro;
 using UnityEngine;
 
 public class ARSceneManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    private ARTapToPlace ar;
+    public ARTapToPlace ar;
     public AmazonS3Client client;
     private string[] keys;
     private Dictionary<string,Texture> textures;
@@ -21,11 +22,11 @@ public class ARSceneManager : MonoBehaviour
     private Dictionary<string, byte[]> contentBodyBytes = null;
     public int limit = 5;
     private Dictionary<string, string> locations;
+    private Dictionary<string, string> descriptions;
     private Dictionary<string, string> positions;
     public Vector2 loc;
     void Start()
     {
-        ar = this.GetComponent<ARTapToPlace>();
         CognitoAWSCredentials credentials = new CognitoAWSCredentials(
         "us-east-2:0b2ab95e-b5ce-4a6e-ba47-9d2ef2a72b7e", // Identity pool ID
         RegionEndpoint.USEast2 // Region
@@ -36,8 +37,7 @@ public class ARSceneManager : MonoBehaviour
         client = new AmazonS3Client(credentials, RegionEndpoint.USEast2);
         keys = getListFilesInBucket(client);
         gameobjects = new Dictionary<string, GameObject>();
-        locations = getLocationStringsOnServer(keys, client);
-        loadImages();
+        InvokeRepeating("loadImages", 0f, 60f);
     }
 
     // Update is called once per frame
@@ -74,6 +74,15 @@ public class ARSceneManager : MonoBehaviour
     }
     public async Task loadImages()
     {
+        foreach (KeyValuePair<string, GameObject> obj in gameobjects)
+        {
+            Destroy(obj.Value);
+        }
+        gameobjects.Clear();
+        contentBodyBytes.Clear();
+        textures.Clear();
+        locations = getLocationStringsOnServer(keys, client);
+        descriptions = getARDescriptions(keys, client);
         int lim = 0;
         foreach (string key in keys)
         {
@@ -94,25 +103,33 @@ public class ARSceneManager : MonoBehaviour
 
     bool isNearByObject(string key)
     {
+        if (!locations.ContainsKey(key))
+            return false;
         Vector2 gps = StringToVector2(locations[key]);
-        float dist = Vector2.Distance(gps, loc);
+        Debug.Log(gps);
+        Vector2 currentGPS = new Vector2(ar.latitude, ar.longitude);
+        Debug.Log(currentGPS);
+        float dist = Vector2.Distance(gps, currentGPS);
+        Debug.Log(dist);
         if(dist < 0.01f)
             return true;
         return false;
     }
     void loadTextures()
     {
-
+        
         foreach (KeyValuePair<string, Texture> tex in textures)
         {
             Texture text = tex.Value;
             GameObject obj = Instantiate(prefab, gameObject.transform);
+            obj.GetComponentInChildren<TextMeshPro>().text = descriptions[tex.Key];
             obj.transform.localPosition += StringToVector3(positions[tex.Key]);
             GameObject contentPlane = obj.GetComponentInChildren<ContentPlane>().gameObject;
             Material mat = new Material(Shader.Find("Unlit/PlaneTexture"));
             mat.SetTexture("_MainTex", text);
             contentPlane.GetComponent<Renderer>().material = mat;
             texturesLoaded = false;
+            gameobjects.Add(tex.Key, obj);
 
         }
     }
@@ -192,6 +209,24 @@ public class ARSceneManager : MonoBehaviour
             };
             var response = client.GetObjectMetadata(request);
             string posAndRot = response.Metadata["x-amz-meta-ar-position"];
+            if (posAndRot != null)
+                filteredFiles.Add(files[i], posAndRot);
+        }
+        return filteredFiles;
+    }
+
+    public Dictionary<string, string> getARDescriptions(string[] files, AmazonS3Client client)
+    {
+        Dictionary<string, string> filteredFiles = new Dictionary<string, string>();
+        for (int i = 0; i < files.Length; i++)
+        {
+            var request = new GetObjectMetadataRequest()
+            {
+                BucketName = "my-graffitit-s3-bucket",
+                Key = files[i],
+            };
+            var response = client.GetObjectMetadata(request);
+            string posAndRot = response.Metadata["x-amz-meta-post-description"];
             if (posAndRot != null)
                 filteredFiles.Add(files[i], posAndRot);
         }

@@ -181,7 +181,7 @@ public class PhoneCamera : MonoBehaviour
     public static void loadARScene()
     {
         ARTapToPlace.hideCanvas = true;
-        SceneManager.LoadScene("ARScene");
+        SceneManager.LoadScene("TemHomePage");
     }
 
     //Helper function to make Texture2D Readable through script
