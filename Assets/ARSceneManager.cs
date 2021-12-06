@@ -20,6 +20,7 @@ public class ARSceneManager : MonoBehaviour
     public Dictionary<string, GameObject> gameobjects;
     private Dictionary<string, byte[]> contentBodyBytes = null;
     public int limit = 5;
+    private Dictionary<string, string> locations;
     void Start()
     {
         ar = this.GetComponent<ARTapToPlace>();
@@ -39,10 +40,23 @@ public class ARSceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(texturesLoaded)
+        if (texturesLoaded)
+        {
             loadTextures();
+            locations = getLocationStringsOnServer(keys, client);
+            loadLocations();
+        }
+            
     }
 
+    void loadLocations()
+    {
+        foreach (KeyValuePair<string, string> location in locations)
+        {
+            string v = location.Value;
+            Debug.Log(v + " " + location.Key);
+        }
+    }
     public async Task loadImages()
     {
         int lim = 0;
@@ -120,5 +134,25 @@ public class ARSceneManager : MonoBehaviour
             filesList.Add(obj.Key);
         }
         return filesList.ToArray();
+    }
+
+    //Key, GPS.
+    public Dictionary<string, string> getLocationStringsOnServer(string[] files, AmazonS3Client client)
+    {
+        Dictionary<string, string> filesAndLocation = new Dictionary<string, string>();
+
+        for (int i = 0; i < files.Length; i++)
+        {
+            var request = new GetObjectMetadataRequest()
+            {
+                BucketName = "my-graffitit-s3-bucket",
+                Key = files[i],
+            };
+            var response = client.GetObjectMetadata(request);
+            string location = response.Metadata["x-amz-meta-location-info"];
+            if (location != null)
+                filesAndLocation.Add(files[i], location);
+        }
+        return filesAndLocation;
     }
 }
