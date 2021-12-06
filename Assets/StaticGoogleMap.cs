@@ -56,7 +56,7 @@ public class StaticGoogleMap : MonoBehaviour
     IEnumerator GetGoogleMap(double latitude, double longitude)
     {
         Debug.Log(appendMarkerStr);
-        url = "https://maps.googleapis.com/maps/api/staticmap?" + "size=" + width + "x" + height + "&center=" + "39.95561" + "," + "-75.15779"
+        url = "https://maps.googleapis.com/maps/api/staticmap?" + "size=" + width + "x" + height + "&center=" + latitude + "," + longitude//"39.95561" + "," + "-75.15779"
                 + "&zoom=" + zoom + "&markers=color:blue%7Clabel:S%7C" + latitude + "," + longitude + appendMarkerStr + "&key=" + APIKey;
 
         WWW www = new WWW(url);
