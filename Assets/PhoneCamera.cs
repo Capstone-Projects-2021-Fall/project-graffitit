@@ -74,6 +74,7 @@ public class PhoneCamera : MonoBehaviour
 
     public static void TakePicture(int maxSize)
     {
+
         NativeCamera.Permission permission = NativeCamera.TakePicture((path) =>
         {
             Debug.Log("Image path: " + path);
@@ -138,8 +139,8 @@ public class PhoneCamera : MonoBehaviour
 
     public static void loadMapDisplay()
     {
-        StaticGoogleMap.latitude = double.Parse(N_Latitude);
-        StaticGoogleMap.longitude = double.Parse(E_Longtitude);
+        StaticGoogleMap.latitude = ARTapToPlace.latitude;
+        StaticGoogleMap.longitude = ARTapToPlace.longitude;
         SceneManager.LoadScene("MapScene");
     }
     

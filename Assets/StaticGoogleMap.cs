@@ -41,7 +41,7 @@ public class StaticGoogleMap : MonoBehaviour
         Dictionary<string, string> filesAndLocation = getLocationStringsOnServer(files, client);
         foreach(KeyValuePair<string, string> kvp in filesAndLocation)
         {
-            appendMarkerStr += "&markers=color:yellow%7Clabel:S%7C" + kvp.Value.Insert(8, ",");
+            appendMarkerStr += "&markers=color:yellow%7Clabel:S%7C" + kvp.Value;
         }
         mapCoroutine = GetGoogleMap(latitude, longitude);
         StartCoroutine(mapCoroutine);
