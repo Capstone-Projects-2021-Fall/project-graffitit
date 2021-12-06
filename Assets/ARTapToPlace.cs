@@ -25,7 +25,7 @@ public class ARTapToPlace : MonoBehaviour
     private float longitude;
     private Canvas canvas;
     public static bool hideCanvas;
-    private IAmazonS3 client;
+    public IAmazonS3 client;
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +47,7 @@ public class ARTapToPlace : MonoBehaviour
         );
 
         client = new AmazonS3Client(credentials, RegionEndpoint.USEast2);
-
+        //getListFilesInBucket((AmazonS3Client)client);
         InvokeRepeating("startGPS", 3f, 3f);
     }
 
