@@ -22,6 +22,7 @@ public class S3Manager : MonoBehaviour
     public static string filePath;
     public static string contentType;
     public static IAmazonS3 client;
+    public static string descriptionText;
     void Start()
     {
         uploadButton.onClick.AddListener(uploadFileToS3);
@@ -59,6 +60,7 @@ public class S3Manager : MonoBehaviour
 
             Debug.Log(PhoneCamera.locationString);
             putRequest.Metadata.Add("Location-Info", PhoneCamera.locationString);
+            descriptionText = description.text;
             putRequest.Metadata.Add("Post-Description", description.text);
             PutObjectResponse response = await client.PutObjectAsync(putRequest);
         }
@@ -66,6 +68,7 @@ public class S3Manager : MonoBehaviour
         {
             Debug.Log($"Error: {e.Message}");
         }
+        ARTapToPlace.placeOBJ = true;
         SceneManager.LoadScene("TemHomePage");
     }
 

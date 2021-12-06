@@ -7,7 +7,7 @@ using System;
 public class PhoneCamera : MonoBehaviour
 {
     //Recorded content
-    //public static Texture2D temTexture;
+    public static Texture2D temTexture;
 
     //Location
     private static string N_Latitude;
@@ -102,7 +102,7 @@ public class PhoneCamera : MonoBehaviour
                     material.shader = Shader.Find("Legacy Shaders/Diffuse");
 
                 material.mainTexture = texture;
-
+                temTexture = texture;
                 Destroy(quad, 5f);
 
                 //Destroy(texture, 5f);
@@ -142,7 +142,7 @@ public class PhoneCamera : MonoBehaviour
         StaticGoogleMap.longitude = double.Parse(E_Longtitude);
         SceneManager.LoadScene("MapScene");
     }
-
+    
     static IEnumerator startGPS()
     {
         if(!Input.location.isEnabledByUser)
@@ -172,7 +172,7 @@ public class PhoneCamera : MonoBehaviour
         {
             N_Latitude = Input.location.lastData.latitude.ToString();
             E_Longtitude = Input.location.lastData.longitude.ToString();
-            locationString = N_Latitude + E_Longtitude;
+            locationString = N_Latitude + "," + E_Longtitude;
             Input.location.Stop();
             yield return null;
         }
@@ -180,7 +180,8 @@ public class PhoneCamera : MonoBehaviour
 
     public static void loadARScene()
     {
-        SceneManager.LoadScene("ARScene");
+        ARTapToPlace.hideCanvas = true;
+        SceneManager.LoadScene("TemHomePage");
     }
 
     //Helper function to make Texture2D Readable through script
