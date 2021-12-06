@@ -25,7 +25,7 @@ public class ARTapToPlace : MonoBehaviour
     private float longitude;
     private Canvas canvas;
     public static bool hideCanvas;
-    public IAmazonS3 client;
+    public AmazonS3Client client;
     public ARSceneManager arScene;
 
     // Start is called before the first frame update
@@ -69,6 +69,7 @@ public class ARTapToPlace : MonoBehaviour
         //Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
         if(canvas.enabled == true)
         {
+            updateS3ObjectMeta(client, S3Manager.fileName);
             Destroy(canvas);
             Debug.Log("TexturePlane in the AR Scene: " + objectToPlace.transform.Find("TexturePlane") is null);
             Debug.Log("PhoneCamera temTexture: " + PhoneCamera.temTexture is null);
