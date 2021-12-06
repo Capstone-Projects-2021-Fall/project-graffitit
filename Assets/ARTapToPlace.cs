@@ -26,6 +26,7 @@ public class ARTapToPlace : MonoBehaviour
     private Canvas canvas;
     public static bool hideCanvas;
     public IAmazonS3 client;
+    public ARSceneManager arScene;
 
     // Start is called before the first frame update
     void Start()
@@ -65,7 +66,7 @@ public class ARTapToPlace : MonoBehaviour
 
     private void PlaceObject()
     {
-        Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
+        //Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
         if(canvas.enabled == true)
         {
             Destroy(canvas);
@@ -74,6 +75,7 @@ public class ARTapToPlace : MonoBehaviour
             //objectToPlace.transform.Find("TexturePlane").GetComponent<Renderer>().material.mainTexture = PhoneCamera.temTexture;
             //SceneManager.LoadScene("TemHomePage");
         }
+        arScene.loadImages();
     }
 
     private void UpdatePlacementIndicator()

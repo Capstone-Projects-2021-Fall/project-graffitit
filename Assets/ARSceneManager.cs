@@ -11,15 +11,15 @@ using UnityEngine;
 public class ARSceneManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    private byte[] contentBodyBytes = null;
     private ARTapToPlace ar;
     public AmazonS3Client client;
     private string[] keys;
-    private List<Texture> textures;
+    private Dictionary<string,Texture> textures;
     private bool texturesLoaded = false;
     public GameObject prefab;
-    public Texture testText;
     public Dictionary<string, GameObject> gameobjects;
+    private Dictionary<string, byte[]> contentBodyBytes = null;
+    public int limit = 5;
     void Start()
     {
         ar = this.GetComponent<ARTapToPlace>();
@@ -27,11 +27,13 @@ public class ARSceneManager : MonoBehaviour
         "us-east-2:0b2ab95e-b5ce-4a6e-ba47-9d2ef2a72b7e", // Identity pool ID
         RegionEndpoint.USEast2 // Region
         );
-        textures = new List<Texture>();
+        textures = new Dictionary<string, Texture>();
+        contentBodyBytes = new Dictionary<string, byte[]>();
 
         client = new AmazonS3Client(credentials, RegionEndpoint.USEast2);
         keys = getListFilesInBucket(client);
         gameobjects = new Dictionary<string, GameObject>();
+        loadImages();
     }
 
     // Update is called once per frame
@@ -43,57 +45,69 @@ public class ARSceneManager : MonoBehaviour
 
     public async Task loadImages()
     {
+        int lim = 0;
         foreach (string key in keys)
         {
+            lim += 1;
             await ReadObjectDataAsync(client, "my-graffitit-s3-bucket", key);
             Texture2D tex = new Texture2D(512, 512);
-            tex.LoadImage(contentBodyBytes);
-            textures.Add(tex);
+            tex.LoadImage(contentBodyBytes[key]);
+            if (!textures.ContainsKey(key))
+                textures.Add(key, tex);
 
+            if (limit >= limit)
+                break;
         }
         texturesLoaded = true;
     }
 
     void loadTextures()
     {
-        foreach (Texture text in textures)
+        int limit = 0;
+
+        foreach (KeyValuePair<string, Texture> tex in textures)
         {
+            Texture text = tex.Value;
             GameObject obj = Instantiate(prefab, gameObject.transform);
-            obj.transform.localPosition += Random.onUnitSphere;
+            obj.transform.localPosition += Random.onUnitSphere*0.5f;
             GameObject contentPlane = obj.GetComponentInChildren<ContentPlane>().gameObject;
             Material mat = new Material(Shader.Find("Unlit/PlaneTexture"));
             mat.SetTexture("_MainTex", text);
             contentPlane.GetComponent<Renderer>().material = mat;
             texturesLoaded = false;
+
         }
     }
 
     public async Task ReadObjectDataAsync(IAmazonS3 client, string bucketname, string keyName)
     {
-        try
+        if (!contentBodyBytes.ContainsKey(keyName))
         {
-            GetObjectRequest request = new GetObjectRequest
+            try
             {
-                BucketName = bucketname,
-                Key = keyName
-            };
+                GetObjectRequest request = new GetObjectRequest
+                {
+                    BucketName = bucketname,
+                    Key = keyName
+                };
 
-            using (GetObjectResponse response = await client.GetObjectAsync(request))
-            using (Stream responseStream = response.ResponseStream)
-            using (StreamReader reader = new StreamReader(responseStream))
-            using (var memstream = new MemoryStream())
-            {
-                var buffer = new byte[512];
-                var bytesRead = default(int);
-                while ((bytesRead = reader.BaseStream.Read(buffer, 0, buffer.Length)) > 0)
-                    memstream.Write(buffer, 0, bytesRead);
+                using (GetObjectResponse response = await client.GetObjectAsync(request))
+                using (Stream responseStream = response.ResponseStream)
+                using (StreamReader reader = new StreamReader(responseStream))
+                using (var memstream = new MemoryStream())
+                {
+                    var buffer = new byte[512];
+                    var bytesRead = default(int);
+                    while ((bytesRead = reader.BaseStream.Read(buffer, 0, buffer.Length)) > 0)
+                        memstream.Write(buffer, 0, bytesRead);
 
-                contentBodyBytes = memstream.ToArray();
+                    contentBodyBytes.Add(keyName, memstream.ToArray());
+                }
             }
-        }
-        catch (AmazonS3Exception e)
-        {
-            Debug.Log($"Error: '{e.Message}'");
+            catch (AmazonS3Exception e)
+            {
+                Debug.Log($"Error: '{e.Message}'");
+            }
         }
     }
 
