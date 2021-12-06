@@ -111,9 +111,6 @@ public class PhoneCamera : MonoBehaviour
             }
         }, maxSize);
     }
-
-<<<<<<< Updated upstream
-=======
     public static void PickImage()
     {
         NativeGallery.Permission permission = NativeGallery.GetImageFromGallery((path) =>
@@ -152,7 +149,6 @@ public class PhoneCamera : MonoBehaviour
             }
         });
     }
->>>>>>> Stashed changes
     public static void RecordVideo()
     {
         NativeCamera.Permission permission = NativeCamera.RecordVideo((path) =>
